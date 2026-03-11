@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Varnell's GitHub Copilot Links, Tips, Agents, and Skills</title>
+    <meta
+      name="description"
+      content="Michael Varnell's curated GitHub Copilot links, tips, agents, and skills."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <main class="page">
+      <header class="hero reveal">
+        <p class="eyebrow">Copilot Resources</p>
+        <h1>Michael Varnell's GitHub Copilot Links, Tips, Agents, and Skills</h1>
+        <p class="hero-copy">
+          A curated collection of GitHub Copilot resources, guidance, and agent skill references.
+        </p>
+      </header>
+
+      <section class="panel reveal" aria-labelledby="resource-list-heading">
+        <div class="panel-head">
+          <h2 id="resource-list-heading">Michael's curated links</h2>
+          <p>Curated Copilot links. Click any card to open the source in a new tab.</p>
+        </div>
+
+        <div id="resource-grid" class="resource-grid" role="list"></div>
+      </section>
+    </main>
+
+    <template id="resource-card-template">
+      <article class="resource-card" role="listitem">
+        <div class="card-top">
+          <span class="chip"></span>
+        </div>
+        <h3></h3>
+        <p class="note"></p>
+        <a class="visit-link" target="_blank" rel="noreferrer noopener">Open resource</a>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
