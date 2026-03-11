@@ -17,6 +17,113 @@ const resources = [
     type: "Cookbook",
     note: "Comprehensive interactive notebook covering Claude Skills fundamentals. Learn how to create professional documents (Excel, PowerPoint, PDFs) with expert-level quality using Skills. Covers setup and installation, understanding the progressive disclosure architecture, discovering available Anthropic-managed skills (xlsx, pptx, pdf, docx), and includes quick-start examples with code. Explains key benefits including expert-level performance, cost efficiency through efficient token usage, proven helper scripts, and composable skills. Features troubleshooting guidance and real-world examples for automating business workflows and document generation.",
   },
+  // Official Docs — Core Agents & Skills
+  {
+    title: "About GitHub Copilot Coding Agent",
+    url: "https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent",
+    type: "Docs",
+    note: "Conceptual overview of the coding agent architecture, how it autonomously works on GitHub issues, opens pull requests, and the session lifecycle.",
+  },
+  {
+    title: "Creating Custom Agents",
+    url: "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents",
+    type: "Docs",
+    note: "Step-by-step guide for creating specialized agents via .agent.md files. Covers how to define agent identity, instructions, and attach skills for specialized workflows.",
+  },
+  {
+    title: "Creating Agent Skills",
+    url: "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-skills",
+    type: "Docs",
+    note: "Detailed guide on developing reusable skills using the SKILL.md format. Covers skill structure, storage locations (.github/skills or ~/.copilot/skills), and attaching skills to custom agents.",
+  },
+  {
+    title: "Best Practices for Copilot Coding Agent",
+    url: "https://docs.github.com/copilot/how-tos/agents/copilot-coding-agent/best-practices-for-using-copilot-to-work-on-tasks",
+    type: "Docs",
+    note: "Official best practices covering task definition, repository instructions (copilot-instructions.md), custom agents, security considerations, and testing strategies for agentic workflows.",
+  },
+  {
+    title: "Building Copilot Extensions",
+    url: "https://docs.github.com/en/copilot/building-copilot-extensions",
+    type: "Docs",
+    note: "Comprehensive official documentation hub for building Copilot extensions. Covers architecture, integration patterns, GitHub App setup, request verification, and deployment to the marketplace.",
+  },
+  {
+    title: "About Building Copilot Extensions",
+    url: "https://docs.github.com/en/copilot/building-copilot-extensions/about-building-copilot-extensions",
+    type: "Docs",
+    note: "Foundation guide explaining what Copilot extensions are, the difference between skillsets and agents, and how they integrate with GitHub Copilot Chat via the GitHub App platform.",
+  },
+  {
+    title: "Creating Custom Agents for Copilot CLI",
+    url: "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-custom-agents-for-cli",
+    type: "Docs",
+    note: "Guide for CLI-specific agent development and customization. Learn how to define agents that respond to gh copilot commands with specialized knowledge and behaviors.",
+  },
+  // VS Code & Microsoft Docs
+  {
+    title: "Use Agent Skills in VS Code",
+    url: "https://code.visualstudio.com/docs/copilot/customization/agent-skills",
+    type: "Docs",
+    note: "VS Code-specific implementation guide for agent skills. Covers creating SKILL.md files, attaching skills to @workspace and custom agents, and the VS Code skills discovery mechanism.",
+  },
+  {
+    title: "GitHub Copilot Coding Agent in VS Code",
+    url: "https://code.visualstudio.com/docs/copilot/copilot-coding-agent",
+    type: "Docs",
+    note: "VS Code-specific documentation for configuring and using the Copilot coding agent. Covers setting up GitHub issues, agent sessions, and reviewing agent-generated pull requests from within VS Code.",
+  },
+  {
+    title: "Building Apps with Copilot Agent Mode",
+    url: "https://learn.microsoft.com/en-us/training/modules/github-copilot-agent-mode/",
+    type: "Tutorial",
+    note: "Microsoft Learn training module on agent mode development. Hands-on exercises for building applications using Copilot agent mode, including multi-file edits and running terminal commands.",
+  },
+  // GitHub Blog — Best Practices & Strategy
+  {
+    title: "How to Write a Great agents.md",
+    url: "https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/",
+    type: "Blog",
+    note: "Insights from analyzing 2,500+ repositories. Covers the six core areas of an effective agents.md: commands, testing, project structure, code style, git workflow, and defining agent boundaries.",
+  },
+  {
+    title: "How to Maximize Copilot's Agentic Capabilities",
+    url: "https://github.blog/ai-and-ml/github-copilot/how-to-maximize-github-copilots-agentic-capabilities/",
+    type: "Blog",
+    note: "Strategic guide on maximizing agent effectiveness. Covers writing better task descriptions, using copilot-instructions.md, leveraging custom agents, and patterns for iterative agentic workflows.",
+  },
+  {
+    title: "Introducing GitHub Copilot Extensions",
+    url: "https://github.blog/news-insights/product-news/introducing-github-copilot-extensions/",
+    type: "Blog",
+    note: "Official announcement of the Copilot Extensions ecosystem. Overview of partner integrations (Docker, DataStax, Stripe, MongoDB), the extension architecture, and the marketplace opportunity.",
+  },
+  // GitHub Repositories
+  {
+    title: "copilot-extensions (GitHub Org)",
+    url: "https://github.com/copilot-extensions",
+    type: "Collection",
+    note: "Central GitHub organization for Copilot Extensions development. Contains SDKs, code samples, the Blackbeard reference implementation, debugging proxies, and preview SDK tooling.",
+  },
+  {
+    title: "Awesome Copilot — Skills Docs",
+    url: "https://github.com/github/awesome-copilot/blob/main/docs/README.skills.md",
+    type: "Docs",
+    note: "Community-curated collection of skill examples and patterns from the awesome-copilot repository. Great reference for real-world SKILL.md implementations across different domains.",
+  },
+  // Community Resources
+  {
+    title: "Copilot Skills: Reusable AI Workflows for DevOps",
+    url: "https://dev.to/pwd9000/github-copilot-skills-reusable-ai-workflows-for-devops-and-sres-caf",
+    type: "Blog",
+    note: "Practical guide on implementing Copilot skills for DevOps and SRE workflows. Covers creating skills for deployment pipelines, incident response, and infrastructure-as-code patterns.",
+  },
+  {
+    title: "Creating Your First Copilot Extension (Step-by-Step)",
+    url: "https://www.nickyt.co/blog/creating-your-first-github-copilot-extension-a-step-by-step-guide-28g0/",
+    type: "Blog",
+    note: "Community walkthrough for building a working Copilot extension from scratch. Covers GitHub App setup, implementing the extension server, handling Copilot API requests, and local testing.",
+  },
 ];
 
 const grid = document.getElementById("resource-grid");
