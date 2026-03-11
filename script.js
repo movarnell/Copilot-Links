@@ -237,3 +237,58 @@ function render() {
 
 renderFilterBar();
 render();
+
+/* ── Section Nav: show/hide on scroll past hero ────────── */
+(function () {
+  const nav = document.getElementById("section-nav");
+  const hero = document.querySelector(".hero");
+  if (!nav || !hero) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      nav.classList.toggle("nav-visible", !entry.isIntersecting);
+    },
+    { threshold: 0 }
+  );
+  observer.observe(hero);
+})();
+
+/* ── Section Nav: active pill tracking on scroll ───────── */
+(function () {
+  const navPills = document.querySelectorAll(".nav-pill");
+  const sectionIds = Array.from(navPills).map((pill) =>
+    pill.getAttribute("href").slice(1)
+  );
+  const sections = sectionIds.map((id) => document.getElementById(id));
+
+  function updateActiveNav() {
+    const scrollY = window.scrollY;
+    const navEl = document.getElementById("section-nav");
+    const offset = (navEl ? navEl.offsetHeight : 0) + 40;
+
+    let currentId = sectionIds[0];
+    for (let i = 0; i < sections.length; i++) {
+      if (sections[i] && sections[i].offsetTop - offset <= scrollY) {
+        currentId = sectionIds[i];
+      }
+    }
+
+    navPills.forEach((pill) => {
+      const isActive = pill.getAttribute("href") === "#" + currentId;
+      pill.classList.toggle("active", isActive);
+    });
+  }
+
+  let ticking = false;
+  window.addEventListener("scroll", function () {
+    if (!ticking) {
+      requestAnimationFrame(function () {
+        updateActiveNav();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  updateActiveNav();
+})();

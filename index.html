@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael Varnell's GitHub Copilot Links, Tips, Agents, and Skills</title>
+    <title>GitHub Copilot Agents & Skills — Team Guide</title>
     <meta
       name="description"
-      content="Michael Varnell's curated GitHub Copilot links, tips, agents, and skills."
+      content="Your team's guide to GitHub Copilot agents and skills. Learn how to build custom agents, create reusable skills, and follow best practices."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,24 +19,174 @@
   <body>
     <div class="background-glow" aria-hidden="true"></div>
 
+    <!-- ── Sticky Section Nav ─────────────────────────────── -->
+    <nav class="section-nav" id="section-nav" aria-label="Page sections">
+      <div class="section-nav-inner">
+        <a href="#overview" class="nav-pill active">Overview</a>
+        <a href="#getting-started" class="nav-pill">Getting Started</a>
+        <a href="#quick-ref" class="nav-pill">Quick Reference</a>
+        <a href="#resources" class="nav-pill">Resources</a>
+      </div>
+    </nav>
+
     <main class="page">
+
+      <!-- ── Hero ───────────────────────────────────────────── -->
       <header class="hero reveal">
-        <p class="eyebrow">Copilot Resources</p>
-        <h1>Michael Varnell's GitHub Copilot Links, Tips, Agents, and Skills</h1>
+        <p class="eyebrow">Team Guide</p>
+        <h1>GitHub Copilot Agents &amp; Skills</h1>
         <p class="hero-copy">
-          A curated collection of GitHub Copilot resources, guidance, and agent skill references.
+          Your team's guide to building with Copilot's agentic capabilities.
+          From first steps to best practices &mdash; everything you need to create
+          custom agents, build reusable skills, and ship faster.
         </p>
       </header>
 
-      <section class="panel reveal" aria-labelledby="resource-list-heading">
+      <!-- ── Overview Panel ─────────────────────────────────── -->
+      <section class="panel reveal" id="overview" aria-labelledby="overview-heading">
         <div class="panel-head">
-          <h2 id="resource-list-heading">Michael's curated links</h2>
-          <p>Curated Copilot links. Click any card to open the source in a new tab.</p>
+          <p class="eyebrow">Concepts</p>
+          <h2 id="overview-heading">What Are Agents &amp; Skills?</h2>
+        </div>
+        <div class="overview-grid">
+          <div class="overview-card">
+            <h3>
+              <span class="overview-icon" aria-hidden="true">&#x1F916;</span>
+              Agents
+            </h3>
+            <ul class="overview-list">
+              <li>Autonomous coding assistants that work directly on GitHub issues</li>
+              <li>Defined via <code>.agent.md</code> files in your repository</li>
+              <li>Open pull requests with proposed changes for team review</li>
+              <li>Customizable with specialized instructions and attached skills</li>
+            </ul>
+          </div>
+          <div class="overview-card">
+            <h3>
+              <span class="overview-icon" aria-hidden="true">&#x2699;&#xFE0F;</span>
+              Skills
+            </h3>
+            <ul class="overview-list">
+              <li>Reusable instruction sets written in <code>SKILL.md</code> format</li>
+              <li>Stored in <code>.github/skills/</code> (project) or <code>~/.copilot/skills/</code> (personal)</li>
+              <li>Attach to agents to give them specialized capabilities</li>
+              <li>Shareable across repositories and team members</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Getting Started Panel ──────────────────────────── -->
+      <section class="panel reveal" id="getting-started" aria-labelledby="gs-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Learning Path</p>
+          <h2 id="gs-heading">Getting Started</h2>
+          <p>Follow these steps to go from zero to productive with Copilot agents.</p>
+        </div>
+        <div class="steps-timeline">
+
+          <div class="step-card">
+            <span class="step-number">1</span>
+            <div class="step-body">
+              <h3>Understand the Basics</h3>
+              <p>Learn what agent skills are and how they fit into the Copilot ecosystem.</p>
+              <a class="step-link" href="https://docs.github.com/en/copilot/concepts/agents/about-agent-skills" target="_blank" rel="noreferrer noopener">
+                About Agent Skills <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">2</span>
+            <div class="step-body">
+              <h3>Try Agent Mode</h3>
+              <p>Get hands-on with agent mode through a guided Microsoft Learn tutorial.</p>
+              <a class="step-link" href="https://learn.microsoft.com/en-us/training/modules/github-copilot-agent-mode/" target="_blank" rel="noreferrer noopener">
+                Building Apps with Agent Mode <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">3</span>
+            <div class="step-body">
+              <h3>Create Your First Custom Agent</h3>
+              <p>Define a specialized agent with its own identity and instructions.</p>
+              <a class="step-link" href="https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents" target="_blank" rel="noreferrer noopener">
+                Creating Custom Agents <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">4</span>
+            <div class="step-body">
+              <h3>Build Reusable Skills</h3>
+              <p>Create SKILL.md files that give agents specialized capabilities your whole team can use.</p>
+              <a class="step-link" href="https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-skills" target="_blank" rel="noreferrer noopener">
+                Creating Agent Skills <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">5</span>
+            <div class="step-body">
+              <h3>Master Best Practices</h3>
+              <p>Learn proven patterns from 2,500+ repositories and official GitHub guidance.</p>
+              <a class="step-link" href="https://docs.github.com/copilot/how-tos/agents/copilot-coding-agent/best-practices-for-using-copilot-to-work-on-tasks" target="_blank" rel="noreferrer noopener">
+                Best Practices <span aria-hidden="true">↗</span>
+              </a>
+              <a class="step-link" href="https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/" target="_blank" rel="noreferrer noopener">
+                How to Write a Great agents.md <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── Quick Reference Panel ──────────────────────────── -->
+      <section class="panel reveal" id="quick-ref" aria-labelledby="qr-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Cheat Sheet</p>
+          <h2 id="qr-heading">Key Files &amp; Locations</h2>
+        </div>
+        <div class="ref-grid">
+          <div class="ref-item">
+            <code class="ref-file">.agent.md</code>
+            <span class="ref-desc">Custom agent definition file — identity, instructions, and skill attachments</span>
+          </div>
+          <div class="ref-item">
+            <code class="ref-file">SKILL.md</code>
+            <span class="ref-desc">Skill instruction file — reusable capability definitions</span>
+          </div>
+          <div class="ref-item">
+            <code class="ref-file">copilot-instructions.md</code>
+            <span class="ref-desc">Repo-wide Copilot instructions — applies to all agents</span>
+          </div>
+          <div class="ref-item">
+            <code class="ref-file">.github/skills/</code>
+            <span class="ref-desc">Project-level skills directory — shared with the team via repo</span>
+          </div>
+          <div class="ref-item">
+            <code class="ref-file">~/.copilot/skills/</code>
+            <span class="ref-desc">Personal skills directory — your private skill library</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Resource Library (existing) ────────────────────── -->
+      <section class="panel reveal" id="resources" aria-labelledby="resource-list-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Deep Dive</p>
+          <h2 id="resource-list-heading">Resource Library</h2>
+          <p>All curated Copilot links. Click any card to open the source in a new tab.</p>
           <div class="filter-bar" id="filter-bar" role="tablist" aria-label="Filter by category"></div>
         </div>
-
         <div id="resource-grid" role="list"></div>
       </section>
+
     </main>
 
     <template id="resource-card-template">
