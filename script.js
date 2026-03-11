@@ -24,21 +24,18 @@ const template = document.getElementById("resource-card-template");
 
 function createCard(resource) {
   const fragment = template.content.cloneNode(true);
-  const card = fragment.querySelector(".resource-card");
   const chip = fragment.querySelector(".chip");
+  const source = fragment.querySelector(".source");
   const title = fragment.querySelector("h3");
   const note = fragment.querySelector(".note");
   const link = fragment.querySelector(".visit-link");
 
   chip.textContent = resource.type;
+  source.textContent = new URL(resource.url).hostname.replace(/^www\./, "");
   title.textContent = resource.title;
   note.textContent = resource.note || "No note provided.";
   link.href = resource.url;
-  link.textContent = resource.url;
-
-  card.addEventListener("click", () => {
-    window.open(resource.url, "_blank", "noopener,noreferrer");
-  });
+  link.textContent = "Visit resource";
 
   return fragment;
 }
