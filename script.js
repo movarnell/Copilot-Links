@@ -11,6 +11,12 @@ const resources = [
     type: "Docs",
     note: "GitHub Docs page describing agent skills in Copilot.",
   },
+  {
+    title: "Skills Introduction (Notebooks)",
+    url: "https://platform.claude.com/cookbook/skills-notebooks-01-skills-introduction",
+    type: "Cookbook",
+    note: "Comprehensive interactive notebook covering Claude Skills fundamentals. Learn how to create professional documents (Excel, PowerPoint, PDFs) with expert-level quality using Skills. Covers setup and installation, understanding the progressive disclosure architecture, discovering available Anthropic-managed skills (xlsx, pptx, pdf, docx), and includes quick-start examples with code. Explains key benefits including expert-level performance, cost efficiency through efficient token usage, proven helper scripts, and composable skills. Features troubleshooting guidance and real-world examples for automating business workflows and document generation.",
+  },
 ];
 
 const grid = document.getElementById("resource-grid");
