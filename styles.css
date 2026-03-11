@@ -108,11 +108,82 @@ h1 {
   margin-top: 0.4rem;
 }
 
+/* ── Filter bar ─────────────────────────────────────────── */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(123, 223, 246, 0.22);
+  background: rgba(123, 223, 246, 0.06);
+  color: var(--muted);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.filter-pill:hover {
+  background: rgba(123, 223, 246, 0.14);
+  border-color: rgba(123, 223, 246, 0.42);
+  color: var(--text);
+}
+
+.filter-pill.active {
+  background: rgba(123, 223, 246, 0.2);
+  border-color: rgba(123, 223, 246, 0.58);
+  color: #b8f4ff;
+  font-weight: 600;
+}
+
+.pill-count {
+  font-size: 0.7rem;
+  opacity: 0.65;
+}
+
+/* ── Grouped (all categories) view ─────────────────────── */
+.category-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.category-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-header {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  margin: 0 0 0.65rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(123, 223, 246, 0.15);
+}
+
+/* ── Resource grid ──────────────────────────────────────── */
 .resource-grid {
   margin-top: 1.15rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+}
+
+.category-section .resource-grid {
+  margin-top: 0;
 }
 
 .resource-card {
@@ -184,8 +255,8 @@ h1 {
   color: var(--muted);
   line-height: 1.45;
   display: -webkit-box;
-  -webkit-line-clamp: 7;
-  line-clamp: 7;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   overflow-wrap: anywhere;
@@ -273,7 +344,7 @@ h1 {
   }
 
   .note {
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 }

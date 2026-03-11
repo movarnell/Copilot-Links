@@ -126,8 +126,61 @@ const resources = [
   },
 ];
 
+const CATEGORY_ORDER = ["Docs", "Blog", "Collection", "Tutorial", "Cookbook"];
+let activeFilter = "All";
+
 const grid = document.getElementById("resource-grid");
+const filterBar = document.getElementById("filter-bar");
 const template = document.getElementById("resource-card-template");
+
+function getSortedTypes() {
+  const seen = new Set();
+  const types = [];
+  resources.forEach((r) => {
+    if (!seen.has(r.type)) {
+      seen.add(r.type);
+      types.push(r.type);
+    }
+  });
+  return types.sort((a, b) => {
+    const ai = CATEGORY_ORDER.indexOf(a);
+    const bi = CATEGORY_ORDER.indexOf(b);
+    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+  });
+}
+
+function makeFilterPill(label, count) {
+  const btn = document.createElement("button");
+  btn.className = "filter-pill" + (activeFilter === label ? " active" : "");
+  btn.setAttribute("role", "tab");
+  btn.setAttribute("aria-selected", activeFilter === label ? "true" : "false");
+
+  const labelSpan = document.createElement("span");
+  labelSpan.textContent = label;
+
+  const countSpan = document.createElement("span");
+  countSpan.className = "pill-count";
+  countSpan.textContent = count;
+
+  btn.appendChild(labelSpan);
+  btn.appendChild(countSpan);
+
+  btn.addEventListener("click", () => {
+    activeFilter = label;
+    renderFilterBar();
+    render();
+  });
+  return btn;
+}
+
+function renderFilterBar() {
+  filterBar.innerHTML = "";
+  filterBar.appendChild(makeFilterPill("All", resources.length));
+  getSortedTypes().forEach((t) => {
+    const count = resources.filter((r) => r.type === t).length;
+    filterBar.appendChild(makeFilterPill(t, count));
+  });
+}
 
 function createCard(resource) {
   const fragment = template.content.cloneNode(true);
@@ -149,9 +202,38 @@ function createCard(resource) {
 
 function render() {
   grid.innerHTML = "";
-  resources.forEach((resource) => {
-    grid.appendChild(createCard(resource));
+
+  if (activeFilter !== "All") {
+    // Flat filtered view
+    grid.className = "resource-grid";
+    resources
+      .filter((r) => r.type === activeFilter)
+      .forEach((r) => grid.appendChild(createCard(r)));
+    return;
+  }
+
+  // Grouped view — one section per category
+  grid.className = "category-container";
+  getSortedTypes().forEach((type) => {
+    const group = resources.filter((r) => r.type === type);
+    if (!group.length) return;
+
+    const section = document.createElement("section");
+    section.className = "category-section";
+
+    const hdr = document.createElement("h3");
+    hdr.className = "category-header";
+    hdr.textContent = `${type} · ${group.length}`;
+    section.appendChild(hdr);
+
+    const subgrid = document.createElement("div");
+    subgrid.className = "resource-grid";
+    group.forEach((r) => subgrid.appendChild(createCard(r)));
+    section.appendChild(subgrid);
+
+    grid.appendChild(section);
   });
 }
 
+renderFilterBar();
 render();
