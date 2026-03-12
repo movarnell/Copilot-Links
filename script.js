@@ -111,19 +111,6 @@ const resources = [
     type: "Docs",
     note: "Community-curated collection of skill examples and patterns from the awesome-copilot repository. Great reference for real-world SKILL.md implementations across different domains.",
   },
-  // Community Resources
-  {
-    title: "Copilot Skills: Reusable AI Workflows for DevOps",
-    url: "https://dev.to/pwd9000/github-copilot-skills-reusable-ai-workflows-for-devops-and-sres-caf",
-    type: "Blog",
-    note: "Practical guide on implementing Copilot skills for DevOps and SRE workflows. Covers creating skills for deployment pipelines, incident response, and infrastructure-as-code patterns.",
-  },
-  {
-    title: "Creating Your First Copilot Extension (Step-by-Step)",
-    url: "https://www.nickyt.co/blog/creating-your-first-github-copilot-extension-a-step-by-step-guide-28g0/",
-    type: "Blog",
-    note: "Community walkthrough for building a working Copilot extension from scratch. Covers GitHub App setup, implementing the extension server, handling Copilot API requests, and local testing.",
-  },
 ];
 
 const CATEGORY_ORDER = ["Docs", "Blog", "Collection", "Tutorial", "Cookbook"];
