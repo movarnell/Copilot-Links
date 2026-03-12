@@ -22,6 +22,7 @@
     <!-- ── Sticky Section Nav ─────────────────────────────── -->
     <nav class="section-nav" id="section-nav" aria-label="Page sections">
       <div class="section-nav-inner">
+        <a href="#use-cases" class="nav-pill active">Use Cases</a>
         <a href="#overview" class="nav-pill active">Overview</a>
         <a href="#getting-started" class="nav-pill">Getting Started</a>
         <a href="#quick-ref" class="nav-pill">Quick Reference</a>
@@ -42,6 +43,75 @@
           custom agents, build reusable skills, and ship faster.
         </p>
       </header>
+
+      <!-- ── Use Cases Panel ──────────────────────────────── -->
+      <section class="panel reveal" id="use-cases" aria-labelledby="use-cases-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Field Notes</p>
+          <h2 id="use-cases-heading">Real Use Cases</h2>
+          <p>Capture practical workflows your team discovers and expand each item for setup details.</p>
+        </div>
+
+        <div class="use-cases-list">
+          <details class="use-case-item">
+            <summary>
+              <span class="use-case-title">RAG-style Log Troubleshooting Agent Using a Reference Folder</span>
+              <span class="use-case-tag">Agent + Skills</span>
+            </summary>
+            <div class="use-case-body">
+              <p>
+                Build a dedicated Copilot agent that uses a reference folder of known log patterns,
+                incident notes, and runbooks to troubleshoot new logs faster with retrieval-style context.
+              </p>
+
+              <h3>How To Set It Up</h3>
+              <ol class="use-case-steps">
+                <li>Create a <code>reference/</code> folder with the exact reference documents you want it to use, known error signatures, and resolution notes.</li>
+                <li>Add a custom <code>.agent.md</code> focused on troubleshooting and root-cause analysis.</li>
+                <li>Create one or more <code>SKILL.md</code> files for parsing logs, matching patterns, and proposing fixes.</li>
+                <li>Attach those skills to the agent so it consistently follows your triage workflow.</li>
+                <li>Prompt the agent with new logs and ask it to compare against the reference folder before recommending actions.</li>
+
+              </ol>
+
+              <h3>Why This Works Well</h3>
+              <ul class="use-case-points">
+                <li>Keeps troubleshooting consistent across team members and incidents.</li>
+                <li>Reduces repeated manual searching across old tickets and files.</li>
+                <li>Improves response speed by reusing proven fixes and diagnostics.</li>
+              </ul>
+
+              <h3>Copilot Build Assist</h3>
+              <p>
+                Copilot can help generate both the agent and skills: ask it to scaffold your
+                <code>.agent.md</code>, draft <code>SKILL.md</code> instructions, and refine prompts for better
+                troubleshooting output over time.
+              </p>
+              <p>
+                <strong>Tip:</strong> Use Copilot and explain what you want the agent to focus on. After it writes the
+                agent for you, ask Copilot if there are any useful skills it sees that might help the agent
+                function better. It is amazing what it can come up with to help itself improve.
+              </p>
+            </div>
+          </details>
+
+          <details class="use-case-item">
+            <summary>
+              <span class="use-case-title">Improving Reference Materials Efficiency for the Agent</span>
+              <span class="use-case-tag">Optimization</span>
+            </summary>
+            <div class="use-case-body">
+              <p>
+                You can take the reference folder you created, and prompt the agent to go through the files and restructure them for its efficiency. Create new documents to document types that are more efficient, and rename or reorganize to improve retrieval, and use less tokens. This is a great way to optimize the agent's performance without changing the underlying code of the agent or skills, just by improving the materials it uses to reference.
+              </p>
+              <br />
+              <p>
+                <strong>Tip:</strong> Make sure you tell the agent not to 'rewrite' the information, but to only restructure it. You don't want to lose any of the important information, just make it more efficient for the agent to reference.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
 
       <!-- ── Overview Panel ─────────────────────────────────── -->
       <section class="panel reveal" id="overview" aria-labelledby="overview-heading">
