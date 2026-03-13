@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beginner Guide — Where Your Agents & Skills Live</title>
+    <meta
+      name="description"
+      content="A beginner-friendly guide to understanding where Copilot agents and skills are stored, and the difference between user-defined and workspace-defined configurations."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <!-- ── Sticky Section Nav ─────────────────────────────── -->
+    <nav class="section-nav nav-visible-always" id="section-nav" aria-label="Page sections">
+      <div class="section-nav-inner">
+        <a href="index.html" class="nav-pill nav-pill-back">&#8592; Main Guide</a>
+        <a href="#what-are-agents-skills" class="nav-pill">Agents &amp; Skills</a>
+        <a href="#workspace" class="nav-pill">Workspaces</a>
+        <a href="#where-agents" class="nav-pill">Where Agents Live</a>
+        <a href="#where-skills" class="nav-pill">Where Skills Live</a>
+        <a href="#comparison" class="nav-pill">User vs Workspace</a>
+        <a href="#visual-map" class="nav-pill">Visual Map</a>
+      </div>
+    </nav>
+
+    <main class="page">
+
+      <!-- ── Hero ───────────────────────────────────────────── -->
+      <header class="hero reveal">
+        <p class="eyebrow">Beginner Guide</p>
+        <h1>Where Your Agents &amp; Skills Live</h1>
+        <p class="hero-copy">
+          If you are new to VS Code or Copilot customization, this page walks you through
+          where agents and skills are stored, what the difference is between personal and
+          project-level configurations, and what a "workspace" actually means.
+        </p>
+      </header>
+
+      <!-- ── What Are Agents & Skills ─────────────────────── -->
+      <section class="panel reveal" id="what-are-agents-skills" aria-labelledby="what-heading">
+        <div class="panel-head">
+          <p class="eyebrow">The Basics</p>
+          <h2 id="what-heading">What Are Agents &amp; Skills?</h2>
+          <p>Before diving into where things are stored, here is what these two concepts actually are.</p>
+        </div>
+
+        <div class="overview-grid">
+          <div class="overview-card">
+            <h3>
+              <span class="overview-icon" aria-hidden="true">&#x1F916;</span>
+              Agents
+            </h3>
+            <p class="guide-text">
+              An <strong>agent</strong> is a custom personality you give to Copilot. It is defined in a single
+              file called <code>.agent.md</code> that tells Copilot who it should act as, what it should focus on,
+              and which skills it can use.
+            </p>
+            <p class="guide-text">
+              Think of an agent like a job description: it tells Copilot what role to play, what rules to follow,
+              and what tools (skills) are available for the job.
+            </p>
+          </div>
+          <div class="overview-card">
+            <h3>
+              <span class="overview-icon" aria-hidden="true">&#x2699;&#xFE0F;</span>
+              Skills
+            </h3>
+            <p class="guide-text">
+              A <strong>skill</strong> is a reusable set of instructions stored in a file called <code>SKILL.md</code>.
+              Skills give agents specialized capabilities &mdash; like knowing how to parse logs, generate tests,
+              or follow a specific coding standard.
+            </p>
+            <p class="guide-text">
+              Think of a skill like a reference manual an employee keeps at their desk: when a specific type of task
+              comes up, they pull out the relevant manual and follow those instructions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── What Is a Workspace? ─────────────────────────── -->
+      <section class="panel reveal" id="workspace" aria-labelledby="workspace-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Core Concept</p>
+          <h2 id="workspace-heading">What Is a Workspace?</h2>
+          <p>Understanding this concept is essential because it determines where your agents and skills are stored and who can see them.</p>
+        </div>
+
+        <div class="analogy-box">
+          <h3>&#x1F4C1; The Desktop Folder Analogy</h3>
+          <p>
+            Imagine your physical desk has several project folders stacked on it. Each folder contains
+            everything related to one project &mdash; notes, documents, checklists, reference materials.
+          </p>
+          <p>
+            When you pick up a folder and open it to start working, <strong>that folder becomes your workspace</strong>.
+            Everything inside it is available to you. Everything in the other folders on your desk is not &mdash; you
+            would have to close this folder and open a different one to access those materials.
+          </p>
+          <p>
+            <strong>VS Code works the same way.</strong> When you use <em>File &rarr; Open Folder</em> and select a
+            folder on your computer, that folder and everything inside it becomes your <strong>workspace</strong>.
+            VS Code's file explorer shows you what is in that folder. Copilot's agents and skills that live
+            inside that folder are now active and available.
+          </p>
+        </div>
+
+        <div class="guide-callout">
+          <h3>Why This Matters for Agents &amp; Skills</h3>
+          <p>
+            Because a workspace is tied to a specific folder, any agent or skill files you put
+            <strong>inside</strong> that folder are <em>workspace-level</em> &mdash; they only work when that
+            folder is open. This is how teams share agents: everyone who opens the same project folder
+            gets the same agents and skills automatically.
+          </p>
+          <p>
+            But you can also store agents and skills in a special folder in your <strong>home directory</strong>
+            (outside any project). These are <em>user-level</em> &mdash; they follow you everywhere,
+            regardless of which project folder you have open.
+          </p>
+        </div>
+      </section>
+
+      <!-- ── Where Agents Live ────────────────────────────── -->
+      <section class="panel reveal" id="where-agents" aria-labelledby="agents-heading">
+        <div class="panel-head">
+          <p class="eyebrow">File Locations</p>
+          <h2 id="agents-heading">Where Agents Live</h2>
+          <p>Agent files are named <code>.agent.md</code> and can be stored in two places depending on who needs access.</p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-card">
+            <div class="location-badge location-badge-workspace">Workspace</div>
+            <h3>Project-Level Agents</h3>
+            <code class="path-display">.github/agents/<em>&lt;agent-name&gt;</em>.agent.md</code>
+            <p class="guide-text">
+              This path is relative to your project folder. When you place an agent file here,
+              it becomes available to <strong>everyone</strong> who opens this project. The file is
+              version-controlled alongside your code, so changes are tracked and shared through Git.
+            </p>
+            <p class="guide-text-note">
+              Best for: team standards, project-specific workflows, shared review agents.
+            </p>
+          </div>
+
+          <div class="location-card">
+            <div class="location-badge location-badge-user">User</div>
+            <h3>Personal Agents</h3>
+            <code class="path-display">~/.copilot/agents/<em>&lt;agent-name&gt;</em>.agent.md</code>
+            <p class="guide-text">
+              The <code>~</code> symbol means your home directory &mdash; this is a folder on your computer
+              that belongs to your user account. Agents stored here are <strong>only available to you</strong>,
+              but they work across every project you open in VS Code.
+            </p>
+            <p class="guide-text-note">
+              Best for: personal preferences, private workflows, agents you want available everywhere.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Where Skills Live ────────────────────────────── -->
+      <section class="panel reveal" id="where-skills" aria-labelledby="skills-heading">
+        <div class="panel-head">
+          <p class="eyebrow">File Locations</p>
+          <h2 id="skills-heading">Where Skills Live</h2>
+          <p>Skills follow the same two-location pattern as agents. Each skill lives inside its own named folder.</p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-card">
+            <div class="location-badge location-badge-workspace">Workspace</div>
+            <h3>Project-Level Skills</h3>
+            <code class="path-display">.github/skills/<em>&lt;skill-name&gt;</em>/SKILL.md</code>
+            <p class="guide-text">
+              Workspace skills are stored inside the project folder under <code>.github/skills/</code>.
+              Each skill gets its own sub-folder with a <code>SKILL.md</code> file inside it.
+              These skills are shared with the team through version control.
+            </p>
+            <p class="guide-text-note">
+              Best for: team coding standards, project-specific linting rules, shared troubleshooting procedures.
+            </p>
+          </div>
+
+          <div class="location-card">
+            <div class="location-badge location-badge-user">User</div>
+            <h3>Personal Skills</h3>
+            <code class="path-display">~/.copilot/skills/<em>&lt;skill-name&gt;</em>/SKILL.md</code>
+            <p class="guide-text">
+              Personal skills live in your home directory and travel with you across every project.
+              No one else can see or use these skills &mdash; they are part of your personal Copilot setup.
+            </p>
+            <p class="guide-text-note">
+              Best for: your preferred code style, personal documentation templates, private utility skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── User vs Workspace Comparison ─────────────────── -->
+      <section class="panel reveal" id="comparison" aria-labelledby="comparison-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Side by Side</p>
+          <h2 id="comparison-heading">User-Defined vs Workspace-Defined</h2>
+          <p>Here is a direct comparison to help you decide where to put your agents and skills.</p>
+        </div>
+
+        <div class="compare-grid">
+          <div class="compare-card compare-card-user">
+            <h3>&#x1F464; User-Defined</h3>
+            <dl class="compare-list">
+              <dt>Stored in</dt>
+              <dd><code>~/.copilot/</code> (your home directory)</dd>
+              <dt>Who sees it</dt>
+              <dd>Only you</dd>
+              <dt>Works in</dt>
+              <dd>Every project you open</dd>
+              <dt>Version controlled</dt>
+              <dd>No &mdash; it lives outside any repository</dd>
+              <dt>Shared with team</dt>
+              <dd>No &mdash; personal to your machine</dd>
+              <dt>Best for</dt>
+              <dd>Personal preferences, private workflows, agents and skills you always want available</dd>
+            </dl>
+          </div>
+
+          <div class="compare-card compare-card-workspace">
+            <h3>&#x1F4C2; Workspace-Defined</h3>
+            <dl class="compare-list">
+              <dt>Stored in</dt>
+              <dd><code>.github/</code> (inside the project folder)</dd>
+              <dt>Who sees it</dt>
+              <dd>Everyone who opens this project</dd>
+              <dt>Works in</dt>
+              <dd>Only this specific project</dd>
+              <dt>Version controlled</dt>
+              <dd>Yes &mdash; tracked by Git with your code</dd>
+              <dt>Shared with team</dt>
+              <dd>Yes &mdash; automatically via the repository</dd>
+              <dt>Best for</dt>
+              <dd>Team standards, project-specific agents, shared review and troubleshooting workflows</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Quick Visual Map ─────────────────────────────── -->
+      <section class="panel reveal" id="visual-map" aria-labelledby="map-heading">
+        <div class="panel-head">
+          <p class="eyebrow">At a Glance</p>
+          <h2 id="map-heading">Quick Visual Map</h2>
+          <p>This shows both storage locations side by side so you can see the full picture.</p>
+        </div>
+
+        <div class="file-tree-grid">
+          <div class="file-tree-block">
+            <h3 class="file-tree-label">&#x1F464; Your Home Directory (User-Level)</h3>
+<pre class="file-tree">~
+└── .copilot/
+    ├── agents/
+    │   ├── my-reviewer.agent.md
+    │   └── my-helper.agent.md
+    └── skills/
+        ├── my-code-style/
+        │   └── SKILL.md
+        └── my-log-parser/
+            └── SKILL.md</pre>
+          </div>
+
+          <div class="file-tree-block">
+            <h3 class="file-tree-label">&#x1F4C2; Your Project Folder (Workspace-Level)</h3>
+<pre class="file-tree">my-project/
+├── .github/
+│   ├── agents/
+│   │   ├── team-reviewer.agent.md
+│   │   └── qa-tester.agent.md
+│   ├── skills/
+│   │   ├── coding-standards/
+│   │   │   └── SKILL.md
+│   │   └── log-troubleshooter/
+│   │       └── SKILL.md
+│   └── copilot-instructions.md
+├── src/
+│   └── ...
+└── README.md</pre>
+          </div>
+        </div>
+
+        <div class="guide-callout guide-callout-spaced">
+          <h3>One More Thing: <code>copilot-instructions.md</code></h3>
+          <p>
+            You may also see a file called <code>copilot-instructions.md</code> inside <code>.github/</code>.
+            This is a repo-wide instruction file that applies to <em>all</em> agents working in the project &mdash;
+            it sets baseline rules and context that every agent follows. For more detail, see the
+            <a href="index.html#quick-ref" class="guide-link">Quick Reference</a> on the main page.
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ── Guide-specific scroll behavior ─────────────────── -->
+    <script>
+      /* Active pill tracking on scroll */
+      (function () {
+        const navPills = document.querySelectorAll('.nav-pill[href^="#"]');
+        const sectionIds = Array.from(navPills).map(pill => pill.getAttribute('href').slice(1));
+        const sections = sectionIds.map(id => document.getElementById(id));
+
+        function updateActiveNav() {
+          const scrollY = window.scrollY;
+          const offset = 80;
+          let currentId = sectionIds[0];
+
+          for (let i = 0; i < sections.length; i++) {
+            if (sections[i] && sections[i].offsetTop - offset <= scrollY) {
+              currentId = sectionIds[i];
+            }
+          }
+
+          navPills.forEach(pill => {
+            const isActive = pill.getAttribute('href') === '#' + currentId;
+            pill.classList.toggle('active', isActive);
+          });
+        }
+
+        let ticking = false;
+        window.addEventListener('scroll', function () {
+          if (!ticking) {
+            requestAnimationFrame(function () {
+              updateActiveNav();
+              ticking = false;
+            });
+            ticking = true;
+          }
+        });
+
+        updateActiveNav();
+      })();
+    </script>
+  </body>
+</html>
