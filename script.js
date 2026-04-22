@@ -1,3 +1,5 @@
+const newsItems = Array.isArray(window.newsFeed) ? window.newsFeed : [];
+
 const resources = [
   {
     title: "Awesome Copilot",
@@ -119,6 +121,136 @@ let activeFilter = "All";
 const grid = document.getElementById("resource-grid");
 const filterBar = document.getElementById("filter-bar");
 const template = document.getElementById("resource-card-template");
+const newsList = document.getElementById("news-list");
+const newsSourcesList = document.getElementById("news-sources-list");
+const latestNewsList = document.getElementById("latest-news-list");
+
+const hasResourceLibrary = grid && filterBar && template;
+const hasNewsPage = Boolean(newsList);
+const hasNewsSourcesList = Boolean(newsSourcesList);
+const hasLatestNewsSidebar = Boolean(latestNewsList);
+
+function getSortedNewsItems() {
+  return [...newsItems].sort((left, right) => new Date(right.date) - new Date(left.date));
+}
+
+function createFeedStatus(message) {
+  const status = document.createElement("p");
+  status.className = "feed-status";
+  status.textContent = message;
+  return status;
+}
+
+function createNewsArticle(item) {
+  const article = document.createElement("article");
+  article.className = "news-article";
+  article.setAttribute("role", "listitem");
+
+  const meta = document.createElement("div");
+  meta.className = "news-meta";
+
+  const source = document.createElement("span");
+  source.textContent = item.source;
+  meta.appendChild(source);
+
+  const date = document.createElement("span");
+  date.textContent = item.displayDate;
+  meta.appendChild(date);
+
+  const heading = document.createElement("h2");
+  const link = document.createElement("a");
+  link.className = "news-link";
+  link.href = item.url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = item.title;
+  heading.appendChild(link);
+
+  const summary = document.createElement("p");
+  summary.textContent = item.summary;
+
+  article.append(meta, heading, summary);
+  return article;
+}
+
+function createLatestNewsCard(item) {
+  const article = document.createElement("article");
+  article.className = "latest-news-card";
+  article.setAttribute("role", "listitem");
+
+  const meta = document.createElement("p");
+  meta.className = "latest-news-meta";
+  meta.textContent = `${item.source} • ${item.displayDate}`;
+
+  const heading = document.createElement("h3");
+  heading.className = "latest-news-title";
+
+  const link = document.createElement("a");
+  link.href = item.url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = item.title;
+  heading.appendChild(link);
+
+  const summary = document.createElement("p");
+  summary.className = "latest-news-summary";
+  summary.textContent = item.summary;
+
+  article.append(meta, heading, summary);
+  return article;
+}
+
+function renderNewsPage() {
+  if (!hasNewsPage) return;
+  newsList.innerHTML = "";
+  const items = getSortedNewsItems();
+  if (!items.length) {
+    newsList.appendChild(createFeedStatus("No news items yet. Populate news-feed.js to fill this tracker."));
+    return;
+  }
+
+  items.forEach((item) => {
+    newsList.appendChild(createNewsArticle(item));
+  });
+}
+
+function renderNewsSources() {
+  if (!hasNewsSourcesList) return;
+  newsSourcesList.innerHTML = "";
+
+  const items = getSortedNewsItems();
+  if (!items.length) {
+    const li = document.createElement("li");
+    li.textContent = "No sources yet. Add stories to news-feed.js.";
+    newsSourcesList.appendChild(li);
+    return;
+  }
+
+  const seenSources = new Set();
+  items.forEach((item) => {
+    if (seenSources.has(item.source)) return;
+    seenSources.add(item.source);
+
+    const li = document.createElement("li");
+    li.textContent = `${item.source} - latest story dated ${item.displayDate}`;
+    newsSourcesList.appendChild(li);
+  });
+}
+
+function renderLatestNewsSidebar() {
+  if (!hasLatestNewsSidebar) return;
+  latestNewsList.innerHTML = "";
+  const items = getSortedNewsItems();
+
+  if (!items.length) {
+    latestNewsList.appendChild(createFeedStatus("Add stories to news-feed.js to populate this daily snapshot."));
+    return;
+  }
+
+  items.slice(0, 3).forEach((item) => {
+    latestNewsList.appendChild(createLatestNewsCard(item));
+  });
+}
 
 function getSortedTypes() {
   const seen = new Set();
@@ -161,6 +293,7 @@ function makeFilterPill(label, count) {
 }
 
 function renderFilterBar() {
+  if (!hasResourceLibrary) return;
   filterBar.innerHTML = "";
   filterBar.appendChild(makeFilterPill("All", resources.length));
   getSortedTypes().forEach((t) => {
@@ -170,6 +303,7 @@ function renderFilterBar() {
 }
 
 function createCard(resource) {
+  if (!hasResourceLibrary) return document.createDocumentFragment();
   const fragment = template.content.cloneNode(true);
   const chip = fragment.querySelector(".chip");
   const source = fragment.querySelector(".source");
@@ -188,6 +322,7 @@ function createCard(resource) {
 }
 
 function render() {
+  if (!hasResourceLibrary) return;
   grid.innerHTML = "";
 
   if (activeFilter !== "All") {
@@ -222,8 +357,14 @@ function render() {
   });
 }
 
-renderFilterBar();
-render();
+if (hasResourceLibrary) {
+  renderFilterBar();
+  render();
+}
+
+renderNewsPage();
+renderNewsSources();
+renderLatestNewsSidebar();
 
 /* ── Section Nav: show/hide on scroll past hero ────────── */
 (function () {
@@ -242,10 +383,13 @@ render();
 
 /* ── Section Nav: active pill tracking on scroll ───────── */
 (function () {
-  const navPills = document.querySelectorAll(".nav-pill");
-  const sectionIds = Array.from(navPills).map((pill) =>
-    pill.getAttribute("href").slice(1)
-  );
+  const navPills = Array.from(document.querySelectorAll(".nav-pill")).filter((pill) => {
+    const href = pill.getAttribute("href") || "";
+    return href.startsWith("#");
+  });
+  if (!navPills.length) return;
+
+  const sectionIds = navPills.map((pill) => pill.getAttribute("href").slice(1));
   const sections = sectionIds.map((id) => document.getElementById(id));
 
   function updateActiveNav() {

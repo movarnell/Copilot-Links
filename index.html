@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitHub Copilot Agents & Skills — Team Guide</title>
+    <title>AI in VS Code Hub — Agents, Skills, News &amp; Workflows</title>
     <meta
       name="description"
-      content="Your team's guide to GitHub Copilot agents and skills. Learn how to build custom agents, create reusable skills, and follow best practices."
+      content="An informational hub for using AI in VS Code. Learn agents and skills, explore practical workflows, compare models, and track AI news from a daily-updated feed."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,35 +23,52 @@
     <nav class="section-nav nav-visible-always" id="section-nav" aria-label="Page sections">
       <div class="section-nav-inner">
         <a href="guide.html" class="nav-pill nav-pill-back">Beginner Guide &#8594;</a>
-        <a href="#use-cases" class="nav-pill active">Use Cases</a>
-        <a href="#overview" class="nav-pill active">Overview</a>
-        <a href="#getting-started" class="nav-pill">Getting Started</a>
-        <a href="#quick-ref" class="nav-pill">Quick Reference</a>
+        <a href="news.html" class="nav-pill nav-pill-back">AI News &#8594;</a>
+        <a href="#use-cases" class="nav-pill active">Workflows</a>
+        <a href="#overview" class="nav-pill active">Agents &amp; Skills</a>
+        <a href="#ai-in-vscode" class="nav-pill">AI in VS Code</a>
+        <a href="#getting-started" class="nav-pill">Start Here</a>
+        <a href="#quick-ref" class="nav-pill">Files</a>
         <a href="#models" class="nav-pill">Models</a>
-        <a href="#resources" class="nav-pill">Resources</a>
+        <a href="#resources" class="nav-pill">Library</a>
       </div>
     </nav>
 
     <main class="page">
 
-      <!-- ── Hero ───────────────────────────────────────────── -->
-      <header class="hero reveal">
-        <p class="eyebrow">Team Guide</p>
-        <h1>GitHub Copilot Agents &amp; Skills</h1>
-        <p class="hero-copy">
-          Your team's guide to building with Copilot's agentic capabilities.
-          From first steps to best practices &mdash; everything you need to create
-          custom agents, build reusable skills, and ship faster.
-        </p>
-        <a href="guide.html" class="hero-guide-link">New to VS Code? Start with the Beginner Guide</a>
-      </header>
+      <!-- ── Hero + News Sidebar ───────────────────────────── -->
+      <section class="hero-shell reveal" aria-labelledby="page-title">
+        <header class="hero">
+          <p class="eyebrow">AI in VS Code Hub</p>
+          <h1 id="page-title">Agents, Skills, and AI Workflows in VS Code</h1>
+          <p class="hero-copy">
+            An informational home base for understanding how AI fits into VS Code.
+            Learn the building blocks behind agents and skills, explore practical workflows,
+            compare models, and keep one eye on a news feed that is ready for daily automation.
+          </p>
+          <div class="hero-actions">
+            <a href="guide.html" class="hero-guide-link">Open the Beginner Guide</a>
+            <a href="news.html" class="hero-guide-link hero-guide-link-secondary">Browse the AI News Tracker</a>
+          </div>
+        </header>
+
+        <aside class="news-sidebar" aria-labelledby="latest-news-heading">
+          <div class="news-sidebar-head">
+            <p class="news-sidebar-kicker">Daily Feed</p>
+            <h2 id="latest-news-heading">AI News Snapshot</h2>
+
+          </div>
+          <div class="latest-news-list" id="latest-news-list" role="list"></div>
+          <a class="news-sidebar-link" href="news.html">Open the full AI news tracker</a>
+        </aside>
+      </section>
 
       <!-- ── Use Cases Panel ──────────────────────────────── -->
       <section class="panel reveal" id="use-cases" aria-labelledby="use-cases-heading">
         <div class="panel-head">
-          <p class="eyebrow">Field Notes</p>
-          <h2 id="use-cases-heading">Real Use Cases</h2>
-          <p>Capture practical workflows your team discovers and expand each item for setup details.</p>
+          <p class="eyebrow">Workflow Patterns</p>
+          <h2 id="use-cases-heading">Real AI Workflows</h2>
+          <p>Capture practical ways your team is using agents, skills, and AI-assisted tooling inside VS Code.</p>
         </div>
 
         <div class="use-cases-list">
@@ -119,8 +136,9 @@
       <!-- ── Overview Panel ─────────────────────────────────── -->
       <section class="panel reveal" id="overview" aria-labelledby="overview-heading">
         <div class="panel-head">
-          <p class="eyebrow">Concepts</p>
-          <h2 id="overview-heading">What Are Agents &amp; Skills?</h2>
+          <p class="eyebrow">Core Concepts</p>
+          <h2 id="overview-heading">Agents and Skills at a Glance</h2>
+          <p>These are the reusable building blocks behind more advanced AI workflows in VS Code.</p>
         </div>
         <div class="overview-grid">
           <div class="overview-card">
@@ -150,12 +168,36 @@
         </div>
       </section>
 
+      <!-- ── AI in VS Code Panel ───────────────────────────── -->
+      <section class="panel reveal" id="ai-in-vscode" aria-labelledby="ai-vscode-heading">
+        <div class="panel-head">
+          <p class="eyebrow">In Practice</p>
+          <h2 id="ai-vscode-heading">Using AI in VS Code</h2>
+          <p>A strong setup balances quick chat loops, deeper agent execution, and repeatable automation.</p>
+        </div>
+        <div class="workflow-grid">
+          <article class="workflow-card">
+            <h3>Interactive Help</h3>
+            <p>Use chat for quick explanations, code edits, documentation lookup, and small in-context fixes without leaving the editor.</p>
+          </article>
+          <article class="workflow-card">
+            <h3>Agentic Execution</h3>
+            <p>Use agent mode when a task spans multiple files, needs terminal commands, or requires validation rather than one-shot suggestions.</p>
+          </article>
+          <article class="workflow-card">
+            <h3>Repeatable Automation</h3>
+            <p>Keep recurring content in a standalone data file so scheduled jobs can update the feed without rewriting page layout or UI logic.</p>
+            <p class="workflow-note">This site now uses <code>news-feed.js</code> for that pattern.</p>
+          </article>
+        </div>
+      </section>
+
       <!-- ── Getting Started Panel ──────────────────────────── -->
       <section class="panel reveal" id="getting-started" aria-labelledby="gs-heading">
         <div class="panel-head">
           <p class="eyebrow">Learning Path</p>
           <h2 id="gs-heading">Getting Started</h2>
-          <p>Follow these steps to go from zero to productive with Copilot agents.</p>
+          <p>Follow these steps to go from zero to productive with AI in VS Code.</p>
         </div>
         <div class="steps-timeline">
 
@@ -247,6 +289,10 @@
             <code class="ref-file">~/.copilot/skills/</code>
             <span class="ref-desc">Personal skills directory — your private skill library</span>
           </div>
+          <div class="ref-item">
+            <code class="ref-file">news-feed.js</code>
+            <span class="ref-desc">Shared AI news data source — update this file to refresh both the homepage snapshot and the full tracker</span>
+          </div>
         </div>
       </section>
 
@@ -254,8 +300,8 @@
       <section class="panel reveal" id="models" aria-labelledby="models-heading">
         <div class="panel-head">
           <p class="eyebrow">Comparison</p>
-          <h2 id="models-heading">GitHub Copilot Models</h2>
-          <p>Choose the right model based on context size, capabilities, and specific coding tasks. Perfect for trying out different models on your workflow.</p>
+          <h2 id="models-heading">AI Models in VS Code</h2>
+          <p>Choose the right model based on context size, capabilities, and the kind of AI-assisted work you want to do.</p>
         </div>
         <div class="table-wrapper">
           <table class="models-table">
@@ -407,8 +453,8 @@
       <section class="panel reveal" id="resources" aria-labelledby="resource-list-heading">
         <div class="panel-head">
           <p class="eyebrow">Deep Dive</p>
-          <h2 id="resource-list-heading">Resource Library</h2>
-          <p>All curated Copilot links. Click any card to open the source in a new tab.</p>
+          <h2 id="resource-list-heading">AI in VS Code Library</h2>
+          <p>Curated docs, tutorials, repositories, and reference material for agents, skills, extensions, and related AI workflows.</p>
           <div class="filter-bar" id="filter-bar" role="tablist" aria-label="Filter by category"></div>
         </div>
         <div id="resource-grid" role="list"></div>
@@ -430,6 +476,7 @@
       </article>
     </template>
 
+    <script src="news-feed.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

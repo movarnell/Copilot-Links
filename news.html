@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI News Tracker — VS Code, Agents, and Models</title>
+    <meta
+      name="description"
+      content="A daily-update-ready AI news tracker for VS Code users covering agents, models, workflows, launches, and security findings."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <nav class="section-nav nav-visible-always" id="section-nav" aria-label="News page sections">
+      <div class="section-nav-inner">
+        <a href="index.html" class="nav-pill nav-pill-back">&#8592; AI Hub</a>
+        <a href="guide.html" class="nav-pill nav-pill-back">Beginner Guide</a>
+        <a href="#top-stories" class="nav-pill active">Latest Feed</a>
+        <a href="#sources" class="nav-pill">Sources</a>
+      </div>
+    </nav>
+
+    <main class="page news-layout">
+      <header class="hero reveal">
+        <p class="eyebrow">AI News</p>
+        <h1>AI News Tracker for VS Code Users</h1>
+        <p class="hero-copy">
+          Track AI stories that matter to day-to-day VS Code work: agent workflows, model releases, automation
+          patterns, extension changes, and major security findings. This page is powered by a shared feed so it can be
+          refreshed daily without rewriting the layout.
+        </p>
+      </header>
+
+      <section class="panel reveal news-intro" id="top-stories" aria-labelledby="top-stories-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Latest Feed</p>
+          <h2 id="top-stories-heading">Current Coverage</h2>
+          <p>Newest stories render first from the shared feed file and link directly to the original reporting.</p>
+        </div>
+
+        <div class="news-callout">
+          <p>
+            Automation note: both this page and the homepage sidebar render from <code>news-feed.js</code>. If your
+            daily job updates that file, both views refresh together.
+          </p>
+        </div>
+
+        <div class="news-list" id="news-list" role="list"></div>
+      </section>
+
+      <section class="panel reveal" id="sources" aria-labelledby="sources-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Source List</p>
+          <h2 id="sources-heading">Tracked Sources</h2>
+          <p>These are the outlets represented in the current feed.</p>
+        </div>
+        <ul class="news-sources" id="news-sources-list"></ul>
+      </section>
+    </main>
+
+    <script src="news-feed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
