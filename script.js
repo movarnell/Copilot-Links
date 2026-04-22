@@ -134,6 +134,7 @@ const resources = [
 
 const CATEGORY_ORDER = ["Docs", "Blog", "Collection", "Tutorial", "Cookbook"];
 let activeFilter = "All";
+let activeNewsCategory = "all";
 
 const grid = document.getElementById("resource-grid");
 const filterBar = document.getElementById("filter-bar");
@@ -158,6 +159,12 @@ const hasLatestNewsSidebar = Boolean(latestNewsList);
 
 function getSortedNewsItems() {
   return [...newsItems].sort((left, right) => new Date(right.date) - new Date(left.date));
+}
+
+function getActiveNewsItems() {
+  return activeNewsCategory === "all"
+    ? getSortedNewsItems()
+    : getNewsItemsByCategory(activeNewsCategory);
 }
 
 function getNewsItemsByCategory(category) {
@@ -230,8 +237,15 @@ function createNewsCard(item, options = {}) {
 }
 
 function createOverviewMetric(section) {
-  const metric = document.createElement("article");
+  const metric = document.createElement("button");
+  const isActive = activeNewsCategory === section.key;
   metric.className = "news-overview-card";
+  if (isActive) {
+    metric.classList.add("active");
+  }
+  metric.type = "button";
+  metric.setAttribute("aria-pressed", isActive ? "true" : "false");
+  metric.title = section.description;
 
   const count = document.createElement("span");
   count.className = "news-overview-count";
@@ -240,16 +254,50 @@ function createOverviewMetric(section) {
   const title = document.createElement("h3");
   title.textContent = section.title;
 
-  const description = document.createElement("p");
-  description.textContent = section.description;
+  metric.append(count, title);
+  metric.addEventListener("click", () => {
+    activeNewsCategory = section.key;
+    renderNewsOverview();
+    renderNewsSpotlight();
+    renderNewsSections();
+  });
 
-  metric.append(count, title, description);
+  return metric;
+}
+
+function createAllOverviewMetric() {
+  const metric = document.createElement("button");
+  const isActive = activeNewsCategory === "all";
+  metric.className = "news-overview-card";
+  if (isActive) {
+    metric.classList.add("active");
+  }
+  metric.type = "button";
+  metric.setAttribute("aria-pressed", isActive ? "true" : "false");
+  metric.title = "Show all tracked AI news items";
+
+  const count = document.createElement("span");
+  count.className = "news-overview-count";
+  count.textContent = getSortedNewsItems().length;
+
+  const title = document.createElement("h3");
+  title.textContent = "All";
+
+  metric.append(count, title);
+  metric.addEventListener("click", () => {
+    activeNewsCategory = "all";
+    renderNewsOverview();
+    renderNewsSpotlight();
+    renderNewsSections();
+  });
+
   return metric;
 }
 
 function renderNewsOverview() {
   if (!hasNewsOverview) return;
   newsOverviewGrid.innerHTML = "";
+  newsOverviewGrid.appendChild(createAllOverviewMetric());
   NEWS_SECTIONS.forEach((section) => {
     newsOverviewGrid.appendChild(createOverviewMetric(section));
   });
@@ -259,7 +307,13 @@ function renderNewsSpotlight() {
   if (!hasNewsSpotlight) return;
   newsSpotlightList.innerHTML = "";
 
-  const items = getSortedNewsItems().slice(0, 3);
+  const shouldShowSpotlight = activeNewsCategory === "all";
+  newsSpotlightList.hidden = !shouldShowSpotlight;
+  if (!shouldShowSpotlight) {
+    return;
+  }
+
+  const items = getActiveNewsItems().slice(0, 3);
   if (!items.length) {
     newsSpotlightList.appendChild(createFeedStatus("No news items yet. Populate news-feed.js to fill this tracker."));
     return;
@@ -275,7 +329,12 @@ function renderNewsSections() {
 
   NEWS_SECTIONS.forEach((section) => {
     const container = newsSectionLists[section.key];
+    const sectionPanel = document.getElementById(section.key);
     if (!container) return;
+
+    if (sectionPanel) {
+      sectionPanel.hidden = !(activeNewsCategory === "all" || activeNewsCategory === section.key);
+    }
 
     container.innerHTML = "";
     const items = getNewsItemsByCategory(section.key);
