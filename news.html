@@ -23,7 +23,11 @@
       <div class="section-nav-inner">
         <a href="index.html" class="nav-pill nav-pill-back">&#8592; AI Hub</a>
         <a href="guide.html" class="nav-pill nav-pill-back">Beginner Guide</a>
-        <a href="#top-stories" class="nav-pill active">Latest Feed</a>
+        <a href="#top-stories" class="nav-pill active">Overview</a>
+        <a href="#new-models" class="nav-pill">New Models</a>
+        <a href="#mythos-news" class="nav-pill">Mythos</a>
+        <a href="#ai-general-news" class="nav-pill">General AI</a>
+        <a href="#companies" class="nav-pill">Companies</a>
         <a href="#sources" class="nav-pill">Sources</a>
       </div>
     </nav>
@@ -41,19 +45,50 @@
 
       <section class="panel reveal news-intro" id="top-stories" aria-labelledby="top-stories-heading">
         <div class="panel-head">
-          <p class="eyebrow">Latest Feed</p>
-          <h2 id="top-stories-heading">Current Coverage</h2>
-          <p>Newest stories render first from the shared feed file and link directly to the original reporting.</p>
+          <p class="eyebrow">News Desk</p>
+          <h2 id="top-stories-heading">Tracked Coverage</h2>
+          <p>The feed is grouped so model launches, Mythos coverage, and broader AI workflow news are easier to scan.</p>
         </div>
 
-        <div class="news-callout">
-          <p>
-            Automation note: both this page and the homepage sidebar render from <code>news-feed.js</code>. If your
-            daily job updates that file, both views refresh together.
-          </p>
-        </div>
+        <div class="news-overview-grid" id="news-overview-grid"></div>
 
-        <div class="news-list" id="news-list" role="list"></div>
+        <div class="news-spotlight-grid" id="news-spotlight-list" role="list"></div>
+      </section>
+
+      <section class="panel reveal" id="new-models" aria-labelledby="new-models-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Category</p>
+          <h2 id="new-models-heading">New Models</h2>
+          <p>Recent model launches and release notes that affect AI-assisted development work.</p>
+        </div>
+        <div class="news-section-grid" id="new-models-list" role="list"></div>
+      </section>
+
+      <section class="panel reveal" id="mythos-news" aria-labelledby="mythos-news-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Category</p>
+          <h2 id="mythos-news-heading">Mythos News</h2>
+          <p>Coverage tied to Mythos, Project Glasswing, and the reported security findings around those deployments.</p>
+        </div>
+        <div class="news-section-grid" id="mythos-news-list" role="list"></div>
+      </section>
+
+      <section class="panel reveal" id="ai-general-news" aria-labelledby="ai-general-news-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Category</p>
+          <h2 id="ai-general-news-heading">AI General News</h2>
+          <p>Broader AI workflow, tooling, and ecosystem shifts relevant to VS Code users and AI-assisted teams.</p>
+        </div>
+        <div class="news-section-grid" id="ai-general-news-list" role="list"></div>
+      </section>
+
+      <section class="panel reveal" id="companies" aria-labelledby="companies-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Tag View</p>
+          <h2 id="companies-heading">AI Companies</h2>
+          <p>Stories are tagged by the companies most closely associated with the item so you can scan by lab or platform.</p>
+        </div>
+        <div class="news-company-cloud" id="news-company-tags" role="list"></div>
       </section>
 
       <section class="panel reveal" id="sources" aria-labelledby="sources-heading">

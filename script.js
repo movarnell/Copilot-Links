@@ -1,4 +1,21 @@
 const newsItems = Array.isArray(window.newsFeed) ? window.newsFeed : [];
+const NEWS_SECTIONS = [
+  {
+    key: "new-models",
+    title: "New Models",
+    description: "Fresh model launches and release notes.",
+  },
+  {
+    key: "mythos-news",
+    title: "Mythos News",
+    description: "Coverage tied to Mythos and Glasswing.",
+  },
+  {
+    key: "ai-general-news",
+    title: "AI General News",
+    description: "Broader AI workflow and ecosystem shifts.",
+  },
+];
 
 const resources = [
   {
@@ -121,17 +138,43 @@ let activeFilter = "All";
 const grid = document.getElementById("resource-grid");
 const filterBar = document.getElementById("filter-bar");
 const template = document.getElementById("resource-card-template");
-const newsList = document.getElementById("news-list");
+const newsOverviewGrid = document.getElementById("news-overview-grid");
+const newsSpotlightList = document.getElementById("news-spotlight-list");
+const newsCompanyTags = document.getElementById("news-company-tags");
 const newsSourcesList = document.getElementById("news-sources-list");
 const latestNewsList = document.getElementById("latest-news-list");
+const newsSectionLists = NEWS_SECTIONS.reduce((accumulator, section) => {
+  accumulator[section.key] = document.getElementById(`${section.key}-list`);
+  return accumulator;
+}, {});
 
 const hasResourceLibrary = grid && filterBar && template;
-const hasNewsPage = Boolean(newsList);
+const hasNewsOverview = Boolean(newsOverviewGrid);
+const hasNewsSpotlight = Boolean(newsSpotlightList);
+const hasNewsCompanies = Boolean(newsCompanyTags);
+const hasNewsSections = NEWS_SECTIONS.some((section) => Boolean(newsSectionLists[section.key]));
 const hasNewsSourcesList = Boolean(newsSourcesList);
 const hasLatestNewsSidebar = Boolean(latestNewsList);
 
 function getSortedNewsItems() {
   return [...newsItems].sort((left, right) => new Date(right.date) - new Date(left.date));
+}
+
+function getNewsItemsByCategory(category) {
+  return getSortedNewsItems().filter((item) => item.category === category);
+}
+
+function getCompanyCounts() {
+  const counts = new Map();
+  newsItems.forEach((item) => {
+    (item.companies || []).forEach((company) => {
+      counts.set(company, (counts.get(company) || 0) + 1);
+    });
+  });
+  return Array.from(counts.entries()).sort((left, right) => {
+    if (right[1] !== left[1]) return right[1] - left[1];
+    return left[0].localeCompare(right[0]);
+  });
 }
 
 function createFeedStatus(message) {
@@ -141,41 +184,17 @@ function createFeedStatus(message) {
   return status;
 }
 
-function createNewsArticle(item) {
-  const article = document.createElement("article");
-  article.className = "news-article";
-  article.setAttribute("role", "listitem");
-
-  const meta = document.createElement("div");
-  meta.className = "news-meta";
-
-  const source = document.createElement("span");
-  source.textContent = item.source;
-  meta.appendChild(source);
-
-  const date = document.createElement("span");
-  date.textContent = item.displayDate;
-  meta.appendChild(date);
-
-  const heading = document.createElement("h2");
-  const link = document.createElement("a");
-  link.className = "news-link";
-  link.href = item.url;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
-  link.textContent = item.title;
-  heading.appendChild(link);
-
-  const summary = document.createElement("p");
-  summary.textContent = item.summary;
-
-  article.append(meta, heading, summary);
-  return article;
+function createCompanyChip(company) {
+  const chip = document.createElement("span");
+  chip.className = "news-company-chip";
+  chip.textContent = company;
+  return chip;
 }
 
-function createLatestNewsCard(item) {
+function createNewsCard(item, options = {}) {
+  const { pageVariant = false } = options;
   const article = document.createElement("article");
-  article.className = "latest-news-card";
+  article.className = "latest-news-card" + (pageVariant ? " news-page-card" : "");
   article.setAttribute("role", "listitem");
 
   const meta = document.createElement("p");
@@ -197,20 +216,95 @@ function createLatestNewsCard(item) {
   summary.textContent = item.summary;
 
   article.append(meta, heading, summary);
+
+  if (pageVariant && item.companies && item.companies.length) {
+    const tags = document.createElement("div");
+    tags.className = "news-card-tags";
+    item.companies.forEach((company) => {
+      tags.appendChild(createCompanyChip(company));
+    });
+    article.appendChild(tags);
+  }
+
   return article;
 }
 
-function renderNewsPage() {
-  if (!hasNewsPage) return;
-  newsList.innerHTML = "";
-  const items = getSortedNewsItems();
+function createOverviewMetric(section) {
+  const metric = document.createElement("article");
+  metric.className = "news-overview-card";
+
+  const count = document.createElement("span");
+  count.className = "news-overview-count";
+  count.textContent = getNewsItemsByCategory(section.key).length;
+
+  const title = document.createElement("h3");
+  title.textContent = section.title;
+
+  const description = document.createElement("p");
+  description.textContent = section.description;
+
+  metric.append(count, title, description);
+  return metric;
+}
+
+function renderNewsOverview() {
+  if (!hasNewsOverview) return;
+  newsOverviewGrid.innerHTML = "";
+  NEWS_SECTIONS.forEach((section) => {
+    newsOverviewGrid.appendChild(createOverviewMetric(section));
+  });
+}
+
+function renderNewsSpotlight() {
+  if (!hasNewsSpotlight) return;
+  newsSpotlightList.innerHTML = "";
+
+  const items = getSortedNewsItems().slice(0, 3);
   if (!items.length) {
-    newsList.appendChild(createFeedStatus("No news items yet. Populate news-feed.js to fill this tracker."));
+    newsSpotlightList.appendChild(createFeedStatus("No news items yet. Populate news-feed.js to fill this tracker."));
     return;
   }
 
   items.forEach((item) => {
-    newsList.appendChild(createNewsArticle(item));
+    newsSpotlightList.appendChild(createNewsCard(item, { pageVariant: true }));
+  });
+}
+
+function renderNewsSections() {
+  if (!hasNewsSections) return;
+
+  NEWS_SECTIONS.forEach((section) => {
+    const container = newsSectionLists[section.key];
+    if (!container) return;
+
+    container.innerHTML = "";
+    const items = getNewsItemsByCategory(section.key);
+    if (!items.length) {
+      container.appendChild(createFeedStatus(`No items yet for ${section.title}.`));
+      return;
+    }
+
+    items.forEach((item) => {
+      container.appendChild(createNewsCard(item, { pageVariant: true }));
+    });
+  });
+}
+
+function renderCompanyTags() {
+  if (!hasNewsCompanies) return;
+  newsCompanyTags.innerHTML = "";
+
+  const companyCounts = getCompanyCounts();
+  if (!companyCounts.length) {
+    newsCompanyTags.appendChild(createFeedStatus("No company tags yet. Add company arrays in news-feed.js."));
+    return;
+  }
+
+  companyCounts.forEach(([company, count]) => {
+    const chip = document.createElement("span");
+    chip.className = "news-company-chip news-company-chip-aggregate";
+    chip.textContent = `${company} · ${count}`;
+    newsCompanyTags.appendChild(chip);
   });
 }
 
@@ -248,7 +342,7 @@ function renderLatestNewsSidebar() {
   }
 
   items.slice(0, 3).forEach((item) => {
-    latestNewsList.appendChild(createLatestNewsCard(item));
+    latestNewsList.appendChild(createNewsCard(item));
   });
 }
 
@@ -362,7 +456,10 @@ if (hasResourceLibrary) {
   render();
 }
 
-renderNewsPage();
+renderNewsOverview();
+renderNewsSpotlight();
+renderNewsSections();
+renderCompanyTags();
 renderNewsSources();
 renderLatestNewsSidebar();
 
