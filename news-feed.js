@@ -1,5 +1,71 @@
 window.newsFeed = [
   {
+    source: "TechCrunch",
+    date: "2026-04-22",
+    displayDate: "April 22, 2026",
+    category: "ai-general-news",
+    companies: ["Google"],
+    title: "Google Launches Gemini Enterprise Agent Platform at Cloud Next",
+    url: "https://techcrunch.com/2026/04/22/google-makes-an-interesting-choice-with-its-new-agent-building-tool-for-enterprises/",
+    summary:
+      "At Google Cloud Next, CEO Sundar Pichai announced the Gemini Enterprise Agent Platform, Google's answer to Amazon Bedrock AgentCore and Microsoft Foundry. The tool is aimed at IT and technical teams building and managing agents at scale, and supports Google's own Gemini models alongside Anthropic's Claude Opus, Sonnet, and Haiku. A separate Gemini Enterprise app handles business-user workflows like scheduling and file management.",
+  },
+  {
+    source: "TechCrunch",
+    date: "2026-04-22",
+    displayDate: "April 22, 2026",
+    category: "ai-general-news",
+    companies: ["Google"],
+    title: "Google Cloud Launches TPU 8t and 8i — Two Specialized AI Chips to Compete with Nvidia",
+    url: "https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/",
+    summary:
+      "Google announced its eighth-generation TPU family at Cloud Next, splitting the chip into two purpose-built designs: the TPU 8t for model training and the TPU 8i for inference. Google claims up to 3x faster training, 80% better performance per dollar versus prior generations, and the ability to cluster 1 million-plus TPUs together. The chips supplement rather than replace Nvidia hardware in Google Cloud's fleet.",
+  },
+  {
+    source: "VentureBeat",
+    date: "2026-04-22",
+    displayDate: "April 22, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI"],
+    title: "OpenAI Unveils Workspace Agents as Successor to Custom GPTs for Enterprises",
+    url: "https://venturebeat.com/orchestration/openai-unveils-workspace-agents-a-successor-to-custom-gpts-for-enterprises-that-can-plug-directly-into-slack-salesforce-and-more",
+    summary:
+      "OpenAI announced Workspace Agents, replacing Custom GPTs as its primary enterprise agent product. Agents can be created and accessed from ChatGPT and embedded directly into Slack, Salesforce, and other third-party platforms. Users can communicate with agents across disparate channels and grant them access to data from connected apps, positioning them as persistent workflow participants rather than standalone chatbot sessions.",
+  },
+  {
+    source: "VentureBeat",
+    date: "2026-04-21",
+    displayDate: "April 21, 2026",
+    category: "ai-general-news",
+    companies: ["Google"],
+    title: "Google Launches Deep Research and Deep Research Max with MCP Support and Private Data Access",
+    url: "https://venturebeat.com/technology/googles-new-deep-research-and-deep-research-max-agents-can-search-the-web-and-your-private-data",
+    summary:
+      "Google unveiled two new API-accessible research agents built on Gemini 3.1 Pro. Deep Research is optimized for speed in interactive apps; Deep Research Max uses extended test-time compute for exhaustive background research, scoring 93.3% on DeepSearchQA. Both agents add Model Context Protocol support, letting them query private databases and third-party enterprise data sources alongside the open web, plus native chart and infographic generation inside reports.",
+  },
+  {
+    source: "TechCrunch",
+    date: "2026-04-21",
+    displayDate: "April 21, 2026",
+    category: "mythos-news",
+    companies: ["Anthropic"],
+    title: "Unauthorized Group Gained Access to Anthropic's Exclusive Cyber Tool Mythos Through Third-Party Contractor",
+    url: "https://techcrunch.com/2026/04/21/unauthorized-group-has-gained-access-to-anthropics-exclusive-cyber-tool-mythos-report-claims/",
+    summary:
+      "Bloomberg reported that members of a private Discord channel—interested in unreleased AI models—gained access to Mythos on the same day it was publicly announced, exploiting credentials held by a third-party contractor working for Anthropic. The group guessed the model's online location based on Anthropic's known URL patterns, provided screenshots and a live demo to Bloomberg, and has been using the model regularly since. Anthropic confirmed it is investigating but said it has found no evidence of impact to its own systems.",
+  },
+  {
+    source: "TechCrunch",
+    date: "2026-04-21",
+    displayDate: "April 21, 2026",
+    category: "ai-general-news",
+    companies: ["SpaceX", "xAI"],
+    title: "SpaceX Partners with Cursor and Holds Option to Acquire the Coding AI Startup for $60B",
+    url: "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/",
+    summary:
+      "SpaceX announced a partnership with Cursor to co-develop a 'next-generation coding and knowledge work AI,' pairing Cursor's developer distribution with SpaceX's Colossus supercomputer. The deal includes an option to acquire Cursor for $60 billion later this year, up from a $50 billion valuation Cursor was eyeing in an imminent funding round. The move comes as SpaceX preps for its IPO and as Cursor and xAI chip resources grow closer—two senior Cursor engineering leads departed to join xAI earlier this month.",
+  },
+  {
     source: "Ars Technica",
     date: "2026-04-21",
     displayDate: "April 21, 2026",
