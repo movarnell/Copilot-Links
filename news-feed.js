@@ -1,5 +1,38 @@
 window.newsFeed = [
   {
+    source: "CNBC",
+    date: "2026-04-24",
+    displayDate: "April 24, 2026",
+    category: "new-models",
+    companies: ["DeepSeek"],
+    title: "DeepSeek Releases V4 Preview — Open-Source, 1M-Token Context, at a Fraction of the Cost",
+    url: "https://www.cnbc.com/2026/04/24/deepseek-v4-llm-preview-open-source-ai-competition-china.html",
+    summary:
+      "Chinese AI startup DeepSeek launched preview versions of its V4 model family, including V4 Pro (1.6T total / 49B active params) and V4 Flash (284B total / 13B active params). V4 is the first open model family built from the ground up around million-token contexts as a default, using a Hybrid Attention Architecture that significantly reduces KV cache usage. The models are open-source and available via the DeepSeek API starting today, priced at $0.14–$1.74 per million input tokens depending on tier.",
+  },
+  {
+    source: "TechCrunch",
+    date: "2026-04-23",
+    displayDate: "April 23, 2026",
+    category: "new-models",
+    companies: ["OpenAI"],
+    title: "OpenAI Releases GPT-5.5, Its Fastest and Most Capable Model Yet",
+    url: "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+    summary:
+      "OpenAI released GPT-5.5, its newest frontier model, just six weeks after GPT-5.4 — a rapid cadence underscoring intense competition among AI labs. GPT-5.5 scores 88.7% on SWE-bench and 92.4% on MMLU, with a 60% reduction in hallucinations versus its predecessor. The model handles multi-step agentic workflows with less user input and is rolling out to Plus, Pro, Business, and Enterprise ChatGPT users, while also powering Codex on NVIDIA infrastructure. API pricing is $5 per million input tokens and $30 per million output tokens.",
+  },
+  {
+    source: "9to5Mac",
+    date: "2026-04-22",
+    displayDate: "April 22, 2026",
+    category: "ai-general-news",
+    companies: ["Google", "Apple"],
+    title: "Google Confirms Gemini Will Power a Revamped, More Conversational Siri in 2026",
+    url: "https://9to5mac.com/2026/04/22/google-teases-gemini-powered-siri-upgrade-during-cloud-next-keynote/",
+    summary:
+      "Google Cloud CEO Thomas Kurian confirmed at Cloud Next that Apple has selected Gemini as the foundation for the next generation of Apple Intelligence and Siri. Under a multi-year deal, Apple Foundation Models will be built on Gemini technology with Google Cloud handling training and inference. Phase 1 has already begun with iOS 26.4 bringing better context awareness to Siri; Phase 2 targets iOS 27 this September with full back-and-forth conversational Siri supporting 20+ exchanges and complex tasks.",
+  },
+  {
     source: "TechCrunch",
     date: "2026-04-22",
     displayDate: "April 22, 2026",
