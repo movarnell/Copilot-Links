@@ -4,7 +4,7 @@
     {
       "name": "copilot-guide",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "/Users/michaelvarnell/Library/Mobile Documents/com~apple~CloudDocs/FrontEnd/Copilot-Links", "-l", "3456"],
+      "runtimeArgs": ["serve", "/Users/michaelvarnell/Documents/Copilot-Links", "-l", "3456"],
       "port": 3456
     }
   ]
