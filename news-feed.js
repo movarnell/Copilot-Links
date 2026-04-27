@@ -1,5 +1,49 @@
 window.newsFeed = [
   {
+    source: "TechCrunch",
+    date: "2026-04-24",
+    displayDate: "April 24, 2026",
+    category: "ai-general-news",
+    companies: ["Google", "Anthropic"],
+    title: "Google Plans Up to $40B More for Anthropic in Cash and Compute",
+    url: "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+    summary:
+      "TechCrunch reported that Alphabet plans to invest up to $40 billion more in Anthropic, with $10 billion committed immediately and up to $30 billion tied to performance targets. The deal deepens the unusual competitor-partner dynamic in frontier AI, where model labs increasingly depend on rival cloud providers for the compute needed to train and run advanced systems.",
+  },
+  {
+    source: "Anthropic",
+    date: "2026-04-24",
+    displayDate: "April 24, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "NEC"],
+    title: "Anthropic and NEC Partner to Build Japan's Largest AI Engineering Workforce",
+    url: "https://www.anthropic.com/news/anthropic-nec?_bhlid=0bb303b3c2c14ba559c9aa85ea1de24a679d8ec9",
+    summary:
+      "Anthropic announced that NEC will roll out Claude to roughly 30,000 NEC Group employees worldwide as part of a long-term partnership focused on AI-native engineering and industry-specific products for Japan. The deal is notable for software teams because it frames Claude not just as a chatbot, but as shared engineering infrastructure embedded across a large enterprise workforce.",
+  },
+  {
+    source: "About Amazon",
+    date: "2026-04-24",
+    displayDate: "April 24, 2026",
+    category: "ai-general-news",
+    companies: ["Amazon", "Meta"],
+    title: "Meta Signs AWS Graviton Deal to Power Agentic AI Workloads",
+    url: "https://press.aboutamazon.com/2026/4/meta-signs-agreement-with-aws-to-power-agentic-ai-on-aws-graviton-chips",
+    summary:
+      "Amazon said Meta will deploy AWS Graviton processors at scale, starting with tens of millions of cores, to support next-generation agentic AI. The announcement matters beyond infrastructure finance because it highlights a shift in AI system design: inference-heavy agent workloads such as code generation, search, and multi-step orchestration are driving fresh demand for CPU capacity, not just training GPUs.",
+  },
+  {
+    source: "Anthropic",
+    date: "2026-04-24",
+    displayDate: "April 24, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic"],
+    title: "Anthropic Tests Claude-Run Commerce in 'Project Deal' Marketplace Experiment",
+    url: "https://www.anthropic.com/features/project-deal",
+    summary:
+      "Anthropic published results from 'Project Deal,' an experiment where Claude-powered agents negotiated and completed small real-money marketplace transactions. While the test was narrow, it offers a concrete look at where autonomous agents may go next: beyond drafting and research into transaction-oriented workflows that require judgment, memory, and bounded decision-making.",
+  },
+  {
     source: "CNBC",
     date: "2026-04-24",
     displayDate: "April 24, 2026",
