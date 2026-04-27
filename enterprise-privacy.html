@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enterprise Copilot Privacy — VS Code Data Controls</title>
+    <meta
+      name="description"
+      content="A practical comparison of what GitHub Copilot Business and Enterprise add for privacy and governance compared with individual Copilot use in VS Code."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <nav class="section-nav nav-visible-always" id="section-nav" aria-label="Enterprise privacy page sections">
+      <div class="section-nav-inner">
+        <a href="index.html" class="nav-pill nav-pill-back">&#8592; AI Hub</a>
+        <a href="guide.html" class="nav-pill nav-pill-back">Beginner Guide</a>
+        <a href="news.html" class="nav-pill nav-pill-back">AI News</a>
+        <a href="#bottom-line" class="nav-pill active">Bottom Line</a>
+        <a href="#comparison" class="nav-pill">Comparison</a>
+        <a href="#controls" class="nav-pill">Enterprise Controls</a>
+        <a href="#vscode" class="nav-pill">VS Code Impact</a>
+        <a href="#sources" class="nav-pill">Sources</a>
+      </div>
+    </nav>
+
+    <main class="page">
+      <header class="hero reveal">
+        <p class="eyebrow">Privacy &amp; Governance</p>
+        <h1>What Enterprise Copilot Adds for VS Code Privacy</h1>
+        <p class="hero-copy">
+          Individual Copilot is useful for personal productivity. Copilot Business and Copilot Enterprise change the
+          privacy posture by adding organization-level contractual protections, retention defaults, policy controls,
+          and admin visibility for teams using Copilot inside VS Code and other clients.
+        </p>
+        <div class="hero-actions">
+          <a href="#comparison" class="hero-guide-link">Compare Privacy Differences</a>
+          <a href="index.html#models" class="hero-guide-link hero-guide-link-secondary">Review Model Choices</a>
+        </div>
+      </header>
+
+      <section class="panel reveal" id="bottom-line" aria-labelledby="bottom-line-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Plain-English Answer</p>
+          <h2 id="bottom-line-heading">The Short Version</h2>
+          <p>
+            The biggest enterprise difference is that the organization, not each individual developer, controls the
+            privacy and governance defaults.
+          </p>
+        </div>
+
+        <div class="overview-grid">
+          <article class="overview-card">
+            <h3>No training on Business or Enterprise data</h3>
+            <p class="guide-text">
+              GitHub says it does not use Copilot Business or Copilot Enterprise data to train GitHub's models.
+              Individual subscribers can opt out, but the enterprise posture is a plan-level commitment rather than a
+              personal preference.
+            </p>
+          </article>
+          <article class="overview-card">
+            <h3>VS Code prompts and suggestions are not retained by default</h3>
+            <p class="guide-text">
+              For Business and Enterprise customers using Copilot through an IDE for chat and code completions, GitHub's
+              default is that prompts and suggestions are not retained.
+            </p>
+          </article>
+          <article class="overview-card">
+            <h3>Admins can set policy instead of relying on user choices</h3>
+            <p class="guide-text">
+              Enterprise owners can control feature and model availability, public-code matching behavior, previews,
+              and related Copilot settings across the enterprise or delegate them to organizations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="comparison" aria-labelledby="comparison-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Side-by-Side</p>
+          <h2 id="comparison-heading">Enterprise vs Individual Copilot in VS Code</h2>
+          <p>Use this table when deciding what actually changes for a developer working in VS Code.</p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="models-table">
+            <thead>
+              <tr>
+                <th>Privacy Area</th>
+                <th>Individual Copilot</th>
+                <th>Business / Enterprise Copilot</th>
+                <th>Why It Matters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight">
+                <td class="model-name">Model training</td>
+                <td>Interaction data may be used to train and improve models unless the individual opts out.</td>
+                <td>Business and Enterprise data is not used to train GitHub's models.</td>
+                <td class="strengths">Enterprise removes this from individual preference management.</td>
+              </tr>
+              <tr class="highlight">
+                <td class="model-name">IDE retention defaults</td>
+                <td>Governed by individual subscriber terms and settings.</td>
+                <td>For IDE chat and code completions, prompts and suggestions are not retained by default.</td>
+                <td class="strengths">The VS Code workflow gets a stronger default data-minimization posture.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Contractual data terms</td>
+                <td>Handled under GitHub terms for individual subscribers.</td>
+                <td>Business and Enterprise customers can use GitHub's Data Protection Agreement.</td>
+                <td class="strengths">This supports enterprise privacy, procurement, and compliance review.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Public-code matching</td>
+                <td>The user can manage their own suggestions-matching-public-code setting.</td>
+                <td>Admins can enforce or delegate public-code matching policy across organizations.</td>
+                <td class="strengths">Teams can apply one consistent rule for license and provenance risk.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Feature and model access</td>
+                <td>The individual chooses from features and models available to their subscription.</td>
+                <td>Enterprise owners can control available Copilot features, previews, and model choices.</td>
+                <td class="strengths">Security teams can limit high-risk or preview behavior before rollout.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Sensitive repository content</td>
+                <td>Developers must manage their own habits and local project boundaries.</td>
+                <td>Organizations can configure content exclusion so selected files are ignored by Copilot.</td>
+                <td class="strengths">Secrets, regulated material, and internal-only files can be kept out of context.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Visibility and auditability</td>
+                <td>Visibility is primarily personal.</td>
+                <td>Organizations and enterprises get usage metrics, code generation dashboards, and audit logs.</td>
+                <td class="strengths">Leaders can monitor adoption and governance without inspecting private code directly.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="controls" aria-labelledby="controls-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Admin Layer</p>
+          <h2 id="controls-heading">What Enterprise Admins Can Control</h2>
+          <p>Enterprise Copilot is less about a different VS Code button and more about managed defaults around the button.</p>
+        </div>
+
+        <div class="overview-grid">
+          <article class="overview-card">
+            <h3>AI controls and policy inheritance</h3>
+            <p class="guide-text">
+              Enterprise owners can set policies centrally or allow organization owners to choose. This can cover
+              feature availability, model access, and preview participation.
+            </p>
+          </article>
+          <article class="overview-card">
+            <h3>Content exclusion</h3>
+            <p class="guide-text">
+              Organizations can exclude files from Copilot context. That is useful for secrets, generated files,
+              regulated data, customer-specific material, or code that should never be sent as prompt context.
+            </p>
+          </article>
+          <article class="overview-card">
+            <h3>Public-code filtering</h3>
+            <p class="guide-text">
+              The public-code matching filter can suppress suggestions that match public GitHub code above GitHub's
+              matching threshold. In enterprise settings, admins can apply that choice consistently.
+            </p>
+          </article>
+          <article class="overview-card">
+            <h3>Usage, audit, and rollout metrics</h3>
+            <p class="guide-text">
+              Enterprise reporting helps teams understand adoption, generated-code activity, and policy changes without
+              relying on informal developer self-reporting.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="vscode" aria-labelledby="vscode-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Developer View</p>
+          <h2 id="vscode-heading">What This Means Inside VS Code</h2>
+          <p>The day-to-day UI may look familiar, but the data handling changes behind the session.</p>
+        </div>
+
+        <div class="guide-callout">
+          <h3>Use enterprise Copilot for work repositories</h3>
+          <p>
+            When a developer signs into VS Code with an account licensed through Copilot Business or Enterprise, the
+            session uses the organization's Copilot entitlement and policies. That means the enterprise settings for
+            model access, retention defaults, public-code matching, and content exclusions can apply while the developer
+            works in the editor.
+          </p>
+          <p>
+            This does not remove every privacy responsibility. Developers should still avoid pasting unnecessary secrets,
+            customer data, credentials, or production incidents into prompts. Enterprise controls reduce risk and create
+            enforceable defaults; they do not replace source control hygiene, least privilege, or secrets management.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="sources" aria-labelledby="sources-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Reference Links</p>
+          <h2 id="sources-heading">Sources to Recheck</h2>
+          <p>These official pages are the basis for the privacy and governance claims above.</p>
+        </div>
+
+        <ul class="news-sources">
+          <li>
+            <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot FAQ</a>
+            - Business/Enterprise training, retention, DPA, and individual subscriber data-use statements.
+          </li>
+          <li>
+            <a href="https://github.com/features/copilot/copilot-business" target="_blank" rel="noopener noreferrer">GitHub Copilot Business</a>
+            - business-plan privacy, public-code filter, and GDPR/DPA FAQ.
+          </li>
+          <li>
+            <a href="https://docs.github.com/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies" target="_blank" rel="noopener noreferrer">Managing enterprise Copilot policies</a>
+            - enterprise AI controls and policy delegation.
+          </li>
+          <li>
+            <a href="https://docs.github.com/en/enterprise-cloud@latest/copilot/about-github-copilot/github-copilot-features" target="_blank" rel="noopener noreferrer">GitHub Copilot features</a>
+            - admin features such as usage data, audit logs, and content exclusion.
+          </li>
+          <li>
+            <a href="https://docs.github.com/en/enterprise-cloud@latest/copilot/reference/ai-models/model-hosting" target="_blank" rel="noopener noreferrer">Hosting of models for GitHub Copilot</a>
+            - model hosting and zero data retention commitments with OpenAI-hosted models.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
