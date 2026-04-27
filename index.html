@@ -308,144 +308,179 @@
             <thead>
               <tr>
                 <th>Model</th>
-                <th>Context</th>
-                <th>Caps</th>
-                <th>Cost</th>
-                <th>Task Strengths</th>
+                <th>Provider</th>
+                <th>Status</th>
+                <th>Multiplier</th>
+                <th>Best Fit</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="model-name">Claude Haiku 4.5</td>
-                <td>160K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
-                <td class="cost-low">0.33x</td>
-                <td class="strengths">▲ Code generation (quick tasks) • ▲ Bug fixes • ◆ Small refactors</td>
-              </tr>
-              <tr>
-                <td class="model-name">Claude Sonnet 4</td>
-                <td>144K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
-                <td class="cost-std">1x</td>
-                <td class="strengths">▲▲ General coding • ▲▲ Code reviews • ▲ Refactoring • ◆ Architecture Q&A</td>
-              </tr>
-              <tr>
-                <td class="model-name">Claude Sonnet 4.5</td>
-                <td>160K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
-                <td class="cost-std">1x</td>
-                <td class="strengths">▲▲ Code generation • ▲▲ Refactoring • ▲ Documentation • ◆ Testing • ★ Codebase Q&A</td>
-              </tr>
-              <tr>
-                <td class="model-name">Claude Sonnet 4.6</td>
-                <td>160K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
-                <td class="cost-std">1x</td>
-                <td class="strengths">▲▲ Code generation • ▲▲ Planning • ▲▲ Architecture • ◆ Performance analysis</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Claude Opus 4.5</td>
-                <td>160K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
-                <td class="cost-high">3x</td>
-                <td class="strengths">▲▲▲ Complex refactoring • ▲▲▲ System design • ★★ Deep codebase analysis • ▲▲ Documentation</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Claude Opus 4.6</td>
-                <td>192K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
-                <td class="cost-high">3x</td>
-                <td class="strengths">▲▲▲ Large migrations • ▲▲▲ Architecture decisions • ★★★ Whole codebase Q&A • ▲▲▲ Planning</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-4o</td>
-                <td>68K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
-                <td class="cost-free">0x</td>
-                <td class="strengths">▲ Quick assistance • ◆ Simple repairs • ◆ Snippets • Limited codebase context</td>
-              </tr>
-              <tr>
                 <td class="model-name">GPT-4.1</td>
-                <td>128K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
                 <td class="cost-free">0x</td>
-                <td class="strengths">▲ Code completion • ▲ Testing • ◆ Bug fixes • ◆ Single-file refactors</td>
+                <td class="strengths">Fast code completions, explanations, and everyday coding help</td>
               </tr>
               <tr>
                 <td class="model-name">GPT-5 mini</td>
-                <td>192K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
                 <td class="cost-free">0x</td>
-                <td class="strengths">▲▲ Code generation • ▲ Refactoring • ◆ Planning • ◆ Codebase summaries</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-5.1</td>
-                <td>192K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
-                <td class="cost-std">1x</td>
-                <td class="strengths">▲▲ General purpose • ▲ Advanced patterns • ◆ Performance optimization • ★ Codebase Q&A</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-5.1-Codex</td>
-                <td>256K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
-                <td class="cost-std">1x</td>
-                <td class="strengths">▲▲▲ Code generation • ▲▲ Complex refactoring • ★ Codebase questions • ▲ Optimization</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-5.1-Codex-Max</td>
-                <td>256K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
-                <td class="cost-std">1x</td>
-                <td class="strengths">▲▲▲ Specialized code tasks • ▲▲ Large refactors • ★ Deep code analysis • ★ Codebase Q&A</td>
+                <td class="strengths">Reliable default for general coding, writing, and lower-cost reasoning</td>
               </tr>
               <tr>
                 <td class="model-name">GPT-5.2</td>
-                <td>192K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
                 <td class="cost-std">1x</td>
-                <td class="strengths">▲▲ Improved reasoning • ▲ Architecture • ▲ Testing • ◆ Documentation • ◆ Debugging</td>
+                <td class="strengths">Deep reasoning, debugging, and architecture-level analysis</td>
               </tr>
               <tr>
                 <td class="model-name">GPT-5.2-Codex</td>
-                <td>400K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
                 <td class="cost-std">1x</td>
-                <td class="strengths">▲▲▲ Entire codebase refactors • ★★★ Codebase questions • ▲▲ Multi-file changes • ▲ Planning</td>
+                <td class="strengths">Long-horizon agentic coding tasks and multi-file implementation work</td>
               </tr>
               <tr>
                 <td class="model-name">GPT-5.3-Codex</td>
-                <td>400K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
                 <td class="cost-std">1x</td>
-                <td class="strengths">▲▲▲ Large migrations • ★★★ Whole codebase Q&A • ▲▲ Architecture • ▲ Feature planning</td>
+                <td class="strengths">Agentic software development, features, tests, refactors, and reviews</td>
+              </tr>
+              <tr class="highlight">
+                <td class="model-name">GPT-5.4</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-std">1x</td>
+                <td class="strengths">Complex reasoning, debugging, and architecture-level code analysis</td>
               </tr>
               <tr>
-                <td class="model-name">GPT-5.4</td>
-                <td>400K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
+                <td class="model-name">GPT-5.4 mini</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-low">0.33x</td>
+                <td class="strengths">Agentic codebase exploration and grep-style tool workflows</td>
+              </tr>
+              <tr>
+                <td class="model-name">GPT-5.4 nano</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-low">0.25x</td>
+                <td class="strengths">Low-cost lightweight prompts, snippets, and quick iteration</td>
+              </tr>
+              <tr class="highlight">
+                <td class="model-name">GPT-5.5</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">7.5x</td>
+                <td class="strengths">Highest-tier OpenAI reasoning for complex analysis and technical decisions</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Haiku 4.5</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-low">0.33x</td>
+                <td class="strengths">Fast answers for lightweight coding questions and small edits</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Sonnet 4</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
                 <td class="cost-std">1x</td>
-                <td class="strengths">▲▲▲ Complex systems • ★★★ Deep codebase knowledge • ▲▲▲ Multi-step refactors • ▲▲ Planning</td>
+                <td class="strengths">Balanced coding workflows, reasoning, and practical development support</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Sonnet 4.5</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-std">1x</td>
+                <td class="strengths">General coding, agent tasks, and complex problem solving</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Sonnet 4.6</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-std">1x</td>
+                <td class="strengths">General coding, agent tasks, visual reasoning, and smarter debugging</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Opus 4.5</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">3x</td>
+                <td class="strengths">High-capability reasoning for difficult codebase analysis and refactoring</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Opus 4.6</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">3x</td>
+                <td class="strengths">Deep reasoning and complex problem solving</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Opus 4.6 fast mode</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">Preview</span></td>
+                <td class="cost-high">30x</td>
+                <td class="strengths">Low-latency Opus-class reasoning when cost is less important</td>
+              </tr>
+              <tr class="highlight">
+                <td class="model-name">Claude Opus 4.7</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">7.5x</td>
+                <td class="strengths">Anthropic's strongest Copilot model for complex reasoning and debugging</td>
               </tr>
               <tr>
                 <td class="model-name">Gemini 2.5 Pro</td>
-                <td>173K</td>
-                <td><span class="cap-badge">Tools</span> <span class="cap-badge">Vision</span></td>
+                <td>Google</td>
+                <td><span class="cap-badge">GA</span></td>
                 <td class="cost-std">1x</td>
-                <td class="strengths">▲▲ General coding • ▲ Code review • ▲ Testing • ◆ Refactoring • ◆ Codebase Q&A</td>
+                <td class="strengths">Complex code generation, debugging, and research workflows</td>
+              </tr>
+              <tr>
+                <td class="model-name">Gemini 3 Flash</td>
+                <td>Google</td>
+                <td><span class="cap-badge">Preview</span></td>
+                <td class="cost-low">0.33x</td>
+                <td class="strengths">Fast help with simple or repetitive coding tasks</td>
+              </tr>
+              <tr>
+                <td class="model-name">Gemini 3.1 Pro</td>
+                <td>Google</td>
+                <td><span class="cap-badge">Preview</span></td>
+                <td class="cost-std">1x</td>
+                <td class="strengths">Long-context reasoning, edit-test loops, and technical analysis</td>
               </tr>
               <tr>
                 <td class="model-name">Grok Code Fast 1</td>
-                <td>173K</td>
-                <td><span class="cap-badge">Tools</span></td>
+                <td>xAI</td>
+                <td><span class="cap-badge">GA</span></td>
                 <td class="cost-low">0.25x</td>
-                <td class="strengths">▲▲ Quick code fixes • ▲ Code completion • ◆ Simple refactors • Fast iteration</td>
+                <td class="strengths">Fast coding, code generation, and debugging across languages</td>
+              </tr>
+              <tr>
+                <td class="model-name">Raptor mini</td>
+                <td>Fine-tuned GPT-5 mini</td>
+                <td><span class="cap-badge">Preview</span></td>
+                <td class="cost-free">0x</td>
+                <td class="strengths">Fast inline suggestions, explanations, and everyday development help</td>
+              </tr>
+              <tr>
+                <td class="model-name">Goldeneye</td>
+                <td>Fine-tuned GPT-5.1-Codex</td>
+                <td><span class="cap-badge">Preview</span></td>
+                <td class="cost-free">Free only</td>
+                <td class="strengths">Evaluation model for complex reasoning and problem solving</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="legend-info">
-          <p><strong>Legend:</strong> ▲ = Good | ▲▲ = Very Good | ▲▲▲ = Excellent | ★ = Recommended | ★★ = Highly Recommended | ★★★ = Best-in-class | ◆ = Competent</p>
+          <p><strong>Source:</strong> Current GitHub Copilot supported-model and model-comparison docs. Multipliers are premium request multipliers for paid plans unless noted.</p>
         </div>
       </section>
 
