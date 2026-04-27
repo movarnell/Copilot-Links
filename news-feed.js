@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "OpenAI",
+    date: "2026-04-27",
+    displayDate: "April 27, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "Microsoft", "Amazon"],
+    title: "The Next Phase of the Microsoft OpenAI Partnership",
+    url: "https://openai.com/index/next-phase-of-microsoft-partnership/",
+    summary:
+      "OpenAI said its amended Microsoft agreement now lets OpenAI serve products across any cloud provider while keeping Azure as its primary launch platform. For developers and enterprise teams, the practical signal is that model distribution and infrastructure are becoming less exclusive and more multi-cloud, which should matter for how AI tools get embedded into existing engineering stacks.",
+  },
+  {
+    source: "OpenAI",
+    date: "2026-04-26",
+    displayDate: "April 26, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI"],
+    title: "OpenAI Publishes Updated Principles for How It Intends to Build and Deploy AI",
+    url: "https://openai.com/index/our-principles/",
+    summary:
+      "OpenAI published a new principles document centered on democratization, empowerment, universal prosperity, resilience, and adaptability. The update is notable because it ties frontier model progress more directly to infrastructure buildout, security, and broad deployment, giving teams a clearer read on how OpenAI frames tradeoffs between rapid product shipping and system-level safeguards.",
+  },
+  {
     source: "TechCrunch",
     date: "2026-04-24",
     displayDate: "April 24, 2026",
