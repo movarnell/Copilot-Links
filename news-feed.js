@@ -1,5 +1,49 @@
 window.newsFeed = [
   {
+    source: "GitHub Blog",
+    date: "2026-04-28",
+    displayDate: "April 28, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft"],
+    title: "GitHub Says Agentic Development Workflows Are Driving a Need for 30x More Scale",
+    url: "https://github.blog/news-insights/company-news/an-update-on-github-availability/",
+    summary:
+      "GitHub's latest availability update says the platform started planning for a 10x capacity increase in late 2025, then had to design for 30x scale as agentic software workflows accelerated. That is a useful operating signal for VS Code and Copilot users: AI-assisted coding is no longer a side feature at platform scale, and reliability work is increasingly being driven by autonomous and high-volume development usage.",
+  },
+  {
+    source: "The Verge",
+    date: "2026-04-28",
+    displayDate: "April 28, 2026",
+    category: "ai-general-news",
+    companies: ["Google", "Pentagon", "OpenAI", "xAI"],
+    title: "Google and Pentagon Reportedly Agree on Deal for 'Any Lawful' Use of AI",
+    url: "https://www.theverge.com/ai-artificial-intelligence/919494/google-pentagon-classified-ai-deal",
+    summary:
+      "The Verge reported that Google signed a classified agreement allowing its AI models to be used for any lawful government purpose, with stated limits around domestic mass surveillance and autonomous weapons. For teams watching the AI tooling market, the story matters because it signals that frontier-model providers are becoming long-term government infrastructure vendors, not just consumer or enterprise software companies.",
+  },
+  {
+    source: "GitHub Blog",
+    date: "2026-04-27",
+    displayDate: "April 27, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft"],
+    title: "GitHub Copilot Is Moving to Usage-Based Billing on June 1",
+    url: "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+    summary:
+      "GitHub announced that all Copilot plans will shift to AI-credit billing on June 1, 2026, while base subscription prices stay the same. Code completions and Next Edit Suggestions remain included, but chat, agent, and review usage will be metered more explicitly. For individuals and engineering managers, this changes how Copilot costs need to be forecast, monitored, and governed across teams.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-04-27",
+    displayDate: "April 27, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft"],
+    title: "Copilot Cloud Agent Startup Time Improved by More Than 20%",
+    url: "https://github.blog/changelog/2026-04-27-copilot-cloud-agent-starts-20-faster-with-actions-custom-images/",
+    summary:
+      "GitHub says Copilot's cloud agent now starts more than 20% faster because its runner environment is being prebuilt with GitHub Actions custom images. The update is small on paper but meaningful in practice: if agent sessions spin up faster, issue-to-code loops tighten and agent workflows become easier to use as a routine part of development instead of a slower fallback path.",
+  },
+  {
     source: "OpenAI",
     date: "2026-04-27",
     displayDate: "April 27, 2026",
