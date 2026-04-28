@@ -22,6 +22,17 @@ window.newsFeed = [
       "The Verge reported that Google signed a classified agreement allowing its AI models to be used for any lawful government purpose, with stated limits around domestic mass surveillance and autonomous weapons. For teams watching the AI tooling market, the story matters because it signals that frontier-model providers are becoming long-term government infrastructure vendors, not just consumer or enterprise software companies.",
   },
   {
+    source: "Anthropic",
+    date: "2026-04-28",
+    displayDate: "April 28, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Adobe", "Autodesk", "Blender", "Canva"],
+    title: "Anthropic Adds Claude Connectors for Adobe, Blender, Autodesk, and Other Creative Tools",
+    url: "https://www.anthropic.com/news/claude-for-creative-work",
+    summary:
+      "Anthropic announced Claude for Creative Work, a set of connectors that lets Claude work inside creative and production tools including Adobe Creative Cloud, Autodesk Fusion, Blender, Ableton, Affinity, SketchUp, and Splice. The update matters for AI-assisted teams because it expands MCP-style agent workflows beyond coding into design, 3D modeling, music, and asset pipelines, where automation can remove repetitive production steps without replacing human judgment.",
+  },
+  {
     source: "GitHub Blog",
     date: "2026-04-27",
     displayDate: "April 27, 2026",
@@ -31,6 +42,17 @@ window.newsFeed = [
     url: "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
     summary:
       "GitHub announced that all Copilot plans will shift to AI-credit billing on June 1, 2026, while base subscription prices stay the same. Code completions and Next Edit Suggestions remain included, but chat, agent, and review usage will be metered more explicitly. For individuals and engineering managers, this changes how Copilot costs need to be forecast, monitored, and governed across teams.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-04-27",
+    displayDate: "April 27, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft"],
+    title: "Copilot Code Review Will Consume GitHub Actions Minutes on Private Repositories",
+    url: "https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/",
+    summary:
+      "GitHub said Copilot code review will begin consuming GitHub Actions minutes for private repositories on June 1, 2026, in addition to being billed through Copilot AI Credits. The change gives engineering leads another reason to treat agentic review as infrastructure usage: teams will need to watch both Copilot spend and Actions-minute budgets when automated review becomes part of normal pull request flow.",
   },
   {
     source: "GitHub Changelog",
@@ -53,6 +75,17 @@ window.newsFeed = [
     url: "https://openai.com/index/next-phase-of-microsoft-partnership/",
     summary:
       "OpenAI said its amended Microsoft agreement now lets OpenAI serve products across any cloud provider while keeping Azure as its primary launch platform. For developers and enterprise teams, the practical signal is that model distribution and infrastructure are becoming less exclusive and more multi-cloud, which should matter for how AI tools get embedded into existing engineering stacks.",
+  },
+  {
+    source: "OpenAI",
+    date: "2026-04-27",
+    displayDate: "April 27, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI"],
+    title: "OpenAI Reaches FedRAMP Moderate for ChatGPT Enterprise and Its API Platform",
+    url: "https://openai.com/index/openai-available-at-fedramp-moderate/",
+    summary:
+      "OpenAI announced FedRAMP 20x Moderate authorization for ChatGPT Enterprise and the OpenAI API Platform, giving U.S. agencies a clearer path to use managed OpenAI products for research, drafting, translation, analysis, citizen-service workflows, and internal copilots. OpenAI also said agencies can access GPT-5.5 in the FedRAMP environment and will soon be able to reach Codex Cloud from FedRAMP ChatGPT Enterprise workspaces.",
   },
   {
     source: "OpenAI",
