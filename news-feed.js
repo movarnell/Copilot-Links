@@ -12,6 +12,28 @@ window.newsFeed = [
   },
   {
     source: "Axios",
+    date: "2026-04-29",
+    displayDate: "April 29, 2026",
+    category: "ai-general-news",
+    companies: ["Google", "OpenAI", "Anthropic", "Pentagon", "U.S. Congress"],
+    title: "Axios: Congress Is Behind the Pentagon's Rapid AI Contracting Push",
+    url: "https://www.axios.com/2026/04/29/congress-military-ai-google-pentagon-deal",
+    summary:
+      "Axios reported that Congress is still far from passing military AI guardrails while the Pentagon expands model access through new contracts, including Google's reportedly permissive agreement for classified settings. The story matters for AI tool watchers because it highlights a widening gap between private-sector frontier model deployment, national-security procurement, and enforceable policy around autonomous weapons, mass surveillance, and human oversight.",
+  },
+  {
+    source: "About Amazon",
+    date: "2026-04-28",
+    displayDate: "April 28, 2026",
+    category: "ai-general-news",
+    companies: ["Amazon", "AWS", "OpenAI"],
+    title: "AWS Adds OpenAI Models, Codex, and Managed Agents to Amazon Bedrock",
+    url: "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
+    summary:
+      "Amazon announced a broader AWS and OpenAI partnership that brings the latest OpenAI models, Codex on Amazon Bedrock, and Amazon Bedrock Managed Agents powered by OpenAI into limited preview. For VS Code and Copilot users, the important signal is that OpenAI's coding-agent workflows are becoming available through enterprise cloud controls such as IAM, PrivateLink, logging, encryption, procurement commitments, and existing AWS governance.",
+  },
+  {
+    source: "Axios",
     date: "2026-04-28",
     displayDate: "April 28, 2026",
     category: "mythos-news",
