@@ -1,5 +1,38 @@
 window.newsFeed = [
   {
+    source: "OpenAI",
+    date: "2026-04-29",
+    displayDate: "April 29, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI"],
+    title: "OpenAI Publishes a Cybersecurity Action Plan for the 'Intelligence Age'",
+    url: "https://openai.com/index/cybersecurity-in-the-intelligence-age/",
+    summary:
+      "OpenAI published a five-part action plan focused on democratizing cyber defense, coordinating with government, tightening controls around frontier cyber capabilities, preserving deployment visibility, and helping users protect themselves. For teams building or adopting AI tools, the practical signal is that model providers are increasingly treating cybersecurity as a deployment and governance problem, not just a safety-policy discussion.",
+  },
+  {
+    source: "Axios",
+    date: "2026-04-28",
+    displayDate: "April 28, 2026",
+    category: "mythos-news",
+    companies: ["OpenAI", "Anthropic", "U.S. House Homeland Security Committee"],
+    title: "OpenAI and Anthropic Brief House Staff on Advanced Cyber Models",
+    url: "https://www.axios.com/2026/04/28/openai-anthropic-congress-cyber-briefings",
+    summary:
+      "Axios reported that OpenAI and Anthropic gave classified briefings to House Homeland Security Committee staff about their newest cyber-capable models, including Anthropic's restricted Mythos Preview. The story matters because it shows frontier model oversight shifting from abstract hearings into concrete briefings about infrastructure risk, deployment controls, and how quickly Congress needs to catch up with model capabilities.",
+  },
+  {
+    source: "Reuters",
+    date: "2026-04-28",
+    displayDate: "April 28, 2026",
+    category: "ai-general-news",
+    companies: ["Goldman Sachs", "Anthropic"],
+    title: "Goldman Cuts Claude Access for Hong Kong Bankers Amid AI Risk Scrutiny",
+    url: "https://wsau.com/2026/04/28/goldman-sachs-bars-hong-kong-bankers-from-anthropic-ai-use-ft-reports/",
+    summary:
+      "Reuters reported that Goldman Sachs removed access to Anthropic's Claude for bankers in Hong Kong while leaving other models such as Gemini and ChatGPT available on its internal platform. For enterprise AI users, the move is a useful reminder that model access is increasingly being shaped by jurisdiction, contract interpretation, and cyber-risk controls rather than by technical capability alone.",
+  },
+  {
     source: "GitHub Blog",
     date: "2026-04-28",
     displayDate: "April 28, 2026",
