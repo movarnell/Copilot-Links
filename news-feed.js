@@ -1,5 +1,38 @@
 window.newsFeed = [
   {
+    source: "Anthropic",
+    date: "2026-04-29",
+    displayDate: "April 29, 2026",
+    category: "mythos-news",
+    companies: ["Anthropic"],
+    title: "Anthropic Updates Responsible Scaling Policy With Stronger External Review Rules",
+    url: "https://www.anthropic.com/responsible-scaling-policy",
+    summary:
+      "Anthropic updated its Responsible Scaling Policy to version 3.2, authorizing its Long-Term Benefit Trust to request external reviews of risk reports, approve the choice of outside reviewers, and receive regular briefings. For teams tracking Mythos-class capability governance, the important signal is that Anthropic is adding more formal oversight around frontier-risk evaluation instead of treating model-safety review as an internal-only process.",
+  },
+  {
+    source: "Axios",
+    date: "2026-04-29",
+    displayDate: "April 29, 2026",
+    category: "mythos-news",
+    companies: ["Anthropic", "White House", "Pentagon", "OpenAI", "Google"],
+    title: "Axios: White House Drafts Path to Restore Anthropic Access for U.S. Agencies",
+    url: "https://www.axios.com/2026/04/29/trump-anthropic-pentagon-ai-executive-order-gov",
+    summary:
+      "Axios reported that the White House is developing guidance that could let agencies work around Anthropic's supply-chain risk designation and regain access to newer models including Mythos. The story matters because it suggests federal AI policy is shifting from a blacklist posture toward a model-access and governance posture, with Anthropic, OpenAI, and Google all being treated as strategic infrastructure vendors.",
+  },
+  {
+    source: "Microsoft Source",
+    date: "2026-04-29",
+    displayDate: "April 29, 2026",
+    category: "ai-general-news",
+    companies: ["Microsoft", "OpenAI", "Azure"],
+    title: "Microsoft Says Its AI Business Reached a $37B Annual Revenue Run Rate",
+    url: "https://news.microsoft.com/source/2026/04/29/microsoft-cloud-and-ai-strength-fuels-third-quarter-results/",
+    summary:
+      "Microsoft said its AI business surpassed a $37 billion annual revenue run rate, up 123% year over year, while Azure and other cloud services grew 40%. For Copilot and VS Code users, the practical takeaway is that AI-assisted development is now being funded and scaled as core cloud infrastructure, not as an experimental add-on business.",
+  },
+  {
     source: "OpenAI",
     date: "2026-04-29",
     displayDate: "April 29, 2026",
