@@ -1,5 +1,49 @@
 window.newsFeed = [
   {
+    source: "The Wall Street Journal",
+    date: "2026-04-30",
+    displayDate: "April 30, 2026",
+    category: "mythos-news",
+    companies: ["Anthropic", "White House", "OpenAI", "Google"],
+    title: "WSJ: White House Opposes Anthropic Plan to Broaden Mythos Access",
+    url: "https://www.wsj.com/tech/ai/white-house-opposes-anthropics-plan-to-expand-access-to-mythos-model-dc281ab5",
+    summary:
+      "The Wall Street Journal reported that the White House opposed Anthropic's plan to expand Mythos access beyond a small group of critical-infrastructure users, citing national-security risk, cyber misuse concerns, and scarce compute capacity. For teams tracking frontier model governance, the practical signal is that highly capable cyber models are now being treated as controlled infrastructure whose rollout can be constrained by federal security priorities, not just vendor readiness.",
+  },
+  {
+    source: "Business Insider",
+    date: "2026-04-30",
+    displayDate: "April 30, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic"],
+    title: "Business Insider: Anthropic Doubles Its Claude Code Token-Cost Estimates",
+    url: "https://www.businessinsider.com/anthropic-claude-code-token-estimates-2026-4",
+    summary:
+      "Business Insider reported that Anthropic raised its estimated Claude Code usage cost for enterprise developers from about $6 to about $13 per active day, with 90% of users now expected to stay under about $30 per active day. The change is important for AI-assisted engineering teams because agentic coding budgets are becoming a planning item: more capable models and heavier workflows can change real usage economics even when list prices do not formally change.",
+  },
+  {
+    source: "Axios",
+    date: "2026-04-29",
+    displayDate: "April 29, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "Anthropic", "Stanford"],
+    title: "Axios Warns AI Capability Growth Is Outrunning Transparency and Oversight",
+    url: "https://www.axios.com/2026/04/29/ai-models-speed-warning",
+    summary:
+      "Axios' Behind the Curtain column pulled together recent signals on AI's acceleration, including coding models being used to build more software, concerns about recursive self-improvement, and Stanford's finding that the most capable foundation models are becoming less transparent. For VS Code users, the useful takeaway is that productivity gains from agents are arriving alongside weaker public visibility into how frontier systems are trained, evaluated, and governed.",
+  },
+  {
+    source: "The Verge",
+    date: "2026-04-29",
+    displayDate: "April 29, 2026",
+    category: "ai-general-news",
+    companies: ["Oracle", "OpenAI", "Microsoft", "Google", "Meta"],
+    title: "The Verge: Oracle's AI Infrastructure Pivot Ties Its Future to OpenAI Demand",
+    url: "https://www.theverge.com/ai-artificial-intelligence/920378/oracle-openai-datacenter-buildout",
+    summary:
+      "The Verge examined Oracle's aggressive AI infrastructure turn, including its large OpenAI data-center commitments and the financial, energy, supply-chain, and execution risks attached to that strategy. The story matters for AI tooling teams because model availability, latency, and price increasingly depend on enormous infrastructure bets by cloud and database companies, not only on model research progress inside the labs.",
+  },
+  {
     source: "Axios",
     date: "2026-04-30",
     displayDate: "April 30, 2026",
