@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "GitHub Changelog",
+    date: "2026-04-30",
+    displayDate: "April 30, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "Visual Studio"],
+    title: "GitHub Brings Copilot Cloud Agents and Debugger Agent Workflows Into Visual Studio",
+    url: "https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/",
+    summary:
+      "GitHub's April Copilot update for Visual Studio adds direct cloud-agent session launches from the IDE, user-level custom agent definitions, broader agent-skill discovery paths, and a debugger agent workflow that can reproduce, instrument, diagnose, and suggest fixes from GitHub or Azure DevOps issues. For VS Code and Copilot users, the broader signal is that agentic development is moving deeper into daily IDE workflows, with live runtime validation becoming part of the expected agent toolchain.",
+  },
+  {
+    source: "The Verge",
+    date: "2026-04-30",
+    displayDate: "April 30, 2026",
+    category: "ai-general-news",
+    companies: ["Microsoft", "OpenAI", "Amazon", "Anthropic", "Google"],
+    title: "The Verge: Microsoft's OpenAI Deal Shifts From Exclusivity Toward Multi-Cloud Economics",
+    url: "https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad",
+    summary:
+      "The Verge broke down Microsoft's revised OpenAI agreement, emphasizing that OpenAI can now offer products across other cloud providers while Microsoft keeps a financial stake in OpenAI revenue, first access on Azure, and model rights through 2032. The practical takeaway for AI-assisted teams is that enterprise model access is becoming less exclusive and more multi-cloud, while Microsoft increasingly positions its AI stack around orchestration across OpenAI, Anthropic, Google, and its own models.",
+  },
+  {
     source: "The Wall Street Journal",
     date: "2026-04-30",
     displayDate: "April 30, 2026",
