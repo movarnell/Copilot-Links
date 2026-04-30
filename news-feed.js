@@ -1,5 +1,49 @@
 window.newsFeed = [
   {
+    source: "Axios",
+    date: "2026-04-30",
+    displayDate: "April 30, 2026",
+    category: "ai-general-news",
+    companies: ["Amazon", "Anthropic", "Google", "Meta", "Microsoft", "OpenAI", "xAI"],
+    title: "Axios: Senators Press Major AI Labs and Cloud Firms on China-Related Insider Safeguards",
+    url: "https://www.axios.com/2026/04/29/ai-firms-china-congress",
+    summary:
+      "Axios reported that Sens. Chuck Grassley and Jim Banks sent identical letters to major AI and cloud companies asking how they vet privileged staff, monitor insider risk, and protect model weights and adjacent assets from access tied to the PRC. For teams building or buying AI tools, the practical signal is that frontier-model governance is shifting beyond external hacking toward workforce access controls, supply-chain trust, and auditability.",
+  },
+  {
+    source: "Axios",
+    date: "2026-04-30",
+    displayDate: "April 30, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Google", "OpenAI", "Amazon", "Microsoft"],
+    title: "Axios: OpenAI, Anthropic, and Google Are Trading Places Faster Than Enterprise Buyers Can Plan",
+    url: "https://www.axios.com/2026/04/30/openai-anthropic-winners-losers-ipo",
+    summary:
+      "Axios argued that the AI market has entered a rapid-rotation phase in which OpenAI, Anthropic, and Google can gain or lose momentum within a single quarter, pushing enterprise buyers to avoid long commitments to any one model provider. For VS Code and Copilot users, the relevant takeaway is that multi-model workflows and vendor flexibility are becoming strategic requirements rather than optional experimentation.",
+  },
+  {
+    source: "TechCrunch",
+    date: "2026-04-29",
+    displayDate: "April 29, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "OpenAI"],
+    title: "TechCrunch: Anthropic Could Raise Another $50B at Up to a $900B Valuation",
+    url: "https://techcrunch.com/2026/04/29/sources-anthropic-could-raise-a-new-50b-round-at-a-valuation-of-900b/",
+    summary:
+      "TechCrunch reported that Anthropic is weighing a fresh $40 billion to $50 billion round that could value the company between roughly $850 billion and $900 billion, driven in part by surging demand for Claude Code and Cowork. The story matters because it shows how strongly investors now value AI coding distribution, and how much capital the biggest labs may keep absorbing to fund model development, enterprise sales, and compute.",
+  },
+  {
+    source: "TechCrunch",
+    date: "2026-04-29",
+    displayDate: "April 29, 2026",
+    category: "ai-general-news",
+    companies: ["Microsoft", "OpenAI", "Anthropic"],
+    title: "TechCrunch: Nadella Says Microsoft Plans to 'Exploit' Its Revised OpenAI Deal",
+    url: "https://techcrunch.com/2026/04/29/satya-nadella-says-hes-ready-to-exploit-the-new-openai-deal/",
+    summary:
+      "TechCrunch reported that Satya Nadella framed Microsoft's amended OpenAI agreement as a direct advantage, emphasizing royalty-free access to frontier OpenAI IP through 2032 while also positioning Azure as a multi-model platform spanning OpenAI, Anthropic, and open source. For developers and engineering leaders, the takeaway is that major platforms are now competing less on exclusive model access and more on orchestration, distribution, and enterprise infrastructure.",
+  },
+  {
     source: "Anthropic",
     date: "2026-04-29",
     displayDate: "April 29, 2026",
