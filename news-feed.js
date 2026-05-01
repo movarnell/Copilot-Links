@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "The Guardian",
+    date: "2026-05-01",
+    displayDate: "May 1, 2026",
+    category: "ai-general-news",
+    companies: ["Pentagon", "OpenAI", "Google", "Nvidia", "Microsoft", "Amazon", "AWS", "SpaceX", "Reflection AI", "Anthropic"],
+    title: "Pentagon Signs AI Agreements With OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX, and Reflection AI",
+    url: "https://www.theguardian.com/us-news/2026/may/01/pentagon-us-military-pairs-with-spacex-google-openai",
+    summary:
+      "The Guardian, with Reuters reporting, said the Pentagon reached agreements with seven major AI and infrastructure companies as part of a push to make the U.S. military an \"AI-first fighting force.\" For teams tracking AI tooling, the practical signal is that frontier models, cloud platforms, GPUs, and agent infrastructure are being pulled deeper into classified and high-assurance government environments, while Anthropic remains a notable exception because of its dispute with the Defense Department.",
+  },
+  {
+    source: "Axios",
+    date: "2026-05-01",
+    displayDate: "May 1, 2026",
+    category: "mythos-news",
+    companies: ["Anthropic", "White House", "Pentagon", "OpenAI", "Google"],
+    title: "Axios: Washington Reconsiders Its Anthropic Standoff as Mythos Becomes Hard to Ignore",
+    url: "https://www.axios.com/2026/05/01/washington-new-anthropic-problem",
+    summary:
+      "Axios reported that the White House is moving toward re-engaging with Anthropic after months of Pentagon disputes, lawsuits, and supply-chain-risk concerns because Anthropic's most advanced systems, including Mythos, are becoming too important for agencies to ignore. The takeaway for AI-assisted teams is that access to high-capability models is increasingly being negotiated through government contracts, risk designations, and deployment controls rather than simple product availability.",
+  },
+  {
     source: "GitHub Changelog",
     date: "2026-04-30",
     displayDate: "April 30, 2026",
