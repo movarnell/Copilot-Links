@@ -22,6 +22,17 @@ window.newsFeed = [
       "Axios reported that the White House is moving toward re-engaging with Anthropic after months of Pentagon disputes, lawsuits, and supply-chain-risk concerns because Anthropic's most advanced systems, including Mythos, are becoming too important for agencies to ignore. The takeaway for AI-assisted teams is that access to high-capability models is increasingly being negotiated through government contracts, risk designations, and deployment controls rather than simple product availability.",
   },
   {
+    source: "Microsoft On the Issues",
+    date: "2026-05-01",
+    displayDate: "May 1, 2026",
+    category: "ai-general-news",
+    companies: ["Microsoft", "Anthropic", "Claude", "Mythos"],
+    title: "Microsoft Calls for Guardrails Around Next-Generation AI Cyber Capabilities",
+    url: "https://blogs.microsoft.com/on-the-issues/2026/05/01/from-capability-to-responsibility-securing-our-global-digital-ecosystem-with-next-generation-ai/",
+    summary:
+      "Microsoft warned that advanced AI models are sharply accelerating vulnerability discovery, pointing to Claude Mythos Preview as evidence that cybersecurity is entering a new phase. The practical takeaway for AI-assisted teams is that powerful coding and security agents need enterprise controls, trusted access paths, and coordinated disclosure practices so faster bug discovery improves defense instead of expanding the attack surface.",
+  },
+  {
     source: "GitHub Changelog",
     date: "2026-04-30",
     displayDate: "April 30, 2026",
