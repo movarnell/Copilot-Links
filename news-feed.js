@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "GitHub Changelog",
+    date: "2026-05-01",
+    displayDate: "May 1, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "OpenAI"],
+    title: "GitHub Will Deprecate GPT-5.2 and GPT-5.2-Codex Across Copilot on June 1",
+    url: "https://github.blog/changelog/2026-05-01-upcoming-deprecation-of-gpt-5-2-and-gpt-5-2-codex/",
+    summary:
+      "GitHub said GPT-5.2 and GPT-5.2-Codex will be removed from most Copilot experiences on June 1, 2026, with GPT-5.5 and GPT-5.3-Codex listed as the suggested replacements. For VS Code and Copilot users, the practical step is to update workflows, model policies, and any integration assumptions before the old models disappear from chat, inline edits, ask mode, agent mode, and completions.",
+  },
+  {
+    source: "Business Insider",
+    date: "2026-05-01",
+    displayDate: "May 1, 2026",
+    category: "ai-general-news",
+    companies: ["Meta", "OpenAI", "Anthropic", "SpaceX", "xAI", "Cursor"],
+    title: "Zuckerberg Says Many AI Agents Still Are Not Polished Enough for Mainstream Users",
+    url: "https://www.businessinsider.com/mark-zuckerberg-ai-agents-mother-test-openclaw-2026-5",
+    summary:
+      "Business Insider reported that Mark Zuckerberg used Meta's first-quarter earnings call to argue that many current AI agents remain too hard for mainstream users because they still require terminal setup, local configuration, or developer-style workflows. The takeaway for AI-assisted teams is that agent capability alone is not enough; products that want broad adoption need reliable setup, clear interaction patterns, and less operational friction than today's developer-focused tools.",
+  },
+  {
     source: "The Guardian",
     date: "2026-05-01",
     displayDate: "May 1, 2026",
