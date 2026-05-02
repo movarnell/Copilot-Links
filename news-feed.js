@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "The Wall Street Journal",
+    date: "2026-05-02",
+    displayDate: "May 2, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "Microsoft", "Google", "Anthropic", "Meta"],
+    title: "WSJ Profiles OpenAI CFO Sarah Friar as IPO Timing and Compute Spending Come Under Scrutiny",
+    url: "https://www.wsj.com/business/openai-sam-altman-ipo-sarah-friar-392c582b",
+    summary:
+      "The Wall Street Journal reported that OpenAI CFO Sarah Friar is pushing more financial discipline as the company weighs a potential IPO, with compute commitments, missed internal growth targets, Microsoft deal work, and competition from Google and Anthropic shaping the debate. For AI-assisted engineering teams, the practical signal is that model access, pricing, and enterprise roadmap stability are increasingly tied to the economics of massive infrastructure commitments.",
+  },
+  {
+    source: "Reuters via Dawn",
+    date: "2026-05-02",
+    displayDate: "May 2, 2026",
+    category: "ai-general-news",
+    companies: ["Pentagon", "OpenAI", "Google", "Nvidia", "Microsoft", "Amazon", "AWS", "SpaceX", "Reflection AI", "Anthropic"],
+    title: "Reuters: Pentagon Expands Classified AI Partnerships While Anthropic Remains Sidelined",
+    url: "https://www.dawn.com/news/1996808",
+    summary:
+      "Reuters reported that the Pentagon's new agreements will bring SpaceX, OpenAI, Google, Nvidia, Reflection AI, Microsoft, and AWS into classified Impact Level 6 and 7 environments, while Anthropic remains excluded after its dispute with the Defense Department over military-use guardrails. For AI tooling watchers, the important takeaway is that government access to frontier systems is being shaped by contract language, classified deployment paths, and vendor willingness to accept broad operational-use terms.",
+  },
+  {
     source: "GitHub Changelog",
     date: "2026-05-01",
     displayDate: "May 1, 2026",
