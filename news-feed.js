@@ -1,5 +1,38 @@
 window.newsFeed = [
   {
+    source: "Business Insider",
+    date: "2026-05-03",
+    displayDate: "May 3, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "xAI", "Elon Musk", "Sam Altman"],
+    title: "Altman Extends Public Olive Branch to Musk Ahead of GPT-5.5 Launch",
+    url: "https://www.businessinsider.com/sam-altman-elon-musk-trial-rivalry-gpt-party-openai-2026-5",
+    summary:
+      "Business Insider reported that Sam Altman said Elon Musk would be welcome at OpenAI's GPT-5.5 launch party even as their courtroom fight over OpenAI's mission and commercialization continues. For AI-assisted engineering teams, the useful signal is that model launches, corporate governance, and founder disputes are now tightly linked because legal outcomes can affect OpenAI's structure, partnerships, and product roadmap.",
+  },
+  {
+    source: "San Francisco Chronicle",
+    date: "2026-05-03",
+    displayDate: "May 3, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "xAI", "Elon Musk", "Sam Altman"],
+    title: "Federal Court Opens Live Audio Access for Musk v. OpenAI Trial",
+    url: "https://www.sfchronicle.com/tech/article/elon-musk-openai-trial-broadcast-22238183.php",
+    summary:
+      "The San Francisco Chronicle reported that the Northern District of California will provide a live public audio feed for the Elon Musk lawsuit against OpenAI, with testimony expected from people tied to OpenAI's founding and governance. The practical takeaway for AI tooling watchers is that the trial is becoming an unusually transparent record of how frontier labs, nonprofit missions, model access, and commercial incentives were negotiated.",
+  },
+  {
+    source: "The Verge",
+    date: "2026-05-02",
+    displayDate: "May 2, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "Microsoft", "xAI", "Meta", "Nvidia", "Google DeepMind"],
+    title: "The Verge Tracks Early Evidence in Musk v. Altman Trial",
+    url: "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+    summary:
+      "The Verge cataloged early exhibits from Musk v. Altman, including founding emails, governance documents, Nvidia infrastructure support, debates over control, and later commercial ties involving Microsoft. For teams relying on OpenAI-powered coding tools, the story matters because the trial evidence could shape how investors, enterprises, and regulators interpret model access, lab governance, and the durability of OpenAI's platform commitments.",
+  },
+  {
     source: "The Wall Street Journal",
     date: "2026-05-02",
     displayDate: "May 2, 2026",
