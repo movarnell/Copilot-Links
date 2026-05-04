@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "Axios",
+    date: "2026-05-04",
+    displayDate: "May 4, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "Anthropic", "TPG", "Brookfield", "Advent", "Bain", "Blackstone", "Goldman Sachs"],
+    title: "Axios: OpenAI and Anthropic Turn Private Equity Into an AI Deployment Channel",
+    url: "https://www.axios.com/2026/05/04/openai-anthropic-private-equity-enterprise-business",
+    summary:
+      "Axios reported that OpenAI and Anthropic are partnering with private-equity firms on multibillion-dollar ventures designed to push AI tools into mid-sized companies, with OpenAI's effort referred to as The Deployment Company and Anthropic pursuing a $1.5 billion Wall Street-backed venture. For AI-assisted teams, the practical signal is that coding tools remain the strongest demand area, but labs are now packaging deployment templates, consulting support, and portfolio-company distribution as part of the enterprise AI product.",
+  },
+  {
+    source: "The Verge",
+    date: "2026-05-04",
+    displayDate: "May 4, 2026",
+    category: "ai-general-news",
+    companies: ["Uber", "Expedia"],
+    title: "Uber CEO Says AI Token Spending Is Already Reshaping Software Hiring and Team Design",
+    url: "https://www.theverge.com/podcast/922909/dara-khosrowshahi-uber-drivers-ai-hotels-service",
+    summary:
+      "The Verge's Decoder interview with Uber CEO Dara Khosrowshahi covered Uber's AI use inside software teams, including the company's early-year token-budget pressure, AI-assisted debugging and scripting, and questions about whether AI changes the relationship between product, design, and engineering roles. For VS Code users and engineering leaders, the useful takeaway is that agentic development is moving from tool adoption into budget planning, org design, and hiring decisions at large software companies.",
+  },
+  {
     source: "Reuters via MarketScreener",
     date: "2026-05-04",
     displayDate: "May 4, 2026",
