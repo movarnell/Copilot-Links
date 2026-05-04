@@ -15,6 +15,17 @@ window.newsFeed = [
     date: "2026-05-03",
     displayDate: "May 3, 2026",
     category: "ai-general-news",
+    companies: ["OpenAI", "Stripe", "Sam Altman"],
+    title: "Altman Says GPT-5.5 Planned Parts of Its Own Launch Event and Asked for a Feedback Hub",
+    url: "https://www.businessinsider.com/sam-altman-gpt-5-5-ai-planned-party-2026-5",
+    summary:
+      "Business Insider reported that Sam Altman asked GPT-5.5 to plan elements of its own launch event, and the model suggested a structured gathering with a centralized feedback hub for future versions such as GPT-5.6. For AI-assisted teams, the useful signal is less the party anecdote than the product pattern: frontier labs are using high-capability models to design workflows around themselves while emphasizing tighter feedback loops for fast model iteration.",
+  },
+  {
+    source: "Business Insider",
+    date: "2026-05-03",
+    displayDate: "May 3, 2026",
+    category: "ai-general-news",
     companies: ["OpenAI", "xAI", "Elon Musk", "Sam Altman"],
     title: "Altman Extends Public Olive Branch to Musk Ahead of GPT-5.5 Launch",
     url: "https://www.businessinsider.com/sam-altman-elon-musk-trial-rivalry-gpt-party-openai-2026-5",
@@ -42,6 +53,17 @@ window.newsFeed = [
     url: "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
     summary:
       "The Verge cataloged early exhibits from Musk v. Altman, including founding emails, governance documents, Nvidia infrastructure support, debates over control, and later commercial ties involving Microsoft. For teams relying on OpenAI-powered coding tools, the story matters because the trial evidence could shape how investors, enterprises, and regulators interpret model access, lab governance, and the durability of OpenAI's platform commitments.",
+  },
+  {
+    source: "The Verge",
+    date: "2026-04-30",
+    displayDate: "April 30, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "Anthropic"],
+    title: "The Verge: OpenAI Plans Restricted GPT-5.5-Cyber Access for Critical Defenders",
+    url: "https://www.theverge.com/ai-artificial-intelligence/921073/openai-sam-altman-new-cybersecurity-model-gpt-5-5-cyber",
+    summary:
+      "The Verge reported that OpenAI is preparing GPT-5.5-Cyber for a limited rollout to vetted critical cyber defenders rather than broad public release. The practical takeaway for engineering and security teams is that the strongest AI security capabilities are being separated from ordinary product access, with eligibility, trust controls, and deployment context becoming part of the model roadmap.",
   },
   {
     source: "The Wall Street Journal",
