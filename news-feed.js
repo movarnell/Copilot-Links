@@ -1,5 +1,16 @@
 window.newsFeed = [
   {
+    source: "Reuters via MarketScreener",
+    date: "2026-05-04",
+    displayDate: "May 4, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Blackstone", "Goldman Sachs", "Hellman & Friedman", "General Atlantic", "OpenAI"],
+    title: "Reuters: Anthropic Nears $1.5B Wall Street Joint Venture to Sell AI Into Private Equity",
+    url: "https://uk.marketscreener.com/news/anthropic-nears-1-5-billion-ai-joint-venture-with-wall-street-firms-wsj-reports-ce7f58deda8af227",
+    summary:
+      "Reuters, citing The Wall Street Journal, reported that Anthropic is finalizing an approximately $1.5 billion joint venture with Blackstone, Goldman Sachs, Hellman & Friedman, General Atlantic, and other Wall Street firms to sell AI tools to private-equity-backed companies. For AI-assisted teams, the signal is that frontier labs are turning enterprise distribution into a strategic advantage, with Claude Code and workflow automation becoming part of broader operating-company rollouts rather than isolated developer subscriptions.",
+  },
+  {
     source: "Business Insider",
     date: "2026-05-03",
     displayDate: "May 3, 2026",
