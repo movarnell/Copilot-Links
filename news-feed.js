@@ -1,5 +1,49 @@
 window.newsFeed = [
   {
+    source: "Microsoft Official Blog",
+    date: "2026-05-05",
+    displayDate: "May 5, 2026",
+    category: "ai-general-news",
+    companies: ["Microsoft", "Copilot", "Microsoft 365", "Dynamics 365", "Fabric", "Agent 365"],
+    title: "Microsoft Expands Copilot Cowork as It Pushes the Frontier Firm Operating Model",
+    url: "https://blogs.microsoft.com/blog/2026/05/05/how-frontier-firms-are-rebuilding-the-operating-model-for-the-age-of-ai/",
+    summary:
+      "Microsoft argued that software teams are moving through author, editor, director, and orchestrator patterns of human-agent collaboration, then tied that shift to new Copilot Cowork capabilities for mobile, plugins, federated connectors, and Agent 365 governance. For VS Code users and engineering leaders, the practical signal is that agentic development patterns are becoming the template for broader enterprise operating models: teams will need specs, review loops, governance, and reusable workflow plugins rather than ad hoc prompt usage.",
+  },
+  {
+    source: "Reuters via Investing.com",
+    date: "2026-05-05",
+    displayDate: "May 5, 2026",
+    category: "mythos-news",
+    companies: ["Microsoft", "Google", "xAI", "CAISI", "Anthropic", "Mythos"],
+    title: "Reuters: Microsoft, Google, and xAI Will Share Models With U.S. Government for Security Reviews",
+    url: "https://www.investing.com/news/stock-market-news/microsoft-xai-and-google-will-share-ai-models-with-us-govt-for-security-reviews-4658803",
+    summary:
+      "Reuters reported that Microsoft, Google, and xAI agreed to provide the Commerce Department's Center for AI Standards and Innovation with early access to new AI models for national-security evaluation before public deployment. The story matters for teams tracking Mythos-class systems because pre-release model review is becoming a concrete governance path, with agencies probing frontier capabilities, stripped-back safety settings, and cyber risk before models reach ordinary product channels.",
+  },
+  {
+    source: "Axios",
+    date: "2026-05-05",
+    displayDate: "May 5, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "Anthropic", "xAI", "Pentagon", "Sam Altman", "Elon Musk"],
+    title: "Axios: AI Idealism Gives Way to Lawsuits, Defense Deals, and Commercial Pressure",
+    url: "https://www.axios.com/2026/05/05/musk-open-ai-idealism",
+    summary:
+      "Axios framed the Musk v. OpenAI trial, Anthropic's defense-policy disputes, and expanding Pentagon AI agreements as evidence that the industry's early public-benefit rhetoric is giving way to a harder mix of competition, commercialization, and national-security pressure. For AI-assisted teams, the useful takeaway is that tool roadmaps are increasingly shaped by corporate structure, litigation, defense access, and regulation debates as much as by raw model quality.",
+  },
+  {
+    source: "The Wall Street Journal",
+    date: "2026-05-05",
+    displayDate: "May 5, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "Jony Ive", "Coco Robotics", "Sora"],
+    title: "WSJ: OpenAI Discussed Spinning Out Robotics and Hardware Units Ahead of IPO Push",
+    url: "https://www.wsj.com/tech/ahead-of-race-to-ipo-openai-discussed-spinning-out-robotics-hardware-divisions-18c89706",
+    summary:
+      "The Wall Street Journal reported that OpenAI discussed separating its robotics and consumer-hardware work from the core company before deciding against the move, while also shifting more attention toward developer and enterprise revenue. For VS Code and Copilot watchers, the practical signal is that frontier labs are sorting experimental hardware, robotics, video, and software-agent bets against IPO readiness, balance-sheet pressure, and enterprise-product focus.",
+  },
+  {
     source: "Axios",
     date: "2026-05-04",
     displayDate: "May 4, 2026",
