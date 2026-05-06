@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "Ars Technica",
+    date: "2026-05-06",
+    displayDate: "May 6, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Claude", "Claude Code", "Claude Managed Agents"],
+    title: "Anthropic Adds 'Dreaming' to Claude Managed Agents",
+    url: "https://arstechnica.com/ai/2026/05/anthropics-claude-can-now-dream-sort-of/",
+    summary:
+      "Ars Technica reported from Anthropic's Code with Claude developer event that Claude Managed Agents are getting a research-preview feature called dreaming, where an agent reviews recent work between sessions and identifies memories that should shape future tasks. For VS Code and agentic-coding users, the signal is that coding assistants are moving beyond single-session chat toward managed infrastructure, persistent project memory, rubric-style outcomes, and multi-agent delegation that can run over minutes or hours.",
+  },
+  {
+    source: "9to5Google",
+    date: "2026-05-06",
+    displayDate: "May 6, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Claude", "Claude Code", "SpaceX", "NVIDIA"],
+    title: "Anthropic Raises Claude Code and Opus API Limits After SpaceX Compute Deal",
+    url: "https://9to5google.com/2026/05/06/claude-code-is-getting-higher-usage-limits-doubled-for-most-users/",
+    summary:
+      "9to5Google reported that Anthropic doubled Claude Code's five-hour limits for Pro, Max, Team, and seat-based Enterprise plans, removed peak-hour reductions for Pro and Max users, and raised Claude Opus API limits after securing SpaceX Colossus 1 capacity. For AI-assisted engineering teams, the practical takeaway is that agent productivity is now constrained as much by compute allocation and rate-limit policy as by model quality, so workflow reliability depends on watching capacity changes across paid plans and APIs.",
+  },
+  {
     source: "The Verge",
     date: "2026-05-05",
     displayDate: "May 5, 2026",
