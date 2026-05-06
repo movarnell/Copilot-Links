@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "The Verge",
+    date: "2026-05-05",
+    displayDate: "May 5, 2026",
+    category: "new-models",
+    companies: ["OpenAI", "ChatGPT", "GPT-5.5"],
+    title: "OpenAI Makes GPT-5.5 Instant the Default ChatGPT Model",
+    url: "https://www.theverge.com/ai-artificial-intelligence/924225/openai-chatgpt-default-model-gpt-5-5-instant",
+    summary:
+      "The Verge reported that OpenAI is replacing GPT-5.3 Instant with GPT-5.5 Instant as ChatGPT's default model, saying the new model cuts hallucinated claims in sensitive domains while keeping low-latency everyday performance. For VS Code and Copilot users, the practical signal is that the baseline model people use for quick coding help, image analysis, search decisions, and personalized context is moving again, so teams should re-check default-model behavior rather than assuming prior ChatGPT responses still represent the current product.",
+  },
+  {
+    source: "Anthropic News",
+    date: "2026-05-05",
+    displayDate: "May 5, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Claude", "Claude Code", "Microsoft 365", "Goldman Sachs", "Citi", "FIS"],
+    title: "Anthropic Launches Financial-Services Agents as Claude Pushes Deeper Into Enterprise Workflows",
+    url: "https://www.anthropic.com/news/finance-agents?cam=claude",
+    summary:
+      "Anthropic released ten ready-to-run AI agent templates for banks, insurers, and financial-services firms, covering work such as pitchbooks, KYC screening, financial modeling, statement audits, and month-end close. For AI-assisted teams, the important takeaway is that Claude's enterprise path is moving from general assistant access into packaged domain workflows, Microsoft 365 integrations, and governed data connectors, which is the same adoption pattern engineering orgs should expect around coding agents and operational automation.",
+  },
+  {
     source: "Microsoft Official Blog",
     date: "2026-05-05",
     displayDate: "May 5, 2026",
