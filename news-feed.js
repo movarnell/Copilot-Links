@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "Axios",
+    date: "2026-05-07",
+    displayDate: "May 7, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "The Anthropic Institute", "Claude", "Jack Clark"],
+    title: "Axios: Anthropic Warns AI-Driven R&D Could Accelerate Toward Recursive Self-Improvement",
+    url: "https://www.axios.com/2026/05/07/anthropic-jack-clark-ai-intelligence-explosion",
+    summary:
+      "Axios reported that Anthropic's new institute is publishing a research agenda around AI systems speeding up AI research itself, with co-founder Jack Clark saying there is a greater-than-even chance an AI model can fully train a successor by the end of 2028. For AI-assisted teams, the practical signal is that frontier labs are beginning to treat recursive model improvement, agent governance, workforce disruption, and cross-government response planning as near-term operational issues rather than abstract safety debates.",
+  },
+  {
+    source: "Reuters via StreetInsider",
+    date: "2026-05-06",
+    displayDate: "May 6, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Claude", "Claude Code", "SpaceX", "xAI", "NVIDIA"],
+    title: "Reuters: Anthropic Taps SpaceX's Colossus 1 Compute as Claude Code Demand Surges",
+    url: "https://www.streetinsider.com/Reuters/Anthropic%2Bstrikes%2BSpaceX%2Bdata%2Bcenter%2Bdeal%2Bas%2Bit%2Bplows%2Bahead%2Bon%2BAI%2Bcoding/26442032.html",
+    summary:
+      "Reuters reported that Anthropic will use the full computing power of SpaceX's Colossus 1 facility in Memphis, adding more than 300 megawatts of capacity within a month as demand for Claude and Claude Code outpaces prior planning. For VS Code and agentic-coding users, the takeaway is that rate limits, coding-agent reliability, and model availability are now directly tied to hyperscale compute deals, GPU utilization, and infrastructure partnerships between nominal AI rivals.",
+  },
+  {
     source: "Ars Technica",
     date: "2026-05-06",
     displayDate: "May 6, 2026",
