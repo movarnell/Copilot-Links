@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Copilot Model Guide — Cost, Tasks, and Workflows</title>
+    <meta
+      name="description"
+      content="A practical GitHub Copilot model guide with current model multipliers, best-fit tasks, and recommended planning, implementation, review, and debugging flows."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <nav class="section-nav nav-visible-always" id="section-nav" aria-label="Model guide sections">
+      <div class="section-nav-inner">
+        <div class="nav-group" aria-label="Other site pages">
+          <span class="nav-group-label">Pages</span>
+          <a href="index.html" class="nav-pill nav-pill-back">AI Hub</a>
+          <a href="guide.html" class="nav-pill nav-pill-back">Guide</a>
+          <a href="news.html" class="nav-pill nav-pill-back">News</a>
+          <a href="enterprise-privacy.html" class="nav-pill nav-pill-back">Copilot Privacy</a>
+          <a href="videos.html" class="nav-pill nav-pill-back">Videos</a>
+        </div>
+        <div class="nav-group" aria-label="Sections on this page">
+          <span class="nav-group-label">On this page</span>
+          <a href="#model-table" class="nav-pill active">Table</a>
+          <a href="#quick-picks" class="nav-pill">Quick Picks</a>
+          <a href="#workflow-flows" class="nav-pill">Flows</a>
+          <a href="#billing-notes" class="nav-pill">Billing</a>
+          <a href="#model-sources" class="nav-pill">Sources</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page">
+      <header class="hero reveal">
+        <p class="eyebrow">Copilot Models</p>
+        <h1>GitHub Copilot Model Guide</h1>
+        <p class="hero-copy">
+          A compact reference for choosing models in Copilot Chat and agent workflows. Use it to balance model quality,
+          premium request cost, latency, and the type of work you are asking Copilot to do.
+        </p>
+        <div class="hero-actions">
+          <a href="#model-table" class="hero-guide-link">Compare Models</a>
+          <a href="#workflow-flows" class="hero-guide-link hero-guide-link-secondary">Use Recommended Flows</a>
+          <a href="index.html" class="hero-guide-link hero-guide-link-secondary">Return to AI Hub</a>
+        </div>
+      </header>
+
+      <section class="panel reveal" id="model-table" aria-labelledby="model-table-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Reference Table</p>
+          <h2 id="model-table-heading">Available Copilot Models and Cost</h2>
+          <p>
+            Paid-plan cost is shown as GitHub's premium request multiplier. Copilot Free has a limited monthly premium
+            request allowance; included models may not consume premium requests on paid plans.
+          </p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="models-table models-table-wide">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Provider</th>
+                <th>Status</th>
+                <th>Paid Cost</th>
+                <th>Free Plan</th>
+                <th>Best At</th>
+                <th>Use It For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="model-name">GPT-4.1</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-free">Included</td>
+                <td class="cost-free">Included</td>
+                <td class="strengths">Fast everyday coding help, explanations, small changes, and fallback chat.</td>
+                <td class="strengths">Use when you want reliable low-cost help and do not need frontier reasoning.</td>
+              </tr>
+              <tr>
+                <td class="model-name">GPT-4o</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">Billing ref</span></td>
+                <td class="cost-free">Included</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">General chat, multimodal help, and broad assistant tasks where available.</td>
+                <td class="strengths">Use as a baseline included model if it appears in your Copilot model picker.</td>
+              </tr>
+              <tr>
+                <td class="model-name">GPT-5 mini</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-free">Included</td>
+                <td class="cost-free">Included</td>
+                <td class="strengths">General coding, writing, quick reasoning, and low-cost daily usage.</td>
+                <td class="strengths">Default to this for routine prompts before escalating to premium models.</td>
+              </tr>
+              <tr>
+                <td class="model-name">GPT-5.2</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">Retires Jun 1</span></td>
+                <td class="cost-std">1x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Deep reasoning, debugging, architectural analysis, and tradeoff decisions.</td>
+                <td class="strengths">Use for thinking through a hard problem before letting an agent edit files.</td>
+              </tr>
+              <tr>
+                <td class="model-name">GPT-5.2-Codex</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">Retires Jun 1</span></td>
+                <td class="cost-std">1x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Long-horizon coding work, multi-file implementation, and agent mode tasks.</td>
+                <td class="strengths">Use for repository edits where Copilot needs to inspect, change, and validate code.</td>
+              </tr>
+              <tr>
+                <td class="model-name">GPT-5.3-Codex</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-std">1x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Agentic software development, tests, refactors, reviews, and codebase navigation.</td>
+                <td class="strengths">Use as a strong default for implementation-heavy agent workflows.</td>
+              </tr>
+              <tr class="highlight">
+                <td class="model-name">GPT-5.4</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-std">1x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Complex reasoning, debugging, code review, and architecture-level analysis.</td>
+                <td class="strengths">Use when you need a strong reviewer or planner without jumping to 7.5x cost.</td>
+              </tr>
+              <tr>
+                <td class="model-name">GPT-5.4 mini</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-low">0.33x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Agentic codebase exploration, search-heavy work, and lightweight implementation.</td>
+                <td class="strengths">Use to scan a repo, find likely files, draft a plan, or handle medium-risk edits.</td>
+              </tr>
+              <tr>
+                <td class="model-name">GPT-5.4 nano</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-low">0.25x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Low-cost snippets, short explanations, small rewrites, and quick checks.</td>
+                <td class="strengths">Use for cheap iteration when mistakes are easy to spot and fix.</td>
+              </tr>
+              <tr class="highlight">
+                <td class="model-name">GPT-5.5</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">7.5x</td>
+                <td class="cost-high">7.5 requests</td>
+                <td class="strengths">Highest-tier OpenAI reasoning, difficult debugging, and technical decisions.</td>
+                <td class="strengths">Use sparingly for planning, diagnosis, and review on high-risk changes.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Haiku 4.5</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-low">0.33x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Fast answers, lightweight edits, small explanations, and cheap support loops.</td>
+                <td class="strengths">Use for quick iteration before escalating to Sonnet or Opus.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Sonnet 4.5</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-std">1x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">General coding, agent tasks, reasoning, and practical development support.</td>
+                <td class="strengths">Use as a balanced implementation model when you want quality at 1x.</td>
+              </tr>
+              <tr class="highlight">
+                <td class="model-name">Claude Sonnet 4.6</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-std">1x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">General coding, debugging, visual reasoning, and agentic development.</td>
+                <td class="strengths">Use as the main "build it" model after a harder model has planned the approach.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Opus 4.5</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">3x</td>
+                <td class="cost-high">3 requests</td>
+                <td class="strengths">Difficult refactors, codebase reasoning, and complex problem solving.</td>
+                <td class="strengths">Use for architectural planning when Sonnet is missing context or nuance.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Opus 4.6</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">3x</td>
+                <td class="cost-high">3 requests</td>
+                <td class="strengths">Deep reasoning, hard debugging, and complex tradeoff analysis.</td>
+                <td class="strengths">Use for planning and review on complicated work when 3x cost is acceptable.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Claude Opus 4.6 fast mode</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">Preview</span></td>
+                <td class="cost-high">30x</td>
+                <td class="cost-high">30 requests</td>
+                <td class="strengths">Low-latency Opus-class reasoning when response speed matters more than budget.</td>
+                <td class="strengths">Reserve for rare interactive sessions where premium request burn is acceptable.</td>
+              </tr>
+              <tr class="highlight">
+                <td class="model-name">Claude Opus 4.7</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">15x</td>
+                <td class="cost-high">15 requests</td>
+                <td class="strengths">Anthropic's strongest Copilot model for advanced coding and reasoning.</td>
+                <td class="strengths">Use for the first planning pass on large, ambiguous, or risky engineering tasks.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Gemini 2.5 Pro</td>
+                <td>Google</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-std">1x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Complex code generation, debugging, research, and broad technical analysis.</td>
+                <td class="strengths">Use as a strong alternative reviewer or researcher at standard cost.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Gemini 3 Flash</td>
+                <td>Google</td>
+                <td><span class="cap-badge">Preview</span></td>
+                <td class="cost-low">0.33x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Fast simple tasks, repetitive edits, summaries, and low-cost iteration.</td>
+                <td class="strengths">Use for quick work when latency and cost matter more than depth.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Gemini 3.1 Pro</td>
+                <td>Google</td>
+                <td><span class="cap-badge">Preview</span></td>
+                <td class="cost-std">1x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Long-context reasoning, edit-test loops, and technical analysis.</td>
+                <td class="strengths">Use for reading large contexts, comparing alternatives, and research-heavy prompts.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Grok Code Fast 1</td>
+                <td>xAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-low">0.25x</td>
+                <td class="cost-std">1 request</td>
+                <td class="strengths">Fast coding, code generation, and debugging across common languages.</td>
+                <td class="strengths">Use for speed-focused implementation when the task is clear and scoped.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Raptor mini</td>
+                <td>Fine-tuned GPT-5 mini</td>
+                <td><span class="cap-badge">Preview</span></td>
+                <td class="cost-free">Included</td>
+                <td class="cost-free">Included</td>
+                <td class="strengths">Inline suggestions, explanations, and everyday developer assistance.</td>
+                <td class="strengths">Use for included-cost support when available in your environment.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Goldeneye</td>
+                <td>Fine-tuned GPT-5.1-Codex</td>
+                <td><span class="cap-badge">Preview</span></td>
+                <td class="cost-free">Free only</td>
+                <td class="cost-free">Included</td>
+                <td class="strengths">Evaluation-oriented reasoning and problem solving.</td>
+                <td class="strengths">Use for comparison and testing when GitHub exposes it in your picker.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="legend-info">
+          <p>
+            <strong>Current caveat:</strong> GitHub may auto-select a model for some requests, especially if the
+            selected model is overloaded. Models also vary by Copilot plan, client, policy settings, and preview access.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="quick-picks" aria-labelledby="quick-picks-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Task Guide</p>
+          <h2 id="quick-picks-heading">Quick Picks by Task Type</h2>
+          <p>Start with the cheapest model that can do the job, then escalate only when the task is ambiguous or risky.</p>
+        </div>
+
+        <div class="models-grid">
+          <article class="model-use-card">
+            <h3>Small code edits</h3>
+            <p><strong>Start:</strong> GPT-5 mini, GPT-4.1, Claude Haiku 4.5, or Grok Code Fast 1.</p>
+            <p><strong>Escalate:</strong> Claude Sonnet 4.6 or GPT-5.3-Codex if the edit touches several files.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>Feature implementation</h3>
+            <p><strong>Start:</strong> Claude Sonnet 4.6 or GPT-5.3-Codex.</p>
+            <p><strong>Escalate:</strong> Claude Opus 4.7 or GPT-5.5 for the plan if the feature is unclear.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>Debugging production issues</h3>
+            <p><strong>Start:</strong> GPT-5.4 or Gemini 2.5 Pro.</p>
+            <p><strong>Escalate:</strong> GPT-5.5 or Claude Opus 4.7 for difficult root-cause analysis.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>Large refactors</h3>
+            <p><strong>Start:</strong> Claude Opus 4.7 or GPT-5.5 for scope and risk analysis.</p>
+            <p><strong>Implement:</strong> Claude Sonnet 4.6 or GPT-5.3-Codex in smaller verified chunks.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>Code review</h3>
+            <p><strong>Start:</strong> GPT-5.4, Gemini 2.5 Pro, or Claude Sonnet 4.6.</p>
+            <p><strong>Escalate:</strong> GPT-5.5 for high-risk logic, security-sensitive areas, or architecture drift.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>Docs and explanations</h3>
+            <p><strong>Start:</strong> GPT-5 mini, GPT-4.1, Gemini 3 Flash, or Claude Haiku 4.5.</p>
+            <p><strong>Escalate:</strong> Gemini 3.1 Pro for long context or GPT-5.4 for technical precision.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>Visual or UI reasoning</h3>
+            <p><strong>Start:</strong> Claude Sonnet 4.6, Gemini 2.5 Pro, or GPT-5.4.</p>
+            <p><strong>Escalate:</strong> Opus or GPT-5.5 when layout, product behavior, and code changes all interact.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>Budget-sensitive loops</h3>
+            <p><strong>Start:</strong> included models, GPT-5.4 nano, Grok Code Fast 1, or Gemini 3 Flash.</p>
+            <p><strong>Escalate:</strong> Pay 1x or higher only after the problem is narrowed.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="workflow-flows" aria-labelledby="workflow-flows-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Recommended Flows</p>
+          <h2 id="workflow-flows-heading">How to Chain Models</h2>
+          <p>Use different models for different phases instead of trying to make one model do every job.</p>
+        </div>
+
+        <div class="flow-stack">
+          <article class="flow-card">
+            <h3>Complex feature flow</h3>
+            <ol class="use-case-steps">
+              <li><strong>Plan with Claude Opus 4.7 or GPT-5.5:</strong> define scope, risks, file map, and test strategy.</li>
+              <li><strong>Implement with Claude Sonnet 4.6 or GPT-5.3-Codex:</strong> make the changes in small commits or agent passes.</li>
+              <li><strong>Review with GPT-5.4 or Gemini 2.5 Pro:</strong> look for missed edge cases, broken assumptions, and missing tests.</li>
+              <li><strong>Polish with GPT-5 mini or Claude Haiku 4.5:</strong> tighten copy, comments, and small follow-up edits.</li>
+            </ol>
+          </article>
+
+          <article class="flow-card">
+            <h3>Bug triage flow</h3>
+            <ol class="use-case-steps">
+              <li><strong>Summarize with GPT-5 mini:</strong> collect symptoms, logs, repro steps, and suspected areas.</li>
+              <li><strong>Diagnose with GPT-5.4, Gemini 2.5 Pro, or Claude Opus 4.7:</strong> reason through likely causes.</li>
+              <li><strong>Patch with Claude Sonnet 4.6 or GPT-5.3-Codex:</strong> edit the smallest safe surface area.</li>
+              <li><strong>Verify with GPT-5.4:</strong> inspect the diff, tests, and regression risk before merging.</li>
+            </ol>
+          </article>
+
+          <article class="flow-card">
+            <h3>Large refactor flow</h3>
+            <ol class="use-case-steps">
+              <li><strong>Inventory with GPT-5.4 mini or Gemini 3.1 Pro:</strong> find call sites, dependencies, and duplicate patterns.</li>
+              <li><strong>Design with Claude Opus 4.7:</strong> choose the migration path and define boundaries.</li>
+              <li><strong>Execute with GPT-5.3-Codex or Claude Sonnet 4.6:</strong> refactor one subsystem at a time.</li>
+              <li><strong>Audit with GPT-5.5:</strong> use a final high-reasoning pass only on the risky diff and tests.</li>
+            </ol>
+          </article>
+
+          <article class="flow-card">
+            <h3>Low-cost daily flow</h3>
+            <ol class="use-case-steps">
+              <li><strong>Ask with included models:</strong> use GPT-5 mini, GPT-4.1, or Raptor mini for most small prompts.</li>
+              <li><strong>Explore with 0.25x to 0.33x models:</strong> use GPT-5.4 nano, Grok Code Fast 1, Gemini 3 Flash, or Haiku.</li>
+              <li><strong>Build with 1x models:</strong> use Sonnet 4.6, GPT-5.3-Codex, GPT-5.4, or Gemini 2.5 Pro when files change.</li>
+              <li><strong>Escalate only for ambiguity:</strong> reserve GPT-5.5 and Opus 4.7 for decisions that affect architecture or reliability.</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="billing-notes" aria-labelledby="billing-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Cost Notes</p>
+          <h2 id="billing-heading">How to Think About Cost</h2>
+          <p>Premium request multipliers are not dollar prices. They are how quickly a request consumes your included or purchased premium request allowance.</p>
+        </div>
+
+        <div class="overview-grid">
+          <article class="overview-card">
+            <h3>Use included models first</h3>
+            <p class="guide-text">
+              GPT-4.1, GPT-5 mini, and Raptor mini are the safest starting point for routine prompts because paid-plan
+              usage is included according to GitHub's multiplier table.
+            </p>
+          </article>
+          <article class="overview-card">
+            <h3>Treat 1x as the default work tier</h3>
+            <p class="guide-text">
+              Sonnet, Codex, GPT-5.4, and Gemini Pro models are usually where implementation, review, and deeper
+              analysis should happen.
+            </p>
+          </article>
+          <article class="overview-card">
+            <h3>Reserve premium-heavy models</h3>
+            <p class="guide-text">
+              GPT-5.5, Claude Opus 4.7, and Opus fast mode should answer narrow, high-value questions rather than
+              carrying every iteration of a long coding session.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="model-sources" aria-labelledby="sources-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Sources</p>
+          <h2 id="sources-heading">Official References</h2>
+          <p>The model list changes often. Re-check these sources before making budget or policy decisions.</p>
+        </div>
+
+        <div class="ref-grid">
+          <div class="ref-item">
+            <a class="step-link" href="https://docs.github.com/en/copilot/reference/ai-models/supported-models" target="_blank" rel="noreferrer noopener">Supported models</a>
+            <span class="ref-desc">GitHub's current supported model list and premium request multiplier table.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://docs.github.com/en/copilot/reference/ai-models/model-comparison" target="_blank" rel="noreferrer noopener">Model comparison</a>
+            <span class="ref-desc">GitHub's capability comparison and task-fit guidance across Copilot models.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://docs.github.com/en/copilot/concepts/copilot-billing/requests" target="_blank" rel="noreferrer noopener">Premium requests</a>
+            <span class="ref-desc">How premium requests work and how usage-based billing applies.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-05-01-upcoming-deprecation-of-gpt-5-2-and-gpt-5-2-codex/" target="_blank" rel="noreferrer noopener">Model deprecation notice</a>
+            <span class="ref-desc">GitHub's May 1, 2026 notice for GPT-5.2 and GPT-5.2-Codex deprecation on June 1.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="news-feed.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
