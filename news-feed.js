@@ -1,5 +1,38 @@
 window.newsFeed = [
   {
+    source: "OpenAI News",
+    date: "2026-05-07",
+    displayDate: "May 7, 2026",
+    category: "new-models",
+    companies: ["OpenAI", "GPT-Realtime-2", "GPT-Realtime-Translate", "GPT-Realtime-Whisper"],
+    title: "OpenAI Releases GPT-Realtime-2 and New Voice API Models",
+    url: "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+    summary:
+      "OpenAI introduced three realtime audio models for developers: GPT-Realtime-2 for GPT-5-class voice reasoning, GPT-Realtime-Translate for live multilingual speech translation, and GPT-Realtime-Whisper for low-latency streaming transcription. For VS Code and agent builders, the practical signal is that voice interfaces are moving closer to tool-using agents that can reason, translate, transcribe, and act during a live conversation rather than serving only as speech input or output.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-07",
+    displayDate: "May 7, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot CLI", "OpenAI", "Anthropic", "Claude"],
+    title: "GitHub Copilot CLI Rubber Duck Adds Cross-Family Model Reviews",
+    url: "https://github.blog/changelog/2026-05-07-rubber-duck-in-github-copilot-cli-now-supports-more-models/",
+    summary:
+      "GitHub said Copilot CLI's experimental Rubber Duck review agent can now use a Claude-powered critic when the main session is running a GPT model, while Claude-orchestrated sessions can use GPT-5.5 for second opinions. For AI-assisted engineering teams, the signal is that model diversity is becoming a built-in review strategy for agentic coding, with architectural catches, subtle bug review, and cross-file conflict detection delegated across model families.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-06",
+    displayDate: "May 6, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "VS Code", "Copilot CLI"],
+    title: "GitHub Copilot in VS Code Adds Semantic Workspace Search, BYOK, and Agent Continuity",
+    url: "https://github.blog/changelog/2026-05-06-github-copilot-in-visual-studio-code-april-releases/",
+    summary:
+      "GitHub's April VS Code Copilot release rollup covered semantic search across any workspace, grep-style GitHub repo search, experimental local chat-history search, inline chat diffs, browser tab sharing, terminal read/write access, and bring-your-own-key support for Business and Enterprise users. For VS Code users, the practical takeaway is that Copilot is becoming less like a chat panel and more like a governed development environment for long-running agents, shared context, model choice, and cross-device session control.",
+  },
+  {
     source: "Axios",
     date: "2026-05-07",
     displayDate: "May 7, 2026",
