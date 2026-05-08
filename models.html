@@ -160,15 +160,6 @@
                 <td class="strengths">Low-cost snippets, short explanations, small rewrites, and quick checks.</td>
                 <td class="strengths">Use for cheap iteration when mistakes are easy to spot and fix.</td>
               </tr>
-              <tr class="highlight">
-                <td class="model-name">GPT-5.5</td>
-                <td>OpenAI</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-high">7.5x</td>
-                <td class="cost-high">7.5 requests</td>
-                <td class="strengths">Highest-tier OpenAI reasoning, difficult debugging, and technical decisions.</td>
-                <td class="strengths">Use sparingly for planning, diagnosis, and review on high-risk changes.</td>
-              </tr>
               <tr>
                 <td class="model-name">Claude Haiku 4.5</td>
                 <td>Anthropic</td>
@@ -227,8 +218,8 @@
                 <td class="model-name">Claude Opus 4.7</td>
                 <td>Anthropic</td>
                 <td><span class="cap-badge">GA</span></td>
-                <td class="cost-high">15x</td>
-                <td class="cost-high">15 requests</td>
+                <td class="cost-high">7.5x</td>
+                <td class="cost-high">7.5 requests</td>
                 <td class="strengths">Anthropic's strongest Copilot model for advanced coding and reasoning.</td>
                 <td class="strengths">Use for the first planning pass on large, ambiguous, or risky engineering tasks.</td>
               </tr>
@@ -314,22 +305,22 @@
           <article class="model-use-card">
             <h3>Feature implementation</h3>
             <p><strong>Start:</strong> Claude Sonnet 4.6 or GPT-5.3-Codex.</p>
-            <p><strong>Escalate:</strong> Claude Opus 4.7 or GPT-5.5 for the plan if the feature is unclear.</p>
+            <p><strong>Escalate:</strong> Claude Opus 4.7 or GPT-5.4 for the plan if the feature is unclear.</p>
           </article>
           <article class="model-use-card">
             <h3>Debugging production issues</h3>
             <p><strong>Start:</strong> GPT-5.4 or Gemini 2.5 Pro.</p>
-            <p><strong>Escalate:</strong> GPT-5.5 or Claude Opus 4.7 for difficult root-cause analysis.</p>
+            <p><strong>Escalate:</strong> Claude Opus 4.7 for difficult root-cause analysis.</p>
           </article>
           <article class="model-use-card">
             <h3>Large refactors</h3>
-            <p><strong>Start:</strong> Claude Opus 4.7 or GPT-5.5 for scope and risk analysis.</p>
+            <p><strong>Start:</strong> Claude Opus 4.7 or GPT-5.4 for scope and risk analysis.</p>
             <p><strong>Implement:</strong> Claude Sonnet 4.6 or GPT-5.3-Codex in smaller verified chunks.</p>
           </article>
           <article class="model-use-card">
             <h3>Code review</h3>
             <p><strong>Start:</strong> GPT-5.4, Gemini 2.5 Pro, or Claude Sonnet 4.6.</p>
-            <p><strong>Escalate:</strong> GPT-5.5 for high-risk logic, security-sensitive areas, or architecture drift.</p>
+            <p><strong>Escalate:</strong> Claude Opus 4.7 for high-risk logic, security-sensitive areas, or architecture drift.</p>
           </article>
           <article class="model-use-card">
             <h3>Docs and explanations</h3>
@@ -339,7 +330,7 @@
           <article class="model-use-card">
             <h3>Visual or UI reasoning</h3>
             <p><strong>Start:</strong> Claude Sonnet 4.6, Gemini 2.5 Pro, or GPT-5.4.</p>
-            <p><strong>Escalate:</strong> Opus or GPT-5.5 when layout, product behavior, and code changes all interact.</p>
+            <p><strong>Escalate:</strong> Opus when layout, product behavior, and code changes all interact.</p>
           </article>
           <article class="model-use-card">
             <h3>Budget-sensitive loops</h3>
@@ -360,7 +351,7 @@
           <article class="flow-card">
             <h3>Complex feature flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Plan with Claude Opus 4.7 or GPT-5.5:</strong> define scope, risks, file map, and test strategy.</li>
+              <li><strong>Plan with Claude Opus 4.7 or GPT-5.4:</strong> define scope, risks, file map, and test strategy.</li>
               <li><strong>Implement with Claude Sonnet 4.6 or GPT-5.3-Codex:</strong> make the changes in small commits or agent passes.</li>
               <li><strong>Review with GPT-5.4 or Gemini 2.5 Pro:</strong> look for missed edge cases, broken assumptions, and missing tests.</li>
               <li><strong>Polish with GPT-5 mini or Claude Haiku 4.5:</strong> tighten copy, comments, and small follow-up edits.</li>
@@ -383,7 +374,7 @@
               <li><strong>Inventory with GPT-5.4 mini or Gemini 3.1 Pro:</strong> find call sites, dependencies, and duplicate patterns.</li>
               <li><strong>Design with Claude Opus 4.7:</strong> choose the migration path and define boundaries.</li>
               <li><strong>Execute with GPT-5.3-Codex or Claude Sonnet 4.6:</strong> refactor one subsystem at a time.</li>
-              <li><strong>Audit with GPT-5.5:</strong> use a final high-reasoning pass only on the risky diff and tests.</li>
+              <li><strong>Audit with GPT-5.4 or Claude Opus 4.7:</strong> use a final high-reasoning pass only on the risky diff and tests.</li>
             </ol>
           </article>
 
@@ -424,7 +415,7 @@
           <article class="overview-card">
             <h3>Reserve premium-heavy models</h3>
             <p class="guide-text">
-              GPT-5.5, Claude Opus 4.7, and Opus fast mode should answer narrow, high-value questions rather than
+              Claude Opus 4.7 and Opus fast mode should answer narrow, high-value questions rather than
               carrying every iteration of a long coding session.
             </p>
           </article>

@@ -1,5 +1,38 @@
 window.newsFeed = [
   {
+    source: "The Guardian",
+    date: "2026-05-08",
+    displayDate: "May 8, 2026",
+    category: "mythos-news",
+    companies: ["Anthropic", "Claude", "Mythos", "OpenAI"],
+    title: "Bruce Schneier Warns Mythos-Class Models Raise the Stakes for Vulnerability Discovery",
+    url: "https://www.theguardian.com/commentisfree/2026/may/08/how-dangerous-is-anthropics-mythos-ai",
+    summary:
+      "Security expert Bruce Schneier argued that Anthropic's Mythos preview should be read as part of a broader shift in AI-assisted vulnerability discovery, where defensive bug finding and scalable exploitation become harder to separate. For VS Code and coding-agent users, the practical takeaway is that model capability, release gating, dependency hygiene, and patch velocity now belong in the same operational conversation as developer productivity.",
+  },
+  {
+    source: "Financial Times",
+    date: "2026-05-08",
+    displayDate: "May 8, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Claude", "Claude Code", "AWS", "Google", "Broadcom", "SpaceX"],
+    title: "FT: Anthropic Weighs Funding Round That Could Push Its Valuation Near $1T",
+    url: "https://www.ft.com/content/a40cafcc-0fa4-4e70-9e24-90d826aea56d",
+    summary:
+      "The Financial Times reported that Anthropic is considering raising up to $50 billion as demand for Claude and Claude Code pushes the company toward much larger compute commitments. For AI-assisted engineering teams, the signal is that model availability, rate limits, and enterprise roadmap speed are increasingly tied to capital markets and long-term infrastructure deals rather than product design alone.",
+  },
+  {
+    source: "OpenAI",
+    date: "2026-05-08",
+    displayDate: "May 8, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "ChatGPT", "Codex", "Codex CLI", "Atlas", "Axios"],
+    title: "OpenAI's macOS Certificate Rotation Deadline Takes Effect",
+    url: "https://openai.com/index/axios-developer-tool-compromise/",
+    summary:
+      "OpenAI's previously announced May 8 deadline is now in effect for older macOS builds signed with its prior certificate after the Axios supply-chain incident. Developers using ChatGPT Desktop, Codex App, Codex CLI, or Atlas should verify they are on the newly signed minimum versions, because unsupported older builds may stop receiving updates or fail under macOS security protections.",
+  },
+  {
     source: "OpenAI News",
     date: "2026-05-07",
     displayDate: "May 7, 2026",
