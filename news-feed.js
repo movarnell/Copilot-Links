@@ -33,6 +33,17 @@ window.newsFeed = [
       "OpenAI's previously announced May 8 deadline is now in effect for older macOS builds signed with its prior certificate after the Axios supply-chain incident. Developers using ChatGPT Desktop, Codex App, Codex CLI, or Atlas should verify they are on the newly signed minimum versions, because unsupported older builds may stop receiving updates or fail under macOS security protections.",
   },
   {
+    source: "Axios",
+    date: "2026-05-07",
+    displayDate: "May 7, 2026",
+    category: "mythos-news",
+    companies: ["OpenAI", "GPT-5.5", "GPT-5.5-Cyber", "Anthropic", "Mythos"],
+    title: "Axios: OpenAI Opens GPT-5.5-Cyber Access to Vetted Critical-Infrastructure Defenders",
+    url: "https://www.axios.com/2026/05/07/openai-gpt-55-cybersecurity-model",
+    summary:
+      "Axios reported that OpenAI is widening limited access to GPT-5.5-Cyber, a more capable defensive variant of GPT-5.5, for vetted teams responsible for securing critical infrastructure. For coding-agent users, the signal is that Mythos-class vulnerability discovery is becoming an operational security workflow: advanced models may help defenders find bugs, review patches, study malware, and simulate attacks, but access controls and policy oversight are now part of the tooling conversation.",
+  },
+  {
     source: "OpenAI News",
     date: "2026-05-07",
     displayDate: "May 7, 2026",
