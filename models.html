@@ -82,11 +82,11 @@
               <tr>
                 <td class="model-name">GPT-4.1</td>
                 <td>OpenAI</td>
-                <td><span class="cap-badge">GA</span></td>
+                <td><span class="cap-badge">Retires Jun 1</span></td>
                 <td class="cost-free">Included</td>
                 <td class="cost-free">Included</td>
                 <td class="strengths">Fast everyday coding help, explanations, small changes, and fallback chat.</td>
-                <td class="strengths">Use when you want reliable low-cost help and do not need frontier reasoning.</td>
+                <td class="strengths">Use only while migrating routine workflows to GPT-5 mini or GPT-5.5.</td>
               </tr>
               <tr>
                 <td class="model-name">GPT-4o</td>
@@ -140,7 +140,16 @@
                 <td class="cost-std">1x</td>
                 <td class="cost-std">1 request</td>
                 <td class="strengths">Complex reasoning, debugging, code review, and architecture-level analysis.</td>
-                <td class="strengths">Use when you need a strong reviewer or planner without jumping to 7.5x cost.</td>
+                <td class="strengths">Use when you need a strong reviewer or planner without jumping to premium-heavy cost.</td>
+              </tr>
+              <tr class="highlight">
+                <td class="model-name">GPT-5.5</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">7.5x</td>
+                <td class="cost-high">7.5 requests</td>
+                <td class="strengths">Frontier reasoning, difficult architecture decisions, and high-stakes code review.</td>
+                <td class="strengths">Use narrowly for ambiguous planning, security-sensitive review, or GPT-4.1 migration checks.</td>
               </tr>
               <tr>
                 <td class="model-name">GPT-5.4 mini</td>
@@ -218,8 +227,8 @@
                 <td class="model-name">Claude Opus 4.7</td>
                 <td>Anthropic</td>
                 <td><span class="cap-badge">GA</span></td>
-                <td class="cost-high">7.5x</td>
-                <td class="cost-high">7.5 requests</td>
+                <td class="cost-high">15x</td>
+                <td class="cost-high">15 requests</td>
                 <td class="strengths">Anthropic's strongest Copilot model for advanced coding and reasoning.</td>
                 <td class="strengths">Use for the first planning pass on large, ambiguous, or risky engineering tasks.</td>
               </tr>
@@ -253,11 +262,11 @@
               <tr>
                 <td class="model-name">Grok Code Fast 1</td>
                 <td>xAI</td>
-                <td><span class="cap-badge">GA</span></td>
+                <td><span class="cap-badge">Retires May 15</span></td>
                 <td class="cost-low">0.25x</td>
                 <td class="cost-std">1 request</td>
                 <td class="strengths">Fast coding, code generation, and debugging across common languages.</td>
-                <td class="strengths">Use for speed-focused implementation when the task is clear and scoped.</td>
+                <td class="strengths">Avoid for new workflows; move speed-focused prompts to GPT-5 mini or Claude Haiku 4.5.</td>
               </tr>
               <tr>
                 <td class="model-name">Raptor mini</td>
@@ -299,7 +308,7 @@
         <div class="models-grid">
           <article class="model-use-card">
             <h3>Small code edits</h3>
-            <p><strong>Start:</strong> GPT-5 mini, GPT-4.1, Claude Haiku 4.5, or Grok Code Fast 1.</p>
+            <p><strong>Start:</strong> GPT-5 mini, Claude Haiku 4.5, or GPT-5.4 nano.</p>
             <p><strong>Escalate:</strong> Claude Sonnet 4.6 or GPT-5.3-Codex if the edit touches several files.</p>
           </article>
           <article class="model-use-card">
@@ -324,7 +333,7 @@
           </article>
           <article class="model-use-card">
             <h3>Docs and explanations</h3>
-            <p><strong>Start:</strong> GPT-5 mini, GPT-4.1, Gemini 3 Flash, or Claude Haiku 4.5.</p>
+            <p><strong>Start:</strong> GPT-5 mini, Gemini 3 Flash, or Claude Haiku 4.5.</p>
             <p><strong>Escalate:</strong> Gemini 3.1 Pro for long context or GPT-5.4 for technical precision.</p>
           </article>
           <article class="model-use-card">
@@ -334,7 +343,7 @@
           </article>
           <article class="model-use-card">
             <h3>Budget-sensitive loops</h3>
-            <p><strong>Start:</strong> included models, GPT-5.4 nano, Grok Code Fast 1, or Gemini 3 Flash.</p>
+            <p><strong>Start:</strong> included models, GPT-5.4 nano, Claude Haiku 4.5, or Gemini 3 Flash.</p>
             <p><strong>Escalate:</strong> Pay 1x or higher only after the problem is narrowed.</p>
           </article>
         </div>
@@ -381,8 +390,8 @@
           <article class="flow-card">
             <h3>Low-cost daily flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Ask with included models:</strong> use GPT-5 mini, GPT-4.1, or Raptor mini for most small prompts.</li>
-              <li><strong>Explore with 0.25x to 0.33x models:</strong> use GPT-5.4 nano, Grok Code Fast 1, Gemini 3 Flash, or Haiku.</li>
+              <li><strong>Ask with included models:</strong> use GPT-5 mini or Raptor mini for most small prompts.</li>
+              <li><strong>Explore with 0.25x to 0.33x models:</strong> use GPT-5.4 nano, Gemini 3 Flash, or Haiku.</li>
               <li><strong>Build with 1x models:</strong> use Sonnet 4.6, GPT-5.3-Codex, GPT-5.4, or Gemini 2.5 Pro when files change.</li>
               <li><strong>Escalate only for ambiguity:</strong> reserve GPT-5.5 and Opus 4.7 for decisions that affect architecture or reliability.</li>
             </ol>
@@ -401,8 +410,8 @@
           <article class="overview-card">
             <h3>Use included models first</h3>
             <p class="guide-text">
-              GPT-4.1, GPT-5 mini, and Raptor mini are the safest starting point for routine prompts because paid-plan
-              usage is included according to GitHub's multiplier table.
+              GPT-5 mini and Raptor mini are the safest starting point for routine prompts because paid-plan
+              usage is included according to GitHub's multiplier table. GPT-4.1 should be treated as a migration-only option.
             </p>
           </article>
           <article class="overview-card">
@@ -415,7 +424,7 @@
           <article class="overview-card">
             <h3>Reserve premium-heavy models</h3>
             <p class="guide-text">
-              Claude Opus 4.7 and Opus fast mode should answer narrow, high-value questions rather than
+              GPT-5.5, Claude Opus 4.7, and Opus fast mode should answer narrow, high-value questions rather than
               carrying every iteration of a long coding session.
             </p>
           </article>
@@ -445,6 +454,14 @@
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-05-01-upcoming-deprecation-of-gpt-5-2-and-gpt-5-2-codex/" target="_blank" rel="noreferrer noopener">Model deprecation notice</a>
             <span class="ref-desc">GitHub's May 1, 2026 notice for GPT-5.2 and GPT-5.2-Codex deprecation on June 1.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-05-07-upcoming-deprecation-of-gpt-4-1/" target="_blank" rel="noreferrer noopener">GPT-4.1 deprecation notice</a>
+            <span class="ref-desc">GitHub's May 7, 2026 notice that GPT-4.1 leaves Copilot on June 1.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-05-08-upcoming-deprecation-of-grok-code-fast-1/" target="_blank" rel="noreferrer noopener">Grok deprecation notice</a>
+            <span class="ref-desc">GitHub's May 8, 2026 notice that Grok Code Fast 1 leaves Copilot on May 15.</span>
           </div>
         </div>
       </section>

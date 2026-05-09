@@ -1,5 +1,49 @@
 window.newsFeed = [
   {
+    source: "GitHub Changelog",
+    date: "2026-05-08",
+    displayDate: "May 8, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot cloud agent"],
+    title: "GitHub Adds Organization-Level Secrets and Variables for Copilot Cloud Agent",
+    url: "https://github.blog/changelog/2026-05-08-more-flexible-secrets-and-variables-for-copilot-cloud-agent/",
+    summary:
+      "GitHub said Copilot cloud agent now has dedicated Agents secrets and variables that can be managed at the organization level or separately in repository settings. For teams using VS Code, Copilot CLI, and cloud agents together, the practical signal is that background agents are becoming easier to govern at scale because common MCP server settings, package-registry tokens, and private-resource configuration no longer have to be duplicated one repository at a time.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-08",
+    displayDate: "May 8, 2026",
+    category: "new-models",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "xAI", "Grok Code Fast 1", "GPT-5 mini", "Claude Haiku 4.5"],
+    title: "GitHub Will Deprecate Grok Code Fast 1 in Copilot on May 15",
+    url: "https://github.blog/changelog/2026-05-08-upcoming-deprecation-of-grok-code-fast-1/",
+    summary:
+      "GitHub announced that Grok Code Fast 1 will be removed from Copilot Chat, inline edits, ask and agent modes, and code completions on May 15, 2026, with GPT-5 mini or Claude Haiku 4.5 as suggested replacements. For cost-sensitive VS Code users, this means any quick-edit workflows that relied on Grok's 0.25x multiplier should be moved to other low-cost models before the cutoff.",
+  },
+  {
+    source: "Visual Studio Code",
+    date: "2026-05-06",
+    displayDate: "May 6, 2026",
+    category: "ai-general-news",
+    companies: ["Microsoft", "Visual Studio Code", "GitHub Copilot", "Copilot CLI", "Claude"],
+    title: "VS Code 1.119 Adds Agent Browser Sharing, OpenTelemetry, and Model-Cost Badges",
+    url: "https://code.visualstudio.com/updates/v1_119",
+    summary:
+      "The VS Code 1.119 release focuses on smoother agent workflows: agents can request access to integrated browser tabs, Copilot agent sessions can emit OpenTelemetry traces, Copilot CLI and Claude responses can show the actual model and multiplier, and sandbox settings can allow network access while keeping file restrictions. For AI-assisted engineering teams, the update makes browser validation, cost visibility, and long-running agent observability more practical inside VS Code.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-07",
+    displayDate: "May 7, 2026",
+    category: "new-models",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "OpenAI", "GPT-4.1", "GPT-5.5"],
+    title: "GitHub Sets June 1 Deprecation Date for GPT-4.1 in Copilot",
+    url: "https://github.blog/changelog/2026-05-07-upcoming-deprecation-of-gpt-4-1/",
+    summary:
+      "GitHub announced that GPT-4.1 will be deprecated across Copilot experiences on June 1, 2026, including chat, inline edits, ask mode, agent mode, and code completions, with GPT-5.5 listed as the suggested replacement. Teams should update workflows, model policies, and documentation now so routine included-model usage does not silently depend on a model that is about to leave the picker.",
+  },
+  {
     source: "The Guardian",
     date: "2026-05-08",
     displayDate: "May 8, 2026",
