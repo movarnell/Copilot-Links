@@ -1,5 +1,38 @@
 window.newsFeed = [
   {
+    source: "Business Insider",
+    date: "2026-05-08",
+    displayDate: "May 8, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Claude", "Claude Code", "SpaceX", "Elon Musk"],
+    title: "Business Insider: Anthropic Is Renting SpaceX Compute to Ease Claude Capacity Pressure",
+    url: "https://www.businessinsider.com/claude-elon-musk-anthropic-ai-compute-2026-5",
+    summary:
+      "Business Insider reported that Anthropic is using compute from a SpaceX data center as it works through capacity pressure around Claude and Claude Code. For AI-assisted engineering teams, the practical signal is that model choice and agent reliability are increasingly constrained by infrastructure access: higher Claude Code limits, faster product rollout, and enterprise availability may depend as much on compute sourcing as on model quality.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-08",
+    displayDate: "May 8, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot code review"],
+    title: "GitHub Adds Copilot Code Review Comment Types to Usage Metrics API",
+    url: "https://github.blog/changelog/2026-05-08-copilot-code-review-comment-types-now-in-usage-metrics-api/",
+    summary:
+      "GitHub added a Copilot code review suggestion breakdown by comment type to the Copilot usage metrics API for enterprise and organization reports. The new reporting separates categories such as security and bug risk and tracks how often developers apply each kind of suggestion, giving engineering leaders a cleaner way to judge whether AI review is catching actionable issues or just adding review noise.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-07",
+    displayDate: "May 7, 2026",
+    category: "new-models",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Anthropic", "Claude Sonnet 4", "Claude Sonnet 4.6"],
+    title: "GitHub Deprecates Claude Sonnet 4 Across Copilot Experiences",
+    url: "https://github.blog/changelog/2026-05-07-claude-sonnet-4-deprecated/",
+    summary:
+      "GitHub said Claude Sonnet 4 was deprecated across Copilot Chat, inline edits, ask and agent modes, and code completions on May 6, 2026, with Claude Sonnet 4.6 listed as the suggested alternative. Copilot Enterprise admins should check model policies and update internal workflow notes so teams do not keep selecting or documenting a model that has already left the supported Copilot surface.",
+  },
+  {
     source: "GitHub Changelog",
     date: "2026-05-08",
     displayDate: "May 8, 2026",
