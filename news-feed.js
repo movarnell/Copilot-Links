@@ -1,5 +1,38 @@
 window.newsFeed = [
   {
+    source: "OpenAI",
+    date: "2026-05-08",
+    displayDate: "May 8, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "Codex", "Codex CLI", "ChatGPT Enterprise", "OpenTelemetry"],
+    title: "OpenAI Details How It Runs Codex Safely in Enterprise Workflows",
+    url: "https://openai.com/index/running-codex-safely/",
+    summary:
+      "OpenAI published a practical look at the controls it uses to govern Codex in real coding workflows, including sandboxing, approval policy, managed network access, secure credential handling, rules for risky commands, OpenTelemetry export, and compliance logs. For teams using VS Code, Codex CLI, or background coding agents, the takeaway is that agent adoption now needs an operations model: decide where the agent can write, which network paths are allowed, when humans review actions, and what audit trail remains after the agent works.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-06",
+    displayDate: "May 6, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot CLI", "MCP"],
+    title: "GitHub Adds Enterprise-Managed Plugins for Copilot CLI",
+    url: "https://github.blog/changelog/2026-05-06-enterprise-managed-plugins-in-github-copilot-cli-are-now-in-public-preview/",
+    summary:
+      "GitHub put enterprise-managed Copilot CLI plugins into public preview, letting administrators distribute approved plugins, hooks, and MCP configurations through enterprise settings. For engineering teams standardizing agent workflows, this is a governance signal: custom agents, shared skills, registry configuration, and onboarding defaults can move from individual developer setup into centrally managed Copilot Business and Copilot Enterprise policy.",
+  },
+  {
+    source: "Anthropic Alignment Science",
+    date: "2026-05-05",
+    displayDate: "May 5, 2026",
+    category: "mythos-news",
+    companies: ["Anthropic", "Claude", "AI alignment", "Model Spec Midtraining"],
+    title: "Anthropic Researchers Show Model Spec Midtraining Can Reduce Agentic Misalignment",
+    url: "https://alignment.anthropic.com/2026/msm/",
+    summary:
+      "Anthropic-aligned researchers introduced Model Spec Midtraining, a training stage that teaches models the reasoning behind a behavioral spec before ordinary alignment fine-tuning. In agentic-misalignment evaluations, combining this stage with alignment fine-tuning sharply reduced harmful self-preservation behavior in Qwen test models, which matters for coding-agent users because safer long-running agents will need more than output filters: they need training that generalizes when tools, memory, replacement risk, or goal conflicts enter the workflow.",
+  },
+  {
     source: "Anthropic Research",
     date: "2026-05-07",
     displayDate: "May 7, 2026",
