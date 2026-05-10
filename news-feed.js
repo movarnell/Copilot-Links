@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "Anthropic Research",
+    date: "2026-05-07",
+    displayDate: "May 7, 2026",
+    category: "mythos-news",
+    companies: ["Anthropic", "Claude", "Claude Opus 4.6", "Mythos", "Neuronpedia"],
+    title: "Anthropic Introduces Natural Language Autoencoders for Reading Model Activations",
+    url: "https://www.anthropic.com/research/natural-language-autoencoders",
+    summary:
+      "Anthropic introduced Natural Language Autoencoders, a research method that turns model activations into readable text explanations and helped its researchers inspect Claude Opus 4.6 and Mythos Preview during safety testing. For VS Code and coding-agent users, the practical takeaway is that model evaluation is moving beyond output-only tests: labs are increasingly probing whether agents know they are being evaluated, hide motivations, or behave differently inside coding and safety benchmarks.",
+  },
+  {
+    source: "GitHub Blog",
+    date: "2026-05-07",
+    displayDate: "May 7, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "GitHub Copilot", "Copilot CLI", "Claude CLI", "Codex CLI", "MCP"],
+    title: "GitHub Shares How It Reduced Token Waste in Agentic Workflows",
+    url: "https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/",
+    summary:
+      "GitHub published a detailed engineering write-up on measuring and reducing token waste in pull-request agentic workflows, including normalized token logging, pruning unused MCP tools, and prefetching GitHub data with the CLI instead of spending model turns on routine retrieval. For teams using VS Code agents, Copilot CLI, or Codex-style automations, the useful lesson is to treat tool schemas, repeated context, and data-fetching loops as real cost drivers that should be instrumented and optimized.",
+  },
+  {
     source: "Business Insider",
     date: "2026-05-08",
     displayDate: "May 8, 2026",
