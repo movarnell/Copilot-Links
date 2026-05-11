@@ -1,5 +1,38 @@
 window.newsFeed = [
   {
+    source: "Visual Studio Code",
+    date: "2026-05-07",
+    displayDate: "May 7, 2026",
+    category: "ai-general-news",
+    companies: ["Microsoft", "Visual Studio Code", "GitHub Copilot", "Copilot CLI"],
+    title: "VS Code 1.120 Adds Context Size Picker and Agent Host Improvements",
+    url: "https://code.visualstudio.com/updates/v1_120",
+    summary:
+      "The VS Code 1.120 Insiders notes add several near-term Copilot workflow improvements: a context size picker in the model picker, GitHub repository metadata in the agent host UI, prompt detection for passwords and passphrases in agent terminals, and Copilot CLI plugin discovery from the local installed-plugins folder. For agent-heavy VS Code users, the practical takeaway is that the editor is making model context, repository-backed sessions, terminal safety, and CLI extensibility easier to manage inside the same development loop.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-07",
+    displayDate: "May 7, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot CLI", "Claude", "GPT-5.5"],
+    title: "Copilot CLI Rubber Duck Now Cross-Checks More Model Families",
+    url: "https://github.blog/changelog/2026-05-07-rubber-duck-in-github-copilot-cli-now-supports-more-models/",
+    summary:
+      "GitHub expanded the experimental Rubber Duck reviewer in Copilot CLI so GPT-led sessions can get a Claude-powered second opinion, while Claude-led sessions can use GPT-5.5 as the critic model. This matters for coding-agent workflows because cross-model review is becoming a built-in quality pattern: use one model to drive the implementation and a different model family to catch architecture mistakes, subtle bugs, or cross-file conflicts before the work lands.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-06",
+    displayDate: "May 6, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "Visual Studio Code", "GitHub Copilot", "Copilot CLI"],
+    title: "GitHub Summarizes April's VS Code Copilot Agent Releases",
+    url: "https://github.blog/changelog/2026-05-06-github-copilot-in-visual-studio-code-april-releases/",
+    summary:
+      "GitHub's April VS Code Copilot roundup confirms a larger direction for the editor: semantic search across any workspace, GitHub repo text search, local chat-history recall, lower token usage, inline diffs in chat, browser tab sharing, BYOK for more Copilot plans, and remote steering for Copilot CLI sessions. For teams using the site as a workflow guide, the current recommendation is to treat VS Code as the control plane for agent context, browser validation, model-provider choice, and long-running CLI work.",
+  },
+  {
     source: "OpenAI",
     date: "2026-05-08",
     displayDate: "May 8, 2026",
