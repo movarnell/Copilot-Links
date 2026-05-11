@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.michaelvarnell.copilot-links-auto-push</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/michaelvarnell/Documents/Copilot-Links/scripts/push-copilot-links.sh</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict>
+      <key>Hour</key>
+      <integer>8</integer>
+      <key>Minute</key>
+      <integer>10</integer>
+    </dict>
+    <dict>
+      <key>Hour</key>
+      <integer>15</integer>
+      <key>Minute</key>
+      <integer>20</integer>
+    </dict>
+  </array>
+
+  <key>StandardOutPath</key>
+  <string>/Users/michaelvarnell/Library/Logs/Copilot-Links/launchd.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/michaelvarnell/Library/Logs/Copilot-Links/launchd.err.log</string>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/michaelvarnell/Documents/Copilot-Links</string>
+</dict>
+</plist>
