@@ -1,5 +1,49 @@
 window.newsFeed = [
   {
+    source: "OpenAI",
+    date: "2026-05-12",
+    displayDate: "May 12, 2026",
+    category: "mythos-news",
+    companies: ["OpenAI", "OpenAI Daybreak", "Cybersecurity", "AI safety"],
+    title: "OpenAI Introduces Daybreak for Defensive Cyber Work",
+    url: "https://openai.com/daybreak",
+    summary:
+      "OpenAI introduced Daybreak as a controlled cybersecurity initiative focused on helping vetted defenders find and fix software vulnerabilities before attackers can exploit them. For VS Code and agent users, the practical signal is that frontier coding models are moving deeper into security review, but the safest pattern remains governed access, narrow scopes, responsible disclosure, and human review before any remediation lands.",
+  },
+  {
+    source: "OpenAI",
+    date: "2026-05-11",
+    displayDate: "May 11, 2026",
+    category: "ai-general-news",
+    companies: ["OpenAI", "OpenAI Deployment Company", "AI adoption", "Enterprise AI"],
+    title: "OpenAI Forms a Deployment Company to Help Organizations Adopt AI",
+    url: "https://openai.com/index/openai-launches-the-deployment-company/",
+    summary:
+      "OpenAI announced the OpenAI Deployment Company to help organizations move from pilots to real operational AI systems. For teams using Copilot, Codex, and VS Code agents, the current lesson is that production AI work needs implementation support around workflow design, governance, evaluation, rollout, and measurement rather than just model access.",
+  },
+  {
+    source: "TechCrunch",
+    date: "2026-05-12",
+    displayDate: "May 12, 2026",
+    category: "ai-general-news",
+    companies: ["Google", "Gemini", "Android", "Agentic AI"],
+    title: "Google Brings Agentic Gemini Features to Android",
+    url: "https://techcrunch.com/2026/05/12/google-brings-agentic-ai-and-vibe-coded-widgets-to-android/",
+    summary:
+      "TechCrunch reported that Google is adding Gemini Intelligence features that can complete tasks across apps, browse the web, fill forms, handle richer dictation, and create Android widgets from natural-language prompts. For AI workflow builders, the signal is that agentic interfaces are expanding beyond developer tools into everyday OS surfaces, making permission design, user confirmation, and app-level task boundaries more important.",
+  },
+  {
+    source: "CSO Online",
+    date: "2026-05-11",
+    displayDate: "May 11, 2026",
+    category: "mythos-news",
+    companies: ["Google", "Google Threat Intelligence Group", "Cybersecurity", "AI safety"],
+    title: "Google Reports an AI-Crafted Zero-Day Exploit in the Wild",
+    url: "https://www.csoonline.com/article/4169046/google-discovers-weaponized-zero-day-exploits-created-with-ai.html",
+    summary:
+      "CSO Online reported on Google Threat Intelligence Group evidence that a criminal group used AI to help develop a zero-day exploit, including reasoning around a faulty trust assumption. For coding-agent teams, this raises the urgency of defensive agent use: secure code review, dependency hygiene, patch validation, and audit trails should be treated as core workflow requirements, not optional security extras.",
+  },
+  {
     source: "Visual Studio Code",
     date: "2026-05-07",
     displayDate: "May 7, 2026",
