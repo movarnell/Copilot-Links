@@ -1,5 +1,49 @@
 window.newsFeed = [
   {
+    source: "GitHub Changelog",
+    date: "2026-05-13",
+    displayDate: "May 13, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot cloud agent", "Automation"],
+    title: "GitHub Adds a REST API for Starting Copilot Cloud Agent Tasks",
+    url: "https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api/",
+    summary:
+      "GitHub put a new Agent tasks REST API into public preview for Copilot Business and Copilot Enterprise users, allowing teams to start Copilot cloud agent work programmatically and track progress through the API. For VS Code and automation-heavy teams, this is a major workflow signal: background coding agents can now be wired into internal developer portals, release scripts, repository setup flows, and broad refactor campaigns instead of being launched only by hand.",
+  },
+  {
+    source: "GitHub Blog",
+    date: "2026-05-12",
+    displayDate: "May 12, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "AI credits", "Copilot CLI"],
+    title: "GitHub Adds Flex Allotments and a New Max Plan for Copilot Individual Users",
+    url: "https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan/",
+    summary:
+      "GitHub updated its June 1 usage-based billing transition for individual Copilot plans by adding variable flex allotments to Pro and Pro+ and introducing a new Max plan for sustained high-volume Copilot work. For developers using VS Code agents, Copilot CLI, and more capable models, the practical takeaway is that long-running agent sessions need cost awareness: paid plans still include unlimited code completions, but chat, agent, and model-heavy work will consume AI credits.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-12",
+    displayDate: "May 12, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot code review"],
+    title: "Copilot Code Review Adds Severity Labels and Grouped Suggestions",
+    url: "https://github.blog/changelog/2026-05-12-copilot-code-review-comment-experience-improvements/",
+    summary:
+      "GitHub improved the Copilot code review comment experience for users on the new pull request interface by adding High, Medium, and Low severity labels plus grouped suggestions that reduce repeated comments. For teams reviewing agent-generated changes, this should make AI feedback easier to triage because reviewers can separate higher-risk issues from style notes and avoid repeated comments across large pull requests.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-12",
+    displayDate: "May 12, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "AI credits", "Copilot Enterprise"],
+    title: "GitHub Releases April Copilot Reports Ahead of AI Credit Billing",
+    url: "https://github.blog/changelog/2026-05-12-april-reports-are-now-available-to-prepare-for-usage-based-billing/",
+    summary:
+      "GitHub made April Copilot usage reports available so enterprises, organizations, and individual Pro users can estimate how their activity maps to AI credits before the June 1 billing change. For engineering leads, the useful move is to inspect which models, users, and surfaces drive the most consumption now, then adjust agent workflows, model defaults, and training before credit-based usage becomes the normal operating model.",
+  },
+  {
     source: "OpenAI",
     date: "2026-05-12",
     displayDate: "May 12, 2026",
