@@ -1,5 +1,60 @@
 window.newsFeed = [
   {
+    source: "GitHub Changelog",
+    date: "2026-05-14",
+    displayDate: "May 14, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot app", "AI agents"],
+    title: "GitHub Copilot App Enters Technical Preview",
+    url: "https://github.blog/changelog/2026-05-14-github-copilot-app-is-now-available-in-technical-preview/",
+    summary:
+      "GitHub introduced the Copilot app in technical preview as a GitHub-native desktop experience for starting agentic development from issues, pull requests, prompts, and previous sessions. For VS Code and Codex-style workflows, this is another sign that coding agents are moving toward dedicated workspaces with isolated branches, resumable sessions, integrated validation, pull request handoff, and automated follow-through on review comments and failing checks.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-14",
+    displayDate: "May 14, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot cloud agent", "Model routing"],
+    title: "Copilot Cloud Agent Adds Auto Model Selection",
+    url: "https://github.blog/changelog/2026-05-14-copilot-cloud-agent-supports-auto-model-selection",
+    summary:
+      "GitHub added Copilot auto model selection to Copilot cloud agent, allowing the service to choose the best available model based on system health and model performance. The feature also carries a discount on the normal model multiplier and avoids weekly rate limits, which makes model routing, cost planning, and reliability part of the agent workflow rather than a manual model-picker decision every time.",
+  },
+  {
+    source: "OpenAI",
+    date: "2026-05-14",
+    displayDate: "May 14, 2026",
+    category: "mythos-news",
+    companies: ["OpenAI", "ChatGPT", "GPT-5.5 Instant", "AI safety", "Safety evaluations"],
+    title: "OpenAI Updates ChatGPT to Better Use Context in Sensitive Conversations",
+    url: "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations/",
+    summary:
+      "OpenAI detailed safety updates that help ChatGPT recognize risk signals that emerge over time within and across conversations, especially around self-harm and harm-to-others scenarios. For people building agent workflows, the important pattern is context-aware safeguards: systems need to reason over more than a single prompt, use focused safety summaries where appropriate, and verify that added caution does not degrade ordinary helpful conversations.",
+  },
+  {
+    source: "Anthropic",
+    date: "2026-05-14",
+    displayDate: "May 14, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Claude", "Gates Foundation", "Beneficial Deployments", "AI for good"],
+    title: "Anthropic and the Gates Foundation Commit $200M to AI for Health and Education",
+    url: "https://www.anthropic.com/news/gates-foundation-partnership",
+    summary:
+      "Anthropic announced a four-year Gates Foundation partnership that combines grant funding, Claude usage credits, and technical support for global health, life sciences, education, and economic mobility programs. For AI adoption teams, the signal is that frontier models are increasingly being packaged with implementation support, discounted access, datasets, and evaluation benchmarks instead of being treated as standalone chat tools.",
+  },
+  {
+    source: "OpenAI",
+    date: "2026-05-13",
+    displayDate: "May 13, 2026",
+    category: "mythos-news",
+    companies: ["OpenAI", "Codex", "ChatGPT desktop", "npm", "Supply chain security"],
+    title: "OpenAI Responds to the TanStack npm Supply Chain Attack",
+    url: "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/",
+    summary:
+      "OpenAI said two employee devices were affected by the broader Mini Shai-Hulud supply chain attack involving TanStack npm, but that it found no evidence user data, production systems, intellectual property, or software builds were compromised. OpenAI is updating macOS application certificates and asking users to update ChatGPT Desktop, Codex App, Codex CLI, and Atlas by June 12, making this a practical reminder to keep AI desktop tools current and to avoid unofficial installers.",
+  },
+  {
     source: "Axios",
     date: "2026-05-14",
     displayDate: "May 14, 2026",
