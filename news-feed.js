@@ -1,5 +1,27 @@
 window.newsFeed = [
   {
+    source: "Axios",
+    date: "2026-05-14",
+    displayDate: "May 14, 2026",
+    category: "ai-general-news",
+    companies: ["Anthropic", "Claude", "Claude Code", "OpenAI", "Codex", "AI agents"],
+    title: "Axios: Anthropic Adds a Separate Meter for Outside Agent Tool Use",
+    url: "https://www.axios.com/2026/05/14/anthropic-claude-price-openai-tokens",
+    summary:
+      "Axios reported that Anthropic is restoring support for third-party agent harnesses on paid Claude plans while putting that usage behind a separate monthly credit meter, as OpenAI courts business users with free Codex usage. For developers choosing between Claude Code, Codex, Copilot CLI, and VS Code agents, the practical signal is that agent workflows are pushing vendors away from simple unlimited subscriptions and toward usage-aware planning.",
+  },
+  {
+    source: "Visual Studio Code",
+    date: "2026-05-13",
+    displayDate: "May 13, 2026",
+    category: "ai-general-news",
+    companies: ["Microsoft", "Visual Studio Code", "GitHub Copilot", "Agents window", "BYOK"],
+    title: "VS Code 1.120 Brings the Agents Window to Stable Preview",
+    url: "https://code.visualstudio.com/updates/v1_120",
+    summary:
+      "The May 2026 VS Code 1.120 Stable release moves the Agents window into preview for Stable users and adds agent-workflow improvements such as easier upstream sync, deterministic change actions, full change views for completed sessions, automatic Copilot CLI plugin discovery, BYOK token-usage visibility, terminal output compression, command risk assessment, and inline plan controls. For agent-heavy work, this makes VS Code a stronger control surface for multi-project coding agents, cost visibility, and safer terminal execution.",
+  },
+  {
     source: "GitHub Changelog",
     date: "2026-05-13",
     displayDate: "May 13, 2026",
@@ -86,17 +108,6 @@ window.newsFeed = [
     url: "https://www.csoonline.com/article/4169046/google-discovers-weaponized-zero-day-exploits-created-with-ai.html",
     summary:
       "CSO Online reported on Google Threat Intelligence Group evidence that a criminal group used AI to help develop a zero-day exploit, including reasoning around a faulty trust assumption. For coding-agent teams, this raises the urgency of defensive agent use: secure code review, dependency hygiene, patch validation, and audit trails should be treated as core workflow requirements, not optional security extras.",
-  },
-  {
-    source: "Visual Studio Code",
-    date: "2026-05-07",
-    displayDate: "May 7, 2026",
-    category: "ai-general-news",
-    companies: ["Microsoft", "Visual Studio Code", "GitHub Copilot", "Copilot CLI"],
-    title: "VS Code 1.120 Adds Context Size Picker and Agent Host Improvements",
-    url: "https://code.visualstudio.com/updates/v1_120",
-    summary:
-      "The VS Code 1.120 Insiders notes add several near-term Copilot workflow improvements: a context size picker in the model picker, GitHub repository metadata in the agent host UI, prompt detection for passwords and passphrases in agent terminals, and Copilot CLI plugin discovery from the local installed-plugins folder. For agent-heavy VS Code users, the practical takeaway is that the editor is making model context, repository-backed sessions, terminal safety, and CLI extensibility easier to manage inside the same development loop.",
   },
   {
     source: "GitHub Changelog",
