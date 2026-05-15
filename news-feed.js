@@ -22,6 +22,17 @@ window.newsFeed = [
       "GitHub added Copilot auto model selection to Copilot cloud agent, allowing the service to choose the best available model based on system health and model performance. The feature also carries a discount on the normal model multiplier and avoids weekly rate limits, which makes model routing, cost planning, and reliability part of the agent workflow rather than a manual model-picker decision every time.",
   },
   {
+    source: "GitHub Changelog",
+    date: "2026-05-14",
+    displayDate: "May 14, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "Usage metrics", "Copilot Enterprise"],
+    title: "GitHub Adds Team-Level Copilot Usage Metrics via API",
+    url: "https://github.blog/changelog/2026-05-14-team-level-copilot-usage-metrics-now-available-via-api/",
+    summary:
+      "GitHub expanded the Copilot usage metrics API with a user-teams report that lets enterprise administrators, organization owners, billing managers, and custom metric roles join team membership to per-user usage data. For engineering leads preparing for AI-credit billing, this makes adoption, model usage, completions, chat, Copilot CLI, code review, and cloud-agent activity easier to analyze by team instead of only at broad organization or enterprise level.",
+  },
+  {
     source: "OpenAI",
     date: "2026-05-14",
     displayDate: "May 14, 2026",
@@ -75,6 +86,17 @@ window.newsFeed = [
     url: "https://code.visualstudio.com/updates/v1_120",
     summary:
       "The May 2026 VS Code 1.120 Stable release moves the Agents window into preview for Stable users and adds agent-workflow improvements such as easier upstream sync, deterministic change actions, full change views for completed sessions, automatic Copilot CLI plugin discovery, BYOK token-usage visibility, terminal output compression, command risk assessment, and inline plan controls. For agent-heavy work, this makes VS Code a stronger control surface for multi-project coding agents, cost visibility, and safer terminal execution.",
+  },
+  {
+    source: "GitHub Changelog",
+    date: "2026-05-13",
+    displayDate: "May 13, 2026",
+    category: "ai-general-news",
+    companies: ["GitHub", "Microsoft", "GitHub Copilot", "JetBrains", "Copilot CLI", "Custom agents"],
+    title: "GitHub Brings Copilot CLI Agent Sessions Into JetBrains IDEs",
+    url: "https://github.blog/changelog/2026-05-13-introducing-copilot-cli-agent-and-unified-sessions-view-in-github-copilot-for-jetbrains-ides/",
+    summary:
+      "GitHub added a public-preview Copilot CLI agent to JetBrains IDEs, plus a unified sessions view, global .agent.md support, an Ask question tool for agent mode, GHES sign-in improvements, and worktree or workspace isolation modes. The update matters for VS Code users because it confirms GitHub is standardizing long-running Copilot CLI sessions, custom agents, and session management across editors rather than keeping agent workflows locked to one IDE.",
   },
   {
     source: "GitHub Changelog",
