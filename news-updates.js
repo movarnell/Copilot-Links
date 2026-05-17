@@ -2,6 +2,17 @@
   const updates = [
     {
       source: "GitHub Changelog",
+      date: "2026-05-17",
+      displayDate: "May 17, 2026",
+      category: "new-models",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "OpenAI", "GPT-5.3-Codex", "Copilot Enterprise"],
+      title: "GPT-5.3-Codex Becomes the Copilot Business and Enterprise Base Model",
+      url: "https://github.blog/changelog/2026-03-18-gpt-5-3-codex-long-term-support-in-github-copilot/",
+      summary:
+        "GitHub's March LTS announcement reached its May 17 milestone: GPT-5.3-Codex is now the base model for Copilot Business and Copilot Enterprise organizations when no other internally approved model is enabled. GitHub says the OpenAI coding model is the first Copilot long-term-support model, remains available through February 4, 2027, and carries a 1x premium request multiplier. For enterprise VS Code users, this is a practical governance change because default model behavior can shift even before teams opt into newer preview models.",
+    },
+    {
+      source: "GitHub Changelog",
       date: "2026-05-15",
       displayDate: "May 15, 2026",
       category: "ai-general-news",
