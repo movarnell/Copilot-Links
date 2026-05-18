@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      source: "OpenAI",
+      date: "2026-05-18",
+      displayDate: "May 18, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "Dell Technologies", "Codex", "Enterprise AI", "Hybrid cloud", "On-premises AI"],
+      title: "OpenAI and Dell Partner to Bring Codex Into Hybrid and On-Prem Enterprise Environments",
+      url: "https://openai.com/index/dell-codex-enterprise-partnership/",
+      summary:
+        "OpenAI and Dell Technologies announced a partnership to help enterprises run Codex closer to governed internal data and systems through Dell AI Data Platform and Dell AI Factory environments. OpenAI says more than 4 million developers now use Codex weekly, and that teams are expanding Codex-powered agents beyond software work into reports, product feedback, sales follow-up, and business-system coordination. For VS Code and coding-agent teams, this is a clear enterprise signal: production agent adoption is moving toward hybrid infrastructure, data governance, and repeatable deployment patterns instead of only browser- or desktop-hosted sessions.",
+    },
+    {
+      source: "Anthropic",
+      date: "2026-05-18",
+      displayDate: "May 18, 2026",
+      category: "ai-general-news",
+      companies: ["Anthropic", "Claude", "Stainless", "MCP", "SDKs", "Developer tools"],
+      title: "Anthropic Acquires Stainless to Strengthen Claude SDK and MCP Tooling",
+      url: "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      summary:
+        "Anthropic acquired Stainless, the developer-tooling company that has generated Anthropic's official SDKs since the early Claude API era and also builds CLIs and MCP servers from API specifications. Anthropic frames the acquisition around agent connectivity: as models act through tools and data systems, the quality of SDKs, connectors, and MCP servers becomes part of model usefulness. For teams building Copilot, Claude Code, Codex, and custom agent workflows, the practical takeaway is that API ergonomics and managed tool connectors are becoming strategic infrastructure, not just library maintenance.",
+    },
+    {
       source: "GitHub Changelog",
       date: "2026-05-17",
       displayDate: "May 17, 2026",
