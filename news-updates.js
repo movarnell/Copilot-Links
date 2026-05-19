@@ -1,6 +1,83 @@
 (function () {
   const updates = [
     {
+      source: "GitHub Changelog",
+      date: "2026-05-18",
+      displayDate: "May 18, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot CLI", "VS Code", "Remote control"],
+      title: "Copilot CLI Remote Control Reaches GA Across Mobile, Web, VS Code, and JetBrains",
+      url: "https://github.blog/changelog/2026-05-18-remote-control-for-copilot-cli-sessions-now-generally-available-on-mobile-web-and-vs-code",
+      summary:
+        "GitHub made remote control for Copilot CLI sessions generally available on GitHub Mobile and github.com, added support for non-GitHub repositories and ordinary directories, and introduced remote control in VS Code and JetBrains. Developers can now start a Copilot CLI session from a terminal or editor, stream progress in real time, steer the session from another device, respond to questions, approve or deny requests, and stop a session remotely. For VS Code users, this makes long-running local agent work more practical, especially when paired with the Agents window and keep-alive workflows.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-18",
+      displayDate: "May 18, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot cloud agent", "GitHub Actions"],
+      title: "Copilot Cloud Agent Adds One-Click Fixes for Failing GitHub Actions",
+      url: "https://github.blog/changelog/2026-05-18-one-click-fixes-for-failing-actions-with-copilot-cloud-agent",
+      summary:
+        "GitHub added a Fix with Copilot button to failing GitHub Actions workflow logs for Copilot Business and Copilot Enterprise subscribers. Copilot cloud agent can investigate the failure, push a fix to the branch, and tag the user for review from its own cloud development environment. The feature is most useful for routine CI failures such as broken tests and linter issues, and it reinforces a practical workflow pattern: let agents handle time-consuming validation repair while humans review the resulting branch before merge.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-18",
+      displayDate: "May 18, 2026",
+      category: "new-models",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "Claude Haiku 4.5", "GPT-5.4 mini", "Copilot cloud agent"],
+      title: "Copilot Cloud Agent Adds Lower-Cost Models for Simple Tasks",
+      url: "https://github.blog/changelog/2026-05-18-copilot-cloud-agent-fast-cost-efficient-models-for-simple-tasks",
+      summary:
+        "GitHub expanded Copilot cloud agent model selection with Claude Haiku 4.5 and GPT-5.4 mini, both listed with 0.33x multipliers. The update gives teams a cheaper, faster option for straightforward delegated changes while preserving stronger models for complex work. For model guidance on this site, the recommendation remains to reserve heavier models for ambiguous planning and reviews, and use 0.33x models for simple fixes, repo scans, and low-risk iteration.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-18",
+      displayDate: "May 18, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot Spaces", "API"],
+      title: "Copilot Spaces API Becomes Generally Available",
+      url: "https://github.blog/changelog/2026-05-18-copilot-spaces-api-now-generally-available",
+      summary:
+        "GitHub made the Copilot Spaces API generally available, letting teams programmatically create, read, update, delete, and manage Spaces, collaborators, and resources. For enterprises using Copilot as a shared knowledge layer, this matters because curated project context can now be managed at scale from internal tools rather than only through manual UI steps. The practical takeaway for agent workflows is to treat Spaces as governed reusable context, especially for standards, architecture notes, and onboarding material.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-18",
+      displayDate: "May 18, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot cloud agent", "Security", "API"],
+      title: "GitHub Adds REST API Auditing for Copilot Cloud Agent Configuration",
+      url: "https://github.blog/changelog/2026-05-18-audit-repository-copilot-cloud-agent-configuration-via-the-rest-api",
+      summary:
+        "GitHub introduced a public-preview REST API for auditing a repository's Copilot cloud agent configuration, including MCP server setup, enabled tools, GitHub Actions workflow policy, and firewall configuration. For organizations rolling out background agents, this is an important governance feature because security teams can inspect agent posture across repositories instead of manually checking each repo. The recommendation is to include this API in agent-readiness checks alongside model policy, network rules, and review requirements.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-18",
+      displayDate: "May 18, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "GitHub.com", "Contextual chat", "Agents"],
+      title: "GitHub Copilot Chat on Web Now Opens in Page Context",
+      url: "https://github.blog/changelog/2026-05-18-ask-questions-in-context-with-copilot-on-web/",
+      summary:
+        "GitHub changed Copilot chat on the web so the Copilot icon opens a contextual panel on the current GitHub page instead of navigating away. Issues, pull requests, and other GitHub surfaces can be attached automatically as context while users navigate, and conversations can be turned into agent sessions by asking Copilot to create a pull request or perform deeper research. For teams, this reduces context switching and makes GitHub.com a more direct bridge between questions, repository context, and agentic follow-through.",
+    },
+    {
+      source: "Visual Studio Code",
+      date: "2026-05-15",
+      displayDate: "May 15, 2026",
+      category: "ai-general-news",
+      companies: ["Microsoft", "Visual Studio Code", "GitHub Copilot", "Agent Host", "Claude", "BYOK"],
+      title: "VS Code 1.121 Iteration Adds Agent Host and BYOK Improvements",
+      url: "https://code.visualstudio.com/updates/v1_121",
+      summary:
+        "The VS Code 1.121 iteration notes add several agent-workflow improvements after the 1.120 stable release, including friendlier Agent Host tool displays, an auto-approve picker for Agent Host connections, automatic permission mode for Claude Agent sessions, custom endpoint BYOK support for OpenAI-compatible and Anthropic-compatible providers, pinned favorite models, integrated-browser Add to Chat improvements, and Mermaid rendering in Copilot CLI chat responses. These are iteration notes, not a stable release replacement, but they show where VS Code agent UX is moving next.",
+    },
+    {
       source: "OpenAI",
       date: "2026-05-18",
       displayDate: "May 18, 2026",
