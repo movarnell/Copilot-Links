@@ -1,6 +1,61 @@
 (function () {
   const updates = [
     {
+      source: "Google",
+      date: "2026-05-19",
+      displayDate: "May 19, 2026",
+      category: "new-models",
+      companies: ["Google", "Gemini", "Gemini 3.5 Flash", "Gemini Omni", "Google I/O", "Antigravity"],
+      title: "Google I/O 2026 Introduces Gemini 3.5 Flash and Gemini Omni",
+      url: "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/",
+      summary:
+        "Google's I/O 2026 announcements center on a more agentic Gemini platform, including Gemini 3.5 Flash, the first model in a new family built around frontier intelligence plus action, and Gemini Omni, a multimodal creation model that starts with video. Google also highlighted Antigravity as its agent-first development platform, signaling that its developer story is moving from AI-assisted writing toward agents that can plan, act, and build. For VS Code and coding-agent users, this adds another major model family to watch for fast agent execution and multimodal workflow support.",
+    },
+    {
+      source: "Google",
+      date: "2026-05-19",
+      displayDate: "May 19, 2026",
+      category: "ai-general-news",
+      companies: ["Google", "Gemini", "Gemini Spark", "Gemini app", "Workspace", "MCP", "macOS"],
+      title: "Google Makes the Gemini App More Proactive With Daily Brief and Gemini Spark",
+      url: "https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/",
+      summary:
+        "Google announced a redesigned Gemini app with Gemini 3.5 Flash, Gemini Omni, Daily Brief, and Gemini Spark, a cloud-based personal AI agent designed to keep working across connected apps under user direction. Spark is built on Gemini 3.5 and the Antigravity harness, connects with Workspace tools, and is planned to gain MCP connections, custom sub-agents, browser operation, and macOS desktop automation. The practical takeaway is that consumer AI assistants are adopting the same long-running, tool-using agent patterns that coding agents already use, with explicit permission checkpoints for high-stakes actions.",
+    },
+    {
+      source: "OpenAI",
+      date: "2026-05-19",
+      displayDate: "May 19, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "C2PA", "SynthID", "Content Credentials", "Codex", "AI safety"],
+      title: "OpenAI Adds SynthID and Public Verification to Its Content Provenance Stack",
+      url: "https://openai.com/index/advancing-content-provenance/",
+      summary:
+        "OpenAI strengthened its AI-generated media provenance approach by becoming a C2PA conforming generator product, adding Google DeepMind SynthID watermarking for images generated through ChatGPT, Codex, or the OpenAI API, and previewing a public verification tool. OpenAI frames the update as a layered system: C2PA metadata carries signed context, while SynthID gives a more durable signal when metadata is stripped or transformed. For teams using AI image and content workflows, this is a governance signal that provenance, verification, and platform interoperability are becoming core product requirements.",
+    },
+    {
+      source: "Anthropic",
+      date: "2026-05-19",
+      displayDate: "May 19, 2026",
+      category: "ai-general-news",
+      companies: ["Anthropic", "Claude", "KPMG", "Digital Gateway", "Enterprise AI", "Cybersecurity"],
+      title: "KPMG Will Roll Out Claude Across More Than 276,000 Employees",
+      url: "https://www.anthropic.com/news/anthropic-kpmg",
+      summary:
+        "Anthropic and KPMG announced a global alliance that gives more than 276,000 KPMG employees access to Claude and embeds Claude into KPMG's Digital Gateway platform, starting with new tax and legal tools. The partnership also names KPMG a preferred Anthropic partner for private equity and includes work on cybersecurity use cases such as finding and fixing vulnerabilities in critical systems. For enterprise AI teams, this is another signal that Claude adoption is moving into governed internal platforms, client delivery workflows, and security-sensitive operations rather than isolated pilots.",
+    },
+    {
+      source: "TechCrunch",
+      date: "2026-05-19",
+      displayDate: "May 19, 2026",
+      category: "ai-general-news",
+      companies: ["Google", "Gemini 3.5 Flash", "Antigravity", "AI agents", "Coding agents"],
+      title: "TechCrunch: Gemini 3.5 Flash Shows Google's Shift From Chatbots to Agents",
+      url: "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/",
+      summary:
+        "TechCrunch reported that Google is positioning Gemini 3.5 Flash around coding and autonomous agent work, including multi-agent execution inside Antigravity 2.0. The report says Google describes Flash as faster than prior frontier models and designed for long-running agentic tasks where sub-agents can split work, coordinate, and pause for human judgment at decision or permission points. For developer workflows, the important takeaway is competitive pressure: coding-agent platforms are increasingly being judged on model speed, orchestration, tool execution, and how clearly they handle human approval boundaries.",
+    },
+    {
       source: "GitHub Changelog",
       date: "2026-05-18",
       displayDate: "May 18, 2026",
