@@ -2,6 +2,72 @@
   const updates = [
     {
       source: "GitHub Changelog",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "VS Code", "Auto model selection", "Premium requests"],
+      title: "Copilot Auto Model Selection Now Routes VS Code Tasks by Need",
+      url: "https://github.blog/changelog/2026-05-20-auto-model-selection-now-routes-based-on-your-task-in-vs-code/",
+      summary:
+        "GitHub updated Copilot auto model selection in VS Code so Auto weighs real-time model health, availability, reasoning needs, code-generation complexity, bug diagnosis difficulty, and tool orchestration before picking a model. GitHub says Auto still respects admin model policies, lets users switch back to a specific model, and shows the selected model on hover. The billing detail matters for teams: Auto currently chooses from 0x to 1x multiplier models and gives paid subscribers a 10% discount on the selected multiplier, so it is now both a workflow and cost-control feature.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "new-models",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "Gemini", "GPT-5.2 Codex", "GPT-5.4 nano"],
+      title: "GitHub Narrows Copilot Web Chat Model Choices",
+      url: "https://github.blog/changelog/2026-05-20-updates-to-available-models-in-copilot-on-web/",
+      summary:
+        "GitHub removed all Gemini models plus several other models, including GPT-5.2 Codex and GPT-5.4 nano, from Copilot Chat on github.com to keep web chat focused on a smaller set of models with more consistent response quality. OpenAI and Claude models remain available across price points, but GitHub says future web-chat rollouts will be more limited than the broader Copilot model ecosystem. For users, this is a reminder that model availability can differ by surface: VS Code, cloud agent, and web chat should not be treated as identical model menus.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "Issues", "Projects", "Triage"],
+      title: "Copilot Chat Adds Semantic Issue Search on GitHub Web",
+      url: "https://github.blog/changelog/2026-05-20-semantic-issue-search-in-copilot-chat/",
+      summary:
+        "GitHub made semantic issue search generally available in Copilot Chat on the web for all Copilot plans. Instead of depending only on exact keywords and manual filters, Copilot can use a semantic issues index to find, group, and analyze issues that match the user's intent even when the wording differs. This is useful for planning and triage work because developers can ask natural-language questions about repository issues when they do not remember the exact title, label, platform, or environment details.",
+    },
+    {
+      source: "Google",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "ai-general-news",
+      companies: ["Google", "Gemini", "Google Search", "Antigravity", "AI Mode", "AI agents"],
+      title: "Google Search Adds Agents and Antigravity-Powered Generative UI",
+      url: "https://blog.google/products-and-platforms/products/search/search-io-2026/",
+      summary:
+        "Google outlined its I/O 2026 Search changes, including Gemini 3.5 Flash as the new default model in AI Mode, a redesigned AI-powered search box, follow-up questions from AI Overviews into AI Mode, background information agents, and agentic booking capabilities. The developer-facing piece is Antigravity in Search: Google says Search will be able to create custom generative UI, simulations, dashboards, and task trackers on demand, with some mini-app experiences starting first for Google AI Pro and Ultra subscribers. This pushes coding-agent behavior into a mainstream search surface rather than keeping it only inside IDEs.",
+    },
+    {
+      source: "OpenAI",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "ChatGPT Edu", "Codex", "Education for Countries", "Singapore", "Government AI"],
+      title: "OpenAI Expands Education for Countries With Singapore and Codex for Teachers",
+      url: "https://openai.com/index/the-next-phase-of-education-for-countries/",
+      summary:
+        "OpenAI shared the next phase of its Education for Countries program, describing government-led deployments of ChatGPT, Codex, and API access for learning, teacher training, and measurement of real classroom impact. Singapore is joining the program through OpenAI for Singapore, with Ministry of Education and GovTech use cases such as personalized support for mother-tongue language learning, practical workshops, OpenAI Academy work, and Codex for Teachers hackathons. For AI adoption watchers, this is a governance signal: OpenAI is trying to pair broad agent access with measurement, local deployment, and teacher-led use cases.",
+    },
+    {
+      source: "Singapore EDB",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "ai-general-news",
+      companies: ["Singapore", "OpenAI", "Google", "NVIDIA", "IMDA", "Agentic AI"],
+      title: "Singapore Announces AI Deployment Push With OpenAI, Google, NVIDIA, and Agentic Governance",
+      url: "https://www.edb.gov.sg/en/about-edb/media-releases-publications/singapore-grows-ai-ecosystem-for-real-world-deployment.html",
+      summary:
+        "Singapore announced a set of AI partnerships at ATxSummit 2026 focused on real-world deployment rather than pilots, including OpenAI for Singapore, a Google National AI Partnership, an NVIDIA AI research lab, a physical-AI testbed in Punggol Digital District, and updated governance work for agentic AI. The OpenAI partnership is listed as a commitment of more than S$300 million, while the Google work includes AI agents for public-good use cases and a whitepaper based on an AI Agents Sandbox. The practical takeaway is that agentic AI is becoming a public-sector deployment and governance issue, not just a product-launch topic.",
+    },
+    {
+      source: "GitHub Changelog",
       date: "2026-05-19",
       displayDate: "May 19, 2026",
       category: "new-models",
