@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      source: "GitHub Changelog",
+      date: "2026-05-19",
+      displayDate: "May 19, 2026",
+      category: "new-models",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "Google", "Gemini 3.5 Flash", "VS Code"],
+      title: "Gemini 3.5 Flash Is Generally Available in GitHub Copilot",
+      url: "https://github.blog/changelog/2026-05-19-gemini-3-5-flash-is-generally-available-for-github-copilot/",
+      summary:
+        "GitHub made Gemini 3.5 Flash generally available for Copilot Pro, Pro+, Business, and Enterprise users, with rollout across VS Code, Visual Studio, JetBrains, Xcode, and Eclipse. GitHub describes it as a Flash-tier model with strong tool use, fast response times, and high cache efficiency for iterative agentic coding, but the launch carries a tentative 14x premium request multiplier. The practical recommendation is to test it for speed-sensitive agent work, but keep it out of budget-sensitive default flows until its pricing settles.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-19",
+      displayDate: "May 19, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "Copilot cloud agent", "Code review", "Pull requests"],
+      title: "Copilot Code Review Feedback Can Now Hand Off Directly to Cloud Agent",
+      url: "https://github.blog/changelog/2026-05-19-easily-apply-copilot-code-review-feedback-with-copilot-cloud-agent/",
+      summary:
+        "GitHub renamed the Copilot code review Implement suggestion action to Fix with Copilot and added a dialog for choosing whether the change should land directly on the current pull request or open a new pull request targeting the branch. The same update replaces Implement all suggestions with Fix batch with Copilot, so developers can select multiple review comments and hand the batch to Copilot cloud agent. For agent workflows, this makes AI review less of a comment-only surface and more of a controlled repair handoff with model choice and optional instructions.",
+    },
+    {
       source: "Google",
       date: "2026-05-19",
       displayDate: "May 19, 2026",
