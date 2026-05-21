@@ -1,6 +1,39 @@
 (function () {
   const updates = [
     {
+      source: "Visual Studio Code",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "ai-general-news",
+      companies: ["Microsoft", "Visual Studio Code", "GitHub Copilot", "Agents Window", "Agent Host Protocol", "Remote agents"],
+      title: "VS Code 1.121 Ships Remote Agents and Agent Terminal Improvements",
+      url: "https://code.visualstudio.com/updates/v1_121",
+      summary:
+        "Microsoft released VS Code 1.121 with several practical agent-workflow updates: remote agent sessions from the Agents window over SSH or Dev Tunnels, the open Agent Host Protocol for coordinating agent sessions across clients, OpenTelemetry/Grafana observability for agent operations, configurable utility models for lightweight Copilot tasks, built-in Mermaid and HTML previews, and terminal changes that make agent-run commands easier to detect, monitor, compress, and clean up. The recommendation for VS Code users is to treat 1.121 as the current stable reference for Agents window behavior, especially if they run long-lived agent sessions on another machine.",
+    },
+    {
+      source: "Google",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "ai-general-news",
+      companies: ["Google", "Google I/O", "Gemini 3.5 Flash", "Gemini Omni", "Antigravity", "Android Studio"],
+      title: "Google I/O Roundup Confirms Gemini 3.5 Flash Across Antigravity, API, and Android Studio",
+      url: "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      summary:
+        "Google's official I/O 2026 roundup confirms Gemini 3.5 Flash as generally available through Google Antigravity, the Gemini API in AI Studio, and Android Studio, while also highlighting Gemini Omni, agentic Search, Gemini Spark, and new developer tooling. For coding-agent watchers, the key update is that Google's fastest new Gemini model is not only a consumer assistant feature; it is being positioned directly in developer surfaces where agents can plan, act, and iterate.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "Microsoft", "GitHub Copilot", "Usage metrics", "Enterprise reporting"],
+      title: "Copilot Usage Metrics Reports Move to GitHub-Owned Download URLs",
+      url: "https://github.blog/changelog/2026-05-20-copilot-usage-metrics-reports-now-use-github-owned-download-urls/",
+      summary:
+        "GitHub changed Copilot usage metrics report downloads so generated reports now use GitHub-owned URLs. The change is mostly operational, but it matters for organizations preparing for June usage-based billing because Copilot reporting, archival, allow-listing, and compliance workflows should expect report links to resolve through GitHub infrastructure rather than older download locations.",
+    },
+    {
       source: "GitHub Changelog",
       date: "2026-05-20",
       displayDate: "May 20, 2026",
