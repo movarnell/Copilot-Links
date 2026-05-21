@@ -1,6 +1,50 @@
 (function () {
   const updates = [
     {
+      source: "OpenAI",
+      date: "2026-05-21",
+      displayDate: "May 21, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "ChatGPT", "Healthcare", "Enterprise AI", "AI adoption"],
+      title: "AdventHealth Uses ChatGPT to Cut Administrative Work Across Care Teams",
+      url: "https://openai.com/index/adventhealth/",
+      summary:
+        "OpenAI published an AdventHealth deployment case study showing ChatGPT for Healthcare being used to reduce administrative workload, generate structured chart summaries, support utilization-management reviews, and help clinical and operational teams reclaim time for patient care. The useful adoption lesson for AI teams is that AdventHealth treats usage, workflow time, and throughput as measurable operating metrics instead of running AI as isolated pilots, which mirrors the same governance pattern developer-tool teams need when rolling out agents across an organization.",
+    },
+    {
+      source: "Axios",
+      date: "2026-05-21",
+      displayDate: "May 21, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "Anthropic", "NVIDIA", "SpaceX", "AI infrastructure", "AI policy"],
+      title: "Axios Frames May 20 as a Compressed Snapshot of the AI Boom",
+      url: "https://www.axios.com/2026/05/21/ai-news-cycle-openai-anthropic-spacex",
+      summary:
+        "Axios tied together a fast sequence of AI developments from May 20: OpenAI's autonomous discrete-geometry result, Anthropic's reported path to profitability, expanding compute commitments, NVIDIA data-center demand, SpaceX's AI infrastructure ambitions, and a pending White House AI executive order. For VS Code and agent users, the broader signal is that model progress, enterprise demand, compute supply, and policy pressure are now moving together, so tool choices increasingly depend on infrastructure, governance, and cost visibility as much as raw model quality.",
+    },
+    {
+      source: "OpenAI",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "Codex", "GPT-5.5", "Ramp", "Code review", "AI agents"],
+      title: "Ramp Engineers Use Codex With GPT-5.5 for Code Review and On-Call Tooling",
+      url: "https://openai.com/index/ramp/",
+      summary:
+        "OpenAI published a Ramp customer story describing engineers using Codex with GPT-5.5 for substantive pull request review in minutes, deeper repository reasoning, and development of an internal on-call assistant. The practical takeaway for teams using coding agents is that the highest-value deployments are being treated as developer-experience systems with feedback loops, CLI and app workflows, and agentic internal tools, not just as one-off prompt experiments.",
+    },
+    {
+      source: "OpenAI",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "mythos-news",
+      companies: ["OpenAI", "AI research", "Mathematics", "Reasoning models", "Scientific discovery"],
+      title: "OpenAI Says a General-Purpose Model Disproved an 80-Year Discrete Geometry Conjecture",
+      url: "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+      summary:
+        "OpenAI said an internal general-purpose reasoning model produced a proof that disproves a long-standing conjecture in the planar unit distance problem, with external mathematicians checking the result and companion remarks explaining the significance. Even though this is research rather than a coding-product launch, it matters for agent workflows because it points to stronger long-horizon reasoning: models that can sustain difficult arguments may become more useful for codebase architecture, verification, scientific computing, and other work where shallow autocomplete is not enough.",
+    },
+    {
       source: "Visual Studio Code",
       date: "2026-05-20",
       displayDate: "May 20, 2026",
