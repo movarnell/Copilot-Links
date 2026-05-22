@@ -1,6 +1,50 @@
 (function () {
   const latestUpdates = [
     {
+      source: "OpenAI Help",
+      date: "2026-05-21",
+      displayDate: "May 21, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "Codex", "ChatGPT", "Computer Use", "Goal mode", "AI agents"],
+      title: "OpenAI Adds Appshots, Goal Mode GA, and Locked Computer Use to Codex",
+      url: "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      summary:
+        "OpenAI's latest ChatGPT release notes add several Codex workflow updates: Appshots for attaching Mac app-window context, Goal mode generally available across the Codex app, IDE extension, and CLI, more precise in-app browser annotations, locked computer use for eligible Mac Computer Use users, and browser-use reliability improvements. For VS Code and agent users, the practical signal is that Codex is moving toward longer-running, supervised work where the model can understand local UI context and keep tasks moving across more surfaces.",
+    },
+    {
+      source: "Axios",
+      date: "2026-05-21",
+      displayDate: "May 21, 2026",
+      category: "ai-general-news",
+      companies: ["Google", "OpenAI", "Anthropic", "Gemini", "AI agents", "AI infrastructure"],
+      title: "Axios: Google Is Trying to Turn Scale Into an AI Advantage",
+      url: "https://www.axios.com/2026/05/21/google-ai-anthropic-openai-war",
+      summary:
+        "Axios framed Google's I/O push as a strategy built around distribution, infrastructure, and product reach rather than only benchmark leadership. The piece contrasts Google with OpenAI and Anthropic, noting that Gemini 3.5 Flash reflects a bet on fast, cheaper models that can be deployed across massive products while the frontier race remains close. For AI-tool watchers, the takeaway is that model selection may increasingly depend on cost, latency, platform reach, and integration depth, not only raw frontier scores.",
+    },
+    {
+      source: "TechCrunch",
+      date: "2026-05-21",
+      displayDate: "May 21, 2026",
+      category: "ai-general-news",
+      companies: ["Hark", "NVIDIA", "AMD", "Qualcomm", "Salesforce", "AI hardware"],
+      title: "Hark Raises $700 Million to Build a Universal AI Interface",
+      url: "https://techcrunch.com/2026/05/21/hark-raises-700m-series-a-for-its-secretive-universal-ai-interface/",
+      summary:
+        "TechCrunch reported that Hark raised a $700 million Series A at a $6 billion post-money valuation to build models, hardware, and a personal AI platform meant to act as a universal interface for digital tasks. The company expects multimodal models this summer and eventual hardware devices, but still has to prove product clarity, privacy handling, and whether a consumer agent can feel useful beyond developer workflows. The story is worth tracking because capital is shifting toward native AI interfaces, not just chat windows and IDE plug-ins.",
+    },
+    {
+      source: "TechCrunch",
+      date: "2026-05-21",
+      displayDate: "May 21, 2026",
+      category: "ai-general-news",
+      companies: ["Google", "Gemini", "Gemini Spark", "Android", "AI agents", "Google I/O"],
+      title: "TechCrunch Questions Whether Google's Consumer Agent Ecosystem Is Clear Enough",
+      url: "https://techcrunch.com/2026/05/21/google-is-pitching-an-ai-agent-ecosystem-to-consumers-who-may-not-buy-it/",
+      summary:
+        "TechCrunch argued that Google's I/O agent announcements show ambition but also product complexity: information agents, Gemini Spark, Android Halo, Daily Brief, AI-first Search, and agentic Chrome all point toward background assistants, but many features are gated to paid tiers or not broadly available yet. For teams designing AI tools, the useful lesson is product focus: agent capability alone is not enough if users cannot tell which assistant handles which job, what data it sees, and why the workflow is worth trusting.",
+    },
+    {
       source: "AP News",
       date: "2026-05-21",
       displayDate: "May 21, 2026",
