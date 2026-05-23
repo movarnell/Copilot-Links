@@ -1,6 +1,39 @@
 (function () {
   const latestUpdates = [
     {
+      source: "TechCrunch",
+      date: "2026-05-23",
+      displayDate: "May 23, 2026",
+      category: "ai-general-news",
+      companies: ["IBM", "Ferrari", "Formula One", "Enterprise AI", "Personalization", "Fan engagement"],
+      title: "Ferrari Uses IBM AI to Turn Race Data Into Personalized Fan Experiences",
+      url: "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/",
+      summary:
+        "TechCrunch reported that Ferrari and IBM are using AI in the Ferrari fan app to turn race data, engagement signals, and team storytelling into more personalized experiences. The app now includes AI-written race summaries, games, prediction features, and an AI companion, with Ferrari citing stronger race-weekend engagement after the IBM partnership. For AI product teams, the useful signal is that applied AI is moving beyond chat assistants into domain-specific customer experiences where data, trust, and repeat engagement matter as much as the model itself.",
+    },
+    {
+      source: "TechCrunch",
+      date: "2026-05-22",
+      displayDate: "May 22, 2026",
+      category: "ai-general-news",
+      companies: ["NTSB", "Codex", "Synthetic media", "AI safety", "Transportation"],
+      title: "NTSB Closes Some Dockets After AI-Recreated Pilot Voices Circulate Online",
+      url: "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
+      summary:
+        "TechCrunch reported that the National Transportation Safety Board temporarily removed public access to its docket system after people used public spectrogram and transcript data to recreate cockpit voice audio from a fatal UPS crash. The report says social posts referenced AI tools, including Codex, in the reconstruction workflow. For agent users, the important lesson is boundary-setting: capable coding and media tools can combine public technical artifacts into sensitive outputs, so teams need data-release review, misuse thinking, and human judgment around what should be reconstructed even when it is technically possible.",
+    },
+    {
+      source: "TechCrunch",
+      date: "2026-05-22",
+      displayDate: "May 22, 2026",
+      category: "ai-general-news",
+      companies: ["AI startups", "Venture capital", "ARR", "Enterprise AI", "AI economics"],
+      title: "TechCrunch Examines Inflated ARR Claims Across AI Startups",
+      url: "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
+      summary:
+        "TechCrunch examined how some AI startups and investors blur annual recurring revenue with contracted or committed ARR, making growth look stronger before customers are fully onboarded or revenue is actually collected. The piece matters for enterprise AI buyers because inflated metrics can hide product-delivery risk, long implementation timelines, churn, and usage economics. For teams tracking AI tools, it is a reminder to look past headline valuations and ask whether adoption, retention, cost-to-serve, and production outcomes support the claimed momentum.",
+    },
+    {
       source: "Anthropic",
       date: "2026-05-22",
       displayDate: "May 22, 2026",
