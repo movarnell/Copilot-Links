@@ -1,6 +1,28 @@
 (function () {
   const latestUpdates = [
     {
+      source: "Anthropic",
+      date: "2026-05-22",
+      displayDate: "May 22, 2026",
+      category: "mythos-news",
+      companies: ["Anthropic", "Claude", "Mythos Preview", "Project Glasswing", "Open source security", "Cybersecurity"],
+      title: "Anthropic Shares First Project Glasswing Results From AI-Assisted Security Scans",
+      url: "https://www.anthropic.com/news/glasswing-initial-update",
+      summary:
+        "Anthropic's first Project Glasswing update says Claude Mythos Preview has helped roughly 50 partners find more than ten thousand high- or critical-severity vulnerabilities and has scanned more than 1,000 open-source projects. Anthropic says independent review of a subset found a 90.6% true-positive rate, while emphasizing that verification, coordinated disclosure, and patching are now the bottlenecks. For coding-agent users, the important signal is both promise and caution: stronger models can materially improve defensive code review, but high-impact security work still needs controlled release, human triage, and responsible disclosure.",
+    },
+    {
+      source: "Fortune",
+      date: "2026-05-22",
+      displayDate: "May 22, 2026",
+      category: "ai-general-news",
+      companies: ["Microsoft", "Anthropic", "Claude Code", "GitHub Copilot", "Copilot CLI", "AI cost governance"],
+      title: "Fortune Highlights Enterprise AI Cost Pressure Around Claude Code and Copilot CLI",
+      url: "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+      summary:
+        "Fortune reported on the enterprise cost pressure behind Microsoft's reported move away from broad internal Claude Code licensing and toward GitHub Copilot CLI for many developers. The piece is useful less as a product-launch story than as a budget warning: agentic coding tools can shift teams from predictable seat pricing into usage-sensitive token and model costs. For this site's model guidance, that reinforces the current recommendation to start routine work on included or low-multiplier models, reserve frontier models for narrow high-value decisions, and monitor usage before June billing changes.",
+    },
+    {
       source: "OpenAI Help",
       date: "2026-05-21",
       displayDate: "May 21, 2026",
