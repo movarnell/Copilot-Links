@@ -1,6 +1,28 @@
 (function () {
   const latestUpdates = [
     {
+      source: "OpenAI",
+      date: "2026-05-22",
+      displayDate: "May 22, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "Codex", "Gartner", "Enterprise AI Coding Agents", "Software development"],
+      title: "OpenAI Says Gartner Named It a Leader in Enterprise AI Coding Agents",
+      url: "https://openai.com/index/gartner-2026-agentic-coding-leader/",
+      summary:
+        "OpenAI published its response to Gartner's 2026 Magic Quadrant for Enterprise AI Coding Agents, saying Codex is now used by more than 4 million people each week and highlighting enterprise deployments at companies such as Cisco, Datadog, Dell Technologies, and NVIDIA. The practical signal for VS Code and Copilot users is that coding agents are being evaluated as an enterprise software category, not just as editor autocomplete. Teams should expect vendor comparisons to focus on repository reasoning, tool use, governance, deployment controls, and measurable software-delivery outcomes.",
+    },
+    {
+      source: "OpenAI",
+      date: "2026-05-22",
+      displayDate: "May 22, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "Codex", "Virgin Atlantic", "Enterprise software", "Testing", "Refactoring"],
+      title: "Virgin Atlantic Uses Codex to Ship and Refactor Production Software Faster",
+      url: "https://openai.com/index/virgin-atlantic",
+      summary:
+        "OpenAI's Virgin Atlantic case study says the airline used Codex to strengthen test coverage before a high-stakes mobile-app launch, ship with no P1 launch defects, and cut some legacy refactors from roughly two weeks to about 30 minutes. The relevant takeaway for developer teams is not just speed: mature Codex adoption is being framed around test coverage, defect reduction, refactoring safety, and delivery coordination. That is the same operating model this site's agent guidance recommends for production codebases: let agents accelerate work, but keep verification and release quality visible.",
+    },
+    {
       source: "TechCrunch",
       date: "2026-05-23",
       displayDate: "May 23, 2026",
@@ -98,6 +120,17 @@
       url: "https://techcrunch.com/2026/05/21/google-is-pitching-an-ai-agent-ecosystem-to-consumers-who-may-not-buy-it/",
       summary:
         "TechCrunch argued that Google's I/O agent announcements show ambition but also product complexity: information agents, Gemini Spark, Android Halo, Daily Brief, AI-first Search, and agentic Chrome all point toward background assistants, but many features are gated to paid tiers or not broadly available yet. For teams designing AI tools, the useful lesson is product focus: agent capability alone is not enough if users cannot tell which assistant handles which job, what data it sees, and why the workflow is worth trusting.",
+    },
+    {
+      source: "AP News",
+      date: "2026-05-18",
+      displayDate: "May 18, 2026",
+      category: "ai-general-news",
+      companies: ["Vatican", "Anthropic", "AI ethics", "AI governance", "Human dignity"],
+      title: "AP: Pope Leo XIV and Anthropic Co-Founder to Launch AI Encyclical on May 25",
+      url: "https://apnews.com/article/9cf3e07fd691f6af510c4a6f9c8ba353",
+      summary:
+        "AP reported that Pope Leo XIV and Anthropic co-founder Jack Clark are scheduled to launch the pontiff's first encyclical on May 25, focused on human dignity in the era of artificial intelligence. The item is not a developer-product release, but it is worth tracking because it puts AI governance, labor, safety, and human agency into a major global institutional forum. For teams adopting agents and model-assisted workflows, it reinforces that AI rollouts should be evaluated through trust, accountability, and human-impact lenses, not only through productivity metrics.",
     },
     {
       source: "AP News",
