@@ -1,6 +1,39 @@
 (function () {
   const latestUpdates = [
     {
+      source: "AP News",
+      date: "2026-05-25",
+      displayDate: "May 25, 2026",
+      category: "ai-general-news",
+      companies: ["Vatican", "Anthropic", "AI regulation", "AI ethics", "Human dignity"],
+      title: "Pope Leo XIV Calls for Robust AI Regulation in First Encyclical",
+      url: "https://apnews.com/article/d92d0108730d146baa46da041b8523da",
+      summary:
+        "AP reported that Pope Leo XIV issued his first encyclical, Magnifica Humanitas, calling for stronger regulation of artificial intelligence and urging developers to prioritize the common good over profit. Anthropic co-founder Christopher Olah joined the Vatican presentation and welcomed the pope's concern. For AI builders and agent users, the important signal is that governance pressure is broadening beyond product safety teams: labor impact, war, human dignity, accountability, and concentration of power are becoming part of mainstream AI adoption debates.",
+    },
+    {
+      source: "TechCrunch",
+      date: "2026-05-24",
+      displayDate: "May 24, 2026",
+      category: "ai-general-news",
+      companies: ["Google Cloud", "Gemini", "AI security", "Shadow AI", "Enterprise governance"],
+      title: "TechCrunch: Even Google Is Navigating AI Security in Real Time",
+      url: "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/",
+      summary:
+        "TechCrunch used comments from Google Cloud COO Francis de Souza and recent Gemini API-key incidents to frame the enterprise AI security problem: companies need data strategy, platform governance, auditability, and consistent controls across clouds before agents roam internal systems. The piece also highlights practical risks around shadow AI, stale data repositories, API-key scope expansion, billing exposure, and delayed credential revocation. For this site's guidance, it reinforces that agent adoption should include permission review, budget caps, secret hygiene, and audit trails from the start.",
+    },
+    {
+      source: "GitHub Blog",
+      date: "2026-05-22",
+      displayDate: "May 22, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Gartner", "Enterprise AI Coding Agents", "Developer productivity"],
+      title: "GitHub Says Copilot Was Named a Gartner Leader for Enterprise AI Coding Agents",
+      url: "https://github.blog/ai-and-ml/github-copilot/github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row/",
+      summary:
+        "GitHub said Gartner recognized GitHub as a Leader in the 2026 Magic Quadrant for Enterprise AI Coding Agents, emphasizing Copilot's breadth across IDEs, CLI, cloud agent work, code review, governance, and enterprise deployment. The useful takeaway for VS Code users is that Copilot is now being positioned as a managed agent platform rather than a single editor feature. That makes current model selection, policy controls, agent-session review, and usage monitoring more important than treating chat, completions, and background agents as separate tools.",
+    },
+    {
       source: "OpenAI",
       date: "2026-05-22",
       displayDate: "May 22, 2026",
