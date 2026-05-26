@@ -1,6 +1,17 @@
 (function () {
   const latestUpdates = [
     {
+      source: "Anthropic",
+      date: "2026-05-25",
+      displayDate: "May 25, 2026",
+      category: "ai-general-news",
+      companies: ["Anthropic", "Claude", "AI safety", "AI ethics", "AI governance", "Vatican"],
+      title: "Anthropic Publishes Chris Olah's Remarks on Pope Leo XIV's AI Encyclical",
+      url: "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+      summary:
+        "Anthropic published co-founder Chris Olah's remarks from the Vatican presentation of Pope Leo XIV's Magnifica Humanitas encyclical on AI. Olah argued that frontier labs operate under commercial, research, geopolitical, pride, and ambition pressures, making outside scrutiny from religious communities, civil society, scholars, governments, and other informed critics essential. The practical takeaway for AI builders is that safety cannot be treated as a lab-only discipline: labor displacement, global benefit-sharing, human flourishing, and uncertainty about model internals need broader review before agentic systems become deeply embedded in work and public life.",
+    },
+    {
       source: "AP News",
       date: "2026-05-25",
       displayDate: "May 25, 2026",
