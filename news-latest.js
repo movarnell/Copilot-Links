@@ -1,6 +1,39 @@
 (function () {
   const latestUpdates = [
     {
+      source: "Visual Studio Code",
+      date: "2026-05-20",
+      displayDate: "May 20, 2026",
+      category: "ai-general-news",
+      companies: ["Microsoft", "Visual Studio Code", "GitHub Copilot", "Agent Sessions", "Copilot setup"],
+      title: "VS Code Refreshes Copilot Setup and Agent Guidance",
+      url: "https://code.visualstudio.com/docs/copilot/overview",
+      summary:
+        "Microsoft's current VS Code Copilot docs now frame Copilot around agent sessions that can plan, edit, run commands, verify results, and move between editor, background, cloud, local, and third-party agent surfaces. The setup docs also note that new sign-ups for Copilot Pro, Pro+, and student plans remain temporarily paused while existing subscribers and eligible accounts can continue using the available plan paths. For this site, the practical update is to teach Copilot as an agent platform with policy, plan availability, and workspace-control checks rather than just a chat extension.",
+    },
+    {
+      source: "Visual Studio Code",
+      date: "2026-05-15",
+      displayDate: "May 15, 2026",
+      category: "ai-general-news",
+      companies: ["Microsoft", "Visual Studio Code", "GitHub Copilot", "Coding agents", "Model selection"],
+      title: "VS Code Explains Why the Coding Harness Matters as Much as the Model",
+      url: "https://code.visualstudio.com/blogs/2026/05/15/coding-harness",
+      summary:
+        "The VS Code team published a deeper explanation of the coding harness behind Copilot: the agent loop, tools, context handling, system prompts, terminal integration, debugging, source control, and evaluation layer that turn a model into a working developer experience. The useful takeaway is that model choice alone is no longer the right comparison point. Teams should evaluate whether their editor harness exposes the right tools safely, preserves context, supports multiple model providers, and verifies work before treating a newer model as an automatic upgrade.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-14",
+      displayDate: "May 14, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Copilot app", "Agentic development", "Pull requests"],
+      title: "GitHub Copilot App Enters Technical Preview",
+      url: "https://github.blog/changelog/2026-05-14-github-copilot-app-is-now-available-in-technical-preview/",
+      summary:
+        "GitHub announced a technical preview of the GitHub Copilot app, a GitHub-native desktop experience for starting agentic sessions from issues, pull requests, prompts, or prior sessions, keeping work isolated, steering the agent, validating results, and landing changes through pull request review. Business and Enterprise access requires preview features and Copilot CLI policy enablement. This is relevant to VS Code users because Copilot's agent workflow is spreading beyond one editor surface into a coordinated GitHub-to-desktop-to-PR loop.",
+    },
+    {
       source: "Anthropic",
       date: "2026-05-25",
       displayDate: "May 25, 2026",
