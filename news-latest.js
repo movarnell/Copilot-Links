@@ -1,6 +1,50 @@
 (function () {
   const latestUpdates = [
     {
+      source: "OpenAI",
+      date: "2026-05-27",
+      displayDate: "May 27, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "Codex", "Thrive Holdings", "Crete", "Tax AI", "Agent evaluation"],
+      title: "OpenAI Shows How Codex Can Drive Self-Improving Domain Agents",
+      url: "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+      summary:
+        "OpenAI and Thrive Holdings described a Tax AI workflow for Crete accountants that uses practitioner corrections, production traces, targeted evals, and Codex-driven engineering tasks to improve a deployed tax-preparation agent over time. The system reportedly processed 7,000 returns during the pilot, saved practitioners about a third of preparation time, and raised measured field-completion quality as the season progressed. For developer teams, the practical lesson is that agent improvement needs more than prompts: production evidence, reviewed failure grouping, eval gates, human review, and scoped tool access are the operating model that turns coding agents into durable product infrastructure.",
+    },
+    {
+      source: "TechCrunch",
+      date: "2026-05-27",
+      displayDate: "May 27, 2026",
+      category: "ai-general-news",
+      companies: ["Cognition", "Devin", "AI coding agents", "OpenAI Codex", "Claude Code", "Windsurf"],
+      title: "Cognition Raises $1 Billion as AI Coding Agent Market Stays Hot",
+      url: "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+      summary:
+        "TechCrunch reported that Cognition, maker of the Devin autonomous software engineer, raised more than $1 billion at a $25 billion pre-money valuation. The round is a signal that investors still see room for independent AI coding-agent companies even as frontier-model vendors push Claude Code, Codex, Jules, Copilot, and other first-party development agents. For buyers and engineering leaders, the important takeaway is to compare these tools on production outcomes, repository fit, governance, cost, and verification workflows rather than assuming the market will collapse into one bundled assistant.",
+    },
+    {
+      source: "TechCrunch",
+      date: "2026-05-27",
+      displayDate: "May 27, 2026",
+      category: "ai-general-news",
+      companies: ["Snowflake", "AWS", "Amazon", "Cortex AI", "Graviton", "AI infrastructure"],
+      title: "Snowflake Signs $6 Billion AWS Deal as AI Workloads Drive Cloud Demand",
+      url: "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/",
+      summary:
+        "TechCrunch covered Snowflake's new five-year, $6 billion AWS agreement, with AI demand and Snowflake Cortex AI usage highlighted as drivers of increased cloud spending. The story also points to a practical infrastructure shift: as AI moves from training into everyday automation and agent workloads, CPUs and cloud-native chips such as AWS Graviton become more important alongside GPUs. For teams deploying internal agents, the lesson is to budget for the full runtime stack, including data platforms, inference, orchestration, retrieval, logging, and routine compute that grows once agents become operational.",
+    },
+    {
+      source: "TechCrunch",
+      date: "2026-05-27",
+      displayDate: "May 27, 2026",
+      category: "ai-general-news",
+      companies: ["ElevenLabs", "AI music", "Generative media", "Licensing", "ElevenCreative"],
+      title: "ElevenLabs Launches Music v2 With Licensed Commercial-Use Positioning",
+      url: "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/",
+      summary:
+        "TechCrunch reported that ElevenLabs launched Music v2, a music-generation model that can change genres within a track, handle vocals and composition more reliably, and let creators regenerate selected song sections from prompts. ElevenLabs says the model is built on licensed data and cleared for commercial use, which matters as AI music companies face copyright scrutiny. For AI-tool users, the broader signal is that generative media products are competing not only on output quality but also on licensing, editability, API availability, and whether commercial teams can safely use the generated assets.",
+    },
+    {
       source: "GitHub Changelog",
       date: "2026-05-26",
       displayDate: "May 26, 2026",
