@@ -1,6 +1,28 @@
 (function () {
   const latestUpdates = [
     {
+      source: "GitHub Changelog",
+      date: "2026-05-26",
+      displayDate: "May 26, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Copilot Memory", "Copilot CLI", "Repository settings", "AI governance"],
+      title: "GitHub Adds More Copilot Memory Controls Across Repositories and CLI",
+      url: "https://github.blog/changelog/2026-05-26-copilot-memory-has-more-controls-for-deletion-scope-and-the-copilot-cli/",
+      summary:
+        "GitHub expanded Copilot Memory controls with clearer deletion guidance, a repository-level off switch, explicit scope labels when memory is captured, and `/memory` commands for Copilot CLI sessions. Copilot Memory remains in public preview for paid Copilot plans. For VS Code and agent users, this is a practical governance update: memory can improve continuity, but teams should decide where repository facts are allowed, who can review them, and when sensitive or outdated context should be removed.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-26",
+      displayDate: "May 26, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Enterprise", "Model rules", "AI governance", "Cost controls"],
+      title: "GitHub Adds Organization-Targeted Copilot Model Rules",
+      url: "https://github.blog/changelog/2026-05-26-target-copilot-models-to-organizations-with-model-rules/",
+      summary:
+        "GitHub introduced targeted model rules in public preview for Copilot Business and Enterprise customers, letting enterprise owners allow specific Copilot models for selected organizations instead of relying only on enterprise-wide defaults. GitHub also refreshed the default model availability UI. The useful takeaway for teams is that model choice is becoming an admin-governed control surface: cost, risk, data policy, and task fit can now vary by organization rather than being a single blanket setting.",
+    },
+    {
       source: "Anthropic",
       date: "2026-05-26",
       displayDate: "May 26, 2026",
