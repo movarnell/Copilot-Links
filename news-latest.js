@@ -1,6 +1,17 @@
 (function () {
   const latestUpdates = [
     {
+      source: "Anthropic",
+      date: "2026-05-26",
+      displayDate: "May 26, 2026",
+      category: "ai-general-news",
+      companies: ["Anthropic", "Claude", "Korea", "Seoul office", "Enterprise AI", "Developer adoption"],
+      title: "Anthropic Names Korea Representative Director Ahead of Seoul Office Opening",
+      url: "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
+      summary:
+        "Anthropic appointed KiYoung Choi as Representative Director of Korea ahead of opening its Seoul office, saying Claude usage in Korea is more than 3.5 times what population size alone would predict and skews heavily toward technical and creative work. The announcement matters for AI-tool tracking because it shows frontier-model vendors moving from global product launches into local enterprise, startup, government, research, and developer-community support. For teams choosing agents and coding assistants, regional presence increasingly affects adoption, compliance conversations, partnerships, and implementation support.",
+    },
+    {
       source: "Visual Studio Code",
       date: "2026-05-20",
       displayDate: "May 20, 2026",
