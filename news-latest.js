@@ -1,6 +1,17 @@
 (function () {
   const latestUpdates = [
     {
+      source: "Visual Studio Code",
+      date: "2026-05-27",
+      displayDate: "May 27, 2026",
+      category: "ai-general-news",
+      companies: ["Microsoft", "Visual Studio Code", "GitHub Copilot", "Agents window", "AI customization"],
+      title: "VS Code 1.123 Updates Agent Sessions and AI Customization Controls",
+      url: "https://code.visualstudio.com/updates/v1_123",
+      summary:
+        "Microsoft's VS Code 1.123 release notes add several agent-facing refinements: the Agents window now shows sessions in a grid layout, agent feedback supports threaded replies, steering messages appear as their own chat turns, and parallel terminal-command completions are batched into a single notification. The release also updates the AI Customization management editor with a cleaner compact header. For VS Code users, the practical takeaway is that agent work is becoming easier to scan, steer, and review across longer sessions rather than being treated as a single chat transcript.",
+    },
+    {
       source: "OpenAI",
       date: "2026-05-27",
       displayDate: "May 27, 2026",
