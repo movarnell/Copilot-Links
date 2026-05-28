@@ -1,6 +1,39 @@
 (function () {
   const latestUpdates = [
     {
+      source: "Anthropic",
+      date: "2026-05-28",
+      displayDate: "May 28, 2026",
+      category: "ai-general-news",
+      companies: ["Anthropic", "Claude", "Claude Opus 4.8", "Claude Code", "Dynamic workflows", "Agentic coding"],
+      title: "Anthropic Launches Claude Opus 4.8 With Stronger Coding and Agent Workflows",
+      url: "https://www.anthropic.com/news/claude-opus-4-8",
+      summary:
+        "Anthropic released Claude Opus 4.8, highlighting stronger coding, agentic task performance, reasoning, knowledge-work behavior, and a lower tendency to leave flaws or uncertainty unflagged. The release also adds dynamic workflows in research preview for Claude Code, letting Claude plan larger work, run many parallel subagents, verify outputs, and handle codebase-scale migrations for Enterprise, Team, and Max plans. For teams comparing development agents, the important signal is that frontier models are being judged less on chat polish and more on long-running execution, self-checking, cost control, and whether they can operate across large repositories without losing judgment.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-28",
+      displayDate: "May 28, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Anthropic", "Claude Opus 4.8", "VS Code", "Copilot CLI"],
+      title: "GitHub Makes Claude Opus 4.8 Available in Copilot",
+      url: "https://github.blog/changelog/2026-05-28-claude-opus-4-8-is-generally-available-for-github-copilot/",
+      summary:
+        "GitHub made Claude Opus 4.8 generally available in Copilot, with access planned across Visual Studio Code chat, ask, edit, and agent modes, Visual Studio, Copilot CLI, Copilot cloud agent, the GitHub Copilot app, github.com, mobile, JetBrains, Xcode, and Eclipse. The model is rolling out gradually for Pro+, Business, and Enterprise users, and Business or Enterprise administrators need to enable the model policy in Copilot settings. The practical takeaway is that Copilot is becoming a multi-model agent platform where model governance, rollout timing, and premium-request cost multipliers matter as much as raw model quality.",
+    },
+    {
+      source: "Anthropic",
+      date: "2026-05-28",
+      displayDate: "May 28, 2026",
+      category: "ai-general-news",
+      companies: ["Anthropic", "Claude", "Claude Code", "Cowork", "AWS", "Google Cloud", "Microsoft Azure"],
+      title: "Anthropic Raises $65 Billion as Claude Demand Pushes Compute Expansion",
+      url: "https://www.anthropic.com/news/series-h",
+      summary:
+        "Anthropic announced a $65 billion Series H at a $965 billion post-money valuation, saying the funding will support safety and interpretability research, compute expansion, Claude product growth, and enterprise partnerships. The announcement says the round includes previously committed hyperscaler investments, strategic memory and chip partners, recent capacity agreements with Amazon, Google and Broadcom, and SpaceX GPU capacity, while Claude is available across AWS, Google Cloud, and Microsoft Azure. For AI-tool buyers, this is a reminder that agent quality and availability are now tied directly to capital, cloud capacity, chip supply, and the economics of running Claude Code and Cowork at scale.",
+    },
+    {
       source: "Visual Studio Code",
       date: "2026-05-27",
       displayDate: "May 27, 2026",
