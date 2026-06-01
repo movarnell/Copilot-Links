@@ -1,6 +1,50 @@
 (function () {
   const latestUpdates = [
     {
+      source: "GitHub Changelog",
+      date: "2026-06-01",
+      displayDate: "June 1, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "AI Credits", "Copilot code review", "Copilot Max", "Actions runners"],
+      title: "GitHub Activates Usage-Based Copilot Billing and New Budget Controls",
+      url: "https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/",
+      summary:
+        "GitHub's June 1 Copilot update makes usage-based billing active across Copilot plans, with usage measured through GitHub AI Credits and Copilot code review now consuming GitHub Actions minutes as well. The release also adds organization-level default runner configuration for Copilot code review, generally available user-level budgets for organizations and enterprises, and Copilot Max upgrades for existing Student, Pro, and Pro+ subscribers. For teams using coding agents heavily, the practical takeaway is to treat Copilot adoption as a governed operational cost: configure budgets, review runner defaults, and decide where agentic workflows are worth the added credit and Actions spend.",
+    },
+    {
+      source: "Anthropic",
+      date: "2026-06-01",
+      displayDate: "June 1, 2026",
+      category: "ai-general-news",
+      companies: ["Anthropic", "Claude", "IPO", "SEC", "Enterprise AI"],
+      title: "Anthropic Confidentially Files Draft S-1 for a Proposed IPO",
+      url: "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      summary:
+        "Anthropic said it confidentially submitted a draft Form S-1 registration statement to the U.S. Securities and Exchange Commission for a proposed initial public offering of common stock. The announcement says the share count and price have not been set, and that the offering remains dependent on SEC review, market conditions, and other factors. For AI-tool buyers, the signal is that frontier-model labs are moving deeper into public-market scrutiny, where revenue durability, infrastructure commitments, safety posture, enterprise adoption, and margin pressure around products such as Claude and Claude Code will become harder to separate.",
+    },
+    {
+      source: "TechCrunch",
+      date: "2026-06-01",
+      displayDate: "June 1, 2026",
+      category: "ai-general-news",
+      companies: ["WindBorne Systems", "WeatherMesh", "ECMWF", "NOAA", "AI weather forecasting"],
+      title: "TechCrunch Reports WindBorne's WeatherMesh-6 Is Challenging Traditional Forecasting",
+      url: "https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/",
+      summary:
+        "TechCrunch reported that WindBorne Systems released WeatherMesh-6, an AI weather model the company says can forecast key variables more frequently and accurately than leading traditional systems, using both model improvements and balloon-collected sensor data. The report says the model produces hourly forecasts and reaches 3 km resolution in Europe and the continental U.S., while WindBorne continues selling data to NOAA and U.S. military customers. The broader AI signal is that domain agents and models may need proprietary data pipelines as much as model architecture: forecast quality, data assimilation, and operational integration become the defensible advantage.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-05-29",
+      displayDate: "May 29, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Copilot usage metrics", "AI adoption", "Enterprise analytics"],
+      title: "GitHub Adds AI Adoption Cohorts to Copilot Usage Metrics",
+      url: "https://github.blog/changelog/2026-05-29-copilot-usage-metrics-api-adds-cohorts-for-ai-adoption/",
+      summary:
+        "GitHub added AI adoption phase fields to Copilot usage metrics, classifying engaged users over a rolling 28-day window into code-first, agent-first, and multi-agent cohorts based on the Copilot surfaces they use. Enterprise and organization reports can now group metrics such as engagement, interactions, generated and accepted code, pull requests, review activity, and median time to merge by those phases. For engineering leaders, this turns Copilot rollout measurement from simple active-user counting into a maturity model that can guide enablement, budget decisions, and training for agentic development.",
+    },
+    {
       source: "Anthropic",
       date: "2026-05-28",
       displayDate: "May 28, 2026",
