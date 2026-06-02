@@ -82,11 +82,11 @@
               <tr>
                 <td class="model-name">GPT-4.1</td>
                 <td>OpenAI</td>
-                <td><span class="cap-badge">Retires Jun 1</span></td>
+                <td><span class="cap-badge">Deprecated</span></td>
                 <td class="cost-free">Included</td>
                 <td class="cost-free">Included</td>
                 <td class="strengths">Fast everyday coding help, explanations, small changes, and fallback chat.</td>
-                <td class="strengths">Use only while migrating routine workflows to GPT-5 mini or GPT-5.5.</td>
+                <td class="strengths">Avoid for new workflows; use GPT-5 mini or GPT-5.5 instead.</td>
               </tr>
               <tr>
                 <td class="model-name">GPT-4o</td>
@@ -109,20 +109,20 @@
               <tr>
                 <td class="model-name">GPT-5.2</td>
                 <td>OpenAI</td>
-                <td><span class="cap-badge">Retires Jun 1</span></td>
+                <td><span class="cap-badge">Deprecated</span></td>
                 <td class="cost-std">1x</td>
                 <td class="cost-std">1 request</td>
                 <td class="strengths">Deep reasoning, debugging, architectural analysis, and tradeoff decisions.</td>
-                <td class="strengths">Use only while migrating planning prompts to GPT-5.5 or GPT-5.4.</td>
+                <td class="strengths">Avoid for new workflows; move planning prompts to GPT-5.5 or GPT-5.4.</td>
               </tr>
               <tr>
                 <td class="model-name">GPT-5.2-Codex</td>
                 <td>OpenAI</td>
-                <td><span class="cap-badge">Retires Jun 1</span></td>
+                <td><span class="cap-badge">Deprecated</span></td>
                 <td class="cost-std">1x</td>
                 <td class="cost-std">1 request</td>
                 <td class="strengths">Long-horizon coding work, multi-file implementation, and agent mode tasks.</td>
-                <td class="strengths">Use only while migrating repository-edit workflows to GPT-5.3-Codex.</td>
+                <td class="strengths">Avoid for new workflows; move repository-edit work to GPT-5.3-Codex.</td>
               </tr>
               <tr>
                 <td class="model-name">GPT-5.3-Codex</td>
@@ -305,7 +305,9 @@
             selected model is overloaded. Models also vary by Copilot plan, client, policy settings, and preview access.
             GitHub's May 20 web-chat update also narrows the github.com model picker compared with VS Code and
             agent surfaces. GitHub's May 26 targeted model rules also mean enterprise owners can now allow different
-            models for different organizations. VS Code's current Copilot setup docs note that new Copilot Pro, Pro+, and student
+            models for different organizations. GitHub's June 1 Auto update also means Copilot Free, Pro, and Pro+
+            users may see evaluation models through Auto, while Business and Enterprise Auto remains limited to GA
+            models. VS Code's current Copilot setup docs note that new Copilot Pro, Pro+, and student
             sign-ups are temporarily paused, so confirm both model access and plan availability in the actual client you
             are using.
           </p>
@@ -449,7 +451,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified May 27, 2026. The model list changes often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified June 2, 2026. The model list changes often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
@@ -479,7 +481,7 @@
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-05-07-upcoming-deprecation-of-gpt-4-1/" target="_blank" rel="noreferrer noopener">GPT-4.1 deprecation notice</a>
-            <span class="ref-desc">GitHub's May 7, 2026 notice that GPT-4.1 leaves Copilot on June 1.</span>
+            <span class="ref-desc">GitHub's May 7, 2026 notice that GPT-4.1 left Copilot on June 1.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-05-15-grok-code-fast-1-deprecated/" target="_blank" rel="noreferrer noopener">Grok deprecation notice</a>
@@ -498,16 +500,20 @@
             <span class="ref-desc">GitHub's May 26, 2026 public preview for allowing specific Copilot models by organization.</span>
           </div>
           <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-06-01-evaluation-models-in-auto-for-individual-plans" target="_blank" rel="noreferrer noopener">Evaluation models in Auto</a>
+            <span class="ref-desc">GitHub's June 1, 2026 notice that Copilot Individual Auto can route to evaluation models while Business and Enterprise remain GA-only.</span>
+          </div>
+          <div class="ref-item">
             <a class="step-link" href="https://code.visualstudio.com/docs/copilot/setup" target="_blank" rel="noreferrer noopener">VS Code Copilot setup</a>
             <span class="ref-desc">Microsoft's current setup guidance, including plan availability and built-in AI feature controls.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://code.visualstudio.com/updates/v1_121" target="_blank" rel="noreferrer noopener">VS Code 1.121 release notes</a>
-            <span class="ref-desc">Microsoft's current stable reference for Agents window, remote agents, AHP, utility model, and terminal-tool behavior.</span>
+            <span class="ref-desc">Microsoft's stable reference for Agents window, remote agents, AHP, utility model, and terminal-tool behavior.</span>
           </div>
           <div class="ref-item">
-            <a class="step-link" href="https://code.visualstudio.com/updates/v1_122" target="_blank" rel="noreferrer noopener">VS Code 1.122 iteration notes</a>
-            <span class="ref-desc">Microsoft's newest iteration watchlist for remote agent tasks, BYOK, local agent host, and chat model-picker changes.</span>
+            <a class="step-link" href="https://code.visualstudio.com/updates/v1_123" target="_blank" rel="noreferrer noopener">VS Code 1.123 release notes</a>
+            <span class="ref-desc">Microsoft's newest iteration watchlist for agent session handoff, execution subagents, cloud-task rendering, and terminal completion behavior.</span>
           </div>
         </div>
       </section>

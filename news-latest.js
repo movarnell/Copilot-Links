@@ -4,6 +4,17 @@
       source: "GitHub Changelog",
       date: "2026-06-01",
       displayDate: "June 1, 2026",
+      category: "new-models",
+      companies: ["GitHub", "GitHub Copilot", "Auto model selection", "Evaluation models", "Copilot Free"],
+      title: "GitHub Adds Evaluation Models to Copilot Auto for Individual Plans",
+      url: "https://github.blog/changelog/2026-06-01-evaluation-models-in-auto-for-individual-plans",
+      summary:
+        "GitHub updated Copilot Auto model selection for Individual plans so Auto can now draw from evaluation models such as Goldeneye and Raptor in addition to generally available models. The change applies to Copilot Free, Pro, and Pro+ users, while Business and Enterprise continue using only generally available models through Auto. For model guidance, the practical takeaway is to treat Auto as a broader experimental routing surface for individual users, but to keep enterprise recommendations tied to admin-approved GA models and actual client availability.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-06-01",
+      displayDate: "June 1, 2026",
       category: "ai-general-news",
       companies: ["GitHub", "GitHub Copilot", "AI Credits", "Copilot code review", "Copilot Max", "Actions runners"],
       title: "GitHub Activates Usage-Based Copilot Billing and New Budget Controls",
