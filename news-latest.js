@@ -1,6 +1,39 @@
 (function () {
   const latestUpdates = [
     {
+      source: "OpenAI",
+      date: "2026-06-02",
+      displayDate: "June 2, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "Codex", "Plugins", "Sites", "Annotations", "Knowledge work"],
+      title: "OpenAI Expands Codex With Role-Specific Plugins, Sites, and Annotations",
+      url: "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      summary:
+        "OpenAI introduced new Codex capabilities aimed beyond software teams: role-specific plugins, workspace-shareable Sites, and in-place annotations for refining generated work. The launch includes six plugin bundles for data analytics, creative production, product design, sales, public equity investing, and investment banking, with OpenAI saying the bundles span 62 popular apps and 110 skills. For teams using coding agents, the signal is that Codex is becoming a broader work-execution layer where connectors, reusable skills, review surfaces, and shareable outputs matter as much as code generation.",
+    },
+    {
+      source: "OpenAI",
+      date: "2026-06-02",
+      displayDate: "June 2, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "Codex", "Knowledge work", "AI adoption", "Workflow automation"],
+      title: "OpenAI Says Codex Has Passed 5 Million Weekly Active Users",
+      url: "https://openai.com/index/codex-for-knowledge-work/",
+      summary:
+        "OpenAI released a report describing Codex as a productivity tool for more than developers, saying Codex now has over 5 million weekly active users and that knowledge workers make up about 20 percent of usage while growing faster than developers. OpenAI says non-developer use is concentrated in reports, spreadsheets, presentations, contracts, research, data analysis, workflow automation, and lightweight internal tools. For AI adoption planning, this broadens the practical evaluation question from whether agents write code well to whether teams can govern parallel agent work that creates business artifacts across roles.",
+    },
+    {
+      source: "GitHub Blog",
+      date: "2026-06-02",
+      displayDate: "June 2, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Copilot app", "Agent Merge", "Copilot SDK", "Copilot code review"],
+      title: "GitHub Introduces Copilot App as an Agent-Native Desktop Experience",
+      url: "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/",
+      summary:
+        "At Microsoft Build, GitHub introduced the Copilot app technical preview as a desktop control center for agentic development across issues, pull requests, sessions, canvases, sandboxes, and review workflows. GitHub says sessions run in separate git worktrees, Agent Merge can help carry pull requests through checks and review, and the Copilot SDK is generally available across major languages for teams embedding the same runtime in their own tools. For VS Code and GitHub users, this makes agent orchestration, validation, sandbox policy, cost tiers, and human review flow central parts of the coding-agent experience.",
+    },
+    {
       source: "GitHub Changelog",
       date: "2026-06-01",
       displayDate: "June 1, 2026",
