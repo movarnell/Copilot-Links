@@ -1,6 +1,61 @@
 (function () {
   const latestUpdates = [
     {
+      source: "GitHub Changelog",
+      date: "2026-06-03",
+      displayDate: "June 3, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Visual Studio Code", "Agents window", "BYOK", "Agent Host Protocol"],
+      title: "GitHub Summarizes May Copilot Updates for VS Code Agents",
+      url: "https://github.blog/changelog/2026-06-03-github-copilot-in-visual-studio-code-may-releases/",
+      summary:
+        "GitHub's June 3 changelog recaps the May and early June Copilot updates in VS Code, including the Agents window preview in Stable, remote agent sessions over SSH or Dev Tunnels, Agent Host Protocol work, session sync, Chronicle commands, and side-by-side agent sessions. The release also expands bring-your-own-key model support to air-gapped environments and adds finer model controls for utility tasks, reasoning effort, and token visibility. For VS Code users, the signal is that agent work is becoming a persistent, multi-session development surface where model governance, terminal safety, remote execution, and searchable session history matter as much as inline completions.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-06-02",
+      displayDate: "June 2, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Copilot SDK", "MCP", "OpenTelemetry", "Developer tools"],
+      title: "GitHub Makes the Copilot SDK Generally Available",
+      url: "https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/",
+      summary:
+        "GitHub made the Copilot SDK generally available, giving teams stable programmatic access to the agent runtime behind Copilot for planning, tool invocation, file edits, streaming, and multi-turn sessions. The SDK is available across Node.js/TypeScript, Python, Go, .NET, Rust, and Java, and supports MCP tools, prompt customization, OpenTelemetry tracing, multiple authentication paths, cloud or remote sessions, and pre/post tool hooks. For engineering teams, this turns Copilot from an IDE-only assistant into embeddable agent infrastructure for internal tools, CI/CD assistants, customer-facing developer features, and governed automation.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-06-02",
+      displayDate: "June 2, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Copilot CLI", "Sandboxes", "Microsoft MXC", "Agent security"],
+      title: "GitHub Puts Copilot Cloud and Local Sandboxes Into Public Preview",
+      url: "https://github.blog/changelog/2026-06-02-cloud-and-local-sandboxes-for-github-copilot-now-in-public-preview/",
+      summary:
+        "GitHub put cloud and local sandboxes for Copilot into public preview, giving agent sessions isolated places to run commands, touch files, and use network access under defined policies. Local sandboxing can be enabled inside a session with `/sandbox enable` and is built on Microsoft MXC across macOS, Linux, and Windows, while cloud sandboxes launch ephemeral Linux environments through `copilot --cloud` and inherit Copilot cloud agent policies. For teams evaluating coding agents, sandboxing is a practical control layer: agent autonomy only scales if filesystem, network, identity, policy, and enterprise management boundaries are clear.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-06-02",
+      displayDate: "June 2, 2026",
+      category: "new-models",
+      companies: ["GitHub", "GitHub Copilot", "Google", "Gemini 3.1 Pro", "Gemini 3.5 Flash", "Model governance"],
+      title: "GitHub Expands Gemini Model Access Across Copilot Surfaces",
+      url: "https://github.blog/changelog/2026-06-02-gemini-models-in-copilot-cli-cloud-agent-and-the-copilot-app/",
+      summary:
+        "GitHub added Gemini 3.1 Pro in preview and Gemini 3.5 Flash across more Copilot surfaces, including Copilot CLI, Copilot cloud agent, the Copilot app technical preview, and the Copilot SDK. Gemini 3.1 Pro is available across Student, Pro, Pro+, Business, and Enterprise plans, while Gemini 3.5 Flash is available for Pro, Pro+, Business, and Enterprise subscribers, with Business and Enterprise admins required to enable the relevant model policy. For model selection guidance, this reinforces Copilot as a multi-model platform where admins need to track surface availability, preview status, plan eligibility, and policy gates before recommending a model for production workflows.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-06-02",
+      displayDate: "June 2, 2026",
+      category: "new-models",
+      companies: ["GitHub", "GitHub Copilot", "Microsoft", "MAI-Code-1-Flash", "VS Code", "Coding models"],
+      title: "Microsoft's MAI-Code-1-Flash Begins Rolling Out in GitHub Copilot",
+      url: "https://github.blog/changelog/2026-06-02-mai-code-1-flash-is-now-available-for-github-copilot/",
+      summary:
+        "GitHub said MAI-Code-1-Flash, Microsoft's new small-tier coding model, is beginning to roll out in GitHub Copilot starting with Visual Studio Code. The model is tuned specifically for Copilot, positioned for lightweight coding workflows, and will gradually expand across Copilot Free, Pro, Pro+, and Max plans after an initial limited rollout. For developers, this is another sign that routine coding work is being routed toward specialized, lower-cost models while larger frontier models are reserved for higher-complexity planning, review, and reasoning tasks.",
+    },
+    {
       source: "Microsoft 365 Blog",
       date: "2026-06-02",
       displayDate: "June 2, 2026",
