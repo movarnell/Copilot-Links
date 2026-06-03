@@ -1,6 +1,28 @@
 (function () {
   const latestUpdates = [
     {
+      source: "Microsoft 365 Blog",
+      date: "2026-06-02",
+      displayDate: "June 2, 2026",
+      category: "ai-general-news",
+      companies: ["Microsoft", "Microsoft 365 Copilot", "Scout", "Personal agents", "Knowledge work"],
+      title: "Microsoft Introduces Scout as an Always-On Personal Agent for Microsoft 365",
+      url: "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+      summary:
+        "Microsoft introduced Scout, an always-on personal agent for Microsoft 365 that is designed to stay grounded in the apps and work context people already use. The announcement matters for AI-workflow tracking because it pushes Copilot-style assistance beyond prompt-response chat into persistent, user-specific agency across documents, communication, and daily work. For teams adopting AI tools, the practical question is how to govern memory, permissions, delegation, and handoff when agents become a standing part of the productivity stack instead of a one-off assistant.",
+    },
+    {
+      source: "Microsoft Blog",
+      date: "2026-06-02",
+      displayDate: "June 2, 2026",
+      category: "ai-general-news",
+      companies: ["Microsoft", "CoreAI", "GitHub", "Azure AI Foundry", "Fabric", "Enterprise agents"],
+      title: "Microsoft Frames Azure, GitHub, Foundry, Fabric, and Copilot as One Agent System",
+      url: "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
+      summary:
+        "Microsoft's CoreAI group argued that enterprise AI value depends on the operating system around agents, not just the model. The post says Microsoft is bringing Azure, GitHub, Microsoft IQ, Fabric, Foundry, Windows, Microsoft Security, and Microsoft 365 together as a single system for deploying agents at enterprise scale. For engineering and operations teams, the signal is that agent adoption increasingly depends on identity, data access, orchestration, security controls, developer workflows, and observability across the full stack.",
+    },
+    {
       source: "OpenAI",
       date: "2026-06-02",
       displayDate: "June 2, 2026",
