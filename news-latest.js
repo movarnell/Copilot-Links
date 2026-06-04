@@ -1,6 +1,28 @@
 (function () {
   const latestUpdates = [
     {
+      source: "Visual Studio Code",
+      date: "2026-06-03",
+      displayDate: "June 3, 2026",
+      category: "ai-general-news",
+      companies: ["Microsoft", "Visual Studio Code", "GitHub Copilot", "Agents window", "Agent sessions"],
+      title: "VS Code 1.124 Adds More Agents Window Session Controls",
+      url: "https://code.visualstudio.com/updates/v1_124",
+      summary:
+        "Microsoft's VS Code 1.124 iteration notes add multi-chat support for local sessions in the Agents window, background send with Alt+Enter or Alt-click Send, keyboard shortcuts for jumping between sessions, and a bulk-close command for session cleanup. The release is smaller than the 1.123 stable notes, but it continues the same direction: agent work in VS Code is becoming a multi-session workspace that needs fast switching, background task kickoff, and predictable session management. For Copilot users, the practical watch item is whether these controls make parallel local agent workflows easier to supervise without losing track of active work.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-06-03",
+      displayDate: "June 3, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Copilot CLI", "Voice input", "Prompt scheduling", "Rubber duck"],
+      title: "GitHub Updates Copilot CLI With Voice Input, Rubber Duck Review, and Experimental Scheduling",
+      url: "https://github.blog/changelog/2026-06-02-copilot-cli-improved-ui-rubber-duck-prompt-scheduling-and-voice-input/",
+      summary:
+        "GitHub's Copilot CLI refresh adds generally available voice input and a built-in rubber duck critic agent, while the redesigned terminal UI and prompt scheduling commands are available through the experimental mode. The June 3 editor note clarifies that scheduling is experimental rather than generally available. For teams adopting terminal-based agents, this update matters because Copilot CLI is moving toward a richer agent console with session tabs, local voice transcription, scheduled follow-up prompts, accessibility improvements, and second-opinion review before changes land.",
+    },
+    {
       source: "GitHub Changelog",
       date: "2026-06-03",
       displayDate: "June 3, 2026",
