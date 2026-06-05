@@ -1,6 +1,39 @@
 (function () {
   const latestUpdates = [
     {
+      source: "GitHub Changelog",
+      date: "2026-06-04",
+      displayDate: "June 4, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "VS Code", "Copilot CLI", "Copilot app", "AI Credits"],
+      title: "GitHub Adds Larger Context Windows and Reasoning Controls to Copilot",
+      url: "https://github.blog/changelog/2026-06-04-larger-context-windows-and-configurable-reasoning-levels-for-github-copilot/",
+      summary:
+        "GitHub said Copilot now supports one-million-token context windows and configurable reasoning levels in Visual Studio Code, Copilot CLI, and the GitHub Copilot app, with expansion to more surfaces planned. The update is useful for larger codebases, long documents, architecture work, and deeper debugging, but GitHub also warns that larger context or higher reasoning consumes more AI Credits per interaction. For Copilot guidance, this makes context and reasoning settings explicit budget levers: use defaults for routine work, then turn up context or reasoning only when the task genuinely needs broader project memory or deeper analysis.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-06-04",
+      displayDate: "June 4, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Copilot cloud agent", "REST API", "Automation"],
+      title: "GitHub Opens the Agent Tasks REST API to Individual Copilot Plans",
+      url: "https://github.blog/changelog/2026-06-04-agent-tasks-rest-api-now-available-for-copilot-pro-pro-and-max/",
+      summary:
+        "GitHub put the Agent tasks REST API into public preview for Copilot Pro, Pro+, and Max users, allowing developers to start and track Copilot cloud agent tasks programmatically. The API supports personal access tokens and OAuth tokens, and GitHub positions it for internal developer portals, recurring release prep, one-click repository setup, and fan-out migrations across many repositories. The practical signal is that Copilot cloud agent is moving from a manual GitHub UI workflow toward scriptable automation, which makes task provenance, repository scope, review gates, and budget controls more important.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-06-04",
+      displayDate: "June 4, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Actions", "Pull requests", "Code review"],
+      title: "GitHub Extends Copilot Fixes for Actions and Pull Request Review Context",
+      url: "https://github.blog/changelog/2026-06-04-fix-with-copilot-for-failing-actions-now-in-pro-pro-and-max/",
+      summary:
+        "GitHub expanded two review and maintenance workflows on June 4: Pro, Pro+, and Max subscribers can now use Fix with Copilot from failed GitHub Actions logs, and Copilot Chat's richer pull-request and diff context is generally available for licensed users on github.com. Together, the updates make Copilot more useful after code is written, not just during implementation. For teams, the key evaluation point is whether Copilot can diagnose CI failures, propose reviewable branch changes, and answer diff-specific questions without weakening human review or branch protection discipline.",
+    },
+    {
       source: "Visual Studio Code",
       date: "2026-06-03",
       displayDate: "June 3, 2026",
