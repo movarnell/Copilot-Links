@@ -33,6 +33,28 @@
       summary:
         "The June 5 VS Code 1.124 iteration notes add WSL connection support in the Agents window and customization for the integrated browser toolbar, letting users show or hide toolbar actions from the context menu. These are incremental updates, but they matter for agent workflows because they tighten two practical surfaces: where local agents can connect and how developers keep the browser validation area focused. The current official VS Code release notes remain fresher than the matching YouTube feature-video coverage, so the page should keep using 1.124 as the primary watchlist until a newer official walkthrough appears.",
     },
+    {
+      source: "GitHub Changelog",
+      date: "2026-06-04",
+      displayDate: "June 4, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "GitHub Copilot", "Visual Studio", "Plan agent", "Skills", "Code review"],
+      title: "GitHub Adds Plan Agent, Skills Management, and Multi-File Diff Review to Visual Studio",
+      url: "https://github.blog/changelog/2026-06-04-github-copilot-in-visual-studio-may-update/",
+      summary:
+        "GitHub's Visual Studio May update adds several Copilot workflow controls to Visual Studio 2026: a Plan agent for read-only implementation planning before code is written, a Skills panel for discovering and editing agent skills, a multi-file summary diff for Copilot changes, context-window usage visibility, and commit attachment in Copilot Chat. For Visual Studio teams, this moves Copilot closer to the same supervised-agent pattern emerging in VS Code and the Copilot app: plan first, inspect context, review multi-file changes, and keep reusable instructions close to the repo.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-06-04",
+      displayDate: "June 4, 2026",
+      category: "ai-general-news",
+      companies: ["GitHub", "Copilot billing", "AI Credits", "Enterprise management", "Budgets", "Usage APIs"],
+      title: "GitHub Makes Budget and Usage Management APIs Generally Available",
+      url: "https://github.blog/changelog/2026-06-04-budget-and-usage-management-apis-now-generally-available/",
+      summary:
+        "GitHub made expanded billing APIs generally available, including API-based budget lifecycle management and a usage summary API that can filter by account, organization, repository, cost center, product, or SKU. This matters for Copilot and AI-agent rollouts because usage-based billing and larger-context reasoning controls are becoming operational concerns, not just product settings. Teams can now wire budget creation, alerting, cost-center reporting, and SKU-level usage review into the same governance workflows they use to manage Copilot plans and AI Credits.",
+    },
   ];
 
   const existingItems = Array.isArray(window.newsFeed) ? window.newsFeed : [];
