@@ -1,6 +1,28 @@
 (function () {
   const latestUpdates = [
     {
+      source: "OpenAI",
+      date: "2026-06-04",
+      displayDate: "June 4, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "ChatGPT", "Memory", "Dreaming", "Personalization"],
+      title: "OpenAI Launches a More Capable ChatGPT Memory Architecture",
+      url: "https://openai.com/index/chatgpt-memory-dreaming/",
+      summary:
+        "OpenAI said it is launching a more capable and compute-efficient ChatGPT memory architecture built on its background dreaming process. The update makes synthesized memories visible through a reviewable memory summary, lets users add or update what ChatGPT knows about them, and is intended to keep preferences, goals, and ongoing-work context fresher over time. For AI-tool users, the practical signal is that personalization is becoming a core product surface rather than a one-off saved-notes feature, which makes memory review, stale-context cleanup, and privacy controls more important.",
+    },
+    {
+      source: "Fortune",
+      date: "2026-06-05",
+      displayDate: "June 5, 2026",
+      category: "ai-general-news",
+      companies: ["OpenAI", "Anthropic", "Google DeepMind", "Microsoft AI", "Biosecurity"],
+      title: "AI Leaders Urge Congress to Require Synthetic DNA Screening",
+      url: "https://fortune.com/2026/06/05/openai-anthropic-microsoft-ceos-congress-bioweapon-safeguards/",
+      summary:
+        "Fortune reported that leaders from OpenAI, Anthropic, Google DeepMind, Microsoft AI, and other organizations signed a public letter asking Congress to make screening and recordkeeping mandatory for synthetic DNA and RNA orders. The letter argues that AI progress could erode the knowledge barriers that have historically limited biological-weapons development, while order screening is a relatively well-understood supply-chain safeguard. For AI governance, this is a notable cross-company alignment around regulating downstream biosecurity chokepoints rather than only regulating model access.",
+    },
+    {
       source: "GitHub Changelog",
       date: "2026-06-02",
       displayDate: "June 2, 2026",
