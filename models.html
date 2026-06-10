@@ -232,6 +232,15 @@
                 <td class="strengths">Anthropic's strongest Copilot model for advanced coding and reasoning.</td>
                 <td class="strengths">Use for the first planning pass on large, ambiguous, or risky engineering tasks.</td>
               </tr>
+              <tr class="highlight">
+                <td class="model-name">Claude Fable 5</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">Provider pricing</td>
+                <td class="cost-high">Not available</td>
+                <td class="strengths">Long-horizon autonomous coding and knowledge-work tasks with Mythos-class safeguards.</td>
+                <td class="strengths">Use only after confirming plan access, admin policy, usage-based billing, and the 30-day safety-retention requirement.</td>
+              </tr>
               <tr>
                 <td class="model-name">Gemini 2.5 Pro</td>
                 <td>Google</td>
@@ -319,7 +328,11 @@
             and reasoning update also makes one-million-token context windows and higher reasoning levels explicit
             AI-credit tradeoffs in VS Code, Copilot CLI, and the Copilot app. GitHub's June 9 security-validation
             update also means third-party coding agents such as Claude and OpenAI Codex can receive CodeQL,
-            dependency, and secret-scanning checks before their pull requests are finalized.
+            dependency, and secret-scanning checks before their pull requests are finalized. GitHub's June 9
+            Claude Fable 5 rollout adds a new high-capability Copilot model, but Business and Enterprise admins
+            must enable it, it is billed under usage-based provider pricing, and it requires up to 30 days of
+            Anthropic prompt/output retention for safety classifiers. GitHub's June 10 Copilot CLI security-review
+            command also makes local AI security review part of the practical pre-commit workflow.
           </p>
         </div>
       </section>
@@ -461,7 +474,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified June 9, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified June 10, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, model data-retention requirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
@@ -520,6 +533,14 @@
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/" target="_blank" rel="noreferrer noopener">Third-party agent security validation</a>
             <span class="ref-desc">GitHub's June 9, 2026 notice that third-party coding agents receive automatic CodeQL, dependency, and secret-scanning validation.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-06-09-claude-fable-5-is-generally-available-for-github-copilot/" target="_blank" rel="noreferrer noopener">Claude Fable 5 in Copilot</a>
+            <span class="ref-desc">GitHub's June 9, 2026 notice for Claude Fable 5 availability, plan support, admin policy, billing, and data-retention requirements.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-06-10-dedicated-security-review-command-now-available-in-copilot-cli/" target="_blank" rel="noreferrer noopener">Copilot CLI security review</a>
+            <span class="ref-desc">GitHub's June 10, 2026 public preview for local AI security review in Copilot CLI.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/" target="_blank" rel="noreferrer noopener">Copilot app preview expansion</a>
