@@ -22,6 +22,17 @@
       summary:
         "Axios analyzed the downstream risk from the Trump administration's Anthropic action, arguing that sudden limits on already-deployed AI models could make foreign governments and enterprise buyers question the dependability of U.S. AI platforms. The piece extends the prior Anthropic/Fable/Mythos story from a single vendor disruption into a platform-risk question for regulated AI adoption. For AI workflow owners, it reinforces the need to track model availability, policy exposure, and contingency paths when a model becomes part of a production process.",
     },
+    {
+      source: "Axios",
+      date: "2026-06-16",
+      displayDate: "June 16, 2026",
+      category: "ai-workflows",
+      companies: ["Microsoft", "Copilot Cowork", "DeepSeek", "Azure", "AI agents", "Enterprise AI"],
+      title: "Microsoft Moves Copilot Cowork Toward Usage-Based Agent Pricing",
+      url: "https://www.axios.com/2026/06/16/microsoft-copilot-cowork-tokenmaxxing-cowork",
+      summary:
+        "Axios reported that Microsoft is moving Copilot Cowork to usage-based pricing as enterprise agent workloads drive high model-consumption costs, and that Microsoft is considering an optional Azure-hosted DeepSeek model path. The story frames Copilot Cowork alongside Claude Code and Codex as agentic tools that can keep calling models while tasks run, making compute cost a product-design and procurement issue. For AI workflow leaders, the signal is to plan for metering, model-routing policy, data-residency controls, and ROI measurement before agent usage scales broadly.",
+    },
   ];
 
   const existingItems = Array.isArray(window.newsFeed) ? window.newsFeed : [];
