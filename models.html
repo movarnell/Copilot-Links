@@ -215,13 +215,13 @@
                 <td class="strengths">Use for planning and review on complicated work when 3x cost is acceptable.</td>
               </tr>
               <tr>
-                <td class="model-name">Claude Opus 4.6 fast mode</td>
+                <td class="model-name">Claude Opus 4.8 fast mode</td>
                 <td>Anthropic</td>
                 <td><span class="cap-badge">Preview</span></td>
-                <td class="cost-high">30x</td>
-                <td class="cost-high">30 requests</td>
+                <td class="cost-high">AI-credit billed</td>
+                <td class="cost-high">Plan dependent</td>
                 <td class="strengths">Low-latency Opus-class reasoning when response speed matters more than budget.</td>
-                <td class="strengths">Reserve for rare interactive sessions where premium request burn is acceptable.</td>
+                <td class="strengths">Use instead of retired Claude Opus 4.6 fast mode after confirming picker access and cost.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">Claude Opus 4.7</td>
@@ -342,9 +342,12 @@
             must enable it, it is billed under usage-based provider pricing, and it requires up to 30 days of
             Anthropic prompt/output retention for safety classifiers. GitHub's current pricing page says Claude Fable 5
             is currently unavailable, so treat any Fable guidance as availability-sensitive and fall back to other
-            enabled models until the picker and pricing page agree. OpenAI's June 26 GPT-5.6 preview introduces
+            enabled models until the picker and pricing page agree. GitHub's June 29 supported-models update retires
+            Claude Opus 4.6 fast mode and points fast-mode users to Claude Opus 4.8 fast mode preview; GitHub's
+            pricing page checked June 29 lists Claude Opus 4.8 standard pricing but not a separate fast-mode pricing
+            row, so verify the actual picker and billing export before using fast mode broadly. OpenAI's June 26 GPT-5.6 preview introduces
             Sol, Terra, and Luna for selected API and Codex partners, but GitHub's supported-models page checked
-            June 28 does not list GPT-5.6 for Copilot; do not treat the OpenAI preview as Copilot availability.
+            June 29 does not list GPT-5.6 for Copilot; do not treat the OpenAI preview as Copilot availability.
             GitHub's supported-models page
             also lists Claude Opus 4.8 across Copilot surfaces, but teams should confirm plan availability and
             billing behavior in the live picker before routing default work to it. GitHub's June 10 Copilot CLI
