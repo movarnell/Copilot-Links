@@ -359,6 +359,15 @@
                 <td class="strengths">Avoid for new workflows; move speed-focused prompts to GPT-5 mini or Claude Haiku 4.5.</td>
               </tr>
               <tr>
+                <td class="model-name">Grok 4.5</td>
+                <td>xAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td>Provider list pricing</td>
+                <td>Provider list pricing</td>
+                <td class="strengths">Fast agentic coding, complex multi-step workflows, image inputs, and up to 500,000 tokens of context.</td>
+                <td class="strengths">Use for time-sensitive exploration or tool-heavy tasks after confirming picker access, policy, and billing.</td>
+              </tr>
+              <tr>
                 <td class="model-name">Raptor mini</td>
                 <td>Fine-tuned GPT-5 mini</td>
                 <td><span class="cap-badge">GA</span></td>
@@ -405,9 +414,9 @@
             from token usage into AI Credits, so confirm both model access and credit behavior in the actual client you
             are using before setting budgets. VS Code 1.126 adds whole-session credit-cost visibility and a unified
             picker for model context size and reasoning effort, so teams can tune model behavior while monitoring
-            cost across an agent workflow. VS Code 1.130 is now the stable release and continues the dedicated agent-host
-            and Agent Host Protocol work while adding assisted approval controls for agent tools and adjacent Copilot
-            workflow refinements. Keep teams on current VS Code builds before depending on those approval and agent-host
+            cost across an agent workflow. VS Code 1.131 is now the stable release and continues the dedicated agent-host
+            and Agent Host Protocol work while adding running-subagent visibility, built-in dictation, and hybrid Markdown
+            editing for agent workflows. Keep teams on current VS Code builds before depending on those approval and agent-host
             behaviors. GitHub's July 1
             Kimi K2.7 Code rollout added Copilot's first selectable open-weight model, and the July 7 expansion now
             includes Business and Enterprise plans with administrator policy controls. GitHub will also fully retire the separate GitHub Models
@@ -443,7 +452,12 @@
             managed-settings.json coverage, dedicated app access policy, plugin marketplace controls, and approval-prompt
             behavior before standardizing an agent workflow across clients. GitHub's July 22 Copilot-versus-API guidance
             also reinforces that model choice should be weighed against the surrounding harness, repository context,
-            policy controls, BYOK behavior, and AI-credit visibility.
+            policy controls, BYOK behavior, and AI-credit visibility. GitHub's July 29 default model enablement policy
+            means Business and Enterprise admins should decide before August 26, 2026 whether unconfigured GA models
+            should become available by default; explicit choices are preserved, while Kimi K2.7 and Fable 5 remain
+            excluded from that default path. GitHub's July 28 Grok 4.5 rollout adds xAI's new GA Copilot model across
+            major Copilot clients, but the supported-models page still lists the VS Code minimum as TBD, so verify
+            client support before relying on it.
             GitHub's June 10 Copilot CLI
             security-review command also makes local AI security review part of the practical pre-commit workflow.
           </p>
@@ -587,7 +601,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified July 30, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, model data-retention requirements, managed-settings coverage, VS Code model-provider controls, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified July 31, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, VS Code model-provider controls, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
@@ -658,6 +672,14 @@
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer noopener">Claude Opus 5 in Copilot</a>
             <span class="ref-desc">GitHub's July 24, 2026 notice for Claude Opus 5 availability, supported surfaces, gradual rollout, admin policy, provider billing, and enhanced cyber-safety safeguards.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-07-28-grok-4-5-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer noopener">Grok 4.5 in Copilot</a>
+            <span class="ref-desc">GitHub's July 28, 2026 notice for Grok 4.5 availability, agentic coding fit, supported surfaces, reasoning controls, and provider-list-price billing.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-07-29-default-model-enablement-for-copilot-business-and-enterprise/" target="_blank" rel="noreferrer noopener">Default model enablement</a>
+            <span class="ref-desc">GitHub's July 29, 2026 notice for the August 26 Business and Enterprise policy controlling default availability of unconfigured GA models.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-07-27-enterprise-managed-settings-now-apply-to-the-github-copilot-app/" target="_blank" rel="noreferrer noopener">Copilot managed settings expansion</a>
