@@ -2,6 +2,28 @@
   const latestUpdates = [
     {
       source: "GitHub Changelog",
+      date: "2026-07-31",
+      displayDate: "July 31, 2026",
+      category: "models",
+      companies: ["GitHub Copilot", "Gemini", "Copilot Enterprise"],
+      title: "GitHub Deprecates Gemini 2.5 Pro and Gemini 3 Flash in Copilot",
+      url: "https://github.blog/changelog/2026-07-31-gemini-2-5-pro-and-gemini-3-flash-deprecated/",
+      summary:
+        "GitHub says Gemini 2.5 Pro and Gemini 3 Flash are deprecated across Copilot Chat, inline edits, ask and agent modes, and code completions as of July 31. GitHub points Gemini 2.5 Pro users to Gemini 3.1 Pro and Gemini 3 Flash users to Gemini 3.6 Flash, with enterprise admins responsible for enabling replacement models through Copilot model policies.",
+    },
+    {
+      source: "GitHub Changelog",
+      date: "2026-07-31",
+      displayDate: "July 31, 2026",
+      category: "copilot",
+      companies: ["GitHub Copilot", "Copilot Business", "Copilot Enterprise"],
+      title: "Enterprise Teams Model Policy Targeting Enters Public Preview",
+      url: "https://github.blog/changelog/2026-07-31-enterprise-teams-model-policy-targeting-in-public-preview/",
+      summary:
+        "GitHub introduced user-based model policy targeting for Enterprise customers with Copilot Business or Enterprise licenses. Admins can set enterprise-wide model baselines, mark models as optional for enterprise teams, and grant additional models by role or experimentation group, with most enterprise customers expected to get preview opt-in access on August 3.",
+    },
+    {
+      source: "GitHub Changelog",
       date: "2026-07-30",
       displayDate: "July 30, 2026",
       category: "copilot",
