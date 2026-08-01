@@ -307,20 +307,20 @@
               <tr>
                 <td class="model-name">Gemini 2.5 Pro</td>
                 <td>Google</td>
-                <td><span class="cap-badge">GA</span></td>
+                <td><span class="cap-badge">Deprecated</span></td>
                 <td class="cost-std">1x</td>
                 <td class="cost-std">1 request</td>
                 <td class="strengths">Complex code generation, debugging, research, and broad technical analysis.</td>
-                <td class="strengths">Use as a strong alternative reviewer or researcher at standard cost.</td>
+                <td class="strengths">Avoid for new workflows; GitHub points users to Gemini 3.1 Pro.</td>
               </tr>
               <tr>
                 <td class="model-name">Gemini 3 Flash</td>
                 <td>Google</td>
-                <td><span class="cap-badge">Preview</span></td>
+                <td><span class="cap-badge">Deprecated</span></td>
                 <td class="cost-low">0.33x</td>
                 <td class="cost-std">1 request</td>
                 <td class="strengths">Fast simple tasks, repetitive edits, summaries, and low-cost iteration.</td>
-                <td class="strengths">Use for quick work when latency and cost matter more than depth.</td>
+                <td class="strengths">Avoid for new workflows; GitHub points users to Gemini 3.6 Flash.</td>
               </tr>
               <tr>
                 <td class="model-name">Gemini 3.1 Pro</td>
@@ -455,7 +455,11 @@
             policy controls, BYOK behavior, and AI-credit visibility. GitHub's July 29 default model enablement policy
             means Business and Enterprise admins should decide before August 26, 2026 whether unconfigured GA models
             should become available by default; explicit choices are preserved, while Kimi K2.7 and Fable 5 remain
-            excluded from that default path. GitHub's July 28 Grok 4.5 rollout adds xAI's new GA Copilot model across
+            excluded from that default path. GitHub's July 31 enterprise teams model-policy preview adds user-based
+            model access targeting for Copilot Business and Enterprise customers, with opt-in access expected for most
+            enterprise customers on August 3. GitHub's July 31 Gemini deprecation notice also removes Gemini 2.5 Pro
+            and Gemini 3 Flash from new Copilot workflows across chat, inline edits, ask and agent modes, and code completions;
+            use Gemini 3.1 Pro and Gemini 3.6 Flash instead after confirming enterprise model policy access. GitHub's July 28 Grok 4.5 rollout adds xAI's new GA Copilot model across
             major Copilot clients, but the supported-models page still lists the VS Code minimum as TBD, so verify
             client support before relying on it.
             GitHub's June 10 Copilot CLI
@@ -601,7 +605,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified July 31, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, VS Code model-provider controls, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified August 1, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
@@ -680,6 +684,14 @@
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-07-29-default-model-enablement-for-copilot-business-and-enterprise/" target="_blank" rel="noreferrer noopener">Default model enablement</a>
             <span class="ref-desc">GitHub's July 29, 2026 notice for the August 26 Business and Enterprise policy controlling default availability of unconfigured GA models.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-07-31-enterprise-teams-model-policy-targeting-in-public-preview/" target="_blank" rel="noreferrer noopener">Enterprise team model targeting</a>
+            <span class="ref-desc">GitHub's July 31, 2026 preview for assigning optional Copilot models to enterprise teams by user role or experiment group.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-07-31-gemini-2-5-pro-and-gemini-3-flash-deprecated/" target="_blank" rel="noreferrer noopener">Gemini model deprecation</a>
+            <span class="ref-desc">GitHub's July 31, 2026 notice that Gemini 2.5 Pro and Gemini 3 Flash are deprecated across Copilot surfaces.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-07-27-enterprise-managed-settings-now-apply-to-the-github-copilot-app/" target="_blank" rel="noreferrer noopener">Copilot managed settings expansion</a>
