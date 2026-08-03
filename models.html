@@ -437,14 +437,14 @@
             as GA Copilot models, with VS Code 1.128 minimum guidance and extended context/reasoning availability
             for GPT-5.6 family models in VS Code and Copilot CLI. Treat those models as policy- and billing-sensitive
             until your actual Copilot picker, admin settings, and AI-credit exports agree. GitHub's July 24 supported-models
-            check also lists Gemini 3 Flash, Gemini 3.1 Pro, Gemini 3.5 Flash, Gemini 3.6 Flash, MAI-Code-1-Flash, and Raptor mini,
+            check also lists Gemini 3.1 Pro, Gemini 3.5 Flash, Gemini 3.6 Flash, MAI-Code-1-Flash, Raptor mini, and Grok 4.5,
             with MAI-Code-1-Flash and Raptor mini included in Auto model selection. GitHub's supported-models page
             also lists Claude Opus 4.8 across Copilot surfaces, but teams should confirm plan availability and
             billing behavior in the live picker before routing default work to it. GitHub's June 30 release makes
             Claude Sonnet 5 generally available across major Copilot IDE, CLI, cloud-agent, app, web, and mobile
             surfaces through a gradual rollout. Business and Enterprise admins must enable it, and GitHub bills it
             at provider list pricing, so keep Sonnet 4.6 as a predictable fallback until access and cost are confirmed.
-            GitHub's July 27 supported-models check still lists Claude Opus 5, with extended context and reasoning
+            GitHub's August 3 supported-models check still lists Claude Opus 5, with extended context and reasoning
             controls in VS Code and Copilot CLI, VS Code 1.128 and Visual Studio 17.14.22 minimum guidance, Pro+,
             Max, Business, and Enterprise plan access, gradual rollout, admin-policy controls, provider-list-price
             billing, and enhanced cyber-safety safeguards that can block some security-adjacent requests.
@@ -488,7 +488,7 @@
           </article>
           <article class="model-use-card">
             <h3>Debugging production issues</h3>
-            <p><strong>Start:</strong> GPT-5.4 or Gemini 2.5 Pro.</p>
+            <p><strong>Start:</strong> GPT-5.4 or Gemini 3.1 Pro.</p>
             <p><strong>Escalate:</strong> Claude Opus 4.7 for difficult root-cause analysis.</p>
           </article>
           <article class="model-use-card">
@@ -498,22 +498,22 @@
           </article>
           <article class="model-use-card">
             <h3>Code review</h3>
-            <p><strong>Start:</strong> GPT-5.4, Gemini 2.5 Pro, or Claude Sonnet 4.6.</p>
+            <p><strong>Start:</strong> GPT-5.4, Gemini 3.1 Pro, or Claude Sonnet 4.6.</p>
             <p><strong>Escalate:</strong> Claude Opus 4.7 for high-risk logic, security-sensitive areas, or architecture drift.</p>
           </article>
           <article class="model-use-card">
             <h3>Docs and explanations</h3>
-            <p><strong>Start:</strong> GPT-5 mini, Gemini 3 Flash, or Claude Haiku 4.5.</p>
+            <p><strong>Start:</strong> GPT-5 mini, Gemini 3.6 Flash, or Claude Haiku 4.5.</p>
             <p><strong>Escalate:</strong> Gemini 3.1 Pro for long context or GPT-5.4 for technical precision.</p>
           </article>
           <article class="model-use-card">
             <h3>Visual or UI reasoning</h3>
-            <p><strong>Start:</strong> Claude Sonnet 4.6, Gemini 2.5 Pro, or GPT-5.4.</p>
+            <p><strong>Start:</strong> Claude Sonnet 4.6, Gemini 3.1 Pro, or GPT-5.4.</p>
             <p><strong>Escalate:</strong> Opus when layout, product behavior, and code changes all interact.</p>
           </article>
           <article class="model-use-card">
             <h3>Budget-sensitive loops</h3>
-            <p><strong>Start:</strong> included models, GPT-5.4 nano, Claude Haiku 4.5, or Gemini 3 Flash.</p>
+            <p><strong>Start:</strong> included models, GPT-5.4 nano, Claude Haiku 4.5, or Gemini 3.6 Flash.</p>
             <p><strong>Escalate:</strong> Pay 1x or higher only after the problem is narrowed; treat Gemini 3.5 Flash as a special-case speed model because it currently lists at 14x.</p>
           </article>
         </div>
@@ -532,7 +532,7 @@
             <ol class="use-case-steps">
               <li><strong>Plan with Claude Opus 4.7 or GPT-5.4:</strong> define scope, risks, file map, and test strategy.</li>
               <li><strong>Implement with Claude Sonnet 4.6 or GPT-5.3-Codex:</strong> make the changes in small commits or agent passes.</li>
-              <li><strong>Review with GPT-5.4 or Gemini 2.5 Pro:</strong> look for missed edge cases, broken assumptions, and missing tests.</li>
+              <li><strong>Review with GPT-5.4 or Gemini 3.1 Pro:</strong> look for missed edge cases, broken assumptions, and missing tests.</li>
               <li><strong>Polish with GPT-5 mini or Claude Haiku 4.5:</strong> tighten copy, comments, and small follow-up edits.</li>
             </ol>
           </article>
@@ -541,7 +541,7 @@
             <h3>Bug triage flow</h3>
             <ol class="use-case-steps">
               <li><strong>Summarize with GPT-5 mini:</strong> collect symptoms, logs, repro steps, and suspected areas.</li>
-              <li><strong>Diagnose with GPT-5.4, Gemini 2.5 Pro, or Claude Opus 4.7:</strong> reason through likely causes.</li>
+              <li><strong>Diagnose with GPT-5.4, Gemini 3.1 Pro, or Claude Opus 4.7:</strong> reason through likely causes.</li>
               <li><strong>Patch with Claude Sonnet 4.6 or GPT-5.3-Codex:</strong> edit the smallest safe surface area.</li>
               <li><strong>Verify with GPT-5.4:</strong> inspect the diff, tests, and regression risk before merging.</li>
             </ol>
@@ -561,8 +561,8 @@
             <h3>Low-cost daily flow</h3>
             <ol class="use-case-steps">
               <li><strong>Ask with included models:</strong> use GPT-5 mini or Raptor mini for most small prompts.</li>
-              <li><strong>Explore with 0.25x to 0.33x models:</strong> use GPT-5.4 nano, Gemini 3 Flash, or Haiku.</li>
-              <li><strong>Build with 1x models:</strong> use Sonnet 4.6, GPT-5.3-Codex, GPT-5.4, or Gemini 2.5 Pro when files change.</li>
+              <li><strong>Explore with 0.25x to 0.33x models:</strong> use GPT-5.4 nano, Gemini 3.6 Flash, or Haiku.</li>
+              <li><strong>Build with 1x models:</strong> use Sonnet 4.6, GPT-5.3-Codex, GPT-5.4, or Gemini 3.1 Pro when files change.</li>
               <li><strong>Escalate only for ambiguity:</strong> reserve GPT-5.5 and Opus 4.7 for decisions that affect architecture or reliability.</li>
             </ol>
           </article>
@@ -605,7 +605,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified August 2, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified August 3, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
