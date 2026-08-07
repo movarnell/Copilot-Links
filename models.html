@@ -208,20 +208,20 @@
               <tr>
                 <td class="model-name">Claude Sonnet 4.5</td>
                 <td>Anthropic</td>
-                <td><span class="cap-badge">GA</span></td>
+                <td><span class="cap-badge">Retires Sep 1</span></td>
                 <td class="cost-std">1x</td>
                 <td class="cost-std">1 request</td>
                 <td class="strengths">General coding, agent tasks, reasoning, and practical development support.</td>
-                <td class="strengths">Use as a balanced implementation model when you want quality at 1x.</td>
+                <td class="strengths">Avoid new defaults; GitHub points users to Claude Sonnet 5 before September 1.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">Claude Sonnet 4.6</td>
                 <td>Anthropic</td>
-                <td><span class="cap-badge">GA</span></td>
+                <td><span class="cap-badge">Retires Sep 1</span></td>
                 <td class="cost-std">1x</td>
                 <td class="cost-std">1 request</td>
                 <td class="strengths">General coding, debugging, visual reasoning, and agentic development.</td>
-                <td class="strengths">Use as the main "build it" model after a harder model has planned the approach.</td>
+                <td class="strengths">Use only as a transition model; GitHub points users to Claude Sonnet 5 before September 1.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">Claude Sonnet 5</td>
@@ -253,20 +253,20 @@
               <tr>
                 <td class="model-name">Claude Opus 4.5</td>
                 <td>Anthropic</td>
-                <td><span class="cap-badge">GA</span></td>
+                <td><span class="cap-badge">Retires Sep 1</span></td>
                 <td class="cost-high">3x</td>
                 <td class="cost-high">3 requests</td>
                 <td class="strengths">Difficult refactors, codebase reasoning, and complex problem solving.</td>
-                <td class="strengths">Use for architectural planning when Sonnet is missing context or nuance.</td>
+                <td class="strengths">Avoid new defaults; GitHub points users to Claude Opus 5 before September 1.</td>
               </tr>
               <tr>
                 <td class="model-name">Claude Opus 4.6</td>
                 <td>Anthropic</td>
-                <td><span class="cap-badge">GA</span></td>
+                <td><span class="cap-badge">Retires Sep 1</span></td>
                 <td class="cost-high">3x</td>
                 <td class="cost-high">3 requests</td>
                 <td class="strengths">Deep reasoning, hard debugging, and complex tradeoff analysis.</td>
-                <td class="strengths">Use for planning and review on complicated work when 3x cost is acceptable.</td>
+                <td class="strengths">Use only as a transition model; GitHub points users to Claude Opus 5 before September 1.</td>
               </tr>
               <tr>
                 <td class="model-name">Claude Opus 4.8 fast mode</td>
@@ -325,11 +325,11 @@
               <tr>
                 <td class="model-name">Gemini 3.1 Pro</td>
                 <td>Google</td>
-                <td><span class="cap-badge">Preview</span></td>
+                <td><span class="cap-badge">Retires Sep 1</span></td>
                 <td class="cost-std">1x</td>
                 <td class="cost-std">1 request</td>
                 <td class="strengths">Long-context reasoning, edit-test loops, and technical analysis.</td>
-                <td class="strengths">Use for reading large contexts, comparing alternatives, and research-heavy prompts.</td>
+                <td class="strengths">Use only as a transition model; GitHub points users to Gemini 3.6 Flash before September 1.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">Gemini 3.5 Flash</td>
@@ -367,14 +367,23 @@
                 <td class="strengths">Fast agentic coding, complex multi-step workflows, image inputs, and up to 500,000 tokens of context.</td>
                 <td class="strengths">Use for time-sensitive exploration or tool-heavy tasks after confirming picker access, policy, and billing.</td>
               </tr>
+              <tr class="highlight">
+                <td class="model-name">Kimi K3</td>
+                <td>Moonshot AI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td>Provider list pricing</td>
+                <td>Provider list pricing</td>
+                <td class="strengths">Current Moonshot model for Copilot coding and agent workflows where available.</td>
+                <td class="strengths">Verify client support, admin policy, and pricing before replacing Kimi K2.7 Code guidance.</td>
+              </tr>
               <tr>
                 <td class="model-name">Raptor mini</td>
                 <td>Fine-tuned GPT-5 mini</td>
-                <td><span class="cap-badge">GA</span></td>
+                <td><span class="cap-badge">Retires Sep 1</span></td>
                 <td class="cost-free">Included</td>
                 <td class="cost-free">Included</td>
                 <td class="strengths">Inline suggestions, explanations, and everyday developer assistance.</td>
-                <td class="strengths">Use for included-cost support when available in your environment.</td>
+                <td class="strengths">Avoid new defaults; GitHub points users to MAI-Code-1-Flash before September 1.</td>
               </tr>
               <tr>
                 <td class="model-name">MAI-Code-1-Flash</td>
@@ -444,7 +453,7 @@
             Claude Sonnet 5 generally available across major Copilot IDE, CLI, cloud-agent, app, web, and mobile
             surfaces through a gradual rollout. Business and Enterprise admins must enable it, and GitHub bills it
             at provider list pricing, so keep Sonnet 4.6 as a predictable fallback until access and cost are confirmed.
-            GitHub's August 3 supported-models check still lists Claude Opus 5, with extended context and reasoning
+            GitHub's August 7 supported-models check still lists Claude Opus 5 and adds Kimi K3, with extended context and reasoning
             controls in VS Code and Copilot CLI, VS Code 1.128 and Visual Studio 17.14.22 minimum guidance, Pro+,
             Max, Business, and Enterprise plan access, gradual rollout, admin-policy controls, provider-list-price
             billing, and enhanced cyber-safety safeguards that can block some security-adjacent requests.
@@ -466,6 +475,9 @@
             than treating it as a hidden model default. GitHub's August 3 managed-settings specialization lets
             enterprise teams override approved keys such as model, plugin, marketplace, and bypass-permission settings
             beneath enterprise-level controls.
+            GitHub's current retirement table schedules Claude Opus 4.5, Claude Opus 4.6, Claude Sonnet 4.5,
+            Claude Sonnet 4.6, Gemini 3.1 Pro, and Raptor mini for September 1, 2026 retirement, so keep
+            new workflow defaults on Claude Opus 5, Claude Sonnet 5, Gemini 3.6 Flash, or MAI-Code-1-Flash where available.
             GitHub's June 10 Copilot CLI
             security-review command also makes local AI security review part of the practical pre-commit workflow.
           </p>
@@ -609,7 +621,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified August 6, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified August 7, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, scheduled retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
