@@ -1,6 +1,17 @@
 (function () {
   const latestUpdates = [
     {
+      source: "GitHub Changelog",
+      date: "2026-08-12",
+      displayDate: "August 12, 2026",
+      category: "developer-tools",
+      companies: ["GitHub Copilot", "VS Code", "Copilot CLI", "MCP", "Agent Plugins"],
+      title: "Agent Plugins 1.0 Brings Portable Skills and MCP Packages to Copilot Clients",
+      url: "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app",
+      summary:
+        "GitHub's Agent Plugins 1.0 changelog says teams can now package skills and MCP server configuration once for compatible agent clients, with general availability in VS Code, Copilot CLI, the GitHub Copilot SDK, and the Copilot app. The update matters for agent-workflow maintainers because plugin packages can keep portable skills and MCP servers together while preserving Copilot-specific capabilities under a namespaced directory, and Business or Enterprise admins can govern plugin and marketplace access through existing managed settings.",
+    },
+    {
       source: "Visual Studio Code",
       date: "2026-08-12",
       displayDate: "August 12, 2026",
