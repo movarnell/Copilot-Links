@@ -2,6 +2,17 @@
   const latestUpdates = [
     {
       source: "GitHub Changelog",
+      date: "2026-08-13",
+      displayDate: "August 13, 2026",
+      category: "models",
+      companies: ["GitHub Copilot", "Gemini", "Google", "VS Code", "Copilot CLI"],
+      title: "Gemini 3.7 Flash Starts Rolling Out in GitHub Copilot",
+      url: "https://github.blog/changelog/2026-08-13-gemini-3-7-flash-is-now-available-in-github-copilot/",
+      summary:
+        "GitHub's Copilot changelog says Gemini 3.7 Flash is rolling out for Pro, Pro+, Max, Business, and Enterprise users across VS Code, Visual Studio, Copilot CLI, Copilot cloud agent, the Copilot app, JetBrains, Xcode, and Eclipse. GitHub positions the Google Flash model as an improvement for web and app development, code quality, codebase research, final-output presentation, verification, and agentic coding workflows, while Business and Enterprise admins must enable the Gemini 3.7 Flash Preview policy before organization members can select it.",
+    },
+    {
+      source: "GitHub Changelog",
       date: "2026-08-12",
       displayDate: "August 12, 2026",
       category: "developer-tools",
