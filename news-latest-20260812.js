@@ -1,6 +1,17 @@
 (function () {
   const latestUpdates = [
     {
+      source: "GitHub Docs",
+      date: "2026-08-18",
+      displayDate: "August 18, 2026",
+      category: "models",
+      companies: ["GitHub Copilot", "Grok", "xAI", "VS Code", "Copilot CLI"],
+      title: "GitHub Docs List Grok 4.6 as a GA Copilot Model",
+      url: "https://docs.github.com/en/copilot/reference/ai-models/supported-models#supported-ai-models-in-copilot",
+      summary:
+        "GitHub's current Copilot supported-models reference now lists Grok 4.6 as a generally available xAI model alongside Grok 4.5, with support shown across Copilot clients and paid plans. The same reference still marks the minimum IDE versions for Grok 4.6 as TBD, so teams should verify picker availability, Business or Enterprise model policy settings, and billing behavior in their own Copilot clients before routing default agent work to it.",
+    },
+    {
       source: "GitHub Changelog",
       date: "2026-08-13",
       displayDate: "August 13, 2026",
