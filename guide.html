@@ -34,6 +34,7 @@
           <span class="nav-group-label">On this page</span>
           <a href="#what-are-agents-skills" class="nav-pill">Agents</a>
           <a href="#workspace" class="nav-pill">Workspaces</a>
+          <a href="#enterprise-model-guide" class="nav-pill">Models</a>
           <a href="#where-agents" class="nav-pill">Agent Files</a>
           <a href="#where-skills" class="nav-pill">Skill Files</a>
           <a href="#comparison" class="nav-pill">User vs Workspace</a>
@@ -143,6 +144,64 @@
             But you can also store agents and skills in a special folder in your <strong>home directory</strong>
             (outside any project). These are <em>user-level</em> &mdash; they follow you everywhere,
             regardless of which project folder you have open.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="enterprise-model-guide" aria-labelledby="enterprise-model-guide-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Model Routing</p>
+          <h2 id="enterprise-model-guide-heading">Current Copilot Enterprise Model Guide</h2>
+          <p>
+            For Enterprise work, use the cheapest model that can reliably complete the phase, then escalate only when
+            evidence quality, coordination complexity, or consequence justifies the additional AI-credit cost.
+            Enterprise seats contribute to a pooled monthly AI-credit allowance, one AI credit equals $0.01, and
+            excess usage is billed by input, cached input, cache write where applicable, and output tokens.
+          </p>
+        </div>
+
+        <div class="models-grid">
+          <article class="model-use-card">
+            <h3>GPT-5 mini</h3>
+            <p><strong>Route:</strong> fixed Python/API collection, simple extraction, and known-schema outputs.</p>
+            <p><strong>Cost:</strong> $0.25 input, $0.025 cached input, $2.00 output per 1M tokens.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>GPT-5.6 Luna</h3>
+            <p><strong>Route:</strong> cheap iteration, quick checks, and lightweight coding loops.</p>
+            <p><strong>Cost:</strong> $0.20 input, $0.02 cached input, $0.25 cache write, $1.20 output per 1M tokens.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>GPT-5.6 Terra</h3>
+            <p><strong>Route:</strong> bounded evidence-validation gates, citation checks, and claim verification before writing.</p>
+            <p><strong>Cost:</strong> $2.00 input, $0.20 cached input, $2.50 cache write, $12.00 output per 1M tokens.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>GPT-5.6 Sol</h3>
+            <p><strong>Route:</strong> long multipart orchestration and diagnosis while promotional pricing is active.</p>
+            <p><strong>Cost:</strong> $2.00 input, $0.20 cached input, $2.50 cache write, $10.00 output per 1M tokens through September 3, 2026.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>Claude Sonnet 5</h3>
+            <p><strong>Route:</strong> retain only when a blind evaluation shows it wins communication quality.</p>
+            <p><strong>Cost:</strong> $2.00 input, $0.20 cached input, $2.50 cache write, $10.00 output per 1M tokens.</p>
+          </article>
+          <article class="model-use-card">
+            <h3>Claude Opus 5</h3>
+            <p><strong>Route:</strong> exceptional unresolved or high-consequence escalation after cheaper models fail.</p>
+            <p><strong>Cost:</strong> $5.00 input, $0.50 cached input, $6.25 cache write, $25.00 output per 1M tokens.</p>
+          </article>
+        </div>
+
+        <div class="guide-callout guide-callout-spaced">
+          <h3>Knowledge-Base Safety Rule</h3>
+          <p>
+            A model saying it is confident is not enough for a knowledge-base write. Require source links,
+            citation checks, and evidence validation before publishing model-generated answers as reference material.
+          </p>
+          <p>
+            Use the detailed <a href="models.html#enterprise-model-routing" class="guide-link">six-model visual route map</a>
+            when you need the side-by-side comparison.
           </p>
         </div>
       </section>

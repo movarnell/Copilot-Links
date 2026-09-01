@@ -6,7 +6,7 @@
     <title>GitHub Copilot Model Guide — Cost, Tasks, and Workflows</title>
     <meta
       name="description"
-      content="A practical GitHub Copilot model guide with current model multipliers, best-fit tasks, and recommended planning, implementation, review, and debugging flows."
+      content="A practical GitHub Copilot Enterprise model guide with current AI-credit token pricing, best-fit tasks, and recommended planning, implementation, review, and debugging flows."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,6 +32,7 @@
         <div class="nav-group" aria-label="Sections on this page">
           <span class="nav-group-label">On this page</span>
           <a href="#model-table" class="nav-pill active">Table</a>
+          <a href="#enterprise-model-routing" class="nav-pill">Enterprise Map</a>
           <a href="#quick-picks" class="nav-pill">Quick Picks</a>
           <a href="#workflow-flows" class="nav-pill">Flows</a>
           <a href="#billing-notes" class="nav-pill">Billing</a>
@@ -46,7 +47,7 @@
         <h1>GitHub Copilot Model Guide</h1>
         <p class="hero-copy">
           A compact reference for choosing models in Copilot Chat and agent workflows. Use it to balance model quality,
-          premium request cost, latency, and the type of work you are asking Copilot to do.
+          token cost, latency, and the type of work you are asking Copilot to do.
         </p>
         <div class="hero-actions">
           <a href="#model-table" class="hero-guide-link">Compare Models</a>
@@ -55,13 +56,117 @@
         </div>
       </header>
 
+      <section class="panel reveal" id="enterprise-model-routing" aria-labelledby="enterprise-model-routing-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Enterprise Routing Graphic</p>
+          <h2 id="enterprise-model-routing-heading">Six-Model Copilot Enterprise Route Map</h2>
+          <p>
+            A current September 1, 2026 view of the models most useful for Copilot Enterprise agent work.
+            Prices are GitHub Copilot AI-credit rates per 1M tokens; 1 AI credit equals $0.01.
+          </p>
+        </div>
+
+        <div class="model-route-graphic" role="img" aria-label="Copilot Enterprise routing graphic comparing GPT-5 mini, GPT-5.6 Luna, GPT-5.6 Terra, GPT-5.6 Sol, Claude Sonnet 5, and Claude Opus 5 by cost and recommended use.">
+          <div class="route-lanes" aria-hidden="true">
+            <div class="route-lane route-lane-low">Low-cost collection</div>
+            <div class="route-lane route-lane-mid">Validation and communication</div>
+            <div class="route-lane route-lane-high">Escalation and orchestration</div>
+          </div>
+
+          <div class="route-card route-card-mini">
+            <div class="route-card-head">
+              <span class="route-kicker">Default collector</span>
+              <strong>GPT-5 mini</strong>
+            </div>
+            <p>Use first for fixed Python/API collection work where the task shape, sources, and outputs are already defined.</p>
+            <dl>
+              <div><dt>Input</dt><dd>$0.25</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.025 / none</dd></div>
+              <div><dt>Output</dt><dd>$2.00</dd></div>
+            </dl>
+          </div>
+
+          <div class="route-card route-card-luna">
+            <div class="route-card-head">
+              <span class="route-kicker">Cheap iteration</span>
+              <strong>GPT-5.6 Luna</strong>
+            </div>
+            <p>Use for quick checks and lightweight coding loops when speed and cost matter more than deep synthesis.</p>
+            <dl>
+              <div><dt>Input</dt><dd>$0.20</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.02 / $0.25</dd></div>
+              <div><dt>Output</dt><dd>$1.20</dd></div>
+            </dl>
+          </div>
+
+          <div class="route-card route-card-terra">
+            <div class="route-card-head">
+              <span class="route-kicker">Evidence gate</span>
+              <strong>GPT-5.6 Terra</strong>
+            </div>
+            <p>Route bounded evidence-validation gates here: compare citations, check extraction quality, and verify claims before writing.</p>
+            <dl>
+              <div><dt>Input</dt><dd>$2.00</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.20 / $2.50</dd></div>
+              <div><dt>Output</dt><dd>$12.00</dd></div>
+            </dl>
+          </div>
+
+          <div class="route-card route-card-sonnet">
+            <div class="route-card-head">
+              <span class="route-kicker">Communication holdout</span>
+              <strong>Claude Sonnet 5</strong>
+            </div>
+            <p>Retain only when a blind evaluation shows it wins communication quality for the audience and source constraints.</p>
+            <dl>
+              <div><dt>Input</dt><dd>$2.00</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.20 / $2.50</dd></div>
+              <div><dt>Output</dt><dd>$10.00</dd></div>
+            </dl>
+          </div>
+
+          <div class="route-card route-card-sol">
+            <div class="route-card-head">
+              <span class="route-kicker">Promo orchestrator</span>
+              <strong>GPT-5.6 Sol</strong>
+            </div>
+            <p>Use for long multipart orchestration and diagnosis while promotional pricing is active, then re-check the route after it expires.</p>
+            <dl>
+              <div><dt>Input</dt><dd>$2.00</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.20 / $2.50</dd></div>
+              <div><dt>Output</dt><dd>$10.00</dd></div>
+            </dl>
+            <span class="route-promo">50% promotional pricing through September 3, 2026</span>
+          </div>
+
+          <div class="route-card route-card-opus">
+            <div class="route-card-head">
+              <span class="route-kicker">Exceptional escalation</span>
+              <strong>Claude Opus 5</strong>
+            </div>
+            <p>Reserve for unresolved, high-consequence work after cheaper routes fail or the decision needs a final independent pass.</p>
+            <dl>
+              <div><dt>Input</dt><dd>$5.00</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.50 / $6.25</dd></div>
+              <div><dt>Output</dt><dd>$25.00</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="route-evidence-note">
+          <strong>Knowledge-base rule:</strong> self-reported confidence is not enough. Require source links, citation checks,
+          and evidence validation before publishing a model-generated answer to a knowledge base.
+        </div>
+      </section>
+
       <section class="panel reveal" id="model-table" aria-labelledby="model-table-heading">
         <div class="panel-head">
           <p class="eyebrow">Reference Table</p>
-          <h2 id="model-table-heading">Available Copilot Models and Cost</h2>
+          <h2 id="model-table-heading">Copilot Enterprise Token Pricing</h2>
           <p>
-            Paid-plan cost is shown using GitHub's model multiplier shorthand, but June 1 billing now converts token
-            usage into AI Credits. Included models may still be the safest starting point on paid plans.
+            Copilot Enterprise seats contribute a pooled monthly AI-credit allowance. Usage is token-based by model
+            and token type, one AI credit equals $0.01, and usage beyond the included pool is billed in AI Credits
+            at GitHub's listed per-token rates.
           </p>
         </div>
 
@@ -72,363 +177,66 @@
                 <th>Model</th>
                 <th>Provider</th>
                 <th>Status</th>
-                <th>Paid Cost</th>
-                <th>Free Plan</th>
-                <th>Best At</th>
+                <th>Input / 1M</th>
+                <th>Cached / Write</th>
+                <th>Output / 1M</th>
                 <th>Use It For</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="model-name">GPT-4.1</td>
-                <td>OpenAI</td>
-                <td><span class="cap-badge">Deprecated</span></td>
-                <td class="cost-free">Included</td>
-                <td class="cost-free">Included</td>
-                <td class="strengths">Fast everyday coding help, explanations, small changes, and fallback chat.</td>
-                <td class="strengths">Avoid for new workflows; use GPT-5 mini or GPT-5.5 instead.</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-4o</td>
-                <td>OpenAI</td>
-                <td><span class="cap-badge">Billing ref</span></td>
-                <td class="cost-free">Included</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">General chat, multimodal help, and broad assistant tasks where available.</td>
-                <td class="strengths">Use as a baseline included model if it appears in your Copilot model picker.</td>
-              </tr>
-              <tr>
                 <td class="model-name">GPT-5 mini</td>
                 <td>OpenAI</td>
                 <td><span class="cap-badge">GA</span></td>
-                <td class="cost-free">Included</td>
-                <td class="cost-free">Included</td>
-                <td class="strengths">General coding, writing, quick reasoning, and low-cost daily usage.</td>
-                <td class="strengths">Default to this for routine prompts before escalating to premium models.</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-5.2</td>
-                <td>OpenAI</td>
-                <td><span class="cap-badge">Deprecated</span></td>
-                <td class="cost-std">1x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Deep reasoning, debugging, architectural analysis, and tradeoff decisions.</td>
-                <td class="strengths">Avoid for new workflows; move planning prompts to GPT-5.5 or GPT-5.4.</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-5.2-Codex</td>
-                <td>OpenAI</td>
-                <td><span class="cap-badge">Deprecated</span></td>
-                <td class="cost-std">1x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Long-horizon coding work, multi-file implementation, and agent mode tasks.</td>
-                <td class="strengths">Avoid for new workflows; move repository-edit work to GPT-5.3-Codex.</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-5.3-Codex</td>
-                <td>OpenAI</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-std">1x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Agentic software development, tests, refactors, reviews, and codebase navigation.</td>
-                <td class="strengths">Use as a strong default for implementation-heavy agent workflows.</td>
+                <td class="cost-low">$0.25</td>
+                <td>$0.025 cached; no cache write</td>
+                <td class="cost-low">$2.00</td>
+                <td class="strengths">Fixed Python/API collection work where the sources, schema, and output are already defined.</td>
               </tr>
               <tr class="highlight">
-                <td class="model-name">GPT-5.4</td>
+                <td class="model-name">GPT-5.6 Luna</td>
                 <td>OpenAI</td>
                 <td><span class="cap-badge">GA</span></td>
-                <td class="cost-std">1x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Complex reasoning, debugging, code review, and architecture-level analysis.</td>
-                <td class="strengths">Use when you need a strong reviewer or planner without jumping to premium-heavy cost.</td>
+                <td class="cost-low">$0.20</td>
+                <td>$0.02 cached; $0.25 write</td>
+                <td class="cost-low">$1.20</td>
+                <td class="strengths">Cheap iteration, quick checks, and lightweight coding loops.</td>
               </tr>
               <tr class="highlight">
-                <td class="model-name">GPT-5.5</td>
+                <td class="model-name">GPT-5.6 Terra</td>
                 <td>OpenAI</td>
                 <td><span class="cap-badge">GA</span></td>
-                <td class="cost-high">7.5x</td>
-                <td class="cost-high">7.5 requests</td>
-                <td class="strengths">Frontier reasoning, difficult architecture decisions, and high-stakes code review.</td>
-                <td class="strengths">Use narrowly for ambiguous planning, security-sensitive review, or GPT-4.1 migration checks.</td>
+                <td class="cost-std">$2.00</td>
+                <td>$0.20 cached; $2.50 write</td>
+                <td class="cost-std">$12.00</td>
+                <td class="strengths">Bounded evidence-validation gates, citation checks, and claim verification before writing.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">GPT-5.6 Sol</td>
                 <td>OpenAI</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-high">7.5x</td>
-                <td class="cost-high">7.5 requests</td>
-                <td class="strengths">Frontier coding, cybersecurity, deep reasoning, and high-stakes agent planning.</td>
-                <td class="strengths">Use only when the task justifies GPT-5.5-class pricing and extended reasoning.</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-5.6 Terra</td>
-                <td>OpenAI</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-std">1x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">General professional work, coding, review, and balanced agent workflows.</td>
-                <td class="strengths">Try as the balanced GPT-5.6 option when it appears in your Copilot picker.</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-5.6 Luna</td>
-                <td>OpenAI</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-low">0.4x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Fast lightweight coding, drafting, and lower-cost agent iteration.</td>
-                <td class="strengths">Use for routine GPT-5.6-family checks before escalating to Terra or Sol.</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-5.4 mini</td>
-                <td>OpenAI</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-low">0.33x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Agentic codebase exploration, search-heavy work, and lightweight implementation.</td>
-                <td class="strengths">Use to scan a repo, find likely files, draft a plan, or handle medium-risk edits.</td>
-              </tr>
-              <tr>
-                <td class="model-name">GPT-5.4 nano</td>
-                <td>OpenAI</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-low">0.25x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Low-cost snippets, short explanations, small rewrites, and quick checks.</td>
-                <td class="strengths">Use for cheap iteration when mistakes are easy to spot and fix.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Claude Haiku 4.5</td>
-                <td>Anthropic</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-low">0.33x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Fast answers, lightweight edits, small explanations, and cheap support loops.</td>
-                <td class="strengths">Use for quick iteration before escalating to Sonnet or Opus.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Claude Sonnet 4.5</td>
-                <td>Anthropic</td>
-                <td><span class="cap-badge">Retired Sep 1</span></td>
-                <td class="cost-std">1x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">General coding, agent tasks, reasoning, and practical development support.</td>
-                <td class="strengths">Avoid for new workflows; GitHub points users to Claude Sonnet 5 after the September 1 retirement.</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Claude Sonnet 4.6</td>
-                <td>Anthropic</td>
-                <td><span class="cap-badge">Retired Sep 1</span></td>
-                <td class="cost-std">1x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">General coding, debugging, visual reasoning, and agentic development.</td>
-                <td class="strengths">Use only where an annual individual-plan exception still applies; otherwise move to Claude Sonnet 5.</td>
+                <td><span class="cap-badge">GA promo</span></td>
+                <td class="cost-std">$2.00 promo</td>
+                <td>$0.20 cached; $2.50 write</td>
+                <td class="cost-std">$10.00 promo</td>
+                <td class="strengths">Long multipart orchestration and diagnosis during 50% promotional pricing through September 3, 2026.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">Claude Sonnet 5</td>
                 <td>Anthropic</td>
                 <td><span class="cap-badge">GA</span></td>
-                <td class="cost-high">Provider pricing</td>
-                <td class="cost-high">Plan dependent</td>
-                <td class="strengths">Agentic coding, CLI-style tasks, tool use, debugging, and sustained multistep implementation.</td>
-                <td class="strengths">Prefer for demanding implementation work after confirming gradual rollout, admin policy, and AI-credit cost.</td>
+                <td class="cost-std">$2.00</td>
+                <td>$0.20 cached; $2.50 write</td>
+                <td class="cost-std">$10.00</td>
+                <td class="strengths">Retain only when a blind evaluation shows it wins communication quality for the audience.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">Claude Opus 5</td>
                 <td>Anthropic</td>
-                <td><span class="cap-badge">GA rollout</span></td>
-                <td class="cost-high">Provider pricing</td>
-                <td class="cost-high">Plan dependent</td>
-                <td class="strengths">Complex long-running coding tasks, multi-step tool use, regression verification, and careful execution.</td>
-                <td class="strengths">Use for high-value planning, review, and autonomous coding after confirming Pro+, Max, Business, or Enterprise access.</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Kimi K2.7 Code</td>
-                <td>Moonshot AI / GitHub hosted</td>
-                <td><span class="cap-badge">GA rollout</span></td>
-                <td class="cost-high">Provider pricing</td>
-                <td class="cost-high">Plan dependent</td>
-                <td class="strengths">Open-weight coding, lower-cost implementation, and agent workflows across Copilot surfaces.</td>
-                <td class="strengths">Available to individual, Business, and Enterprise plans; confirm admin policy and open-weight governance requirements.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Claude Opus 4.5</td>
-                <td>Anthropic</td>
-                <td><span class="cap-badge">Retired Sep 1</span></td>
-                <td class="cost-high">3x</td>
-                <td class="cost-high">3 requests</td>
-                <td class="strengths">Difficult refactors, codebase reasoning, and complex problem solving.</td>
-                <td class="strengths">Avoid for new workflows; GitHub points users to Claude Opus 5 after the September 1 retirement.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Claude Opus 4.6</td>
-                <td>Anthropic</td>
-                <td><span class="cap-badge">Retired Sep 1</span></td>
-                <td class="cost-high">3x</td>
-                <td class="cost-high">3 requests</td>
-                <td class="strengths">Deep reasoning, hard debugging, and complex tradeoff analysis.</td>
-                <td class="strengths">Avoid for new workflows; move to Claude Opus 4.7, Claude Opus 4.8, or Claude Opus 5.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Claude Opus 4.8 fast mode</td>
-                <td>Anthropic</td>
-                <td><span class="cap-badge">Preview</span></td>
-                <td class="cost-high">AI-credit billed</td>
-                <td class="cost-high">Plan dependent</td>
-                <td class="strengths">Low-latency Opus-class reasoning when response speed matters more than budget.</td>
-                <td class="strengths">Use instead of retired Claude Opus 4.6 fast mode after confirming picker access and cost.</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Claude Opus 4.7</td>
-                <td>Anthropic</td>
                 <td><span class="cap-badge">GA</span></td>
-                <td class="cost-high">15x</td>
-                <td class="cost-high">15 requests</td>
-                <td class="strengths">Anthropic's strongest Copilot model for advanced coding and reasoning.</td>
-                <td class="strengths">Use for the first planning pass on large, ambiguous, or risky engineering tasks.</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Claude Opus 4.8</td>
-                <td>Anthropic</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-high">Provider pricing</td>
-                <td class="cost-high">Plan dependent</td>
-                <td class="strengths">Newly listed Opus-class Copilot model for advanced reasoning and coding work.</td>
-                <td class="strengths">Check the actual picker, admin policy, and pricing page before making it a default.</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Claude Fable 5</td>
-                <td>Anthropic</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-high">Provider pricing</td>
-                <td class="cost-high">Not available</td>
-                <td class="strengths">Long-horizon autonomous coding and knowledge-work tasks with Mythos-class safeguards.</td>
-                <td class="strengths">Use only after confirming plan access, admin policy, usage-based billing, and the 30-day safety-retention requirement.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Gemini 2.5 Pro</td>
-                <td>Google</td>
-                <td><span class="cap-badge">Deprecated</span></td>
-                <td class="cost-std">1x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Complex code generation, debugging, research, and broad technical analysis.</td>
-                <td class="strengths">Avoid for new workflows; GitHub points users to Gemini 3.1 Pro.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Gemini 3 Flash</td>
-                <td>Google</td>
-                <td><span class="cap-badge">Deprecated</span></td>
-                <td class="cost-low">0.33x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Fast simple tasks, repetitive edits, summaries, and low-cost iteration.</td>
-                <td class="strengths">Avoid for new workflows; GitHub points users to Gemini 3.6 Flash.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Gemini 3.1 Pro</td>
-                <td>Google</td>
-                <td><span class="cap-badge">Retired Sep 1</span></td>
-                <td class="cost-std">1x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Long-context reasoning, edit-test loops, and technical analysis.</td>
-                <td class="strengths">Avoid for new workflows; GitHub points users to Gemini 3.6 Flash after the September 1 retirement.</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Gemini 3.5 Flash</td>
-                <td>Google</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-high">14x</td>
-                <td class="cost-high">Not available</td>
-                <td class="strengths">Fast iterative agentic coding, tool use, and cache-efficient workflows.</td>
-                <td class="strengths">Test for speed-sensitive agent work, but avoid as a default until pricing stabilizes.</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Gemini 3.6 Flash</td>
-                <td>Google</td>
-                <td><span class="cap-badge">Rolling out</span></td>
-                <td class="cost-high">Provider pricing</td>
-                <td class="cost-high">Not available</td>
-                <td class="strengths">Web and app development, coding, parallel tool use, and longer-horizon agentic tasks.</td>
-                <td class="strengths">Use only after confirming gradual picker access, admin policy, reasoning controls, and AI-credit billing.</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Gemini 3.7 Flash</td>
-                <td>Google</td>
-                <td><span class="cap-badge">Rolling out</span></td>
-                <td class="cost-high">Provider pricing</td>
-                <td class="cost-high">Not available</td>
-                <td class="strengths">Web and app development, agentic coding workflows, codebase research, and verification-heavy coding tasks.</td>
-                <td class="strengths">Confirm gradual rollout and the Business or Enterprise preview policy before routing default work to it.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Grok Code Fast 1</td>
-                <td>xAI</td>
-                <td><span class="cap-badge">Deprecated</span></td>
-                <td class="cost-low">0.25x</td>
-                <td class="cost-std">1 request</td>
-                <td class="strengths">Fast coding, code generation, and debugging across common languages.</td>
-                <td class="strengths">Avoid for new workflows; move speed-focused prompts to GPT-5 mini or Claude Haiku 4.5.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Grok 4.5</td>
-                <td>xAI</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td>Provider list pricing</td>
-                <td>Provider list pricing</td>
-                <td class="strengths">Fast agentic coding, complex multi-step workflows, image inputs, and up to 500,000 tokens of context.</td>
-                <td class="strengths">Use for time-sensitive exploration or tool-heavy tasks after confirming picker access, policy, and billing.</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Grok 4.6</td>
-                <td>xAI</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td>Provider list pricing</td>
-                <td>Provider list pricing</td>
-                <td class="strengths">Current xAI model option for Copilot coding and agent workflows where available.</td>
-                <td class="strengths">Treat as the current xAI Copilot option after confirming Business or Enterprise policy access and billing.</td>
-              </tr>
-              <tr class="highlight">
-                <td class="model-name">Kimi K3</td>
-                <td>Moonshot AI</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td>Provider list pricing</td>
-                <td>Provider list pricing</td>
-                <td class="strengths">Current Moonshot model for Copilot coding and agent workflows where available.</td>
-                <td class="strengths">Verify client support, admin policy, and pricing before replacing Kimi K2.7 Code guidance.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Raptor mini</td>
-                <td>Fine-tuned GPT-5 mini</td>
-                <td><span class="cap-badge">Retired Sep 1</span></td>
-                <td class="cost-free">Included</td>
-                <td class="cost-free">Included</td>
-                <td class="strengths">Inline suggestions, explanations, and everyday developer assistance.</td>
-                <td class="strengths">Avoid for new workflows; GitHub points users to MAI-Code-1-Flash after the September 1 retirement.</td>
-              </tr>
-              <tr>
-                <td class="model-name">MAI-Code-1-Flash</td>
-                <td>Microsoft</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-free">Included</td>
-                <td class="cost-free">Included</td>
-                <td class="strengths">Fast Microsoft-hosted coding support, Auto model selection, and low-friction everyday tasks.</td>
-                <td class="strengths">Avoid new defaults; GitHub points users to MAI-Code-1.1-Flash before September 10.</td>
-              </tr>
-              <tr>
-                <td class="model-name">MAI-Code-1.1-Flash</td>
-                <td>Microsoft</td>
-                <td><span class="cap-badge">GA</span></td>
-                <td class="cost-free">Included</td>
-                <td class="cost-free">Included</td>
-                <td class="strengths">Updated Microsoft-hosted coding model listed for Copilot and Auto model selection.</td>
-                <td class="strengths">Treat as a low-friction included option after confirming it appears in your client and policy.</td>
-              </tr>
-              <tr>
-                <td class="model-name">Goldeneye</td>
-                <td>Fine-tuned GPT-5.1-Codex</td>
-                <td><span class="cap-badge">Preview</span></td>
-                <td class="cost-free">Free only</td>
-                <td class="cost-free">Included</td>
-                <td class="strengths">Evaluation-oriented reasoning and problem solving.</td>
-                <td class="strengths">Use for comparison and testing when GitHub exposes it in your picker.</td>
+                <td class="cost-high">$5.00</td>
+                <td>$0.50 cached; $6.25 write</td>
+                <td class="cost-high">$25.00</td>
+                <td class="strengths">Exceptional unresolved or high-consequence escalation after cheaper models fail.</td>
               </tr>
             </tbody>
           </table>
@@ -436,98 +244,11 @@
 
         <div class="legend-info">
           <p>
-            <strong>Current caveat:</strong> GitHub may auto-select a model for some requests, especially if the
-            selected model is overloaded. Models also vary by Copilot plan, client, policy settings, and preview access.
-            GitHub's May 20 web-chat update also narrows the github.com model picker compared with VS Code and
-            agent surfaces. GitHub's May 26 targeted model rules also mean enterprise owners can now allow different
-            models for different organizations. GitHub's June 1 Auto update also means Copilot Free, Pro, and Pro+
-            users may see evaluation models through Auto, while Business and Enterprise Auto remains limited to GA
-            models. GitHub's June 5 deprecation notice confirms GPT-5.2 and GPT-5.2-Codex should no longer
-            be recommended for new workflows across most Copilot surfaces, with GPT-5.5 and GPT-5.3-Codex
-            listed as the suggested replacements. GitHub's June 2 agent-app and sandbox previews also mean model
-            guidance should be paired with tool, runtime-isolation, review-boundary, and canvas-handoff policies. VS Code's current Copilot setup docs note that new Copilot Pro, Pro+, and student
-            sign-ups are temporarily paused. GitHub's current pricing docs also say Copilot usage is now converted
-            from token usage into AI Credits, so confirm both model access and credit behavior in the actual client you
-            are using before setting budgets. VS Code 1.126 adds whole-session credit-cost visibility and a unified
-            picker for model context size and reasoning effort, so teams can tune model behavior while monitoring
-            cost across an agent workflow. VS Code 1.135 is now the stable release and continues the dedicated agent-host
-            and Agent Host Protocol work while adding external Copilot and Claude agent sessions, experimental Rubber Duck
-            review, detailed per-model chat usage, and a streamlined single-pane Agents window layout. Keep teams on current VS Code builds before depending on those approval and agent-host
-            behaviors. GitHub's July 1
-            Kimi K2.7 Code rollout added Copilot's first selectable open-weight model, and the July 7 expansion now
-            includes Business and Enterprise plans with administrator policy controls. GitHub will also fully retire the separate GitHub Models
-            playground, catalog, inference API, and BYOK endpoints on July 30, so do not confuse that product with
-            Copilot's continuing multi-model picker. GitHub's June 4 context
-            and reasoning update also makes one-million-token context windows and higher reasoning levels explicit
-            AI-credit tradeoffs in VS Code, Copilot CLI, and the Copilot app. GitHub's June 9 security-validation
-            update also means third-party coding agents such as Claude and OpenAI Codex can receive CodeQL,
-            dependency, and secret-scanning checks before their pull requests are finalized. GitHub's June 9
-            Claude Fable 5 rollout adds a new high-capability Copilot model, but Business and Enterprise admins
-            must enable it, it is billed under usage-based provider pricing, and it requires up to 30 days of
-            Anthropic prompt/output retention for safety classifiers. GitHub's current pricing page says Claude Fable 5
-            is currently unavailable, so treat any Fable guidance as availability-sensitive and fall back to other
-            enabled models until the picker and pricing page agree. GitHub's June 29 supported-models update retires
-            Claude Opus 4.6 fast mode and points fast-mode users to Claude Opus 4.8 fast mode preview; GitHub's
-            pricing page checked June 29 lists Claude Opus 4.8 standard pricing but not a separate fast-mode pricing
-            row, so verify the actual picker and billing export before using fast mode broadly. GitHub's July 10 supported-models and pricing pages now list GPT-5.6 Luna, Sol, and Terra
-            as GA Copilot models, with VS Code 1.128 minimum guidance and extended context/reasoning availability
-            for GPT-5.6 family models in VS Code and Copilot CLI. Treat those models as policy- and billing-sensitive
-            until your actual Copilot picker, admin settings, and AI-credit exports agree. GitHub's July 24 supported-models
-            check also lists Gemini 3.1 Pro, Gemini 3.5 Flash, Gemini 3.6 Flash, MAI-Code-1-Flash, Raptor mini, and Grok 4.5,
-            with MAI-Code-1-Flash and Raptor mini included in Auto model selection. GitHub's August 28 supported-models
-            check keeps MAI-Code-1.1-Flash as a GA Microsoft model and Auto-eligible option, GitHub's August 13
-            changelog adds Gemini 3.7 Flash as a gradual-rollout Google model for major Copilot clients, and GitHub's
-            September 1 supported-models check still lists Grok 4.6 as a GA xAI model across Copilot clients and paid plans,
-            with minimum IDE versions still marked TBD. GitHub's supported-models page
-            also lists Claude Opus 4.8 across Copilot surfaces, but teams should confirm plan availability and
-            billing behavior in the live picker before routing default work to it. GitHub's June 30 release makes
-            Claude Sonnet 5 generally available across major Copilot IDE, CLI, cloud-agent, app, web, and mobile
-            surfaces through a gradual rollout. Business and Enterprise admins must enable it, and GitHub bills it
-            at provider list pricing, so keep Sonnet 4.6 as a predictable fallback until access and cost are confirmed.
-            GitHub's September 1 supported-models check still lists Claude Opus 5 and Kimi K3, with extended context and reasoning
-            controls in VS Code and Copilot CLI, VS Code 1.128 and Visual Studio 17.14.22 minimum guidance, Pro+,
-            Max, Business, and Enterprise plan access, gradual rollout, admin-policy controls, provider-list-price
-            billing, and enhanced cyber-safety safeguards that can block some security-adjacent requests.
-            GitHub's August 7 Copilot release roundup also means model guidance should account for Auto-request
-            model and AI-credit details in the Copilot app, CLI /worktree isolation, /rewind recovery, live tool-call
-            duration visibility, and VS Code /btw side chats when choosing how much context and reasoning to spend.
-            GitHub's July 27 Copilot app and cloud-agent governance updates also mean enterprise teams should verify
-            managed-settings.json coverage, dedicated app access policy, plugin marketplace controls, and approval-prompt
-            behavior before standardizing an agent workflow across clients. GitHub's July 22 Copilot-versus-API guidance
-            also reinforces that model choice should be weighed against the surrounding harness, repository context,
-            policy controls, BYOK behavior, and AI-credit visibility. GitHub's July 29 default model enablement policy
-            took effect on August 26, 2026 for Copilot Business and Enterprise: unconfigured GA models now follow the
-            enterprise or organization default availability policy, explicit choices are preserved, and Kimi K2.7,
-            Kimi K3, other open-weight models, pre-GA models, and Claude Fable 5 remain excluded from that default path.
-            GitHub's July 31 enterprise teams model-policy preview adds user-based
-            model access targeting for Copilot Business and Enterprise customers, with opt-in access expected for most
-            enterprise customers on August 3. GitHub's July 31 Gemini deprecation notice also removes Gemini 2.5 Pro
-            and Gemini 3 Flash from new Copilot workflows across chat, inline edits, ask and agent modes, and code completions;
-            use Gemini 3.1 Pro and Gemini 3.6 Flash instead after confirming enterprise model policy access. GitHub's July 28 Grok 4.5 rollout added xAI's prior GA Copilot model across
-            major Copilot clients, and the August 18 supported-models check means Grok 4.6 should now be preferred for new xAI model
-            checks when it appears in the picker and policy settings. GitHub's August 3 cloud-agent update also extends configurable
-            reasoning levels to Copilot cloud agent, so teams should budget reasoning depth per delegated task rather
-            than treating it as a hidden model default. GitHub's August 3 managed-settings specialization lets
-            enterprise teams override approved keys such as model, plugin, marketplace, and bypass-permission settings
-            beneath enterprise-level controls. GitHub's August 18 JetBrains managed-settings release extends central
-            plugin governance, MCP allowlists, managed OpenTelemetry, and organization-controlled permission modes to
-            JetBrains IDEs.
-            GitHub's current retirement table puts Claude Opus 4.5, Claude Opus 4.6, Claude Sonnet 4.5,
-            Claude Sonnet 4.6, Gemini 3.1 Pro, and Raptor mini at September 1, 2026 retirement, so keep
-            new workflow defaults on Claude Opus 5, Claude Sonnet 5, Gemini 3.6 Flash, Gemini 3.7 Flash, or MAI-Code-1.1-Flash where available.
-            OpenAI's August 24 Kiro announcement also puts GPT-5.6 Sol, Terra, and Luna into another spec-driven
-            coding-agent workflow, while OpenAI's August 26 Hugging Face incident review reinforces that model and agent
-            choices should account for constrained permissions, monitoring, review checkpoints, repository standards,
-            tests, and provider-specific cost behavior, not just benchmark strength. GitHub's June 10 Copilot CLI
-            security-review command also makes local AI security review part of the practical pre-commit workflow.
-            GitHub's August 28 weekly Copilot release roundup also adds practical model and workflow governance signals:
-            Visual Studio users can pin or hide models, compare capability and cost, adjust reasoning effort per task,
-            review uncommitted changes with the Git agent, and monitor premium-model usage before hitting plan limits,
-            while Copilot CLI users can set default execution and permission modes for new sessions. GitHub's August 31
-            Copilot in VS Code monthly roundup confirms the August VS Code changes across grouped agent sessions, /btw
-            side conversations, prompt timeline navigation, Agent Plugins 1.0, external Copilot and Claude session
-            continuation, Agent Host shared connections, Rubber Duck review, integrated-browser feedback, per-model token
-            usage, and dictation cleanup.
+            <strong>Enterprise billing caveat:</strong> GitHub may auto-select a model for some interactions, especially if the
+            selected model is overloaded. Models also vary by client, enterprise policy settings, preview access, context size,
+            and reasoning level. Rates shown are default-tier rates; long-context usage can cost more. Legacy
+            annual-plan multiplier language for some individual plans is not the Enterprise billing model;
+            Enterprise usage is metered by input, cached input, cache write where applicable, and output tokens.
           </p>
         </div>
       </section>
@@ -542,43 +263,43 @@
         <div class="models-grid">
           <article class="model-use-card">
             <h3>Small code edits</h3>
-            <p><strong>Start:</strong> GPT-5 mini, Claude Haiku 4.5, or GPT-5.4 nano.</p>
-            <p><strong>Escalate:</strong> Claude Sonnet 5 or GPT-5.3-Codex if the edit touches several files.</p>
+            <p><strong>Start:</strong> GPT-5 mini for fixed Python/API collection and known-schema edits.</p>
+            <p><strong>Escalate:</strong> GPT-5.6 Luna for cheap iteration when the edit needs another pass.</p>
           </article>
           <article class="model-use-card">
             <h3>Feature implementation</h3>
-            <p><strong>Start:</strong> Claude Sonnet 5 or GPT-5.3-Codex.</p>
-            <p><strong>Escalate:</strong> Claude Opus 4.7 or GPT-5.4 for the plan if the feature is unclear.</p>
+            <p><strong>Start:</strong> GPT-5.6 Terra for bounded validation gates around requirements, evidence, and tests.</p>
+            <p><strong>Escalate:</strong> GPT-5.6 Sol for multipart orchestration while promotional pricing is active.</p>
           </article>
           <article class="model-use-card">
             <h3>Debugging production issues</h3>
-            <p><strong>Start:</strong> GPT-5.4 or Gemini 3.6 Flash.</p>
-            <p><strong>Escalate:</strong> Claude Opus 5 or Claude Opus 4.7 for difficult root-cause analysis.</p>
+            <p><strong>Start:</strong> GPT-5.6 Terra to verify logs, citations, repro evidence, and claim quality.</p>
+            <p><strong>Escalate:</strong> GPT-5.6 Sol for long diagnosis, then Claude Opus 5 only if the issue remains unresolved.</p>
           </article>
           <article class="model-use-card">
             <h3>Large refactors</h3>
-            <p><strong>Start:</strong> Claude Opus 5, Claude Opus 4.7, or GPT-5.4 for scope and risk analysis.</p>
-            <p><strong>Implement:</strong> Claude Sonnet 5 or GPT-5.3-Codex in smaller verified chunks.</p>
+            <p><strong>Start:</strong> GPT-5.6 Sol for long multipart planning and cross-file coordination during promotional pricing.</p>
+            <p><strong>Escalate:</strong> Claude Opus 5 for exceptional high-consequence review after cheaper routes fail.</p>
           </article>
           <article class="model-use-card">
             <h3>Code review</h3>
-            <p><strong>Start:</strong> GPT-5.4, Gemini 3.6 Flash, or Claude Sonnet 5.</p>
-            <p><strong>Escalate:</strong> Claude Opus 5 or Claude Opus 4.7 for high-risk logic, security-sensitive areas, or architecture drift.</p>
+            <p><strong>Start:</strong> GPT-5.6 Terra for citation-backed evidence gates and focused diff checks.</p>
+            <p><strong>Escalate:</strong> Claude Opus 5 for high-risk logic, security-sensitive areas, or architecture drift.</p>
           </article>
           <article class="model-use-card">
             <h3>Docs and explanations</h3>
-            <p><strong>Start:</strong> GPT-5 mini, Gemini 3.6 Flash, or Claude Haiku 4.5.</p>
-            <p><strong>Escalate:</strong> Gemini 3.7 Flash for long context or GPT-5.4 for technical precision.</p>
+            <p><strong>Start:</strong> GPT-5 mini for source collection and first drafts from known evidence.</p>
+            <p><strong>Escalate:</strong> Claude Sonnet 5 only when blind review shows it improves audience-fit communication.</p>
           </article>
           <article class="model-use-card">
             <h3>Visual or UI reasoning</h3>
-            <p><strong>Start:</strong> Claude Sonnet 5, Gemini 3.7 Flash, or GPT-5.4.</p>
-            <p><strong>Escalate:</strong> Opus when layout, product behavior, and code changes all interact.</p>
+            <p><strong>Start:</strong> GPT-5.6 Terra when the work is bounded by screenshots, requirements, or citations.</p>
+            <p><strong>Escalate:</strong> GPT-5.6 Sol or Claude Opus 5 when layout, product behavior, and code changes all interact.</p>
           </article>
           <article class="model-use-card">
             <h3>Budget-sensitive loops</h3>
-            <p><strong>Start:</strong> included models, GPT-5.4 nano, Claude Haiku 4.5, or Gemini 3.6 Flash.</p>
-            <p><strong>Escalate:</strong> Pay 1x or higher only after the problem is narrowed; treat Gemini 3.5 Flash as a special-case speed model because it currently lists at 14x.</p>
+            <p><strong>Start:</strong> GPT-5 mini or GPT-5.6 Luna before using Terra, Sol, Sonnet 5, or Opus 5.</p>
+            <p><strong>Escalate:</strong> Spend higher token-rate models only after the question, evidence, and acceptance criteria are narrowed.</p>
           </article>
         </div>
       </section>
@@ -594,10 +315,10 @@
           <article class="flow-card">
             <h3>Complex feature flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Plan with Claude Opus 5, Claude Opus 4.7, or GPT-5.4:</strong> define scope, risks, file map, and test strategy.</li>
-              <li><strong>Implement with Claude Sonnet 5 or GPT-5.3-Codex:</strong> make the changes in small commits or agent passes.</li>
-              <li><strong>Review with GPT-5.4 or Gemini 3.6 Flash:</strong> look for missed edge cases, broken assumptions, and missing tests.</li>
-              <li><strong>Polish with GPT-5 mini or Claude Haiku 4.5:</strong> tighten copy, comments, and small follow-up edits.</li>
+              <li><strong>Collect with GPT-5 mini:</strong> gather fixed Python/API evidence and known-schema inputs.</li>
+              <li><strong>Validate with GPT-5.6 Terra:</strong> check citations, extraction quality, and acceptance criteria before writing.</li>
+              <li><strong>Orchestrate with GPT-5.6 Sol:</strong> coordinate long multipart implementation or diagnosis while promotional pricing is active.</li>
+              <li><strong>Escalate only if needed:</strong> use Claude Sonnet 5 for blind-tested communication quality or Claude Opus 5 for exceptional unresolved risk.</li>
             </ol>
           </article>
 
@@ -605,29 +326,29 @@
             <h3>Bug triage flow</h3>
             <ol class="use-case-steps">
               <li><strong>Summarize with GPT-5 mini:</strong> collect symptoms, logs, repro steps, and suspected areas.</li>
-              <li><strong>Diagnose with GPT-5.4, Gemini 3.6 Flash, Claude Opus 5, or Claude Opus 4.7:</strong> reason through likely causes.</li>
-              <li><strong>Patch with Claude Sonnet 5 or GPT-5.3-Codex:</strong> edit the smallest safe surface area.</li>
-              <li><strong>Verify with GPT-5.4:</strong> inspect the diff, tests, and regression risk before merging.</li>
+              <li><strong>Verify with GPT-5.6 Terra:</strong> test whether the evidence supports the likely cause.</li>
+              <li><strong>Diagnose with GPT-5.6 Sol:</strong> handle long cross-system reasoning while the promotional rate applies.</li>
+              <li><strong>Escalate with Claude Opus 5:</strong> reserve for unresolved or high-consequence failures.</li>
             </ol>
           </article>
 
           <article class="flow-card">
             <h3>Large refactor flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Inventory with GPT-5.4 mini or Gemini 3.6 Flash:</strong> find call sites, dependencies, and duplicate patterns.</li>
-              <li><strong>Design with Claude Opus 5 or Claude Opus 4.7:</strong> choose the migration path and define boundaries.</li>
-              <li><strong>Execute with GPT-5.3-Codex or Claude Sonnet 5:</strong> refactor one subsystem at a time.</li>
-              <li><strong>Audit with GPT-5.4, Claude Opus 5, or Claude Opus 4.7:</strong> use a final high-reasoning pass only on the risky diff and tests.</li>
+              <li><strong>Inventory with GPT-5 mini:</strong> find call sites, dependencies, and duplicate patterns.</li>
+              <li><strong>Gate with GPT-5.6 Terra:</strong> validate the evidence behind each migration claim.</li>
+              <li><strong>Coordinate with GPT-5.6 Sol:</strong> manage long multipart sequencing while promotional pricing is active.</li>
+              <li><strong>Audit with Claude Opus 5:</strong> use a final pass only on the risky diff and tests.</li>
             </ol>
           </article>
 
           <article class="flow-card">
             <h3>Low-cost daily flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Ask with included models:</strong> use GPT-5 mini or MAI-Code-1.1-Flash for most small prompts.</li>
-              <li><strong>Explore with 0.25x to 0.33x models:</strong> use GPT-5.4 nano, Gemini 3.6 Flash, or Haiku.</li>
-              <li><strong>Build with 1x models:</strong> use GPT-5.3-Codex, GPT-5.4, or a current Sonnet/Gemini option when files change.</li>
-              <li><strong>Escalate only for ambiguity:</strong> reserve GPT-5.5, Claude Opus 5, and Opus 4.7 for decisions that affect architecture or reliability.</li>
+              <li><strong>Collect with GPT-5 mini:</strong> keep fixed-source work on the lowest simple route.</li>
+              <li><strong>Iterate with GPT-5.6 Luna:</strong> use it for cheap checks when the task is still small.</li>
+              <li><strong>Validate with GPT-5.6 Terra:</strong> spend more only when evidence quality matters.</li>
+              <li><strong>Escalate deliberately:</strong> reserve GPT-5.6 Sol, Claude Sonnet 5, and Claude Opus 5 for their defined routes.</li>
             </ol>
           </article>
         </div>
@@ -637,29 +358,29 @@
         <div class="panel-head">
           <p class="eyebrow">Cost Notes</p>
           <h2 id="billing-heading">How to Think About Cost</h2>
-          <p>Model multipliers are not dollar prices. Under the June 1 billing model, token usage is converted into AI Credits, so the real cost also depends on prompt length, outputs, cached context, and agent surface.</p>
+          <p>Copilot Enterprise usage is token-based. The real cost depends on prompt length, cached context, cache writes where applicable, outputs, selected model, and agent surface.</p>
         </div>
 
         <div class="overview-grid">
           <article class="overview-card">
             <h3>Use included models first</h3>
             <p class="guide-text">
-              GPT-5 mini and Raptor mini are the safest starting point for routine prompts because paid-plan
-              usage is included according to GitHub's multiplier table. GPT-4.1 should be treated as a migration-only option.
+              GPT-5 mini and GPT-5.6 Luna are the safest starting points for routine prompts because their Enterprise
+              token rates are low. GPT-4.1 should be treated as a migration-only option.
             </p>
           </article>
           <article class="overview-card">
-            <h3>Treat 1x as the default work tier</h3>
+            <h3>Treat mid-tier rates as workhorse capacity</h3>
             <p class="guide-text">
-              Current Sonnet, Codex, GPT-5.4, and Gemini models are usually where implementation, review, and deeper
-              analysis should happen.
+              GPT-5.6 Terra and Claude Sonnet 5 sit in the middle of this six-model route, but they serve different
+              jobs: Terra for evidence gates, Sonnet 5 only for blind-tested communication quality.
             </p>
           </article>
           <article class="overview-card">
             <h3>Reserve premium-heavy models</h3>
             <p class="guide-text">
-              GPT-5.5, Claude Opus 5, Claude Opus 4.7, and Opus fast mode should answer narrow, high-value questions rather than
-              carrying every iteration of a long coding session.
+              GPT-5.6 Sol and Claude Opus 5 should answer narrow, high-value questions rather than carrying every
+              iteration of a long coding session. Re-check Sol after the September 3, 2026 promotion expires.
             </p>
           </article>
         </div>
@@ -675,15 +396,11 @@
         <div class="ref-grid">
           <div class="ref-item">
             <a class="step-link" href="https://docs.github.com/en/copilot/reference/ai-models/supported-models" target="_blank" rel="noreferrer noopener">Supported models</a>
-            <span class="ref-desc">GitHub's current supported model list and model multiplier reference.</span>
+            <span class="ref-desc">GitHub's current supported model list and model availability reference.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://docs.github.com/en/copilot/reference/ai-models/model-comparison" target="_blank" rel="noreferrer noopener">Model comparison</a>
             <span class="ref-desc">GitHub's capability comparison and task-fit guidance across Copilot models.</span>
-          </div>
-          <div class="ref-item">
-            <a class="step-link" href="https://docs.github.com/en/copilot/concepts/billing/copilot-requests" target="_blank" rel="noreferrer noopener">Copilot requests</a>
-            <span class="ref-desc">GitHub's request guidance and June 1 transition from request accounting to usage-based AI Credits.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing" target="_blank" rel="noreferrer noopener">Models and pricing</a>
@@ -707,7 +424,7 @@
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-05-19-gemini-3-5-flash-is-generally-available-for-github-copilot/" target="_blank" rel="noreferrer noopener">Gemini 3.5 Flash GA notice</a>
-            <span class="ref-desc">GitHub's May 19, 2026 rollout note for Gemini 3.5 Flash in Copilot and its tentative 14x multiplier.</span>
+            <span class="ref-desc">GitHub's May 19, 2026 rollout note for Gemini 3.5 Flash in Copilot.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-05-20-updates-to-available-models-in-copilot-on-web/" target="_blank" rel="noreferrer noopener">Copilot web model changes</a>
@@ -728,10 +445,6 @@
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/" target="_blank" rel="noreferrer noopener">Third-party agent security validation</a>
             <span class="ref-desc">GitHub's June 9, 2026 notice that third-party coding agents receive automatic CodeQL, dependency, and secret-scanning validation.</span>
-          </div>
-          <div class="ref-item">
-            <a class="step-link" href="https://github.blog/changelog/2026-06-09-claude-fable-5-is-generally-available-for-github-copilot/" target="_blank" rel="noreferrer noopener">Claude Fable 5 in Copilot</a>
-            <span class="ref-desc">GitHub's June 9, 2026 notice for Claude Fable 5 availability, plan support, admin policy, billing, and data-retention requirements.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-06-30-claude-sonnet-5-is-generally-available-for-github-copilot/" target="_blank" rel="noreferrer noopener">Claude Sonnet 5 in Copilot</a>

@@ -80,6 +80,8 @@ h1,
 h2,
 h3 {
   font-family: "Sora", sans-serif;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 h1 {
@@ -700,6 +702,7 @@ h1 {
   transform: translateY(-100%);
   opacity: 0;
   transition: transform 300ms ease, opacity 300ms ease;
+  overflow-x: hidden;
 }
 
 .section-nav.nav-visible {
@@ -725,6 +728,7 @@ h1 {
   justify-content: center;
   gap: 0.45rem;
   max-width: 100%;
+  min-width: 0;
 }
 
 .nav-group-label {
@@ -1049,6 +1053,142 @@ h1 {
   color: var(--accent-2);
 }
 
+.model-route-graphic {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.8rem;
+  position: relative;
+  min-width: 0;
+}
+
+.route-lanes {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+}
+
+.route-lane {
+  border: 1px solid rgba(123, 223, 246, 0.16);
+  background: rgba(123, 223, 246, 0.06);
+  color: rgba(245, 248, 255, 0.72);
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.route-card {
+  grid-column: span 4;
+  min-width: 0;
+  min-height: 13.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border: 1px solid rgba(123, 223, 246, 0.18);
+  border-radius: 8px;
+  background: linear-gradient(145deg, rgba(8, 20, 32, 0.92), rgba(6, 12, 22, 0.88));
+  padding: 0.95rem;
+}
+
+.route-card-mini,
+.route-card-luna {
+  border-color: rgba(123, 234, 102, 0.24);
+}
+
+.route-card-terra,
+.route-card-sonnet {
+  border-color: rgba(123, 223, 246, 0.25);
+}
+
+.route-card-sol,
+.route-card-opus {
+  border-color: rgba(255, 185, 119, 0.32);
+}
+
+.route-card-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+}
+
+.route-card-head strong {
+  color: var(--text);
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+}
+
+.route-kicker {
+  color: var(--accent);
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.route-card p {
+  margin: 0;
+  color: rgba(245, 248, 255, 0.78);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.route-card dl {
+  display: grid;
+  gap: 0.4rem;
+  margin: auto 0 0;
+}
+
+.route-card dl div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.7rem;
+  border-bottom: 1px solid rgba(123, 223, 246, 0.09);
+  padding-bottom: 0.32rem;
+}
+
+.route-card dt {
+  color: rgba(245, 248, 255, 0.62);
+  font-size: 0.68rem;
+}
+
+.route-card dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.route-promo {
+  display: inline-block;
+  align-self: flex-start;
+  max-width: 100%;
+  border: 1px solid rgba(255, 185, 119, 0.35);
+  border-radius: 4px;
+  background: rgba(255, 185, 119, 0.1);
+  color: #ffcf95;
+  padding: 0.28rem 0.4rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  white-space: normal;
+}
+
+.route-evidence-note {
+  margin-top: 0.9rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid rgba(255, 185, 119, 0.24);
+  border-left: 3px solid #ffb977;
+  border-radius: 8px;
+  background: rgba(255, 185, 119, 0.07);
+  color: rgba(245, 248, 255, 0.82);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
 .model-preview-grid,
 .flow-stack {
   display: grid;
@@ -1258,6 +1398,42 @@ h1 {
 
 /* ── Responsive ────────────────────────────────────────── */
 @media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .page,
+  .section-nav-inner {
+    width: min(100% - 1rem, 1000px);
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+
+  .panel {
+    padding: 0.9rem;
+  }
+
+  .panel-head h2 {
+    font-size: 1.12rem;
+  }
+
+  .hero-copy,
+  .panel-head p,
+  .route-card p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .nav-group {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 0.1rem;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
@@ -1362,6 +1538,26 @@ h1 {
 
   .models-grid {
     grid-template-columns: 1fr;
+  }
+
+  .model-route-graphic,
+  .route-lanes {
+    grid-template-columns: 1fr;
+  }
+
+  .route-card {
+    grid-column: 1 / -1;
+    min-height: 0;
+  }
+
+  .route-card dl div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.12rem;
+  }
+
+  .route-card dd {
+    text-align: left;
   }
 
   .steps-timeline::before {
