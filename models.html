@@ -61,7 +61,7 @@
           <p class="eyebrow">Enterprise Routing Graphic</p>
           <h2 id="enterprise-model-routing-heading">Six-Model Copilot Enterprise Route Map</h2>
           <p>
-            A current September 2, 2026 view of the models most useful for Copilot Enterprise agent work.
+            A current September 11, 2026 view of the models most useful for Copilot Enterprise agent work.
             Prices are GitHub Copilot AI-credit rates per 1M tokens; 1 AI credit equals $0.01.
           </p>
         </div>
@@ -127,16 +127,16 @@
 
           <div class="route-card route-card-sol">
             <div class="route-card-head">
-              <span class="route-kicker">Promo orchestrator</span>
+              <span class="route-kicker">Long-horizon orchestrator</span>
               <strong>GPT-5.6 Sol</strong>
             </div>
-            <p>Use for long multipart orchestration and diagnosis while promotional pricing is active, then re-check the route after it expires.</p>
+            <p>Use for long multipart orchestration and diagnosis when its current full-rate cost is justified by task complexity.</p>
             <dl>
-              <div><dt>Input</dt><dd>$2.00</dd></div>
-              <div><dt>Cached / write</dt><dd>$0.20 / $2.50</dd></div>
-              <div><dt>Output</dt><dd>$10.00</dd></div>
+              <div><dt>Input</dt><dd>$4.00</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.40 / $5.00</dd></div>
+              <div><dt>Output</dt><dd>$20.00</dd></div>
             </dl>
-            <span class="route-promo">50% promotional pricing through September 3, 2026</span>
+            <span class="route-promo">Promotion ended September 3, 2026</span>
           </div>
 
           <div class="route-card route-card-opus">
@@ -162,7 +162,7 @@
       <section class="panel reveal" id="model-table" aria-labelledby="model-table-heading">
         <div class="panel-head">
           <p class="eyebrow">Reference Table</p>
-          <h2 id="model-table-heading">Copilot Enterprise Token Pricing</h2>
+          <h2 id="model-table-heading">Selected Copilot Enterprise Token Pricing</h2>
           <p>
             Copilot Enterprise seats contribute a pooled monthly AI-credit allowance. Usage is token-based by model
             and token type, one AI credit equals $0.01, and usage beyond the included pool is billed in AI Credits
@@ -214,11 +214,20 @@
               <tr class="highlight">
                 <td class="model-name">GPT-5.6 Sol</td>
                 <td>OpenAI</td>
-                <td><span class="cap-badge">GA promo</span></td>
-                <td class="cost-std">$2.00 promo</td>
-                <td>$0.20 cached; $2.50 write</td>
-                <td class="cost-std">$10.00 promo</td>
-                <td class="strengths">Long multipart orchestration and diagnosis during 50% promotional pricing through September 3, 2026.</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-std">$4.00</td>
+                <td>$0.40 cached; $5.00 write</td>
+                <td class="cost-std">$20.00</td>
+                <td class="strengths">Long multipart orchestration and diagnosis when the higher full-rate cost is justified.</td>
+              </tr>
+              <tr>
+                <td class="model-name">GPT-6 Astra</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">$10.00</td>
+                <td>$1.00 cached; $12.50 write</td>
+                <td class="cost-high">$50.00</td>
+                <td class="strengths">Premium OpenAI route for long-horizon autonomous coding when planning and validation quality outweigh cost.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">Claude Sonnet 5</td>
@@ -245,7 +254,16 @@
                 <td class="cost-high">$10.00</td>
                 <td>$0.25 cached; $12.50 write</td>
                 <td class="cost-high">$50.00</td>
-                <td class="strengths">Premium Anthropic escalation when Fable-specific quality justifies a much higher output rate.</td>
+                <td class="strengths">Specialized premium route only after retention review and administrator enablement; Enterprise ZDR requires approved access.</td>
+              </tr>
+              <tr>
+                <td class="model-name">Gemini 3.8 Flash</td>
+                <td>Google</td>
+                <td><span class="cap-badge">GA promo</span></td>
+                <td class="cost-low">$0.75 promo</td>
+                <td>$0.075 cached; no cache write</td>
+                <td class="cost-low">$3.75 promo</td>
+                <td class="strengths">Cost-aware Google route for complex terminal coding tasks during introductory pricing through December 31, 2026.</td>
               </tr>
             </tbody>
           </table>
@@ -258,6 +276,11 @@
             and reasoning level. Rates shown are default-tier rates; long-context usage can cost more. Legacy
             annual-plan multiplier language for some individual plans is not the Enterprise billing model;
             Enterprise usage is metered by input, cached input, cache write where applicable, and output tokens.
+          </p>
+          <p>
+            <strong>Fable governance caveat:</strong> Claude Fable 5 and 5.1 retain prompts and outputs by default and are
+            excluded from default model enablement. Enterprise zero-data-retention access requires GitHub approval and
+            configuration under the current time-limited exception through the end of 2026.
           </p>
         </div>
       </section>
@@ -278,7 +301,7 @@
           <article class="model-use-card">
             <h3>Feature implementation</h3>
             <p><strong>Start:</strong> GPT-5.6 Terra for bounded validation gates around requirements, evidence, and tests.</p>
-            <p><strong>Escalate:</strong> GPT-5.6 Sol for multipart orchestration while promotional pricing is active.</p>
+            <p><strong>Escalate:</strong> GPT-5.6 Sol for multipart orchestration when the current full-rate cost is justified.</p>
           </article>
           <article class="model-use-card">
             <h3>Debugging production issues</h3>
@@ -287,7 +310,7 @@
           </article>
           <article class="model-use-card">
             <h3>Large refactors</h3>
-            <p><strong>Start:</strong> GPT-5.6 Sol for long multipart planning and cross-file coordination during promotional pricing.</p>
+            <p><strong>Start:</strong> GPT-5.6 Sol for long multipart planning and cross-file coordination when Terra is not enough.</p>
             <p><strong>Escalate:</strong> Claude Opus 5 for exceptional high-consequence review after cheaper routes fail.</p>
           </article>
           <article class="model-use-card">
@@ -326,7 +349,7 @@
             <ol class="use-case-steps">
               <li><strong>Collect with GPT-5 mini:</strong> gather fixed Python/API evidence and known-schema inputs.</li>
               <li><strong>Validate with GPT-5.6 Terra:</strong> check citations, extraction quality, and acceptance criteria before writing.</li>
-              <li><strong>Orchestrate with GPT-5.6 Sol:</strong> coordinate long multipart implementation or diagnosis while promotional pricing is active.</li>
+              <li><strong>Orchestrate with GPT-5.6 Sol:</strong> coordinate long multipart implementation or diagnosis when the full-rate cost is warranted.</li>
               <li><strong>Escalate only if needed:</strong> use Claude Sonnet 5 for blind-tested communication quality or Claude Opus 5 for exceptional unresolved risk.</li>
             </ol>
           </article>
@@ -336,7 +359,7 @@
             <ol class="use-case-steps">
               <li><strong>Summarize with GPT-5 mini:</strong> collect symptoms, logs, repro steps, and suspected areas.</li>
               <li><strong>Verify with GPT-5.6 Terra:</strong> test whether the evidence supports the likely cause.</li>
-              <li><strong>Diagnose with GPT-5.6 Sol:</strong> handle long cross-system reasoning while the promotional rate applies.</li>
+              <li><strong>Diagnose with GPT-5.6 Sol:</strong> handle long cross-system reasoning when cheaper routes stall.</li>
               <li><strong>Escalate with Claude Opus 5:</strong> reserve for unresolved or high-consequence failures.</li>
             </ol>
           </article>
@@ -346,7 +369,7 @@
             <ol class="use-case-steps">
               <li><strong>Inventory with GPT-5 mini:</strong> find call sites, dependencies, and duplicate patterns.</li>
               <li><strong>Gate with GPT-5.6 Terra:</strong> validate the evidence behind each migration claim.</li>
-              <li><strong>Coordinate with GPT-5.6 Sol:</strong> manage long multipart sequencing while promotional pricing is active.</li>
+              <li><strong>Coordinate with GPT-5.6 Sol:</strong> manage long multipart sequencing after cheaper validation gates are exhausted.</li>
               <li><strong>Audit with Claude Opus 5:</strong> use a final pass only on the risky diff and tests.</li>
             </ol>
           </article>
@@ -375,7 +398,7 @@
             <h3>Use included models first</h3>
             <p class="guide-text">
               GPT-5 mini and GPT-5.6 Luna are the safest starting points for routine prompts because their Enterprise
-              token rates are low. GPT-4.1 should be treated as a migration-only option.
+              token rates are low. GPT-4.1 is retired from selectable Copilot use; move remaining workflows to a supported model.
             </p>
           </article>
           <article class="overview-card">
@@ -388,8 +411,8 @@
           <article class="overview-card">
             <h3>Reserve premium-heavy models</h3>
             <p class="guide-text">
-              GPT-5.6 Sol and Claude Opus 5 should answer narrow, high-value questions rather than carrying every
-              iteration of a long coding session. Re-check Sol after the September 3, 2026 promotion expires.
+              GPT-5.6 Sol, GPT-6 Astra, and Claude Opus 5 should answer narrow, high-value questions rather than carrying
+              every iteration of a long coding session. Consider Claude Fable 5.1 only after its retention and ZDR requirements are approved.
             </p>
           </article>
         </div>
@@ -399,7 +422,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified September 2, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified September 11, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
@@ -508,6 +531,38 @@
             <span class="ref-desc">GitHub's September 1, 2026 notice that Copilot code review can approve pull requests while repository merge rules still apply.</span>
           </div>
           <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/" target="_blank" rel="noreferrer noopener">GPT-6 Astra in Copilot</a>
+            <span class="ref-desc">GitHub's September 4, 2026 notice for GPT-6 Astra availability, long-horizon coding fit, rollout, supported surfaces, and model-policy controls.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-03-gemini-3-8-flash-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer noopener">Gemini 3.8 Flash in Copilot</a>
+            <span class="ref-desc">GitHub's September 3, 2026 notice for Gemini 3.8 Flash rollout, supported surfaces, introductory pricing, and Business or Enterprise model policy.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model/" target="_blank" rel="noreferrer noopener">Managed default models</a>
+            <span class="ref-desc">GitHub's September 2, 2026 notice that enterprise-managed settings can set default Copilot models globally or by team.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/" target="_blank" rel="noreferrer noopener">Copilot app and CLI content exclusions</a>
+            <span class="ref-desc">GitHub's September 2, 2026 notice that the Copilot app and CLI now honor enterprise, organization, and repository content exclusions.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/" target="_blank" rel="noreferrer noopener">Copilot JetBrains sandbox controls</a>
+            <span class="ref-desc">GitHub's September 8, 2026 notice for enterprise-managed sandbox policies, policy diagnostics, global project context, and Copilot CLI links into JetBrains IDE context.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/" target="_blank" rel="noreferrer noopener">Managed agent permissions</a>
+            <span class="ref-desc">GitHub's September 9, 2026 notice for centrally managed shell, file, and network permissions in the Copilot app, Copilot CLI, and VS Code Agent Host sessions.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-10-mai-code-1-flash-deprecated/" target="_blank" rel="noreferrer noopener">MAI-Code-1-Flash deprecation</a>
+            <span class="ref-desc">GitHub's September 10, 2026 notice that MAI-Code-1-Flash is deprecated across Copilot and MAI-Code-1.1-Flash is the suggested replacement.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/" target="_blank" rel="noreferrer noopener">Selected model deprecations</a>
+            <span class="ref-desc">GitHub's September 3, 2026 notice scheduling Gemini 3.5 Flash, Gemini 3.6 Flash, Kimi K2.7 Code, and Claude Opus 4.7 removal from Copilot on October 2.</span>
+          </div>
+          <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-07-27-enterprise-managed-settings-now-apply-to-the-github-copilot-app/" target="_blank" rel="noreferrer noopener">Copilot managed settings expansion</a>
             <span class="ref-desc">GitHub's July 27, 2026 notice that enterprise managed settings now cover the Copilot app and Copilot cloud agent.</span>
           </div>
@@ -556,8 +611,8 @@
             <span class="ref-desc">Microsoft's current stable reference for browser-driven agent testing, per-site permissions, agent-session organization, and pull-request action banners.</span>
           </div>
           <div class="ref-item">
-            <a class="step-link" href="https://code.visualstudio.com/updates/v1_125" target="_blank" rel="noreferrer noopener">VS Code 1.125 release notes</a>
-            <span class="ref-desc">Microsoft's newest official reference for model-provider discovery, additional-spend visibility, integrated browser improvements, forwarded-port handling for agents, and managed Copilot settings.</span>
+            <a class="step-link" href="https://code.visualstudio.com/updates/v1_137" target="_blank" rel="noreferrer noopener">VS Code 1.137 release notes</a>
+            <span class="ref-desc">Microsoft's newest stable reference for agent automations, Voice Mode, GitHub issue and pull request context, queued agent messages, and Agent Host behavior.</span>
           </div>
         </div>
       </section>
