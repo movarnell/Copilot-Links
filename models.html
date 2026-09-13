@@ -61,7 +61,7 @@
           <p class="eyebrow">Enterprise Routing Graphic</p>
           <h2 id="enterprise-model-routing-heading">Six-Model Copilot Enterprise Route Map</h2>
           <p>
-            A current September 12, 2026 view of the models most useful for Copilot Enterprise agent work.
+            A current September 13, 2026 view of the models most useful for Copilot Enterprise agent work.
             Prices are GitHub Copilot AI-credit rates per 1M tokens; 1 AI credit equals $0.01.
           </p>
         </div>
@@ -202,6 +202,15 @@
                 <td class="cost-low">$1.20</td>
                 <td class="strengths">Cheap iteration, quick checks, and lightweight coding loops.</td>
               </tr>
+              <tr>
+                <td class="model-name">GPT-5.3-Codex</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA · LTS fallback</span></td>
+                <td class="cost-std">$1.75</td>
+                <td>$0.175 cached; no cache write</td>
+                <td class="cost-std">$14.00</td>
+                <td class="strengths">Agentic software development and the current long-term-support fallback when Auto cannot use another eligible model.</td>
+              </tr>
               <tr class="highlight">
                 <td class="model-name">GPT-5.6 Terra</td>
                 <td>OpenAI</td>
@@ -276,6 +285,12 @@
             and reasoning level. Rates shown are default-tier rates; long-context usage can cost more. Legacy
             annual-plan multiplier language for some individual plans is not the Enterprise billing model;
             Enterprise usage is metered by input, cached input, cache write where applicable, and output tokens.
+          </p>
+          <p>
+            <strong>Auto-selection option:</strong> GitHub says Auto chooses an eligible model based on availability and
+            task complexity, and paid Copilot plans receive a model-cost discount when using it. Use Auto for routine
+            routing when policy allows it, but select a model explicitly when retention, capability, or predictable
+            per-token cost matters.
           </p>
           <p>
             <strong>Fable governance caveat:</strong> Claude Fable 5 and 5.1 retain prompts and outputs by default and are
@@ -405,7 +420,8 @@
             <h3>Use included models first</h3>
             <p class="guide-text">
               GPT-5 mini and GPT-5.6 Luna are the safest starting points for routine prompts because their Enterprise
-              token rates are low. GPT-4.1 is retired from selectable Copilot use; move remaining workflows to a supported model.
+              token rates are low. GPT-4.1 is retired from selectable Copilot use, though GitHub still lists it as a
+              background utility model; move workflows that selected it explicitly to a supported model.
             </p>
           </article>
           <article class="overview-card">
@@ -429,7 +445,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified September 12, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified September 13, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
