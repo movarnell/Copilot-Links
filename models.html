@@ -59,9 +59,9 @@
       <section class="panel reveal" id="enterprise-model-routing" aria-labelledby="enterprise-model-routing-heading">
         <div class="panel-head">
           <p class="eyebrow">Enterprise Routing Graphic</p>
-          <h2 id="enterprise-model-routing-heading">Six-Model Copilot Enterprise Route Map</h2>
+          <h2 id="enterprise-model-routing-heading">Six-Model Copilot Enterprise Route and Migration Map</h2>
           <p>
-            A current September 18, 2026 view of the models most useful for Copilot Enterprise agent work.
+            A current September 19, 2026 view of five durable Copilot Enterprise routes plus GPT-5 mini migration guidance.
             Prices are GitHub Copilot AI-credit rates per 1M tokens; 1 AI credit equals $0.01.
           </p>
         </div>
@@ -75,10 +75,10 @@
 
           <div class="route-card route-card-mini">
             <div class="route-card-head">
-              <span class="route-kicker">Default collector</span>
+              <span class="route-kicker">Retires October 19</span>
               <strong>GPT-5 mini</strong>
             </div>
-            <p>Use first for fixed Python/API collection work where the task shape, sources, and outputs are already defined.</p>
+            <p>Do not start new workflows on GPT-5 mini. Migrate fixed collection and routine prompts to GPT-5.6 Luna before October 19, 2026.</p>
             <dl>
               <div><dt>Input</dt><dd>$0.25</dd></div>
               <div><dt>Cached / write</dt><dd>$0.025 / none</dd></div>
@@ -187,11 +187,11 @@
               <tr>
                 <td class="model-name">GPT-5 mini</td>
                 <td>OpenAI</td>
-                <td><span class="cap-badge">GA</span></td>
+                <td><span class="cap-badge">GA · retires Oct 19</span></td>
                 <td class="cost-low">$0.25</td>
                 <td>$0.025 cached; no cache write</td>
                 <td class="cost-low">$2.00</td>
-                <td class="strengths">Fixed Python/API collection work where the sources, schema, and output are already defined.</td>
+                <td class="strengths">Currently GA; scheduled to retire on October 19, 2026. Migrate routine lightweight workflows to GPT-5.6 Luna.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">GPT-5.6 Luna</td>
@@ -296,6 +296,11 @@
             cost matters.
           </p>
           <p>
+            <strong>October 19 migration:</strong> GitHub will retire GPT-5 mini, GPT-5.4 mini, GPT-5.4, GPT-5.5,
+            Gemini 3.7 Flash, and Grok 4.5 across Copilot. Move explicit selections to GitHub's listed replacements
+            before the deadline and confirm those models are enabled by Enterprise policy.
+          </p>
+          <p>
             <strong>Fable governance caveat:</strong> Claude Fable 5 and 5.1 retain prompts and outputs by default and are
             excluded from default model enablement. Enterprise zero-data-retention access requires GitHub approval and
             configuration under the current time-limited exception through the end of 2026.
@@ -320,8 +325,8 @@
         <div class="models-grid">
           <article class="model-use-card">
             <h3>Small code edits</h3>
-            <p><strong>Start:</strong> GPT-5 mini for fixed Python/API collection and known-schema edits.</p>
-            <p><strong>Escalate:</strong> GPT-5.6 Luna for cheap iteration when the edit needs another pass.</p>
+            <p><strong>Start:</strong> GPT-5.6 Luna for fixed Python/API collection, known-schema edits, and cheap iteration.</p>
+            <p><strong>Escalate:</strong> GPT-5.6 Terra when the edit needs a stronger evidence or validation pass.</p>
           </article>
           <article class="model-use-card">
             <h3>Feature implementation</h3>
@@ -345,17 +350,17 @@
           </article>
           <article class="model-use-card">
             <h3>Docs and explanations</h3>
-            <p><strong>Start:</strong> GPT-5 mini for source collection and first drafts from known evidence.</p>
+            <p><strong>Start:</strong> GPT-5.6 Luna for source collection and first drafts from known evidence.</p>
             <p><strong>Escalate:</strong> Claude Sonnet 5 only when blind review shows it improves audience-fit communication.</p>
           </article>
           <article class="model-use-card">
             <h3>Visual or UI reasoning</h3>
-            <p><strong>Start:</strong> GPT-5 mini for screenshot or image input, after confirming visual input is available in the active Copilot client.</p>
+            <p><strong>Start:</strong> Confirm visual input is supported in the active Copilot client and choose a currently supported multimodal model; do not build a new visual workflow on GPT-5 mini because it retires October 19, 2026.</p>
             <p><strong>Escalate:</strong> Convert the visual evidence into explicit text requirements before moving to a deeper model whose active client supports the needed inputs.</p>
           </article>
           <article class="model-use-card">
             <h3>Budget-sensitive loops</h3>
-            <p><strong>Start:</strong> GPT-5 mini or GPT-5.6 Luna before using Terra, Sol, Sonnet 5, or Opus 5.</p>
+            <p><strong>Start:</strong> GPT-5.6 Luna before using Terra, Sol, Sonnet 5, or Opus 5.</p>
             <p><strong>Escalate:</strong> Spend higher token-rate models only after the question, evidence, and acceptance criteria are narrowed.</p>
           </article>
         </div>
@@ -372,7 +377,7 @@
           <article class="flow-card">
             <h3>Complex feature flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Collect with GPT-5 mini:</strong> gather fixed Python/API evidence and known-schema inputs.</li>
+              <li><strong>Collect with GPT-5.6 Luna:</strong> gather fixed Python/API evidence and known-schema inputs.</li>
               <li><strong>Validate with GPT-5.6 Terra:</strong> check citations, extraction quality, and acceptance criteria before writing.</li>
               <li><strong>Orchestrate with GPT-5.6 Sol:</strong> coordinate long multipart implementation or diagnosis when the full-rate cost is warranted.</li>
               <li><strong>Escalate only if needed:</strong> use Claude Sonnet 5 for blind-tested communication quality or Claude Opus 5 for exceptional unresolved risk.</li>
@@ -382,7 +387,7 @@
           <article class="flow-card">
             <h3>Bug triage flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Summarize with GPT-5 mini:</strong> collect symptoms, logs, repro steps, and suspected areas.</li>
+              <li><strong>Summarize with GPT-5.6 Luna:</strong> collect symptoms, logs, repro steps, and suspected areas.</li>
               <li><strong>Verify with GPT-5.6 Terra:</strong> test whether the evidence supports the likely cause.</li>
               <li><strong>Diagnose with GPT-5.6 Sol:</strong> handle long cross-system reasoning when cheaper routes stall.</li>
               <li><strong>Escalate with Claude Opus 5:</strong> reserve for unresolved or high-consequence failures.</li>
@@ -392,7 +397,7 @@
           <article class="flow-card">
             <h3>Large refactor flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Inventory with GPT-5 mini:</strong> find call sites, dependencies, and duplicate patterns.</li>
+              <li><strong>Inventory with GPT-5.6 Luna:</strong> find call sites, dependencies, and duplicate patterns.</li>
               <li><strong>Gate with GPT-5.6 Terra:</strong> validate the evidence behind each migration claim.</li>
               <li><strong>Coordinate with GPT-5.6 Sol:</strong> manage long multipart sequencing after cheaper validation gates are exhausted.</li>
               <li><strong>Audit with Claude Opus 5:</strong> use a final pass only on the risky diff and tests.</li>
@@ -402,7 +407,7 @@
           <article class="flow-card">
             <h3>Low-cost daily flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Collect with GPT-5 mini:</strong> keep fixed-source work on the lowest simple route.</li>
+              <li><strong>Collect with GPT-5.6 Luna:</strong> keep fixed-source work on the lowest supported simple route.</li>
               <li><strong>Iterate with GPT-5.6 Luna:</strong> use it for cheap checks when the task is still small.</li>
               <li><strong>Validate with GPT-5.6 Terra:</strong> spend more only when evidence quality matters.</li>
               <li><strong>Escalate deliberately:</strong> reserve GPT-5.6 Sol, Claude Sonnet 5, and Claude Opus 5 for their defined routes.</li>
@@ -422,8 +427,9 @@
           <article class="overview-card">
             <h3>Use included models first</h3>
             <p class="guide-text">
-              GPT-5 mini and GPT-5.6 Luna are the safest starting points for routine prompts because their Enterprise
-              token rates are low. GPT-4.1 is retired from selectable Copilot use, though GitHub still lists it as a
+              GPT-5.6 Luna is the safest starting point for routine prompts because its Enterprise token rates are low.
+              GPT-5 mini remains available today but retires October 19, 2026; migrate workflows to GPT-5.6 Luna now.
+              GPT-4.1 is retired from selectable Copilot use, though GitHub still lists it as a
               background utility model; move workflows that selected it explicitly to a supported model.
             </p>
           </article>
@@ -448,7 +454,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified September 18, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified September 19, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
@@ -483,6 +489,10 @@
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-06-05-gpt-5-2-and-gpt-5-2-codex-deprecated/" target="_blank" rel="noreferrer noopener">Model deprecation notice</a>
             <span class="ref-desc">GitHub's June 5, 2026 notice that GPT-5.2 and GPT-5.2-Codex are deprecated across most Copilot surfaces.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october/" target="_blank" rel="noreferrer noopener">October 19 Copilot model deprecations</a>
+            <span class="ref-desc">GitHub's September 18, 2026 notice that GPT-5 mini, GPT-5.4, GPT-5.4 mini, GPT-5.5, Gemini 3.7 Flash, and Grok 4.5 retire across Copilot on October 19, with listed replacements.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-05-07-upcoming-deprecation-of-gpt-4-1/" target="_blank" rel="noreferrer noopener">GPT-4.1 deprecation notice</a>
