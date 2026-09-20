@@ -61,7 +61,7 @@
           <p class="eyebrow">Enterprise Routing Graphic</p>
           <h2 id="enterprise-model-routing-heading">Six-Model Copilot Enterprise Route and Migration Map</h2>
           <p>
-            A current September 19, 2026 view of five durable Copilot Enterprise routes plus GPT-5 mini migration guidance.
+            A current September 20, 2026 view of five durable Copilot Enterprise routes plus GPT-5 mini migration guidance.
             Prices are GitHub Copilot AI-credit rates per 1M tokens; 1 AI credit equals $0.01.
           </p>
         </div>
@@ -205,11 +205,11 @@
               <tr>
                 <td class="model-name">GPT-5.3-Codex</td>
                 <td>OpenAI</td>
-                <td><span class="cap-badge">GA · LTS fallback</span></td>
+                <td><span class="cap-badge">GA · base + LTS</span></td>
                 <td class="cost-std">$1.75</td>
                 <td>$0.175 cached; no cache write</td>
                 <td class="cost-std">$14.00</td>
-                <td class="strengths">Agentic software development and the current long-term-support fallback when Auto cannot use another eligible model.</td>
+                <td class="strengths">Agentic software development; the Business and Enterprise base model when no other model is enabled, with one-year LTS support from March 18, 2026.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">GPT-5.6 Terra</td>
@@ -280,11 +280,12 @@
 
         <div class="legend-info">
           <p>
-            <strong>Enterprise billing caveat:</strong> GitHub may auto-select a model for some interactions, especially if the
-            selected model is overloaded. Models also vary by client, enterprise policy settings, preview access, context size,
+            <strong>Enterprise billing caveat:</strong> Auto can route around busy or degraded models, and Copilot code review
+            automatically selects an undisclosed model. Models also vary by client, enterprise policy settings, preview access, context size,
             and reasoning level. Rates shown are default-tier rates; long-context usage can cost more. Legacy
             annual-plan multiplier language for some individual plans is not the Enterprise billing model;
-            Enterprise usage is metered by input, cached input, cache write where applicable, and output tokens.
+            Selected-model usage is metered by input, cached input, cache write where applicable, and output tokens;
+            Copilot code review also consumes GitHub Actions minutes.
           </p>
           <p>
             <strong>Auto-selection option:</strong> GitHub offers Efficiency, Balance, and Intelligence tiers in
@@ -294,6 +295,11 @@
             selected model's token rate regardless of tier, with a 10% Auto discount for paid plans. Use Auto
             when policy allows it, but select a model explicitly when retention, capability, or predictable per-token
             cost matters.
+          </p>
+          <p>
+            <strong>October 2 migration:</strong> GitHub will retire Claude Opus 4.7, Gemini 3.5 Flash,
+            Gemini 3.6 Flash, and Kimi K2.7 Code across Copilot. Move explicit selections to Claude Opus 5,
+            Gemini 3.8 Flash, or Kimi K3 as applicable before the deadline.
           </p>
           <p>
             <strong>October 19 migration:</strong> GitHub will retire GPT-5 mini, GPT-5.4 mini, GPT-5.4, GPT-5.5,
@@ -319,7 +325,7 @@
         <div class="panel-head">
           <p class="eyebrow">Task Guide</p>
           <h2 id="quick-picks-heading">Quick Picks by Task Type</h2>
-          <p>These are site recommendations grounded in GitHub's published capabilities and pricing. Start with the cheapest model that can do the job, then escalate only when the task is ambiguous or risky.</p>
+          <p>These are site recommendations grounded in GitHub's published capabilities and pricing and OpenAI's model-selection guidance. For a new or high-risk workflow, establish an accuracy baseline with the most capable model, then test smaller models for cost and latency. Start with the cheapest proven model only for established low-risk work.</p>
         </div>
 
         <div class="models-grid">
@@ -425,7 +431,7 @@
 
         <div class="overview-grid">
           <article class="overview-card">
-            <h3>Use included models first</h3>
+            <h3>Use lower-cost models for proven routine work</h3>
             <p class="guide-text">
               GPT-5.6 Luna is the safest starting point for routine prompts because its Enterprise token rates are low.
               GPT-5 mini remains available today but retires October 19, 2026; migrate workflows to GPT-5.6 Luna now.
@@ -454,7 +460,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified September 19, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified September 20, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
