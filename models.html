@@ -61,12 +61,12 @@
           <p class="eyebrow">Enterprise Routing Graphic</p>
           <h2 id="enterprise-model-routing-heading">Six-Model Copilot Enterprise Route and Migration Map</h2>
           <p>
-            A current September 22, 2026 view of five durable Copilot Enterprise routes plus GPT-5 mini migration guidance.
+            A current September 24, 2026 view of five selected Copilot Enterprise routes plus GPT-5 mini migration guidance.
             Prices are GitHub Copilot AI-credit rates per 1M tokens; 1 AI credit equals $0.01.
           </p>
         </div>
 
-        <div class="model-route-graphic" role="img" aria-label="Copilot Enterprise routing graphic comparing GPT-5 mini, GPT-5.6 Luna, GPT-5.6 Terra, GPT-5.6 Sol, Claude Sonnet 5, and Claude Opus 5 by cost and recommended use.">
+        <div class="model-route-graphic" role="img" aria-label="Copilot Enterprise routing graphic comparing GPT-5 mini, GPT-6 Luna, GPT-5.6 Terra, GPT-6 Sol, Claude Sonnet 5, and Claude Opus 5.5 by cost and recommended use.">
           <div class="route-lanes" aria-hidden="true">
             <div class="route-lane route-lane-low">Low-cost collection</div>
             <div class="route-lane route-lane-mid">Validation and communication</div>
@@ -89,13 +89,13 @@
           <div class="route-card route-card-luna">
             <div class="route-card-head">
               <span class="route-kicker">Cheap iteration</span>
-              <strong>GPT-5.6 Luna</strong>
+              <strong>GPT-6 Luna</strong>
             </div>
-            <p>Use for quick checks and lightweight coding loops when speed and cost matter more than deep synthesis.</p>
+            <p>Use for quick checks and lightweight coding loops; it is the lowest-cost GPT-6 route. Keep GPT-5 mini migrations on GitHub's listed GPT-5.6 Luna target until separately validated.</p>
             <dl>
-              <div><dt>Input</dt><dd>$0.20</dd></div>
-              <div><dt>Cached / write</dt><dd>$0.02 / $0.25</dd></div>
-              <div><dt>Output</dt><dd>$1.20</dd></div>
+              <div><dt>Input</dt><dd>$0.10</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.01 / $0.125</dd></div>
+              <div><dt>Output</dt><dd>$0.50</dd></div>
             </dl>
           </div>
 
@@ -127,28 +127,27 @@
 
           <div class="route-card route-card-sol">
             <div class="route-card-head">
-              <span class="route-kicker">Long-horizon orchestrator</span>
-              <strong>GPT-5.6 Sol</strong>
+              <span class="route-kicker">Balanced all-rounder</span>
+              <strong>GPT-6 Sol</strong>
             </div>
-            <p>Use for long multipart orchestration and diagnosis when its current full-rate cost is justified by task complexity.</p>
+            <p>Use as the balanced all-round route for interactive and agentic coding that benefits from careful multistep validation.</p>
             <dl>
-              <div><dt>Input</dt><dd>$4.00</dd></div>
-              <div><dt>Cached / write</dt><dd>$0.40 / $5.00</dd></div>
-              <div><dt>Output</dt><dd>$20.00</dd></div>
+              <div><dt>Input</dt><dd>$2.00</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.20 / $2.50</dd></div>
+              <div><dt>Output</dt><dd>$10.00</dd></div>
             </dl>
-            <span class="route-promo">Promotion ended September 3, 2026</span>
           </div>
 
           <div class="route-card route-card-opus">
             <div class="route-card-head">
               <span class="route-kicker">Exceptional escalation</span>
-              <strong>Claude Opus 5</strong>
+              <strong>Claude Opus 5.5</strong>
             </div>
-            <p>Reserve for unresolved, high-consequence work after cheaper routes fail or the decision needs a final independent pass.</p>
+            <p>Reserve for long-running, high-consequence agent work that needs efficient multistep recovery after cheaper routes fail.</p>
             <dl>
-              <div><dt>Input</dt><dd>$5.00</dd></div>
-              <div><dt>Cached / write</dt><dd>$0.50 / $6.25</dd></div>
-              <div><dt>Output</dt><dd>$25.00</dd></div>
+              <div><dt>Input</dt><dd>$4.00</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.20 / $5.00</dd></div>
+              <div><dt>Output</dt><dd>$20.00</dd></div>
             </dl>
           </div>
         </div>
@@ -202,6 +201,15 @@
                 <td class="cost-low">$1.20</td>
                 <td class="strengths">Cheap iteration, quick checks, and lightweight coding loops.</td>
               </tr>
+              <tr class="highlight">
+                <td class="model-name">GPT-6 Luna</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-low">$0.10</td>
+                <td>$0.01 cached; $0.125 write</td>
+                <td class="cost-low">$0.50</td>
+                <td class="strengths">Lowest-cost GPT-6 route for smaller, faster tasks; gradual rollout and client or policy availability can vary.</td>
+              </tr>
               <tr>
                 <td class="model-name">GPT-5.3-Codex</td>
                 <td>OpenAI</td>
@@ -229,6 +237,15 @@
                 <td class="cost-std">$20.00</td>
                 <td class="strengths">Long multipart orchestration and diagnosis when the higher full-rate cost is justified.</td>
               </tr>
+              <tr class="highlight">
+                <td class="model-name">GPT-6 Sol</td>
+                <td>OpenAI</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-std">$2.00</td>
+                <td>$0.20 cached; $2.50 write</td>
+                <td class="cost-std">$10.00</td>
+                <td class="strengths">Balanced interactive and agentic coding with careful multistep validation; gradual rollout and client or policy availability can vary.</td>
+              </tr>
               <tr>
                 <td class="model-name">GPT-6 Astra</td>
                 <td>OpenAI</td>
@@ -255,6 +272,15 @@
                 <td>$0.50 cached; $6.25 write</td>
                 <td class="cost-high">$25.00</td>
                 <td class="strengths">Exceptional unresolved or high-consequence escalation after cheaper models fail.</td>
+              </tr>
+              <tr class="highlight">
+                <td class="model-name">Claude Opus 5.5</td>
+                <td>Anthropic</td>
+                <td><span class="cap-badge">GA</span></td>
+                <td class="cost-high">$4.00</td>
+                <td>$0.20 cached; $5.00 write</td>
+                <td class="cost-high">$20.00</td>
+                <td class="strengths">Long-running agentic coding and knowledge work with efficient multistep recovery; gradual rollout and plan or policy availability can vary.</td>
               </tr>
               <tr>
                 <td class="model-name">Claude Fable 5.1</td>
@@ -331,32 +357,32 @@
         <div class="models-grid">
           <article class="model-use-card">
             <h3>Small code edits</h3>
-            <p><strong>Start:</strong> GPT-5.6 Luna for fixed Python/API collection, known-schema edits, and cheap iteration.</p>
+            <p><strong>Start:</strong> GPT-6 Luna for fixed Python/API collection, known-schema edits, and cheap iteration.</p>
             <p><strong>Escalate:</strong> GPT-5.6 Terra when the edit needs a stronger evidence or validation pass.</p>
           </article>
           <article class="model-use-card">
             <h3>Feature implementation</h3>
             <p><strong>Start:</strong> GPT-5.6 Terra for bounded validation gates around requirements, evidence, and tests.</p>
-            <p><strong>Escalate:</strong> GPT-5.6 Sol for multipart orchestration when the current full-rate cost is justified.</p>
+            <p><strong>Escalate:</strong> GPT-6 Sol for balanced multipart orchestration and careful multistep validation.</p>
           </article>
           <article class="model-use-card">
             <h3>Debugging production issues</h3>
             <p><strong>Start:</strong> GPT-5.6 Terra to verify logs, citations, repro evidence, and claim quality.</p>
-            <p><strong>Escalate:</strong> GPT-5.6 Sol for long diagnosis, then Claude Opus 5 only if the issue remains unresolved.</p>
+            <p><strong>Escalate:</strong> GPT-6 Sol for long diagnosis, then Claude Opus 5.5 only if the issue remains unresolved.</p>
           </article>
           <article class="model-use-card">
             <h3>Large refactors</h3>
-            <p><strong>Start:</strong> GPT-5.6 Sol for long multipart planning and cross-file coordination when Terra is not enough.</p>
-            <p><strong>Escalate:</strong> Claude Opus 5 for exceptional high-consequence review after cheaper routes fail.</p>
+            <p><strong>Start:</strong> GPT-6 Sol for long multipart planning and cross-file coordination when Terra is not enough.</p>
+            <p><strong>Escalate:</strong> Claude Opus 5.5 for exceptional high-consequence review after cheaper routes fail.</p>
           </article>
           <article class="model-use-card">
             <h3>Code review</h3>
             <p><strong>Start:</strong> GPT-5.6 Terra for citation-backed evidence gates and focused diff checks.</p>
-            <p><strong>Escalate:</strong> Claude Opus 5 for high-risk logic, security-sensitive areas, or architecture drift.</p>
+            <p><strong>Escalate:</strong> Claude Opus 5.5 for high-risk logic, security-sensitive areas, or architecture drift.</p>
           </article>
           <article class="model-use-card">
             <h3>Docs and explanations</h3>
-            <p><strong>Start:</strong> GPT-5.6 Luna for source collection and first drafts from known evidence.</p>
+            <p><strong>Start:</strong> GPT-6 Luna for source collection and first drafts from known evidence.</p>
             <p><strong>Escalate:</strong> Claude Sonnet 5 only when blind review shows it improves audience-fit communication.</p>
           </article>
           <article class="model-use-card">
@@ -366,7 +392,7 @@
           </article>
           <article class="model-use-card">
             <h3>Budget-sensitive loops</h3>
-            <p><strong>Start:</strong> GPT-5.6 Luna before using Terra, Sol, Sonnet 5, or Opus 5.</p>
+            <p><strong>Start:</strong> GPT-6 Luna before using Terra, Sol, Sonnet 5, or Opus 5.5.</p>
             <p><strong>Escalate:</strong> Spend higher token-rate models only after the question, evidence, and acceptance criteria are narrowed.</p>
           </article>
         </div>
@@ -383,40 +409,40 @@
           <article class="flow-card">
             <h3>Complex feature flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Collect with GPT-5.6 Luna:</strong> gather fixed Python/API evidence and known-schema inputs.</li>
+              <li><strong>Collect with GPT-6 Luna:</strong> gather fixed Python/API evidence and known-schema inputs.</li>
               <li><strong>Validate with GPT-5.6 Terra:</strong> check citations, extraction quality, and acceptance criteria before writing.</li>
-              <li><strong>Orchestrate with GPT-5.6 Sol:</strong> coordinate long multipart implementation or diagnosis when the full-rate cost is warranted.</li>
-              <li><strong>Escalate only if needed:</strong> use Claude Sonnet 5 for blind-tested communication quality or Claude Opus 5 for exceptional unresolved risk.</li>
+              <li><strong>Orchestrate with GPT-6 Sol:</strong> coordinate long multipart implementation or diagnosis with careful multistep validation.</li>
+              <li><strong>Escalate only if needed:</strong> use Claude Sonnet 5 for blind-tested communication quality or Claude Opus 5.5 for exceptional unresolved risk.</li>
             </ol>
           </article>
 
           <article class="flow-card">
             <h3>Bug triage flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Summarize with GPT-5.6 Luna:</strong> collect symptoms, logs, repro steps, and suspected areas.</li>
+              <li><strong>Summarize with GPT-6 Luna:</strong> collect symptoms, logs, repro steps, and suspected areas.</li>
               <li><strong>Verify with GPT-5.6 Terra:</strong> test whether the evidence supports the likely cause.</li>
-              <li><strong>Diagnose with GPT-5.6 Sol:</strong> handle long cross-system reasoning when cheaper routes stall.</li>
-              <li><strong>Escalate with Claude Opus 5:</strong> reserve for unresolved or high-consequence failures.</li>
+              <li><strong>Diagnose with GPT-6 Sol:</strong> handle long cross-system reasoning when cheaper routes stall.</li>
+              <li><strong>Escalate with Claude Opus 5.5:</strong> reserve for unresolved or high-consequence failures.</li>
             </ol>
           </article>
 
           <article class="flow-card">
             <h3>Large refactor flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Inventory with GPT-5.6 Luna:</strong> find call sites, dependencies, and duplicate patterns.</li>
+              <li><strong>Inventory with GPT-6 Luna:</strong> find call sites, dependencies, and duplicate patterns.</li>
               <li><strong>Gate with GPT-5.6 Terra:</strong> validate the evidence behind each migration claim.</li>
-              <li><strong>Coordinate with GPT-5.6 Sol:</strong> manage long multipart sequencing after cheaper validation gates are exhausted.</li>
-              <li><strong>Audit with Claude Opus 5:</strong> use a final pass only on the risky diff and tests.</li>
+              <li><strong>Coordinate with GPT-6 Sol:</strong> manage long multipart sequencing after cheaper validation gates are exhausted.</li>
+              <li><strong>Audit with Claude Opus 5.5:</strong> use a final pass only on the risky diff and tests.</li>
             </ol>
           </article>
 
           <article class="flow-card">
             <h3>Low-cost daily flow</h3>
             <ol class="use-case-steps">
-              <li><strong>Collect with GPT-5.6 Luna:</strong> keep fixed-source work on the lowest supported simple route.</li>
-              <li><strong>Iterate with GPT-5.6 Luna:</strong> use it for cheap checks when the task is still small.</li>
+              <li><strong>Collect with GPT-6 Luna:</strong> keep fixed-source work on the lowest-cost GPT-6 route.</li>
+              <li><strong>Iterate with GPT-6 Luna:</strong> use it for cheap checks when the task is still small.</li>
               <li><strong>Validate with GPT-5.6 Terra:</strong> spend more only when evidence quality matters.</li>
-              <li><strong>Escalate deliberately:</strong> reserve GPT-5.6 Sol, Claude Sonnet 5, and Claude Opus 5 for their defined routes.</li>
+              <li><strong>Escalate deliberately:</strong> reserve GPT-6 Sol, Claude Sonnet 5, and Claude Opus 5.5 for their defined routes.</li>
             </ol>
           </article>
         </div>
@@ -433,8 +459,9 @@
           <article class="overview-card">
             <h3>Use lower-cost models for proven routine work</h3>
             <p class="guide-text">
-              GPT-5.6 Luna is the safest starting point for routine prompts because its Enterprise token rates are low.
-              GPT-5 mini remains available today but retires October 19, 2026; migrate workflows to GPT-5.6 Luna now.
+              GPT-6 Luna is the lowest-cost current GPT-6 route for routine prompts. GPT-5 mini remains available today
+              but retires October 19, 2026; follow GitHub's listed migration target of GPT-5.6 Luna for existing workflows,
+              then evaluate GPT-6 Luna separately before changing production behavior.
               GPT-4.1 is retired from selectable Copilot use, though GitHub still lists it as a
               background utility model; move workflows that selected it explicitly to a supported model.
             </p>
@@ -442,15 +469,16 @@
           <article class="overview-card">
             <h3>Treat mid-tier rates as workhorse capacity</h3>
             <p class="guide-text">
-              GPT-5.6 Terra and Claude Sonnet 5 sit in the middle of this six-model route, but they serve different
-              jobs: Terra for evidence gates, Sonnet 5 only for blind-tested communication quality.
+              GPT-5.6 Terra, GPT-6 Sol, and Claude Sonnet 5 sit in the middle of this six-model route, but they serve
+              different jobs: Terra for evidence gates, GPT-6 Sol for balanced agentic coding, and Sonnet 5 only for
+              blind-tested communication quality.
             </p>
           </article>
           <article class="overview-card">
             <h3>Reserve premium-heavy models</h3>
             <p class="guide-text">
-              GPT-5.6 Sol, GPT-6 Astra, and Claude Opus 5 should answer narrow, high-value questions rather than carrying
-              every iteration of a long coding session. Consider Claude Fable 5.1 only after its retention and ZDR requirements are approved.
+              GPT-6 Astra and Claude Opus 5.5 should answer narrow, high-value questions rather than carrying every
+              iteration of a long coding session. Consider Claude Fable 5.1 only after its retention and ZDR requirements are approved.
             </p>
           </article>
         </div>
@@ -460,7 +488,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified September 22, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified September 24, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
@@ -543,6 +571,14 @@
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer noopener">Claude Opus 5 in Copilot</a>
             <span class="ref-desc">GitHub's July 24, 2026 notice for Claude Opus 5 availability, supported surfaces, gradual rollout, admin policy, provider billing, and enhanced cyber-safety safeguards.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer noopener">Claude Opus 5.5 in Copilot</a>
+            <span class="ref-desc">GitHub's September 22, 2026 notice for Claude Opus 5.5 agentic coding and knowledge-work guidance, rollout surfaces, token efficiency, error recovery, pricing, and model-policy controls.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available" target="_blank" rel="noreferrer noopener">GPT-6 Sol and GPT-6 Luna in Copilot</a>
+            <span class="ref-desc">GitHub's September 22, 2026 notice for the balanced GPT-6 Sol and lightweight GPT-6 Luna routes, supported plans and clients, gradual rollout, token billing, and model-policy controls.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-07-28-grok-4-5-is-now-available-in-github-copilot/" target="_blank" rel="noreferrer noopener">Grok 4.5 in Copilot</a>
