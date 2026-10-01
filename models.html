@@ -61,12 +61,12 @@
           <p class="eyebrow">Enterprise Routing Graphic</p>
           <h2 id="enterprise-model-routing-heading">Six-Model Copilot Enterprise Route and Migration Map</h2>
           <p>
-            A current September 29, 2026 view of five selected Copilot Enterprise routes plus GPT-5 mini migration guidance.
+            A current October 1, 2026 view of five selected Copilot Enterprise routes plus GPT-5 mini migration guidance.
             Prices are GitHub Copilot AI-credit rates per 1M tokens; 1 AI credit equals $0.01.
           </p>
         </div>
 
-        <div class="model-route-graphic" role="img" aria-label="Copilot Enterprise routing graphic comparing GPT-5 mini, GPT-6 Luna, GPT-5.6 Terra, GPT-6 Sol, Claude Sonnet 5.5, and Claude Opus 5.5 by cost and recommended use.">
+        <div class="model-route-graphic" role="img" aria-label="Copilot Enterprise routing graphic comparing GPT-5 mini, GPT-6 Luna, GPT-5.6 Terra, GPT-6.1 Sol, Claude Sonnet 5.5, and Claude Opus 5.5 by cost and recommended use.">
           <div class="route-lanes" aria-hidden="true">
             <div class="route-lane route-lane-low">Low-cost collection</div>
             <div class="route-lane route-lane-mid">Validation and communication</div>
@@ -128,12 +128,12 @@
           <div class="route-card route-card-sol">
             <div class="route-card-head">
               <span class="route-kicker">Balanced all-rounder</span>
-              <strong>GPT-6 Sol</strong>
+              <strong>GPT-6.1 Sol</strong>
             </div>
-            <p>Use as the balanced all-round route for interactive and agentic coding that benefits from careful multistep validation.</p>
+            <p>Use for agentic coding and terminal workflows that benefit from strong multistep performance and efficient token use.</p>
             <dl>
               <div><dt>Input</dt><dd>$2.00</dd></div>
-              <div><dt>Cached / write</dt><dd>$0.20 / $2.50</dd></div>
+              <div><dt>Cached / write</dt><dd>$0.10 / $2.50</dd></div>
               <div><dt>Output</dt><dd>$10.00</dd></div>
             </dl>
           </div>
@@ -238,13 +238,13 @@
                 <td class="strengths">Long multipart orchestration and diagnosis when the higher full-rate cost is justified.</td>
               </tr>
               <tr class="highlight">
-                <td class="model-name">GPT-6 Sol</td>
+                <td class="model-name">GPT-6.1 Sol</td>
                 <td>OpenAI</td>
                 <td><span class="cap-badge">GA</span></td>
                 <td class="cost-std">$2.00</td>
-                <td>$0.20 cached; $2.50 write</td>
+                <td>$0.10 cached; $2.50 write</td>
                 <td class="cost-std">$10.00</td>
-                <td class="strengths">Balanced interactive and agentic coding with careful multistep validation; gradual rollout and client or policy availability can vary.</td>
+                <td class="strengths">Agentic coding and terminal workflows with strong multistep performance and efficient token use; gradual rollout and client or policy availability can vary.</td>
               </tr>
               <tr>
                 <td class="model-name">GPT-6 Astra</td>
@@ -338,9 +338,10 @@
             configuration under the current time-limited exception through the end of 2026.
           </p>
           <p>
-            <strong>HydraFusion research-preview caveat:</strong> Copilot CLI can now use HydraFusion from
-            <code>/experimental</code> to choose among single, cascade, and independent-critique patterns from a model
-            pool spanning multiple providers. Usage is billed from every model leg at its standard token rate, so treat
+            <strong>HydraFusion research-preview caveat:</strong> Copilot CLI, VS Code 1.140 or later, and the GitHub
+            Copilot app can use HydraFusion to choose among single, cascade, and independent-critique patterns from a
+            model pool spanning multiple providers. Business and Enterprise administrators must allow preview features.
+            Usage is billed from every model leg at its standard token rate, so treat
             benchmark savings as directional, inspect actual cost and quality on your own tasks, and keep normal
             validation and policy gates.
           </p>
@@ -363,16 +364,16 @@
           <article class="model-use-card">
             <h3>Feature implementation</h3>
             <p><strong>Start:</strong> GPT-5.6 Terra for bounded validation gates around requirements, evidence, and tests.</p>
-            <p><strong>Escalate:</strong> GPT-6 Sol for balanced multipart orchestration and careful multistep validation.</p>
+            <p><strong>Escalate:</strong> GPT-6.1 Sol for multipart orchestration and efficient multistep validation.</p>
           </article>
           <article class="model-use-card">
             <h3>Debugging production issues</h3>
             <p><strong>Start:</strong> GPT-5.6 Terra to verify logs, citations, repro evidence, and claim quality.</p>
-            <p><strong>Escalate:</strong> GPT-6 Sol for long diagnosis, then Claude Opus 5.5 only if the issue remains unresolved.</p>
+            <p><strong>Escalate:</strong> GPT-6.1 Sol for long diagnosis, then Claude Opus 5.5 only if the issue remains unresolved.</p>
           </article>
           <article class="model-use-card">
             <h3>Large refactors</h3>
-            <p><strong>Start:</strong> GPT-6 Sol for long multipart planning and cross-file coordination when Terra is not enough.</p>
+            <p><strong>Start:</strong> GPT-6.1 Sol for long multipart planning and cross-file coordination when Terra is not enough.</p>
             <p><strong>Escalate:</strong> Claude Opus 5.5 for exceptional high-consequence review after cheaper routes fail.</p>
           </article>
           <article class="model-use-card">
@@ -411,7 +412,7 @@
             <ol class="use-case-steps">
               <li><strong>Collect with GPT-6 Luna:</strong> gather fixed Python/API evidence and known-schema inputs.</li>
               <li><strong>Validate with GPT-5.6 Terra:</strong> check citations, extraction quality, and acceptance criteria before writing.</li>
-              <li><strong>Orchestrate with GPT-6 Sol:</strong> coordinate long multipart implementation or diagnosis with careful multistep validation.</li>
+              <li><strong>Orchestrate with GPT-6.1 Sol:</strong> coordinate long multipart implementation or diagnosis with efficient multistep validation.</li>
               <li><strong>Escalate only if needed:</strong> use Claude Sonnet 5.5 when blind tests show stronger everyday development, CLI, or communication results, or Claude Opus 5.5 for exceptional unresolved risk.</li>
             </ol>
           </article>
@@ -421,7 +422,7 @@
             <ol class="use-case-steps">
               <li><strong>Summarize with GPT-6 Luna:</strong> collect symptoms, logs, repro steps, and suspected areas.</li>
               <li><strong>Verify with GPT-5.6 Terra:</strong> test whether the evidence supports the likely cause.</li>
-              <li><strong>Diagnose with GPT-6 Sol:</strong> handle long cross-system reasoning when cheaper routes stall.</li>
+              <li><strong>Diagnose with GPT-6.1 Sol:</strong> handle long cross-system reasoning when cheaper routes stall.</li>
               <li><strong>Escalate with Claude Opus 5.5:</strong> reserve for unresolved or high-consequence failures.</li>
             </ol>
           </article>
@@ -431,7 +432,7 @@
             <ol class="use-case-steps">
               <li><strong>Inventory with GPT-6 Luna:</strong> find call sites, dependencies, and duplicate patterns.</li>
               <li><strong>Gate with GPT-5.6 Terra:</strong> validate the evidence behind each migration claim.</li>
-              <li><strong>Coordinate with GPT-6 Sol:</strong> manage long multipart sequencing after cheaper validation gates are exhausted.</li>
+              <li><strong>Coordinate with GPT-6.1 Sol:</strong> manage long multipart sequencing after cheaper validation gates are exhausted.</li>
               <li><strong>Audit with Claude Opus 5.5:</strong> use a final pass only on the risky diff and tests.</li>
             </ol>
           </article>
@@ -442,7 +443,7 @@
               <li><strong>Collect with GPT-6 Luna:</strong> keep fixed-source work on the lowest-cost GPT-6 route.</li>
               <li><strong>Iterate with GPT-6 Luna:</strong> use it for cheap checks when the task is still small.</li>
               <li><strong>Validate with GPT-5.6 Terra:</strong> spend more only when evidence quality matters.</li>
-              <li><strong>Escalate deliberately:</strong> reserve GPT-6 Sol, Claude Sonnet 5.5, and Claude Opus 5.5 for their defined routes.</li>
+              <li><strong>Escalate deliberately:</strong> reserve GPT-6.1 Sol, Claude Sonnet 5.5, and Claude Opus 5.5 for their defined routes.</li>
             </ol>
           </article>
         </div>
@@ -469,8 +470,8 @@
           <article class="overview-card">
             <h3>Treat mid-tier rates as workhorse capacity</h3>
             <p class="guide-text">
-              GPT-5.6 Terra, GPT-6 Sol, and Claude Sonnet 5.5 sit in the middle of this six-model route, but they serve
-              different jobs: Terra for evidence gates, GPT-6 Sol for balanced agentic coding, and Sonnet 5.5 when
+              GPT-5.6 Terra, GPT-6.1 Sol, and Claude Sonnet 5.5 sit in the middle of this six-model route, but they serve
+              different jobs: Terra for evidence gates, GPT-6.1 Sol for efficient agentic coding, and Sonnet 5.5 when
               blind tests favor its everyday development, CLI, latency, or communication fit.
             </p>
           </article>
@@ -488,7 +489,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified September 29, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified October 1, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
@@ -581,6 +582,10 @@
             <span class="ref-desc">GitHub's September 22, 2026 notice for Claude Opus 5.5 agentic coding and knowledge-work guidance, rollout surfaces, token efficiency, error recovery, pricing, and model-policy controls.</span>
           </div>
           <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot/" target="_blank" rel="noreferrer noopener">GPT-6.1 Sol in Copilot</a>
+            <span class="ref-desc">GitHub's September 29, 2026 notice for GPT-6.1 Sol agentic coding and terminal-workflow guidance, rollout surfaces, token efficiency, pricing, and model-policy controls.</span>
+          </div>
+          <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available" target="_blank" rel="noreferrer noopener">GPT-6 Sol and GPT-6 Luna in Copilot</a>
             <span class="ref-desc">GitHub's September 22, 2026 notice for the balanced GPT-6 Sol and lightweight GPT-6 Luna routes, supported plans and clients, gradual rollout, token billing, and model-policy controls.</span>
           </div>
@@ -662,7 +667,11 @@
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/" target="_blank" rel="noreferrer noopener">Project HydraFusion research preview</a>
-            <span class="ref-desc">GitHub's September 4, 2026 explanation of adaptive single, cascade, and critique workflows, benchmark limits, standard per-model token billing, and current Copilot CLI preview scope.</span>
+            <span class="ref-desc">GitHub's September 4, 2026 explanation of adaptive single, cascade, and critique workflows, benchmark limits, and standard per-model token billing.</span>
+          </div>
+          <div class="ref-item">
+            <a class="step-link" href="https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/" target="_blank" rel="noreferrer noopener">HydraFusion in VS Code and the Copilot app</a>
+            <span class="ref-desc">GitHub's September 30, 2026 expansion of HydraFusion to VS Code 1.140 or later and the Copilot app, with clearer progress reporting and preview-policy requirements.</span>
           </div>
           <div class="ref-item">
             <a class="step-link" href="https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/" target="_blank" rel="noreferrer noopener">Copilot code-review analysis updates</a>
@@ -721,8 +730,8 @@
             <span class="ref-desc">Microsoft's historical release reference for browser-driven agent testing, per-site permissions, agent-session organization, and pull-request action banners.</span>
           </div>
           <div class="ref-item">
-            <a class="step-link" href="https://code.visualstudio.com/updates/v1_139" target="_blank" rel="noreferrer noopener">VS Code 1.139 release notes</a>
-            <span class="ref-desc">Microsoft's newest stable reference for remote Dev Container agent sessions, faster and denser session lists, in-place renaming, and multiple-chat presentation controls.</span>
+            <a class="step-link" href="https://code.visualstudio.com/updates/v1_140" target="_blank" rel="noreferrer noopener">VS Code 1.140 release notes</a>
+            <span class="ref-desc">Microsoft's newest stable reference for the Copilot harness, HydraFusion, multi-folder sessions, remote delegation, worktree reuse, and enterprise AI controls.</span>
           </div>
         </div>
       </section>
