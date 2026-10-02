@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copilot Field Guide — Learn Models, Costs &amp; Workflows</title>
+    <meta
+      name="description"
+      content="An informational hub for using AI in VS Code. Learn agents and skills, explore practical workflows, compare models, and track AI news from a daily-updated feed."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="field-guide.css" />
+    <link rel="stylesheet" href="model-lab.css" />
+  </head>
+  <body>
+<nav class="field-nav" aria-label="Main navigation"><a class="field-brand" href="index.html">Copilot <span>Field Guide</span></a><div><a href="index.html">News</a><a href="models.html">Models</a><a href="guide.html">Guide</a><a href="learning.html" aria-current="page">Workflows</a><a href="videos.html">Videos</a><a href="enterprise-privacy.html">Privacy</a></div></nav>
+    <div class="background-glow" aria-hidden="true"></div>
+
+<main class="page learning-page"><section class="learning-hero" aria-labelledby="page-title"><header class="hero"><h1 id="page-title">Learn the models.<br>Spend wisely.</h1><p class="hero-copy">Use a strong model to plan. Use a lean model to build. Know when to switch.</p><div class="hero-actions"><a class="hero-guide-link" href="#model-lab">Find your model <span aria-hidden="true">→</span></a><a class="hero-guide-link hero-guide-link-secondary" href="news.html">Explore the news</a></div></header><aside class="hero-chart" aria-label="Illustrative workflow comparison"><h2>One task. Two approaches.</h2><p>Strong model throughout</p><div class="bar-track"><div class="bar-fill neutral" style="width:100%"></div></div><p>Plan + lean build</p><div class="bar-track"><div class="bar-fill" style="width:20.8333%"></div></div><p class="chart-note">Illustrative workload. Adjust the assumptions below.</p></aside></section><section class="learning-section" id="model-lab" aria-labelledby="workflow-heading"><h2 id="workflow-heading">Give each model the right job.</h2><p class="section-intro">A starting strategy, not a rule: spend more where judgment matters and less where the steps are clear.</p><div class="workflow-rail"><article><span class="step-number">01</span><h3>Plan</h3><p>Use GPT-6.1 Sol or another stronger model to clarify goals, compare approaches, and write testable steps.</p><small>Deliverable: a bounded plan + acceptance checks.</small></article><article><span class="step-number">02</span><h3>Build</h3><p>Try GPT-6 Luna for focused edits, documentation, and implementation against that plan.</p><small>Deliverable: small changes + passing checks.</small></article><article><span class="step-number">03</span><h3>Review</h3><p>Use a stronger model for risky decisions or unresolved failures. Verify results with tests and human judgment.</p><small>Escalate when the same failure repeats.</small></article></div><details class="handoff"><summary>What should I hand to the cheaper model?</summary><p>Give it the goal, relevant files, the agreed approach, constraints, and commands or checks that prove success. Work in small steps. Ask it to stop and report a blocker instead of guessing.</p><blockquote>“Implement step 2 of this plan. Keep the public API unchanged. Run the listed checks. If the assumptions fail, explain what you found before changing the approach.”</blockquote><p>Switch models in the Copilot model picker. Preserve the plan and relevant context when starting a new conversation; switching alone does not guarantee an effective handoff.</p></details></section>
+<section class="learning-section" aria-labelledby="task-heading"><div class="section-heading"><div><h2 id="task-heading">Start with the task.</h2><p class="section-intro">Choose a situation to see a practical starting point.</p></div><label class="task-control">What are you doing?<select id="task-choice"><option value="edit">A small, well-defined edit</option><option value="feature">A feature across several files</option><option value="debug">A bug with an unclear cause</option><option value="risk">Security, payments, or a migration</option><option value="docs">Documentation from known sources</option></select></label></div><div class="task-answer" id="task-answer" aria-live="polite"></div><p class="chart-note">These are editorial recommendations, not model benchmarks. Judge the actual result, not the model’s confidence.</p></section>
+<section class="learning-section" aria-labelledby="price-heading"><div class="section-heading"><div><h2 id="price-heading">Same tokens. Different price.</h2><p class="section-intro">20,000 uncached input tokens + 4,000 output tokens, at standard rates.</p></div><span class="date-note">Prices checked October 1, 2026</span></div><div class="price-chart" id="price-chart" aria-label="Usage price comparison"></div><div class="price-axis" aria-hidden="true"><span>$0</span><span>$0.10</span><span>$0.20</span><span>$0.30</span><span>$0.40</span></div><p class="chart-note">Linear scale, $0 to $0.400. Gemini 3.8 Flash uses its promotional rate through December 31, 2026. This compares prices for equal tokens, not quality or cost per successful task. Input tokens are what you send; output tokens are what the model generates, including billed reasoning.</p><p class="source-note"><a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing" target="_blank" rel="noopener">GitHub’s official rates</a> · AI-credit billing: 1 credit = $0.01. Subscription fees, included allowances, caching, and long-context tiers are excluded here. Availability depends on your plan, client, and organization policy. Legacy annual request-based plans differ.</p></section>
+<section class="learning-section" id="cost-calculator" aria-labelledby="cost-heading"><h2 id="cost-heading">Make the tradeoff visible.</h2><p class="section-intro">Adjust the work. See what model switching could save.</p><div class="cost-lab"><form class="lab-controls" id="cost-form"><h3>Adjust the assumptions.</h3><label>Strong model<select id="strong-model"><option value="sol">GPT-6.1 Sol</option><option value="sonnet">Claude Sonnet 5.5</option><option value="opus">Claude Opus 5.5</option><option value="astra">GPT-6 Astra</option></select></label><label>Build steps <output id="steps-value">10</output><input id="build-steps" type="range" min="1" max="50" value="10"></label><div class="token-fields"><label>Input tokens per step<input id="input-tokens" type="number" min="0" max="272000" step="1000" value="10000" required></label><label>Output tokens per step<input id="output-tokens" type="number" min="0" max="100000" step="1000" value="2000" required></label></div><label>Strong planning + review steps<input id="strong-steps" type="number" min="0" max="20" value="2" required></label><label>Luna output / reasoning overhead <output id="effort-value">1×</output><input id="luna-overhead" type="range" min="1" max="20" step="0.5" value="1"></label><label>Luna extra attempts <output id="retry-value">0%</output><input id="luna-retries" type="range" min="0" max="300" step="10" value="0"></label><p class="chart-note">Overhead is your assumption, not a fixed “High” multiplier. Higher thinking effort can consume more tokens. Extra attempts repeat both input and output.</p><button class="reset-button" type="reset">Reset example</button></form><div class="lab-results"><h3>Estimated usage cost</h3><div class="cost-bar-row"><div><span id="all-label">Sol for every step</span><strong id="all-cost">$0.480</strong></div><div class="bar-track"><div class="bar-fill neutral" id="all-bar"></div></div></div><div class="cost-bar-row"><div><span id="mixed-label">Sol plan + Luna build</span><strong id="mixed-cost">$0.100</strong></div><div class="bar-track"><div class="bar-fill" id="mixed-bar"></div></div></div><div class="savings" aria-live="polite"><strong id="savings-number">79%</strong><span id="savings-text">less estimated usage cost</span></div><p class="estimate-note">Illustrative estimate, not a benchmark. Both routes include the same planning + review steps. Every step uses the token counts you enter; real steps vary.</p><details><summary>See the calculation</summary><p id="formula"></p><p>Cost = (input tokens × input rate + output tokens × output rate) ÷ 1,000,000. No cache reads or writes. Standard tier only; per-step input is capped at 272K. Dollars show usage value, not necessarily an extra charge on your bill.</p></details><p class="source-note"><a href="https://code.visualstudio.com/docs/agent-customization/language-models" target="_blank" rel="noopener">How thinking effort affects usage</a></p></div></div></section>
+<section class="learning-section effort-lesson"><h2>“High” is a setting. Success is the goal.</h2><div class="lesson-columns"><p>Start with Luna on a bounded task. If your client offers thinking effort, try a higher setting when deeper reasoning is useful. There is no published universal conversion from “High” to a fixed cost.</p><p>Check the result. If it repeats a failed approach, misses constraints, or needs architectural judgment, pause and switch. A cheap attempt that never finishes is not an efficient workflow.</p></div><p class="source-note">Read more: <a href="https://docs.github.com/en/copilot/reference/ai-models/model-comparison" target="_blank" rel="noopener">GitHub’s model comparison</a> · <a href="models.html#model-table">Full pricing reference</a></p></section><section class="learning-section news-sidebar" aria-labelledby="latest-news-heading"><div class="news-sidebar-head"><div class="section-heading"><h2 id="latest-news-heading">Keep up. Keep building.</h2><a href="news.html">See all news →</a></div></div><div class="latest-news-list" id="latest-news-list" role="list"></div></section>      <!-- ── Use Cases Panel ──────────────────────────────── -->
+      <section class="panel reveal" id="use-cases" aria-labelledby="use-cases-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Workflow Patterns</p>
+          <h2 id="use-cases-heading">Real AI Workflows</h2>
+          <p>Capture practical ways your team is using agents, skills, and AI-assisted tooling inside VS Code.</p>
+        </div>
+
+        <div class="use-cases-list">
+          <details class="use-case-item">
+            <summary>
+              <span class="use-case-title">RAG-style Log Troubleshooting Agent Using a Reference Folder</span>
+              <span class="use-case-tag">Agent + Skills</span>
+            </summary>
+            <div class="use-case-body">
+              <p>
+                Build a dedicated Copilot agent that uses a reference folder of documentation you choose and can alter,
+                incident notes, and snippets of common issues to troubleshoot new logs faster with retrieval-style context.
+              </p>
+
+              <h3>How To Set It Up</h3>
+              <ol class="use-case-steps">
+                <li>Create a <code>reference/</code> folder with the exact reference documents you want it to use, known error signatures, and resolution notes.</li>
+                <li>Add a custom <code>.agent.md</code> focused on troubleshooting and root-cause analysis.</li>
+                <li>Create one or more <code>SKILL.md</code> files for parsing logs, matching patterns, and proposing fixes.</li>
+                <li>Attach those skills to the agent so it consistently follows your triage workflow.</li>
+                <li>Prompt the agent with new logs and ask it to compare against the reference folder before recommending actions.</li>
+
+              </ol>
+
+              <h3>Why This Works Well</h3>
+              <ul class="use-case-points">
+                <li>Keeps the agent focused, and if you add limits to the tools it can't attempt any rewrites.</li>
+                <li>Reduces repeated manual searching across old tickets and files.</li>
+                <li>You are able to prompt it to ensure the responses it gives meet your standards to reduce edits before passing information along, and to speed checking the results</li>
+                <li>You can ask for it to find links to the information in the documentation to support its answers</li>
+              </ul>
+
+              <h3>Copilot Build Assist</h3>
+              <p>
+                Copilot can help generate both the agent and skills: ask it to scaffold your
+                <code>.agent.md</code>, draft <code>SKILL.md</code> instructions, and refine prompts for better
+                troubleshooting output over time.
+              </p>
+              <p>
+                <strong>Tip:</strong> Use Copilot and explain what you want the agent to focus on. After it writes the
+                agent for you, ask Copilot if there are any useful skills it sees that might help the agent
+                function better. It is amazing what it can come up with to help itself improve.
+              </p>
+            </div>
+          </details>
+
+          <details class="use-case-item">
+            <summary>
+              <span class="use-case-title">Improving Reference Materials Efficiency for the Agent</span>
+              <span class="use-case-tag">Optimization</span>
+            </summary>
+            <div class="use-case-body">
+              <p>
+                You can take the reference folder you created, and prompt the agent to go through the files and restructure them for its efficiency. Create new documents to document types that are more efficient, and rename or reorganize to improve retrieval, and use less tokens. This is a great way to optimize the agent's performance without changing the underlying code of the agent or skills, just by improving the materials it uses to reference.
+              </p>
+              <br />
+              <p>
+                <strong>Tip:</strong> Make sure you tell the agent not to 'rewrite' the information, but to only restructure it. You don't want to lose any of the important information, just make it more efficient for the agent to reference.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- ── Overview Panel ─────────────────────────────────── -->
+      <section class="panel reveal" id="overview" aria-labelledby="overview-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Core Concepts</p>
+          <h2 id="overview-heading">Agents and Skills at a Glance</h2>
+          <p>These are the reusable building blocks behind more advanced AI workflows in VS Code.</p>
+        </div>
+        <div class="overview-grid">
+          <div class="overview-card">
+            <h3>
+              <span class="overview-icon" aria-hidden="true">&#x1F916;</span>
+              Agents
+            </h3>
+            <ul class="overview-list">
+              <li>Autonomous coding assistants that work directly on GitHub issues</li>
+              <li>Defined via <code>.agent.md</code> files in your repository</li>
+              <li>Open pull requests with proposed changes for team review</li>
+              <li>Customizable with specialized instructions and attached skills</li>
+            </ul>
+          </div>
+          <div class="overview-card">
+            <h3>
+              <span class="overview-icon" aria-hidden="true">&#x2699;&#xFE0F;</span>
+              Skills
+            </h3>
+            <ul class="overview-list">
+              <li>Reusable instruction sets written in <code>SKILL.md</code> format</li>
+              <li>Stored in <code>.github/skills/</code> (project) or <code>~/.copilot/skills/</code> (personal)</li>
+              <li>Attach to agents to give them specialized capabilities</li>
+              <li>Shareable across repositories and team members</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── AI in VS Code Panel ───────────────────────────── -->
+      <section class="panel reveal" id="ai-in-vscode" aria-labelledby="ai-vscode-heading">
+        <div class="panel-head">
+          <p class="eyebrow">In Practice</p>
+          <h2 id="ai-vscode-heading">Using AI in VS Code</h2>
+          <p>A strong setup balances quick chat loops, deeper agent execution, and repeatable automation.</p>
+        </div>
+        <div class="workflow-grid">
+          <article class="workflow-card">
+            <h3>Interactive Help</h3>
+            <p>Use chat for quick explanations, code edits, documentation lookup, and small in-context fixes without leaving the editor.</p>
+          </article>
+          <article class="workflow-card">
+            <h3>Agentic Execution</h3>
+            <p>Use agent mode when a task spans multiple files, needs terminal commands, or requires validation rather than one-shot suggestions.</p>
+          </article>
+          <article class="workflow-card">
+            <h3>Repeatable Automation</h3>
+            <p>Keep recurring content in a standalone data file so scheduled jobs can update the feed without rewriting page layout or UI logic.</p>
+            <p class="workflow-note">This site now uses <code>news-feed.js</code> for that pattern.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ── Getting Started Panel ──────────────────────────── -->
+      <section class="panel reveal" id="getting-started" aria-labelledby="gs-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Learning Path</p>
+          <h2 id="gs-heading">Getting Started</h2>
+          <p>Follow these steps to go from zero to productive with AI in VS Code.</p>
+        </div>
+        <div class="steps-timeline">
+
+          <div class="step-card">
+            <span class="step-number">1</span>
+            <div class="step-body">
+              <h3>Understand the Basics</h3>
+              <p>Learn what agent skills are and how they fit into the Copilot ecosystem.</p>
+              <a class="step-link" href="https://docs.github.com/en/copilot/concepts/agents/about-agent-skills" target="_blank" rel="noreferrer noopener">
+                About Agent Skills <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">2</span>
+            <div class="step-body">
+              <h3>Try Agent Mode</h3>
+              <p>Get hands-on with agent mode through a guided Microsoft Learn tutorial.</p>
+              <a class="step-link" href="https://learn.microsoft.com/en-us/training/modules/github-copilot-agent-mode/" target="_blank" rel="noreferrer noopener">
+                Building Apps with Agent Mode <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">3</span>
+            <div class="step-body">
+              <h3>Create Your First Custom Agent</h3>
+              <p>Define a specialized agent with its own identity and instructions.</p>
+              <a class="step-link" href="https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents" target="_blank" rel="noreferrer noopener">
+                Creating Custom Agents <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">4</span>
+            <div class="step-body">
+              <h3>Build Reusable Skills</h3>
+              <p>Create SKILL.md files that give agents specialized capabilities your whole team can use.</p>
+              <a class="step-link" href="https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-skills" target="_blank" rel="noreferrer noopener">
+                Creating Agent Skills <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">5</span>
+            <div class="step-body">
+              <h3>Master Best Practices</h3>
+              <p>Learn proven patterns from 2,500+ repositories and official GitHub guidance.</p>
+              <a class="step-link" href="https://docs.github.com/copilot/how-tos/agents/copilot-coding-agent/best-practices-for-using-copilot-to-work-on-tasks" target="_blank" rel="noreferrer noopener">
+                Best Practices <span aria-hidden="true">↗</span>
+              </a>
+              <a class="step-link" href="https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/" target="_blank" rel="noreferrer noopener">
+                How to Write a Great agents.md <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── Quick Reference Panel ──────────────────────────── -->
+      <section class="panel reveal" id="quick-ref" aria-labelledby="qr-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Cheat Sheet</p>
+          <h2 id="qr-heading">Key Files &amp; Locations</h2>
+        </div>
+        <div class="ref-grid">
+          <div class="ref-item">
+            <code class="ref-file">.agent.md</code>
+            <span class="ref-desc">Custom agent definition file — identity, instructions, and skill attachments</span>
+          </div>
+          <div class="ref-item">
+            <code class="ref-file">SKILL.md</code>
+            <span class="ref-desc">Skill instruction file — reusable capability definitions</span>
+          </div>
+          <div class="ref-item">
+            <code class="ref-file">copilot-instructions.md</code>
+            <span class="ref-desc">Repo-wide Copilot instructions — applies to all agents</span>
+          </div>
+          <div class="ref-item">
+            <code class="ref-file">.github/skills/</code>
+            <span class="ref-desc">Project-level skills directory — shared with the team via repo</span>
+          </div>
+          <div class="ref-item">
+            <code class="ref-file">~/.copilot/skills/</code>
+            <span class="ref-desc">Personal skills directory — your private skill library</span>
+          </div>
+          <div class="ref-item">
+            <code class="ref-file">news-feed.js</code>
+            <span class="ref-desc">Shared AI news data source — update this file to refresh both the homepage snapshot and the full tracker</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Models Panel ──────────────────────────────────── -->
+      <section class="panel reveal" id="models" aria-labelledby="models-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Model Guide</p>
+          <h2 id="models-heading">Go Deeper in the Model Guide</h2>
+          <p>
+            The model table is now a dedicated reference with current Copilot multipliers, task fit,
+            and recommended model flows for planning, implementation, review, and quick edits.
+          </p>
+        </div>
+        <div class="model-preview-grid">
+          <article class="model-preview-card">
+            <h3>Cost-aware model table</h3>
+            <p>Compare selected models, token rates, availability notes, and suggested starting points.</p>
+          </article>
+          <article class="model-preview-card">
+            <h3>Task recommendations</h3>
+            <p>Pick a practical flow for planning, implementation, debugging, refactoring, docs, visual work, and low-cost loops.</p>
+          </article>
+          <article class="model-preview-card">
+            <h3>Official-source notes</h3>
+            <p>Includes GitHub's current model, billing, and auto-selection caveats so the guide is easier to maintain.</p>
+          </article>
+        </div>
+        <div class="legend-info">
+          <p>
+            <strong>Open the full guide:</strong>
+            <a href="models.html">GitHub Copilot Model Guide</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ── Resource Library (existing) ────────────────────── -->
+      <section class="panel reveal" id="resources" aria-labelledby="resource-list-heading">
+        <div class="panel-head">
+          <p class="eyebrow">Deep Dive</p>
+          <h2 id="resource-list-heading">AI in VS Code Library</h2>
+          <p>Curated docs, tutorials, repositories, and reference material for agents, skills, extensions, and related AI workflows.</p>
+          <div class="filter-bar" id="filter-bar" role="tablist" aria-label="Filter by category"></div>
+        </div>
+        <div id="resource-grid" role="list"></div>
+      </section>
+
+    </main>
+
+    <template id="resource-card-template">
+      <article class="resource-card" role="listitem">
+        <div class="card-top">
+          <span class="chip"></span>
+          <span class="source"></span>
+        </div>
+        <h3></h3>
+        <p class="note"></p>
+        <div class="card-actions">
+          <a class="visit-link" target="_blank" rel="noreferrer noopener">Visit resource</a>
+        </div>
+      </article>
+    </template>
+
+      <script src="news-feed.js"></script>
+      <script src="news-updates.js"></script>
+      <script src="script.js"></script>
+  <script src="model-lab.js"></script>
+  </body>
+</html>

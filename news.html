@@ -1,120 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI News Tracker — VS Code, Agents, and Models</title>
-    <meta
-      name="description"
-      content="A daily-update-ready AI news tracker for VS Code users covering agents, models, workflows, launches, and security findings."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="field-guide.css" />
-    <link rel="stylesheet" href="model-lab.css" />
-  </head>
-  <body>
-<nav class="field-nav" aria-label="Main navigation"><a class="field-brand" href="index.html">Copilot <span>Field Guide</span></a><div><a href="models.html">Models</a><a href="guide.html">Guide</a><a href="news.html">News</a><a href="videos.html">Videos</a><a href="enterprise-privacy.html">Privacy</a></div></nav>
-    <div class="background-glow" aria-hidden="true"></div>
-
-    <nav class="section-nav nav-visible-always" id="section-nav" aria-label="News page sections">
-      <div class="section-nav-inner">
-        <div class="nav-group" aria-label="Other site pages">
-          <span class="nav-group-label">Pages</span>
-          <a href="index.html" class="nav-pill nav-pill-back">AI Hub</a>
-          <a href="guide.html" class="nav-pill nav-pill-back">Guide</a>
-          <a href="models.html" class="nav-pill nav-pill-back">Models</a>
-          <a href="enterprise-privacy.html" class="nav-pill nav-pill-back">Copilot Privacy</a>
-          <a href="videos.html" class="nav-pill nav-pill-back">Videos</a>
-        </div>
-        <div class="nav-group" aria-label="Sections on this page">
-          <span class="nav-group-label">On this page</span>
-          <a href="#top-stories" class="nav-pill active">Overview</a>
-          <a href="#new-models" class="nav-pill">Models</a>
-          <a href="#mythos-news" class="nav-pill">Mythos</a>
-          <a href="#ai-general-news" class="nav-pill">General AI</a>
-          <a href="#companies" class="nav-pill">Companies</a>
-          <a href="#sources" class="nav-pill">Sources</a>
-        </div>
-      </div>
-    </nav>
-
-    <main class="page news-layout">
-      <header class="hero reveal">
-        <p class="eyebrow">AI News</p>
-        <h1>AI News Tracker for VS Code Users</h1>
-        <p class="hero-copy">
-          Track AI stories that matter to day-to-day VS Code work: agent workflows, model releases, automation
-          patterns, extension changes, and major security findings. This page is powered by a shared feed so it can be
-          refreshed daily without rewriting the layout.
-        </p>
-      </header>
-
-      <section class="panel reveal news-intro" id="top-stories" aria-labelledby="top-stories-heading">
-        <div class="panel-head">
-          <p class="eyebrow">News Desk</p>
-          <h2 id="top-stories-heading">Tracked Coverage</h2>
-          <p>The feed is grouped so model launches, Mythos coverage, and broader AI workflow news are easier to scan.</p>
-        </div>
-
-        <div class="news-overview-grid" id="news-overview-grid"></div>
-
-        <div class="news-spotlight-grid" id="news-spotlight-list" role="list"></div>
-      </section>
-
-      <section class="panel reveal" id="new-models" aria-labelledby="new-models-heading">
-        <div class="panel-head">
-          <p class="eyebrow">Category</p>
-          <h2 id="new-models-heading">New Models</h2>
-          <p>Recent model launches and release notes that affect AI-assisted development work.</p>
-        </div>
-        <div class="news-section-grid" id="new-models-list" role="list"></div>
-      </section>
-
-      <section class="panel reveal" id="mythos-news" aria-labelledby="mythos-news-heading">
-        <div class="panel-head">
-          <p class="eyebrow">Category</p>
-          <h2 id="mythos-news-heading">Mythos News</h2>
-          <p>Coverage tied to Mythos, Project Glasswing, and the reported security findings around those deployments.</p>
-        </div>
-        <div class="news-section-grid" id="mythos-news-list" role="list"></div>
-      </section>
-
-      <section class="panel reveal" id="ai-general-news" aria-labelledby="ai-general-news-heading">
-        <div class="panel-head">
-          <p class="eyebrow">Category</p>
-          <h2 id="ai-general-news-heading">AI General News</h2>
-          <p>Broader AI workflow, tooling, and ecosystem shifts relevant to VS Code users and AI-assisted teams.</p>
-        </div>
-        <div class="news-section-grid" id="ai-general-news-list" role="list"></div>
-      </section>
-
-      <section class="panel reveal" id="companies" aria-labelledby="companies-heading">
-        <div class="panel-head">
-          <p class="eyebrow">Tag View</p>
-          <h2 id="companies-heading">AI Companies</h2>
-          <p>Stories are tagged by the companies most closely associated with the item so you can scan by lab or platform.</p>
-        </div>
-        <div class="news-company-cloud" id="news-company-tags" role="list"></div>
-      </section>
-
-      <section class="panel reveal" id="sources" aria-labelledby="sources-heading">
-        <div class="panel-head">
-          <p class="eyebrow">Source List</p>
-          <h2 id="sources-heading">Tracked Sources</h2>
-          <p>These are the outlets represented in the current feed.</p>
-        </div>
-        <ul class="news-sources" id="news-sources-list"></ul>
-      </section>
-    </main>
-
-    <script src="news-feed.js"></script>
-    <script src="news-updates.js"></script>
-    <script src="script.js"></script>
-  </body>
-</html>
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latest AI News — Copilot Field Guide</title>
+<meta name="description" content="Recent AI news with publication dates, concise summaries, and direct links to original articles. Explore model releases, agents, tools, and the broader AI ecosystem.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="field-guide.css"><link rel="stylesheet" href="model-lab.css"><link rel="stylesheet" href="news-page.css">
+</head><body>
+<nav class="field-nav" aria-label="Main navigation"><a class="field-brand" href="index.html">Copilot <span>Field Guide</span></a><div><a href="index.html" aria-current="page">News</a><a href="models.html">Models</a><a href="guide.html">Guide</a><a href="learning.html">Workflows</a><a href="videos.html">Videos</a><a href="enterprise-privacy.html">Privacy</a></div></nav>
+<main class="page news-layout news-first">
+<header class="hero"><h1>What’s happening in AI.</h1><p class="hero-copy">Recent model releases, agent tools, and stories from across AI. Read a concise summary, then go straight to the original article.</p></header>
+<section id="top-stories" aria-labelledby="latest-heading">
+<div class="news-desk-heading"><h2 id="latest-heading">Latest articles</h2><p id="news-window-note" class="chart-note"></p></div>
+<form class="news-reader-filters" aria-label="Filter news articles"><label>Coverage<select id="news-category"><option value="all">All AI news</option><option value="new-models">Models</option><option value="ai-general-news">AI tools &amp; industry</option><option value="mythos-news">Mythos &amp; security</option></select></label><label>Publication window<select id="news-window"><option value="14">Recent · 14 days</option><option value="30">Past 30 days</option><option value="all">Full archive</option></select></label><p id="news-result-count" role="status"></p></form>
+<div id="news-current-list" class="news-article-list" role="list"></div><button id="news-load-more" class="reset-button" type="button">Show more articles</button>
+<noscript><p>Enable JavaScript to browse this feed. You can also read the <a href="https://github.blog/changelog/">GitHub Changelog</a>, <a href="https://openai.com/news/">OpenAI News</a>, and <a href="https://www.anthropic.com/news">Anthropic Newsroom</a> directly.</p></noscript>
+</section>
+<section class="news-archive-link" id="archive"><h2>Looking for an earlier story?</h2><p>Older coverage stays in the archive with its original publication date. It is never presented as a new release.</p><button id="news-open-archive" class="reset-button" type="button">Browse the full archive</button></section>
+<section class="news-learning-links"><h2>Turn the news into practical choices.</h2><p>Understand what models cost, what to use them for, and how to work with them.</p><div><a href="models.html">Compare models and costs →</a><a href="learning.html">Explore illustrated workflows →</a><a href="guide.html">Start with the beginner guide →</a></div></section>
+</main>
+<script src="news-feed.js"></script><script src="news-page.js"></script>
+</body></html>
