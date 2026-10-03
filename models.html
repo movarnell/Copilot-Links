@@ -61,7 +61,7 @@
 
 <section class="learning-section" id="model-lab" aria-labelledby="workflow-heading"><h2 id="workflow-heading">Give each model the right job.</h2><p class="section-intro">A starting strategy, not a rule: spend more where judgment matters and less where the steps are clear.</p><div class="workflow-rail"><article><span class="step-number">01</span><h3>Plan</h3><p>Use GPT-6.1 Sol or another stronger model to clarify goals, compare approaches, and write testable steps.</p><small>Deliverable: a bounded plan + acceptance checks.</small></article><article><span class="step-number">02</span><h3>Build</h3><p>Try GPT-6 Luna for focused edits, documentation, and implementation against that plan.</p><small>Deliverable: small changes + passing checks.</small></article><article><span class="step-number">03</span><h3>Review</h3><p>Use a stronger model for risky decisions or unresolved failures. Verify results with tests and human judgment.</p><small>Escalate when the same failure repeats.</small></article></div><details class="handoff"><summary>What should I hand to the cheaper model?</summary><p>Give it the goal, relevant files, the agreed approach, constraints, and commands or checks that prove success. Work in small steps. Ask it to stop and report a blocker instead of guessing.</p><blockquote>“Implement step 2 of this plan. Keep the public API unchanged. Run the listed checks. If the assumptions fail, explain what you found before changing the approach.”</blockquote><p>Switch models in the Copilot model picker. Preserve the plan and relevant context when starting a new conversation; switching alone does not guarantee an effective handoff.</p></details></section>
 <section class="learning-section" aria-labelledby="task-heading"><div class="section-heading"><div><h2 id="task-heading">Start with the task.</h2><p class="section-intro">Choose a situation to see a practical starting point.</p></div><label class="task-control">What are you doing?<select id="task-choice"><option value="edit">A small, well-defined edit</option><option value="feature">A feature across several files</option><option value="debug">A bug with an unclear cause</option><option value="risk">Security, payments, or a migration</option><option value="docs">Documentation from known sources</option></select></label></div><div class="task-answer" id="task-answer" aria-live="polite"></div><p class="chart-note">These are editorial recommendations, not model benchmarks. Judge the actual result, not the model’s confidence.</p></section>
-<section class="learning-section" aria-labelledby="price-heading"><div class="section-heading"><div><h2 id="price-heading">Same tokens. Different price.</h2><p class="section-intro">20,000 uncached input tokens + 4,000 output tokens, at standard rates.</p></div><span class="date-note">Prices checked October 2, 2026</span></div><div class="price-chart" id="price-chart" aria-label="Usage price comparison"></div><div class="price-axis" aria-hidden="true"><span>$0</span><span>$0.10</span><span>$0.20</span><span>$0.30</span><span>$0.40</span></div><p class="chart-note">Linear scale, $0 to $0.400. Gemini 3.8 Flash uses its promotional rate through December 31, 2026. This compares prices for equal tokens, not quality or cost per successful task. Input tokens are what you send; output tokens are what the model generates, including billed reasoning.</p><p class="source-note"><a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing" target="_blank" rel="noopener">GitHub’s official rates</a> · AI-credit billing: 1 credit = $0.01. Subscription fees, included allowances, caching, and long-context tiers are excluded here. Availability depends on your plan, client, and organization policy. Legacy annual request-based plans differ.</p></section>
+<section class="learning-section" aria-labelledby="price-heading"><div class="section-heading"><div><h2 id="price-heading">Same tokens. Different price.</h2><p class="section-intro">20,000 uncached input tokens + 4,000 output tokens, at standard rates.</p></div><span class="date-note">Prices checked October 3, 2026</span></div><div class="price-chart" id="price-chart" aria-label="Usage price comparison"></div><div class="price-axis" aria-hidden="true"><span>$0</span><span>$0.10</span><span>$0.20</span><span>$0.30</span><span>$0.40</span></div><p class="chart-note">Linear scale, $0 to $0.400. Gemini 3.8 Flash uses its promotional rate through December 31, 2026. This compares prices for equal tokens, not quality or cost per successful task. Input tokens are what you send; output tokens are what the model generates, including billed reasoning.</p><p class="source-note"><a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing" target="_blank" rel="noopener">GitHub’s official rates</a> · AI-credit billing: 1 credit = $0.01. Subscription fees, included allowances, caching, and long-context tiers are excluded here. Availability depends on your plan, client, and organization policy. Legacy annual request-based plans differ.</p></section>
 <section class="learning-section" id="cost-calculator" aria-labelledby="cost-heading"><h2 id="cost-heading">Make the tradeoff visible.</h2><p class="section-intro">Adjust the work. See what model switching could save.</p><div class="cost-lab"><form class="lab-controls" id="cost-form"><h3>Adjust the assumptions.</h3><label>Strong model<select id="strong-model"><option value="sol">GPT-6.1 Sol</option><option value="sonnet">Claude Sonnet 5.5</option><option value="opus">Claude Opus 5.5</option><option value="astra">GPT-6 Astra</option></select></label><label>Build steps <output id="steps-value">10</output><input id="build-steps" type="range" min="1" max="50" value="10"></label><div class="token-fields"><label>Input tokens per step<input id="input-tokens" type="number" min="0" max="272000" step="1000" value="10000" required></label><label>Output tokens per step<input id="output-tokens" type="number" min="0" max="100000" step="1000" value="2000" required></label></div><label>Strong planning + review steps<input id="strong-steps" type="number" min="0" max="20" value="2" required></label><label>Luna output / reasoning overhead <output id="effort-value">1×</output><input id="luna-overhead" type="range" min="1" max="20" step="0.5" value="1"></label><label>Luna extra attempts <output id="retry-value">0%</output><input id="luna-retries" type="range" min="0" max="300" step="10" value="0"></label><p class="chart-note">Overhead is your assumption, not a fixed “High” multiplier. Higher thinking effort can consume more tokens. Extra attempts repeat both input and output.</p><button class="reset-button" type="reset">Reset example</button></form><div class="lab-results"><h3>Estimated usage cost</h3><div class="cost-bar-row"><div><span id="all-label">Sol for every step</span><strong id="all-cost">$0.480</strong></div><div class="bar-track"><div class="bar-fill neutral" id="all-bar"></div></div></div><div class="cost-bar-row"><div><span id="mixed-label">Sol plan + Luna build</span><strong id="mixed-cost">$0.100</strong></div><div class="bar-track"><div class="bar-fill" id="mixed-bar"></div></div></div><div class="savings" aria-live="polite"><strong id="savings-number">79%</strong><span id="savings-text">less estimated usage cost</span></div><p class="estimate-note">Illustrative estimate, not a benchmark. Both routes include the same planning + review steps. Every step uses the token counts you enter; real steps vary.</p><details><summary>See the calculation</summary><p id="formula"></p><p>Cost = (input tokens × input rate + output tokens × output rate) ÷ 1,000,000. No cache reads or writes. Standard tier only; per-step input is capped at 272K. Dollars show usage value, not necessarily an extra charge on your bill.</p></details><p class="source-note"><a href="https://code.visualstudio.com/docs/agent-customization/language-models" target="_blank" rel="noopener">How thinking effort affects usage</a></p></div></div></section>
 <section class="learning-section effort-lesson"><h2>“High” is a setting. Success is the goal.</h2><div class="lesson-columns"><p>Start with Luna on a bounded task. If your client offers thinking effort, try a higher setting when deeper reasoning is useful. There is no published universal conversion from “High” to a fixed cost.</p><p>Check the result. If it repeats a failed approach, misses constraints, or needs architectural judgment, pause and switch. A cheap attempt that never finishes is not an efficient workflow.</p></div><p class="source-note">Read more: <a href="https://docs.github.com/en/copilot/reference/ai-models/model-comparison" target="_blank" rel="noopener">GitHub’s model comparison</a> · <a href="models.html#model-table">Full pricing reference</a></p></section>
       <section class="panel reveal" id="enterprise-model-routing" aria-labelledby="enterprise-model-routing-heading">
@@ -69,7 +69,7 @@
           <p class="eyebrow">Enterprise Routing Graphic</p>
           <h2 id="enterprise-model-routing-heading">Six-Model Copilot Enterprise Route and Migration Map</h2>
           <p>
-            A current October 2, 2026 view of five selected Copilot Enterprise routes plus GPT-5 mini migration guidance.
+            A current October 3, 2026 view of five selected Copilot Enterprise routes plus GPT-5 mini migration guidance.
             Prices are GitHub Copilot AI-credit rates per 1M tokens; 1 AI credit equals $0.01.
           </p>
         </div>
@@ -109,10 +109,10 @@
 
           <div class="route-card route-card-terra">
             <div class="route-card-head">
-              <span class="route-kicker">Evidence gate</span>
+              <span class="route-kicker">Balanced coding</span>
               <strong>GPT-5.6 Terra</strong>
             </div>
-            <p>Route bounded evidence-validation gates here: compare citations, check extraction quality, and verify claims before writing.</p>
+            <p>Use for balanced everyday interactive and agentic coding. Keep tests, source checks, and human review as independent validation gates.</p>
             <dl>
               <div><dt>Input</dt><dd>$2.00</dd></div>
               <div><dt>Cached / write</dt><dd>$0.20 / $2.50</dd></div>
@@ -234,7 +234,7 @@
                 <td class="cost-std">$2.00</td>
                 <td>$0.20 cached; $2.50 write</td>
                 <td class="cost-std">$12.00</td>
-                <td class="strengths">Bounded evidence-validation gates, citation checks, and claim verification before writing.</td>
+                <td class="strengths">Balanced everyday interactive and agentic coding; use tests, source checks, and human review for validation.</td>
               </tr>
               <tr class="highlight">
                 <td class="model-name">GPT-5.6 Sol</td>
@@ -331,9 +331,9 @@
             cost matters.
           </p>
           <p>
-            <strong>October 2 migration:</strong> GitHub scheduled Claude Opus 4.7, Gemini 3.5 Flash,
-            Gemini 3.6 Flash, and Kimi K2.7 Code for retirement across Copilot on October 2, 2026. Move
-            explicit selections to Claude Opus 5, Gemini 3.8 Flash, or Kimi K3 as applicable, and verify
+            <strong>October 2 migration:</strong> GitHub deprecated Claude Opus 4.7, Gemini 3.5 Flash,
+            Gemini 3.6 Flash, and Kimi K2.7 Code across Copilot on October 2, 2026. Move
+            explicit selections to Claude Opus 5.5, Gemini 3.8 Flash, or Kimi K3 as applicable, and verify
             current availability in the model picker and organization policy.
           </p>
           <p>
@@ -368,16 +368,16 @@
           <article class="model-use-card">
             <h3>Small code edits</h3>
             <p><strong>Start:</strong> GPT-6 Luna for fixed Python/API collection, known-schema edits, and cheap iteration.</p>
-            <p><strong>Escalate:</strong> GPT-5.6 Terra when the edit needs a stronger evidence or validation pass.</p>
+            <p><strong>Escalate:</strong> GPT-5.6 Terra when the edit needs balanced interactive coding, with independent tests and source checks.</p>
           </article>
           <article class="model-use-card">
             <h3>Feature implementation</h3>
-            <p><strong>Start:</strong> GPT-5.6 Terra for bounded validation gates around requirements, evidence, and tests.</p>
+            <p><strong>Start:</strong> GPT-5.6 Terra for balanced everyday interactive and agentic coding.</p>
             <p><strong>Escalate:</strong> GPT-6.1 Sol for multipart orchestration and efficient multistep validation.</p>
           </article>
           <article class="model-use-card">
             <h3>Debugging production issues</h3>
-            <p><strong>Start:</strong> GPT-5.6 Terra to verify logs, citations, repro evidence, and claim quality.</p>
+            <p><strong>Start:</strong> GPT-5.6 Terra for a balanced debugging pass, then verify logs, repro evidence, and claims independently.</p>
             <p><strong>Escalate:</strong> GPT-6.1 Sol for long diagnosis, then Claude Opus 5.5 only if the issue remains unresolved.</p>
           </article>
           <article class="model-use-card">
@@ -387,7 +387,7 @@
           </article>
           <article class="model-use-card">
             <h3>Code review</h3>
-            <p><strong>Start:</strong> GPT-5.6 Terra for citation-backed evidence gates and focused diff checks.</p>
+            <p><strong>Start:</strong> GPT-5.6 Terra for a focused everyday review, backed by tests, source checks, and human judgment.</p>
             <p><strong>Escalate:</strong> Claude Opus 5.5 for high-risk logic, security-sensitive areas, or architecture drift.</p>
           </article>
           <article class="model-use-card">
@@ -420,7 +420,7 @@
             <h3>Complex feature flow</h3>
             <ol class="use-case-steps">
               <li><strong>Collect with GPT-6 Luna:</strong> gather fixed Python/API evidence and known-schema inputs.</li>
-              <li><strong>Validate with GPT-5.6 Terra:</strong> check citations, extraction quality, and acceptance criteria before writing.</li>
+              <li><strong>Build with GPT-5.6 Terra:</strong> use a balanced coding pass, then check citations, extraction quality, and acceptance criteria independently.</li>
               <li><strong>Orchestrate with GPT-6.1 Sol:</strong> coordinate long multipart implementation or diagnosis with efficient multistep validation.</li>
               <li><strong>Escalate only if needed:</strong> use Claude Sonnet 5.5 when blind tests show stronger everyday development, CLI, or communication results, or Claude Opus 5.5 for exceptional unresolved risk.</li>
             </ol>
@@ -430,7 +430,7 @@
             <h3>Bug triage flow</h3>
             <ol class="use-case-steps">
               <li><strong>Summarize with GPT-6 Luna:</strong> collect symptoms, logs, repro steps, and suspected areas.</li>
-              <li><strong>Verify with GPT-5.6 Terra:</strong> test whether the evidence supports the likely cause.</li>
+              <li><strong>Investigate with GPT-5.6 Terra:</strong> use a balanced agentic pass, then test whether the evidence supports the likely cause.</li>
               <li><strong>Diagnose with GPT-6.1 Sol:</strong> handle long cross-system reasoning when cheaper routes stall.</li>
               <li><strong>Escalate with Claude Opus 5.5:</strong> reserve for unresolved or high-consequence failures.</li>
             </ol>
@@ -440,7 +440,7 @@
             <h3>Large refactor flow</h3>
             <ol class="use-case-steps">
               <li><strong>Inventory with GPT-6 Luna:</strong> find call sites, dependencies, and duplicate patterns.</li>
-              <li><strong>Gate with GPT-5.6 Terra:</strong> validate the evidence behind each migration claim.</li>
+              <li><strong>Build with GPT-5.6 Terra:</strong> handle balanced coding work, then validate the evidence behind each migration claim independently.</li>
               <li><strong>Coordinate with GPT-6.1 Sol:</strong> manage long multipart sequencing after cheaper validation gates are exhausted.</li>
               <li><strong>Audit with Claude Opus 5.5:</strong> use a final pass only on the risky diff and tests.</li>
             </ol>
@@ -451,7 +451,7 @@
             <ol class="use-case-steps">
               <li><strong>Collect with GPT-6 Luna:</strong> keep fixed-source work on the lowest-cost GPT-6 route.</li>
               <li><strong>Iterate with GPT-6 Luna:</strong> use it for cheap checks when the task is still small.</li>
-              <li><strong>Validate with GPT-5.6 Terra:</strong> spend more only when evidence quality matters.</li>
+              <li><strong>Use GPT-5.6 Terra:</strong> move to balanced everyday coding when Luna is not enough, then validate independently.</li>
               <li><strong>Escalate deliberately:</strong> reserve GPT-6.1 Sol, Claude Sonnet 5.5, and Claude Opus 5.5 for their defined routes.</li>
             </ol>
           </article>
@@ -480,7 +480,7 @@
             <h3>Treat mid-tier rates as workhorse capacity</h3>
             <p class="guide-text">
               GPT-5.6 Terra, GPT-6.1 Sol, and Claude Sonnet 5.5 sit in the middle of this six-model route, but they serve
-              different jobs: Terra for evidence gates, GPT-6.1 Sol for efficient agentic coding, and Sonnet 5.5 when
+              different jobs: Terra for balanced everyday interactive and agentic coding, GPT-6.1 Sol for efficient complex agentic coding, and Sonnet 5.5 when
               blind tests favor its everyday development, CLI, latency, or communication fit.
             </p>
           </article>
@@ -498,7 +498,7 @@
         <div class="panel-head">
           <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official References</h2>
-          <p>Verified October 2, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
+          <p>Verified October 3, 2026. The model list, context-window controls, reasoning controls, agent-app surfaces, sandbox policy controls, security-validation defaults, model data-retention requirements, managed-settings coverage, default model enablement, enterprise team targeting, VS Code model-provider controls, code-review billing behavior, retirements, and AI-credit billing details change often, so re-check these sources before making budget or policy decisions.</p>
         </div>
 
         <div class="ref-grid">
