@@ -2,3 +2,4 @@ document.write('<script src="news-feed-base.js"><\/script><script src="news-upda
 document.write('<script src="news-latest-20261015.js"><\/script>');
 document.write('<script src="news-latest-20261016.js"><\/script>');
 document.write('<script src="news-latest-20261017.js"><\/script>');
+document.write('<script src="news-latest-20261018.js"><\/script>');
