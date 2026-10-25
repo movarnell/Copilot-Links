@@ -9,3 +9,4 @@ document.write('<script src="news-latest-20261021.js"><\/script>');
 document.write('<script src="news-latest-20261022.js"><\/script>');
 document.write('<script src="news-latest-20261023.js"><\/script>');
 document.write('<script src="news-latest-20261024.js"><\/script>');
+document.write('<script src="news-latest-20261025.js"><\/script>');
