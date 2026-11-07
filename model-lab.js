@@ -1,4 +1,4 @@
-/* Published USD per million tokens, standard tier. Verified 2026-11-05.
+/* Published USD per million tokens, standard tier. Verified 2026-11-07.
  * Source: https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing
  * Recommendations and workload assumptions are editorial, not benchmarks. */
 (() => {
