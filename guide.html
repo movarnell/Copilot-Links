@@ -81,13 +81,13 @@
               Agents
             </h3>
             <p class="guide-text">
-              An <strong>agent</strong> is a custom personality you give to Copilot. It is defined in a single
-              file typically named <code>&lt;agent-name&gt;.agent.md</code> that tells Copilot who it should act as, what it should focus on,
-              and which skills it can use.
+              An <strong>agent</strong> is a reusable Copilot role and configuration. It is defined in a single
+              file typically named <code>&lt;agent-name&gt;.agent.md</code> that combines instructions, selected tools,
+              and optionally a model for a particular kind of work.
             </p>
             <p class="guide-text">
               Think of an agent like a job description: it tells Copilot what role to play, what rules to follow,
-              and what tools (skills) are available for the job.
+              and which tools are available. Skills are separate task-specific instruction and resource packages that an agent can discover and use.
             </p>
           </div>
           <div class="overview-card">
@@ -140,13 +140,13 @@
           <p>
             Because a workspace is tied to a specific folder, any agent or skill files you put
             <strong>inside</strong> that folder are <em>workspace-level</em> &mdash; they only work when that
-            folder is open. This is how teams share agents: everyone who opens the same project folder
-            gets the same agents and skills automatically.
+            folder is open. This is how teams share agents and skills: compatible Copilot clients can discover the
+            same repository files when the project is open, subject to the active surface and organization policy.
           </p>
           <p>
             But you can also store agents and skills in a special folder in your <strong>home directory</strong>
-            (outside any project). These are <em>user-level</em> &mdash; they follow you everywhere,
-            regardless of which project folder you have open.
+            (outside any project). These are <em>user-level</em> and can follow you across local projects in compatible
+            clients; personal skills are not automatically available to cloud sessions unless they are made available there separately.
           </p>
         </div>
       </section>
@@ -238,8 +238,8 @@
             <code class="path-display">~/.copilot/agents/<em>&lt;agent-name&gt;</em>.agent.md</code>
             <p class="guide-text">
               The <code>~</code> symbol means your home directory &mdash; this is a folder on your computer
-              that belongs to your user account. Agents stored here are <strong>only available to you</strong>,
-              but they work across every project you open in VS Code.
+              that belongs to your user account. Agents stored here are <strong>only available to you</strong>
+              and can be discovered across local projects in compatible VS Code Copilot surfaces.
             </p>
             <p class="guide-text-note">
               Best for: personal preferences, private workflows, agents you want available everywhere.
@@ -276,8 +276,8 @@
             <h3>Personal Skills</h3>
             <code class="path-display">~/.copilot/skills/<em>&lt;skill-name&gt;</em>/SKILL.md</code>
             <p class="guide-text">
-              Personal skills live in your home directory and travel with you across every project.
-              No one else can see or use these skills &mdash; they are part of your personal Copilot setup.
+              Personal skills live in your home directory and can be discovered across local projects by compatible clients.
+              No one else can see or use these local files, and cloud sessions need their own available copy.
             </p>
             <p class="guide-text-note">
               Best for: your preferred code style, personal documentation templates, private utility skills.
@@ -303,7 +303,7 @@
               <dt>Who sees it</dt>
               <dd>Only you</dd>
               <dt>Works in</dt>
-              <dd>Every project you open</dd>
+              <dd>Compatible local projects and Copilot surfaces</dd>
               <dt>Version controlled</dt>
               <dd>No &mdash; it lives outside any repository</dd>
               <dt>Shared with team</dt>
@@ -319,7 +319,7 @@
               <dt>Stored in</dt>
               <dd><code>.github/</code> (inside the project folder)</dd>
               <dt>Who sees it</dt>
-              <dd>Everyone who opens this project</dd>
+              <dd>Teammates using compatible clients and allowed surfaces</dd>
               <dt>Works in</dt>
               <dd>Only this specific project</dd>
               <dt>Version controlled</dt>
@@ -379,8 +379,8 @@
           <h3>One More Thing: <code>copilot-instructions.md</code></h3>
           <p>
             You may also see a file called <code>copilot-instructions.md</code> inside <code>.github/</code>.
-            This is a repo-wide instruction file that applies to <em>all</em> agents working in the project &mdash;
-            it sets baseline rules and context that every agent follows. For more detail, see the
+            This is a repo-wide instruction file for Copilot sessions in that repository. Compatible Copilot surfaces
+            use it as baseline project context; other agent harnesses can have different instruction-discovery rules. For more detail, see the
             <a href="learning.html#quick-ref" class="guide-link">Quick Reference</a> on the main page.
           </p>
         </div>
