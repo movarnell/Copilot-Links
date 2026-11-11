@@ -1,4 +1,4 @@
-/* Published USD per million tokens, standard tier. Verified 2026-11-10.
+/* Published USD per million tokens, standard tier. Verified 2026-11-11.
  * Source: https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing
  * Recommendations and workload assumptions are editorial, not benchmarks. */
 (() => {
@@ -11,13 +11,15 @@
     sol: { name: 'GPT-6.1 Sol', short: 'Sol', input: 2, output: 10 },
     sonnet: { name: 'Claude Sonnet 5.5', short: 'Sonnet', input: 2, output: 10 },
     opus: { name: 'Claude Opus 5.5', short: 'Opus', input: 4, output: 20 },
+    carbon: { name: 'Gemini 4 Carbon', short: 'Carbon', input: 2, output: 10 },
+    fable: { name: 'Claude Fable 5.2', short: 'Fable', input: 8, output: 40 },
     astra: { name: 'GPT-6 Astra', short: 'Astra', input: 10, output: 50 }
   };
   const $ = (id) => document.getElementById(id);
   const price = (model, input, output) => (input * model.input + output * model.output) / 1e6;
   const dollars = (n) => '$' + n.toFixed(3);
   const chart = $('price-chart');
-  if (chart) ['luna', 'haiku', 'flash', 'terra', 'sol', 'sonnet', 'opus', 'astra'].forEach((key) => {
+  if (chart) ['luna', 'haiku', 'flash', 'terra', 'sol', 'sonnet', 'carbon', 'opus', 'fable', 'astra'].forEach((key) => {
     const model = rates[key], cost = price(model, 20000, 4000);
     const row = document.createElement('div'); row.className = 'price-row';
     const label = document.createElement('span'); label.textContent = model.name;
