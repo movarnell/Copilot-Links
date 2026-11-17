@@ -26,3 +26,4 @@ document.write('<script src="news-latest-20261112.js"><\/script>');
 document.write('<script src="news-latest-20261113.js"><\/script>');
 document.write('<script src="news-latest-20261114.js"><\/script>');
 document.write('<script src="news-latest-20261116.js"><\/script>');
+document.write('<script src="news-latest-20261117.js"><\/script>');
