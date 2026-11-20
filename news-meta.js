@@ -1,7 +1,7 @@
 window.newsFeedMeta = {
-  updatedAt: "2026-11-19T08:04:45-06:00",
-  displayUpdatedAt: "November 19, 2026 at 8:04 AM CT",
-  message: "Articles last updated November 19, 2026 at 8:04 AM CT.",
+  updatedAt: "2026-11-20T08:04:48-06:00",
+  displayUpdatedAt: "November 20, 2026 at 8:04 AM CT",
+  message: "Articles last updated November 20, 2026 at 8:04 AM CT.",
 };
 
 (function renderNewsFeedMeta() {
